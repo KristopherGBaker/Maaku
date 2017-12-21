@@ -680,13 +680,13 @@
 		A276D4B41FEB21A9006D5715 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				A268236E1FEC4286006780A9 /* Extensions */,
 				A276D4BD1FEB21A9006D5715 /* Block.swift */,
 				A276D4D11FEB21A9006D5715 /* Document.swift */,
 				A276D4BC1FEB21A9006D5715 /* DocumentConverter.swift */,
 				A276D4D31FEB21A9006D5715 /* Plugin.swift */,
 				A276D4D21FEB21A9006D5715 /* Style.swift */,
 				A276D4CA1FEB21A9006D5715 /* Container */,
+				A268236E1FEC4286006780A9 /* Extensions */,
 				A276D4BE1FEB21A9006D5715 /* Inline */,
 				A276D4B51FEB21A9006D5715 /* Leaf */,
 			);

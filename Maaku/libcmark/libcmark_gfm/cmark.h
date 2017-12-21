@@ -106,6 +106,9 @@ typedef struct cmark_mem {
   void (*free)(void *);
 } cmark_mem;
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wstrict-prototypes"
+    
 /** The default memory allocator; uses the system's calloc,
  * realloc and free.
  */
@@ -118,6 +121,8 @@ cmark_mem *cmark_get_default_mem_allocator();
 CMARK_EXPORT
 cmark_mem *cmark_get_arena_mem_allocator();
 
+#pragma clang diagnostic pop
+    
 /** Resets the arena allocator, quickly returning all used memory
  * to the operating system.
  */
