@@ -64,7 +64,9 @@ extension DocumentConverter: CMParserDelegate {
     }
     
     public func parser(parser: CMParser, foundText text: String) {
-        nodes.append(Text(text: text))
+        if !text.isEmpty {
+            nodes.append(Text(text: text))   
+        }
     }
     
     public func parserFoundThematicBreak(parser: CMParser) {
@@ -413,6 +415,24 @@ extension DocumentConverter: CMParserDelegate {
         if let _ = nodes.last as? TableCell {
             nodes.removeLast()
             nodes.append(TableCell(items: inlineItems))
+        }
+    }
+    
+    public func parserDidStartStrikethrough(parser: CMParser) {
+        nodes.append(Strikethrough())
+    }
+    
+    public func parserDidEndStrikethrough(parser: CMParser) {
+        var inlineItems: [Inline] = []
+        
+        while let item = nodes.last as? Inline, !(item is Strikethrough) {
+            inlineItems.insert(item, at: 0)
+            nodes.removeLast()
+        }
+        
+        if let _ = nodes.last as? Strikethrough {
+            nodes.removeLast()
+            nodes.append(Strikethrough(items: inlineItems))
         }
     }
     

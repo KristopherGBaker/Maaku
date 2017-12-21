@@ -12,5 +12,6 @@
 #include "node.h"
 #include "cmark.h"
 #include "core-extensions.h"
+#include "maaku.h"
 
 #endif /* libcmark_h */

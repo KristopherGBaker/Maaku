@@ -28,6 +28,9 @@ public class CMDocument {
     /// The document options.
     private let options: CMDocumentOption
     
+    /// The enabled extensions.
+    private let extensions: CMExtensionOption
+    
     /// Creates a document initialized with the specified data using the default options.
     ///
     /// - Parameters:
@@ -80,6 +83,7 @@ public class CMDocument {
     ///     The initialized and parsed document.
     public init(text: String, options: CMDocumentOption, extensions: CMExtensionOption) throws {
         self.options = options
+        self.extensions = extensions
         core_extensions_ensure_registered()
 
         guard let parser = cmark_parser_new(options.rawValue) else {
@@ -127,7 +131,7 @@ public extension CMDocument {
     /// - Returns:
     ///     The HTML as a string.
     public func renderHtml() throws -> String {
-        return try node.renderHtml(options)
+        return try node.renderHtml(options, extensions: extensions)
     }
     
     /// Renders the document as XML.

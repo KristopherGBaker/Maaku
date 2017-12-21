@@ -224,12 +224,21 @@ public extension CMNode {
     
     /// Renders the node as HTML.
     ///
+    /// - Parameters:
+    ///     - options: The document options.
+    ///     - extensions: The extension options.
     /// - Throws:
     ///     `CMDocumentError.renderError` if there is an error rendering the HTML.
     /// - Returns:
     ///     The HTML as a string.
-    public func renderHtml(_ options: CMDocumentOption) throws -> String {
-        guard let buffer = cmark_render_html(cmarkNode, options.rawValue, nil) else {
+    public func renderHtml(_ options: CMDocumentOption, extensions: CMExtensionOption) throws -> String {
+        var htmlExtensions: UnsafeMutablePointer<cmark_llist>? = nil
+        
+        if extensions.contains(.tagfilters) {
+            htmlExtensions = maaku_filter_get_extensions()
+        }
+        
+        guard let buffer = cmark_render_html(cmarkNode, options.rawValue, htmlExtensions) else {
             throw CMDocumentError.renderError
         }
         
@@ -246,6 +255,8 @@ public extension CMNode {
     
     /// Renders the node as XML.
     ///
+    /// - Parameters:
+    ///     - options: The document options.
     /// - Throws:
     ///     `CMDocumentError.renderError` if there is an error rendering the XML.
     /// - Returns:
@@ -269,6 +280,7 @@ public extension CMNode {
     /// Renders the node as groff man page.
     ///
     /// - Parameters:
+    ///     - options: The document options.
     ///     - width: The man page width.
     /// - Throws:
     ///     `CMDocumentError.renderError` if there is an error rendering the man page.
@@ -293,6 +305,7 @@ public extension CMNode {
     /// Renders the node as common mark.
     ///
     /// - Parameters:
+    ///     - options: The document options.
     ///     - width: The common mark width.
     /// - Throws:
     ///     `CMDocumentError.renderError` if there is an error rendering the common mark.
@@ -317,6 +330,7 @@ public extension CMNode {
     /// Renders the node as Latex.
     ///
     /// - Parameters:
+    ///     - options: The document options.
     ///     - width: The Latex width.
     /// - Throws:
     ///     `CMDocumentError.renderError` if there is an error rendering the Latex.
@@ -341,6 +355,7 @@ public extension CMNode {
     /// Renders the node as plain text.
     ///
     /// - Parameters:
+    ///     - options: The document options.
     ///     - width: The plain text width.
     /// - Throws:
     ///     `CMDocumentError.renderError` if there is an error rendering the plain text.
