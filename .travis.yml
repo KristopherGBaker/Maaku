@@ -10,7 +10,7 @@ env:
   - IOS_SDK=iphonesimulator11.2
   - MACOS_SDK=macosx10.13
   matrix:
-    - DESTINATION="OS=10.1,name=iPhone 8 Plus"     SCHEME="$IOS_FRAMEWORK_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" POD_LINT="YES"
+    - DESTINATION="OS=11.2,name=iPhone 8 Plus"     SCHEME="$IOS_FRAMEWORK_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" POD_LINT="YES"
 
     - DESTINATION="arch=x86_64"                    SCHEME="$MACOS_FRAMEWORK_SCHEME"   SDK="$MACOS_SDK"   RUN_TESTS="YES" POD_LINT="NO"
 before_install:
@@ -39,4 +39,3 @@ script:
   - if [ $POD_LINT == "YES" ]; then
       pod lib lint;
     fi
-    
