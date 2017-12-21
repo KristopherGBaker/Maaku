@@ -97,19 +97,6 @@
 		A26822861FEB8FAB006780A9 /* scanners.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4FA1FEB21A9006D5715 /* scanners.h */; };
 		A26822871FEB8FAB006780A9 /* syntax_extension.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5081FEB21A9006D5715 /* syntax_extension.h */; };
 		A26822881FEB8FAB006780A9 /* utf8.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5141FEB21A9006D5715 /* utf8.h */; };
-		A26822891FEB8FBF006780A9 /* autolink.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4D81FEB21A9006D5715 /* autolink.c */; };
-		A268228A1FEB8FBF006780A9 /* core-extensions.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4E21FEB21A9006D5715 /* core-extensions.c */; };
-		A268228B1FEB8FBF006780A9 /* ext_scanners.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4DA1FEB21A9006D5715 /* ext_scanners.c */; };
-		A268228C1FEB8FBF006780A9 /* strikethrough.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4D71FEB21A9006D5715 /* strikethrough.c */; };
-		A268228D1FEB8FBF006780A9 /* table.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4D91FEB21A9006D5715 /* table.c */; };
-		A268228E1FEB8FBF006780A9 /* tagfilter.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4DB1FEB21A9006D5715 /* tagfilter.c */; };
-		A268228F1FEB8FC2006780A9 /* autolink.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4DD1FEB21A9006D5715 /* autolink.h */; };
-		A26822901FEB8FC2006780A9 /* cmarkextensions_export.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4D61FEB21A9006D5715 /* cmarkextensions_export.h */; };
-		A26822911FEB8FC2006780A9 /* core-extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4DC1FEB21A9006D5715 /* core-extensions.h */; };
-		A26822921FEB8FC2006780A9 /* ext_scanners.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4E11FEB21A9006D5715 /* ext_scanners.h */; };
-		A26822931FEB8FC2006780A9 /* strikethrough.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4DE1FEB21A9006D5715 /* strikethrough.h */; };
-		A26822941FEB8FC2006780A9 /* table.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4DF1FEB21A9006D5715 /* table.h */; };
-		A26822951FEB8FC2006780A9 /* tagfilter.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4E01FEB21A9006D5715 /* tagfilter.h */; };
 		A26822961FEB8FCF006780A9 /* YoutubePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4A21FEB21A9006D5715 /* YoutubePlugin.swift */; };
 		A26822A01FEC2703006780A9 /* Maaku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A268222A1FEB8F17006780A9 /* Maaku.framework */; };
 		A26822A61FEC2738006780A9 /* Maaku+TestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D60E1FEB3676006D5715 /* Maaku+TestCase.swift */; };
@@ -193,19 +180,6 @@
 		A276D5451FEB21A9006D5715 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4D11FEB21A9006D5715 /* Document.swift */; };
 		A276D5461FEB21A9006D5715 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4D21FEB21A9006D5715 /* Style.swift */; };
 		A276D5471FEB21A9006D5715 /* Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4D31FEB21A9006D5715 /* Plugin.swift */; };
-		A276D5481FEB21A9006D5715 /* cmarkextensions_export.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4D61FEB21A9006D5715 /* cmarkextensions_export.h */; };
-		A276D5491FEB21A9006D5715 /* strikethrough.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4D71FEB21A9006D5715 /* strikethrough.c */; };
-		A276D54A1FEB21A9006D5715 /* autolink.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4D81FEB21A9006D5715 /* autolink.c */; };
-		A276D54B1FEB21A9006D5715 /* table.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4D91FEB21A9006D5715 /* table.c */; };
-		A276D54C1FEB21A9006D5715 /* ext_scanners.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4DA1FEB21A9006D5715 /* ext_scanners.c */; };
-		A276D54D1FEB21A9006D5715 /* tagfilter.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4DB1FEB21A9006D5715 /* tagfilter.c */; };
-		A276D54E1FEB21A9006D5715 /* core-extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4DC1FEB21A9006D5715 /* core-extensions.h */; };
-		A276D54F1FEB21A9006D5715 /* autolink.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4DD1FEB21A9006D5715 /* autolink.h */; };
-		A276D5501FEB21A9006D5715 /* strikethrough.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4DE1FEB21A9006D5715 /* strikethrough.h */; };
-		A276D5511FEB21A9006D5715 /* table.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4DF1FEB21A9006D5715 /* table.h */; };
-		A276D5521FEB21A9006D5715 /* tagfilter.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4E01FEB21A9006D5715 /* tagfilter.h */; };
-		A276D5531FEB21A9006D5715 /* ext_scanners.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4E11FEB21A9006D5715 /* ext_scanners.h */; };
-		A276D5541FEB21A9006D5715 /* core-extensions.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4E21FEB21A9006D5715 /* core-extensions.c */; };
 		A276D5551FEB21A9006D5715 /* xml.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4E41FEB21A9006D5715 /* xml.c */; };
 		A276D5561FEB21A9006D5715 /* cmark.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4E51FEB21A9006D5715 /* cmark.c */; };
 		A276D5571FEB21A9006D5715 /* man.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4E61FEB21A9006D5715 /* man.c */; };
@@ -369,19 +343,6 @@
 		A276D4D11FEB21A9006D5715 /* Document.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
 		A276D4D21FEB21A9006D5715 /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		A276D4D31FEB21A9006D5715 /* Plugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plugin.swift; sourceTree = "<group>"; };
-		A276D4D61FEB21A9006D5715 /* cmarkextensions_export.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmarkextensions_export.h; sourceTree = "<group>"; };
-		A276D4D71FEB21A9006D5715 /* strikethrough.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = strikethrough.c; sourceTree = "<group>"; };
-		A276D4D81FEB21A9006D5715 /* autolink.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = autolink.c; sourceTree = "<group>"; };
-		A276D4D91FEB21A9006D5715 /* table.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = table.c; sourceTree = "<group>"; };
-		A276D4DA1FEB21A9006D5715 /* ext_scanners.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ext_scanners.c; sourceTree = "<group>"; };
-		A276D4DB1FEB21A9006D5715 /* tagfilter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tagfilter.c; sourceTree = "<group>"; };
-		A276D4DC1FEB21A9006D5715 /* core-extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "core-extensions.h"; sourceTree = "<group>"; };
-		A276D4DD1FEB21A9006D5715 /* autolink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autolink.h; sourceTree = "<group>"; };
-		A276D4DE1FEB21A9006D5715 /* strikethrough.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = strikethrough.h; sourceTree = "<group>"; };
-		A276D4DF1FEB21A9006D5715 /* table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = table.h; sourceTree = "<group>"; };
-		A276D4E01FEB21A9006D5715 /* tagfilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tagfilter.h; sourceTree = "<group>"; };
-		A276D4E11FEB21A9006D5715 /* ext_scanners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ext_scanners.h; sourceTree = "<group>"; };
-		A276D4E21FEB21A9006D5715 /* core-extensions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "core-extensions.c"; sourceTree = "<group>"; };
 		A276D4E41FEB21A9006D5715 /* xml.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xml.c; sourceTree = "<group>"; };
 		A276D4E51FEB21A9006D5715 /* cmark.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmark.c; sourceTree = "<group>"; };
 		A276D4E61FEB21A9006D5715 /* man.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = man.c; sourceTree = "<group>"; };
@@ -667,29 +628,8 @@
 			children = (
 				A276D5181FEB21A9006D5715 /* module.map */,
 				A276D4E31FEB21A9006D5715 /* libcmark_gfm */,
-				A276D4D51FEB21A9006D5715 /* libcmark_gfmextensions */,
 			);
 			path = libcmark;
-			sourceTree = "<group>";
-		};
-		A276D4D51FEB21A9006D5715 /* libcmark_gfmextensions */ = {
-			isa = PBXGroup;
-			children = (
-				A276D4D81FEB21A9006D5715 /* autolink.c */,
-				A276D4DD1FEB21A9006D5715 /* autolink.h */,
-				A276D4D61FEB21A9006D5715 /* cmarkextensions_export.h */,
-				A276D4E21FEB21A9006D5715 /* core-extensions.c */,
-				A276D4DC1FEB21A9006D5715 /* core-extensions.h */,
-				A276D4DA1FEB21A9006D5715 /* ext_scanners.c */,
-				A276D4E11FEB21A9006D5715 /* ext_scanners.h */,
-				A276D4D71FEB21A9006D5715 /* strikethrough.c */,
-				A276D4DE1FEB21A9006D5715 /* strikethrough.h */,
-				A276D4D91FEB21A9006D5715 /* table.c */,
-				A276D4DF1FEB21A9006D5715 /* table.h */,
-				A276D4DB1FEB21A9006D5715 /* tagfilter.c */,
-				A276D4E01FEB21A9006D5715 /* tagfilter.h */,
-			);
-			path = libcmark_gfmextensions;
 			sourceTree = "<group>";
 		};
 		A276D4E31FEB21A9006D5715 /* libcmark_gfm */ = {
@@ -867,22 +807,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				A268227A1FEB8FAB006780A9 /* footnotes.h in Headers */,
-				A26822951FEB8FC2006780A9 /* tagfilter.h in Headers */,
-				A26822901FEB8FC2006780A9 /* cmarkextensions_export.h in Headers */,
-				A268228F1FEB8FC2006780A9 /* autolink.h in Headers */,
 				A26822731FEB8FAB006780A9 /* chunk.h in Headers */,
 				A26822801FEB8FAB006780A9 /* node.h in Headers */,
-				A26822931FEB8FC2006780A9 /* strikethrough.h in Headers */,
 				A26822871FEB8FAB006780A9 /* syntax_extension.h in Headers */,
 				A268227E1FEB8FAB006780A9 /* iterator.h in Headers */,
 				A26822771FEB8FAB006780A9 /* cmark_version.h in Headers */,
 				A268227D1FEB8FAB006780A9 /* inlines.h in Headers */,
 				A26822791FEB8FAB006780A9 /* config.h in Headers */,
 				A26822741FEB8FAB006780A9 /* cmark_ctype.h in Headers */,
-				A26822911FEB8FC2006780A9 /* core-extensions.h in Headers */,
 				A26822831FEB8FAB006780A9 /* references.h in Headers */,
 				A26822841FEB8FAB006780A9 /* registry.h in Headers */,
-				A26822941FEB8FC2006780A9 /* table.h in Headers */,
 				A26822781FEB8FAB006780A9 /* cmark.h in Headers */,
 				A26822851FEB8FAB006780A9 /* render.h in Headers */,
 				A26822721FEB8FAB006780A9 /* buffer.h in Headers */,
@@ -894,7 +828,6 @@
 				A26822881FEB8FAB006780A9 /* utf8.h in Headers */,
 				A268227F1FEB8FAB006780A9 /* map.h in Headers */,
 				A268227B1FEB8FAB006780A9 /* houdini.h in Headers */,
-				A26822921FEB8FC2006780A9 /* ext_scanners.h in Headers */,
 				A26822751FEB8FAB006780A9 /* cmark_export.h in Headers */,
 				A26822861FEB8FAB006780A9 /* scanners.h in Headers */,
 			);
@@ -911,18 +844,12 @@
 				A276D55B1FEB21A9006D5715 /* cmark_export.h in Headers */,
 				A276D4951FEB1EB2006D5715 /* Maaku.h in Headers */,
 				A276D57E1FEB21A9006D5715 /* inlines.h in Headers */,
-				A276D5531FEB21A9006D5715 /* ext_scanners.h in Headers */,
-				A276D5481FEB21A9006D5715 /* cmarkextensions_export.h in Headers */,
-				A276D5521FEB21A9006D5715 /* tagfilter.h in Headers */,
 				A276D5671FEB21A9006D5715 /* footnotes.h in Headers */,
 				A276D56C1FEB21A9006D5715 /* node.h in Headers */,
 				A276D55C1FEB21A9006D5715 /* html.h in Headers */,
 				A276D5731FEB21A9006D5715 /* cmark_version.h in Headers */,
 				A276D5851FEB21A9006D5715 /* utf8.h in Headers */,
 				A276D5631FEB21A9006D5715 /* chunk.h in Headers */,
-				A276D54E1FEB21A9006D5715 /* core-extensions.h in Headers */,
-				A276D5511FEB21A9006D5715 /* table.h in Headers */,
-				A276D5501FEB21A9006D5715 /* strikethrough.h in Headers */,
 				A276D5681FEB21A9006D5715 /* parser.h in Headers */,
 				A276D5621FEB21A9006D5715 /* config.h in Headers */,
 				A276D5791FEB21A9006D5715 /* syntax_extension.h in Headers */,
@@ -934,7 +861,6 @@
 				A276D5711FEB21A9006D5715 /* registry.h in Headers */,
 				A276D56B1FEB21A9006D5715 /* scanners.h in Headers */,
 				A276D5771FEB21A9006D5715 /* cmark_extension_api.h in Headers */,
-				A276D54F1FEB21A9006D5715 /* autolink.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1250,7 +1176,6 @@
 			files = (
 				A26822371FEB8F63006780A9 /* CMListType.swift in Sources */,
 				A268225C1FEB8FA2006780A9 /* commonmark.c in Sources */,
-				A26822891FEB8FBF006780A9 /* autolink.c in Sources */,
 				A268226C1FEB8FA2006780A9 /* registry.c in Sources */,
 				A26822551FEB8F78006780A9 /* LeafBlock.swift in Sources */,
 				A26822441FEB8F6D006780A9 /* OrderedList.swift in Sources */,
@@ -1260,7 +1185,6 @@
 				A268224B1FEB8F72006780A9 /* InlineHtml.swift in Sources */,
 				A26822351FEB8F63006780A9 /* CMDocumentOption.swift in Sources */,
 				A26822511FEB8F78006780A9 /* CodeBlock.swift in Sources */,
-				A268228C1FEB8FBF006780A9 /* strikethrough.c in Sources */,
 				A268225E1FEB8FA2006780A9 /* houdini_href_e.c in Sources */,
 				A268223C1FEB8F68006780A9 /* Document.swift in Sources */,
 				A26822671FEB8FA2006780A9 /* map.c in Sources */,
@@ -1276,7 +1200,6 @@
 				A26822661FEB8FA2006780A9 /* man.c in Sources */,
 				A26822711FEB8FA2006780A9 /* xml.c in Sources */,
 				A26822571FEB8FA2006780A9 /* arena.c in Sources */,
-				A268228D1FEB8FBF006780A9 /* table.c in Sources */,
 				A26822491FEB8F72006780A9 /* Inline.swift in Sources */,
 				A26822401FEB8F6D006780A9 /* BlockQuote.swift in Sources */,
 				A268226B1FEB8FA2006780A9 /* references.c in Sources */,
@@ -1293,16 +1216,13 @@
 				A268225B1FEB8FA2006780A9 /* cmark.c in Sources */,
 				A26822431FEB8F6D006780A9 /* ListItem.swift in Sources */,
 				A26822961FEB8FCF006780A9 /* YoutubePlugin.swift in Sources */,
-				A268228E1FEB8FBF006780A9 /* tagfilter.c in Sources */,
 				A26822561FEB8F78006780A9 /* Paragraph.swift in Sources */,
 				A26822341FEB8F63006780A9 /* CMDocument.swift in Sources */,
 				A26822451FEB8F6D006780A9 /* UnorderedList.swift in Sources */,
 				A26822521FEB8F78006780A9 /* Heading.swift in Sources */,
 				A268223B1FEB8F68006780A9 /* Block.swift in Sources */,
 				A26822631FEB8FA2006780A9 /* iterator.c in Sources */,
-				A268228B1FEB8FBF006780A9 /* ext_scanners.c in Sources */,
 				A268223A1FEB8F63006780A9 /* CMParser.swift in Sources */,
-				A268228A1FEB8FBF006780A9 /* core-extensions.c in Sources */,
 				A268224A1FEB8F72006780A9 /* InlineCode.swift in Sources */,
 				A26822691FEB8FA2006780A9 /* plaintext.c in Sources */,
 				A26822601FEB8FA2006780A9 /* houdini_html_u.c in Sources */,
@@ -1358,7 +1278,6 @@
 			files = (
 				A276D5301FEB21A9006D5715 /* Heading.swift in Sources */,
 				A276D5351FEB21A9006D5715 /* InlineCode.swift in Sources */,
-				A276D54D1FEB21A9006D5715 /* tagfilter.c in Sources */,
 				A276D55F1FEB21A9006D5715 /* latex.c in Sources */,
 				A276D53E1FEB21A9006D5715 /* FootnoteReference.swift in Sources */,
 				A276D56E1FEB21A9006D5715 /* references.c in Sources */,
@@ -1377,14 +1296,11 @@
 				A276D5561FEB21A9006D5715 /* cmark.c in Sources */,
 				A276D5551FEB21A9006D5715 /* xml.c in Sources */,
 				A276D5801FEB21A9006D5715 /* footnotes.c in Sources */,
-				A276D54A1FEB21A9006D5715 /* autolink.c in Sources */,
 				A276D5451FEB21A9006D5715 /* Document.swift in Sources */,
 				A276D5641FEB21A9006D5715 /* syntax_extension.c in Sources */,
 				A276D5251FEB21A9006D5715 /* CMIterator.swift in Sources */,
-				A276D54B1FEB21A9006D5715 /* table.c in Sources */,
 				A276D5601FEB21A9006D5715 /* houdini_href_e.c in Sources */,
 				A276D55A1FEB21A9006D5715 /* cmark_ctype.c in Sources */,
-				A276D5491FEB21A9006D5715 /* strikethrough.c in Sources */,
 				A276D5581FEB21A9006D5715 /* buffer.c in Sources */,
 				A276D57C1FEB21A9006D5715 /* html.c in Sources */,
 				A276D5841FEB21A9006D5715 /* registry.c in Sources */,
@@ -1404,7 +1320,6 @@
 				A276D52A1FEB21A9006D5715 /* CMParser.swift in Sources */,
 				A276D5431FEB21A9006D5715 /* BlockQuote.swift in Sources */,
 				A276D53C1FEB21A9006D5715 /* Text.swift in Sources */,
-				A276D54C1FEB21A9006D5715 /* ext_scanners.c in Sources */,
 				A276D52D1FEB21A9006D5715 /* LeafBlock.swift in Sources */,
 				A276D52B1FEB21A9006D5715 /* CMListType.swift in Sources */,
 				A276D5571FEB21A9006D5715 /* man.c in Sources */,
@@ -1422,7 +1337,6 @@
 				A276D5701FEB21A9006D5715 /* iterator.c in Sources */,
 				A276D5391FEB21A9006D5715 /* Image.swift in Sources */,
 				A276D55D1FEB21A9006D5715 /* inlines.c in Sources */,
-				A276D5541FEB21A9006D5715 /* core-extensions.c in Sources */,
 				A276D5341FEB21A9006D5715 /* SoftBreak.swift in Sources */,
 				A276D5591FEB21A9006D5715 /* blocks.c in Sources */,
 				A276D5861FEB21A9006D5715 /* node.c in Sources */,

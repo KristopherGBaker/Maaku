@@ -79,7 +79,6 @@ public class CMDocument {
     ///     The initialized and parsed document.
     public init(text: String, options: CMDocumentOption) throws {
         self.options = options
-        core_extensions_ensure_registered()
         
         guard let cmarkNode = cmark_parse_document(text, text.utf8.count, options.rawValue) else {
             throw CMDocumentError.parsingError
