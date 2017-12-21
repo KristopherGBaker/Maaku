@@ -6,7 +6,7 @@ env:
   - LANG=en_US.UTF-8
   - WORKSPACE=Maaku.xcworkspace
   - IOS_FRAMEWORK_SCHEME="Maaku"
-  - MACOS_FRAMEWORK_SCHEME="Maaku"
+  - MACOS_FRAMEWORK_SCHEME="Maaku-macOS"
   - IOS_SDK=iphonesimulator11.2
   - MACOS_SDK=macosx10.13
   matrix:
