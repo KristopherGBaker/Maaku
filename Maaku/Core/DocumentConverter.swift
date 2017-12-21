@@ -64,7 +64,9 @@ extension DocumentConverter: CMParserDelegate {
     }
     
     public func parser(parser: CMParser, foundText text: String) {
-        nodes.append(Text(text: text))
+        if !text.isEmpty {
+            nodes.append(Text(text: text))   
+        }
     }
     
     public func parserFoundThematicBreak(parser: CMParser) {
@@ -335,6 +337,103 @@ extension DocumentConverter: CMParserDelegate {
     
     public func parser(parser: CMParser, foundFootnoteReference reference: String) {
         nodes.append(FootnoteReference(reference: reference))
+    }
+    
+    public func parserDidStartTable(parser: CMParser) {
+        nodes.append(Table())
+    }
+    
+    public func parserDidEndTable(parser: CMParser) {
+        var rows: [TableRow] = []
+        var header = TableHeader()
+        
+        while let item = nodes.last as? TableLine {
+            if let tableHeader = item as? TableHeader {
+                header = tableHeader
+            }
+            else if let row = item as? TableRow {
+                rows.insert(row, at: 0)
+            }
+            
+            nodes.removeLast()
+        }
+        
+        if let _ = nodes.last as? Table {
+            nodes.removeLast()
+            nodes.append(Table(header: header, rows: rows))
+        }
+    }
+    
+    public func parserDidStartTableHeader(parser: CMParser) {
+        nodes.append(TableHeader())
+    }//TableLine
+    
+    public func parserDidEndTableHeader(parser: CMParser) {
+        var cells: [TableCell] = []
+        
+        while let item = nodes.last as? TableCell {
+            cells.insert(item, at: 0)
+            nodes.removeLast()
+        }
+        
+        if let _ = nodes.last as? TableHeader {
+            nodes.removeLast()
+            nodes.append(TableHeader(cells: cells))
+        }
+    }
+    
+    public func parserDidStartTableRow(parser: CMParser) {
+        nodes.append(TableRow())
+    }
+    
+    public func parserDidEndTableRow(parser: CMParser) {
+        var cells: [TableCell] = []
+        
+        while let item = nodes.last as? TableCell {
+            cells.insert(item, at: 0)
+            nodes.removeLast()
+        }
+        
+        if let _ = nodes.last as? TableRow {
+            nodes.removeLast()
+            nodes.append(TableRow(cells: cells))
+        }
+    }
+    
+    public func parserDidStartTableCell(parser: CMParser) {
+        nodes.append(TableCell())
+    }
+    
+    public func parserDidEndTableCell(parser: CMParser) {
+        var inlineItems: [Inline] = []
+        
+        while let item = nodes.last as? Inline {
+            inlineItems.insert(item, at: 0)
+            nodes.removeLast()
+        }
+        
+        if let _ = nodes.last as? TableCell {
+            nodes.removeLast()
+            nodes.append(TableCell(items: inlineItems))
+        }
+    }
+    
+    public func parserDidStartStrikethrough(parser: CMParser) {
+        nodes.append(Strikethrough())
+    }
+    
+    public func parserDidEndStrikethrough(parser: CMParser) {
+        var inlineItems: [Inline] = []
+        
+        while let item = nodes.last as? Inline, !(item is Strikethrough) {
+            inlineItems.insert(item, at: 0)
+            nodes.removeLast()
+        }
+        
+        if let _ = nodes.last as? Strikethrough {
+            nodes.removeLast()
+            nodes.append(Strikethrough(items: inlineItems))
+        }
     }
     
 }

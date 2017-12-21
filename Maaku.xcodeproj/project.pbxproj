@@ -141,6 +141,65 @@
 		A26822CD1FEC274F006780A9 /* link.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D65D1FEB469A006D5715 /* link.md */; };
 		A26822CE1FEC274F006780A9 /* strong.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D65F1FEB46A4006D5715 /* strong.md */; };
 		A26822CF1FEC2751006780A9 /* YoutubePluginSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26822221FEB8B55006780A9 /* YoutubePluginSpec.swift */; };
+		A268234D1FEC3129006780A9 /* core-extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = A26823351FEC3036006780A9 /* core-extensions.h */; };
+		A268234E1FEC312A006780A9 /* core-extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = A26823351FEC3036006780A9 /* core-extensions.h */; };
+		A268234F1FEC3137006780A9 /* core-extensions.c in Sources */ = {isa = PBXBuildFile; fileRef = A26823341FEC3036006780A9 /* core-extensions.c */; };
+		A26823501FEC3137006780A9 /* core-extensions.c in Sources */ = {isa = PBXBuildFile; fileRef = A26823341FEC3036006780A9 /* core-extensions.c */; };
+		A26823511FEC3178006780A9 /* autolink.c in Sources */ = {isa = PBXBuildFile; fileRef = A26823331FEC3036006780A9 /* autolink.c */; };
+		A26823521FEC3178006780A9 /* autolink.h in Headers */ = {isa = PBXBuildFile; fileRef = A268233F1FEC3037006780A9 /* autolink.h */; };
+		A26823531FEC3178006780A9 /* cmarkextensions_export.h in Headers */ = {isa = PBXBuildFile; fileRef = A268233B1FEC3037006780A9 /* cmarkextensions_export.h */; };
+		A26823541FEC3178006780A9 /* ext_scanners.c in Sources */ = {isa = PBXBuildFile; fileRef = A268233E1FEC3037006780A9 /* ext_scanners.c */; };
+		A26823551FEC3178006780A9 /* ext_scanners.h in Headers */ = {isa = PBXBuildFile; fileRef = A26823361FEC3036006780A9 /* ext_scanners.h */; };
+		A26823561FEC3178006780A9 /* strikethrough.c in Sources */ = {isa = PBXBuildFile; fileRef = A268233D1FEC3037006780A9 /* strikethrough.c */; };
+		A26823571FEC3178006780A9 /* strikethrough.h in Headers */ = {isa = PBXBuildFile; fileRef = A268233C1FEC3037006780A9 /* strikethrough.h */; };
+		A26823581FEC3178006780A9 /* table.c in Sources */ = {isa = PBXBuildFile; fileRef = A26823381FEC3037006780A9 /* table.c */; };
+		A26823591FEC3178006780A9 /* table.h in Headers */ = {isa = PBXBuildFile; fileRef = A268233A1FEC3037006780A9 /* table.h */; };
+		A268235A1FEC3178006780A9 /* tagfilter.c in Sources */ = {isa = PBXBuildFile; fileRef = A26823391FEC3037006780A9 /* tagfilter.c */; };
+		A268235B1FEC3178006780A9 /* tagfilter.h in Headers */ = {isa = PBXBuildFile; fileRef = A26823371FEC3037006780A9 /* tagfilter.h */; };
+		A268235C1FEC3179006780A9 /* autolink.c in Sources */ = {isa = PBXBuildFile; fileRef = A26823331FEC3036006780A9 /* autolink.c */; };
+		A268235D1FEC3179006780A9 /* autolink.h in Headers */ = {isa = PBXBuildFile; fileRef = A268233F1FEC3037006780A9 /* autolink.h */; };
+		A268235E1FEC3179006780A9 /* cmarkextensions_export.h in Headers */ = {isa = PBXBuildFile; fileRef = A268233B1FEC3037006780A9 /* cmarkextensions_export.h */; };
+		A268235F1FEC3179006780A9 /* ext_scanners.c in Sources */ = {isa = PBXBuildFile; fileRef = A268233E1FEC3037006780A9 /* ext_scanners.c */; };
+		A26823601FEC3179006780A9 /* ext_scanners.h in Headers */ = {isa = PBXBuildFile; fileRef = A26823361FEC3036006780A9 /* ext_scanners.h */; };
+		A26823611FEC3179006780A9 /* strikethrough.c in Sources */ = {isa = PBXBuildFile; fileRef = A268233D1FEC3037006780A9 /* strikethrough.c */; };
+		A26823621FEC3179006780A9 /* strikethrough.h in Headers */ = {isa = PBXBuildFile; fileRef = A268233C1FEC3037006780A9 /* strikethrough.h */; };
+		A26823631FEC3179006780A9 /* table.c in Sources */ = {isa = PBXBuildFile; fileRef = A26823381FEC3037006780A9 /* table.c */; };
+		A26823641FEC3179006780A9 /* table.h in Headers */ = {isa = PBXBuildFile; fileRef = A268233A1FEC3037006780A9 /* table.h */; };
+		A26823651FEC3179006780A9 /* tagfilter.c in Sources */ = {isa = PBXBuildFile; fileRef = A26823391FEC3037006780A9 /* tagfilter.c */; };
+		A26823661FEC3179006780A9 /* tagfilter.h in Headers */ = {isa = PBXBuildFile; fileRef = A26823371FEC3037006780A9 /* tagfilter.h */; };
+		A26823681FEC329B006780A9 /* libcmark.h in Headers */ = {isa = PBXBuildFile; fileRef = A26823671FEC3294006780A9 /* libcmark.h */; };
+		A26823691FEC329B006780A9 /* libcmark.h in Headers */ = {isa = PBXBuildFile; fileRef = A26823671FEC3294006780A9 /* libcmark.h */; };
+		A268236D1FEC3330006780A9 /* table.md in Resources */ = {isa = PBXBuildFile; fileRef = A268236C1FEC3330006780A9 /* table.md */; };
+		A26823701FEC4293006780A9 /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = A268236F1FEC4293006780A9 /* Table.swift */; };
+		A26823741FEC42A6006780A9 /* TableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26823731FEC42A6006780A9 /* TableRow.swift */; };
+		A26823761FEC42AD006780A9 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26823751FEC42AD006780A9 /* TableCell.swift */; };
+		A26823781FEC44DA006780A9 /* CMExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26823771FEC44DA006780A9 /* CMExtension.swift */; };
+		A268237A1FEC47CD006780A9 /* TableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26823791FEC47CD006780A9 /* TableHeader.swift */; };
+		A268237D1FEC4DC1006780A9 /* TableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A268237C1FEC4DC1006780A9 /* TableSpec.swift */; };
+		A268237E1FEC4DCF006780A9 /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = A268236F1FEC4293006780A9 /* Table.swift */; };
+		A268237F1FEC4DCF006780A9 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26823751FEC42AD006780A9 /* TableCell.swift */; };
+		A26823801FEC4DCF006780A9 /* TableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26823791FEC47CD006780A9 /* TableHeader.swift */; };
+		A26823811FEC4DCF006780A9 /* TableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26823731FEC42A6006780A9 /* TableRow.swift */; };
+		A26823821FEC4DE0006780A9 /* CMExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26823771FEC44DA006780A9 /* CMExtension.swift */; };
+		A26823831FEC4DE5006780A9 /* TableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A268237C1FEC4DC1006780A9 /* TableSpec.swift */; };
+		A26823841FEC4DED006780A9 /* table.md in Resources */ = {isa = PBXBuildFile; fileRef = A268236C1FEC3330006780A9 /* table.md */; };
+		A26823861FEC4EF6006780A9 /* Strikethrough.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26823851FEC4EF6006780A9 /* Strikethrough.swift */; };
+		A26823871FEC4EF6006780A9 /* Strikethrough.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26823851FEC4EF6006780A9 /* Strikethrough.swift */; };
+		A26823891FEC5159006780A9 /* StrikethroughSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26823881FEC5159006780A9 /* StrikethroughSpec.swift */; };
+		A268238A1FEC515C006780A9 /* StrikethroughSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26823881FEC5159006780A9 /* StrikethroughSpec.swift */; };
+		A268238C1FEC517B006780A9 /* strikethrough.md in Resources */ = {isa = PBXBuildFile; fileRef = A268238B1FEC517B006780A9 /* strikethrough.md */; };
+		A268238D1FEC517B006780A9 /* strikethrough.md in Resources */ = {isa = PBXBuildFile; fileRef = A268238B1FEC517B006780A9 /* strikethrough.md */; };
+		A26823921FEC5595006780A9 /* autolink.md in Resources */ = {isa = PBXBuildFile; fileRef = A26823911FEC5595006780A9 /* autolink.md */; };
+		A26823931FEC5595006780A9 /* autolink.md in Resources */ = {isa = PBXBuildFile; fileRef = A26823911FEC5595006780A9 /* autolink.md */; };
+		A26823941FEC55B2006780A9 /* AutolinkSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A268238E1FEC5517006780A9 /* AutolinkSpec.swift */; };
+		A26823951FEC55B2006780A9 /* AutolinkSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A268238E1FEC5517006780A9 /* AutolinkSpec.swift */; };
+		A26823971FEC56E4006780A9 /* TagFilterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26823961FEC56E4006780A9 /* TagFilterSpec.swift */; };
+		A26823991FEC5969006780A9 /* tagfilter.md in Resources */ = {isa = PBXBuildFile; fileRef = A26823981FEC5969006780A9 /* tagfilter.md */; };
+		A268239A1FEC5969006780A9 /* tagfilter.md in Resources */ = {isa = PBXBuildFile; fileRef = A26823981FEC5969006780A9 /* tagfilter.md */; };
+		A26823A01FEC6F70006780A9 /* maaku.h in Headers */ = {isa = PBXBuildFile; fileRef = A268239E1FEC6F70006780A9 /* maaku.h */; };
+		A26823A11FEC6F70006780A9 /* maaku.h in Headers */ = {isa = PBXBuildFile; fileRef = A268239E1FEC6F70006780A9 /* maaku.h */; };
+		A26823A21FEC6F70006780A9 /* maaku.c in Sources */ = {isa = PBXBuildFile; fileRef = A268239F1FEC6F70006780A9 /* maaku.c */; };
+		A26823A31FEC6F70006780A9 /* maaku.c in Sources */ = {isa = PBXBuildFile; fileRef = A268239F1FEC6F70006780A9 /* maaku.c */; };
 		A276D48E1FEB1EB2006D5715 /* Maaku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A276D4841FEB1EB2006D5715 /* Maaku.framework */; };
 		A276D4951FEB1EB2006D5715 /* Maaku.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4871FEB1EB2006D5715 /* Maaku.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A276D51B1FEB21A9006D5715 /* YoutubePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4A21FEB21A9006D5715 /* YoutubePlugin.swift */; };
@@ -301,6 +360,37 @@
 		A26822221FEB8B55006780A9 /* YoutubePluginSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubePluginSpec.swift; sourceTree = "<group>"; };
 		A268222A1FEB8F17006780A9 /* Maaku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Maaku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A268229B1FEC2703006780A9 /* MaakuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaakuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A26823161FEC2E2D006780A9 /* module.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.map; sourceTree = "<group>"; };
+		A26823331FEC3036006780A9 /* autolink.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = autolink.c; sourceTree = "<group>"; };
+		A26823341FEC3036006780A9 /* core-extensions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "core-extensions.c"; sourceTree = "<group>"; };
+		A26823351FEC3036006780A9 /* core-extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "core-extensions.h"; sourceTree = "<group>"; };
+		A26823361FEC3036006780A9 /* ext_scanners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ext_scanners.h; sourceTree = "<group>"; };
+		A26823371FEC3037006780A9 /* tagfilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tagfilter.h; sourceTree = "<group>"; };
+		A26823381FEC3037006780A9 /* table.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = table.c; sourceTree = "<group>"; };
+		A26823391FEC3037006780A9 /* tagfilter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tagfilter.c; sourceTree = "<group>"; };
+		A268233A1FEC3037006780A9 /* table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = table.h; sourceTree = "<group>"; };
+		A268233B1FEC3037006780A9 /* cmarkextensions_export.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmarkextensions_export.h; sourceTree = "<group>"; };
+		A268233C1FEC3037006780A9 /* strikethrough.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = strikethrough.h; sourceTree = "<group>"; };
+		A268233D1FEC3037006780A9 /* strikethrough.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = strikethrough.c; sourceTree = "<group>"; };
+		A268233E1FEC3037006780A9 /* ext_scanners.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ext_scanners.c; sourceTree = "<group>"; };
+		A268233F1FEC3037006780A9 /* autolink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autolink.h; sourceTree = "<group>"; };
+		A26823671FEC3294006780A9 /* libcmark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libcmark.h; sourceTree = "<group>"; };
+		A268236C1FEC3330006780A9 /* table.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = table.md; sourceTree = "<group>"; };
+		A268236F1FEC4293006780A9 /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
+		A26823731FEC42A6006780A9 /* TableRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableRow.swift; sourceTree = "<group>"; };
+		A26823751FEC42AD006780A9 /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		A26823771FEC44DA006780A9 /* CMExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMExtension.swift; sourceTree = "<group>"; };
+		A26823791FEC47CD006780A9 /* TableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeader.swift; sourceTree = "<group>"; };
+		A268237C1FEC4DC1006780A9 /* TableSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableSpec.swift; sourceTree = "<group>"; };
+		A26823851FEC4EF6006780A9 /* Strikethrough.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strikethrough.swift; sourceTree = "<group>"; };
+		A26823881FEC5159006780A9 /* StrikethroughSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrikethroughSpec.swift; sourceTree = "<group>"; };
+		A268238B1FEC517B006780A9 /* strikethrough.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = strikethrough.md; sourceTree = "<group>"; };
+		A268238E1FEC5517006780A9 /* AutolinkSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutolinkSpec.swift; sourceTree = "<group>"; };
+		A26823911FEC5595006780A9 /* autolink.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = autolink.md; sourceTree = "<group>"; };
+		A26823961FEC56E4006780A9 /* TagFilterSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagFilterSpec.swift; sourceTree = "<group>"; };
+		A26823981FEC5969006780A9 /* tagfilter.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = tagfilter.md; sourceTree = "<group>"; };
+		A268239E1FEC6F70006780A9 /* maaku.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = maaku.h; sourceTree = "<group>"; };
+		A268239F1FEC6F70006780A9 /* maaku.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = maaku.c; sourceTree = "<group>"; };
 		A276D4841FEB1EB2006D5715 /* Maaku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Maaku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A276D4871FEB1EB2006D5715 /* Maaku.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Maaku.h; sourceTree = "<group>"; };
 		A276D4881FEB1EB2006D5715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -395,7 +485,6 @@
 		A276D5151FEB21A9006D5715 /* node.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = node.c; sourceTree = "<group>"; };
 		A276D5161FEB21A9006D5715 /* references.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = references.h; sourceTree = "<group>"; };
 		A276D5171FEB21A9006D5715 /* render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = render.h; sourceTree = "<group>"; };
-		A276D5181FEB21A9006D5715 /* module.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.map; sourceTree = "<group>"; };
 		A276D5891FEB220A006D5715 /* Maaku.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Maaku.podspec; sourceTree = "<group>"; };
 		A276D58A1FEB220B006D5715 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A276D58B1FEB220B006D5715 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -490,6 +579,29 @@
 			path = Plugins;
 			sourceTree = "<group>";
 		};
+		A268236E1FEC4286006780A9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A268236F1FEC4293006780A9 /* Table.swift */,
+				A26823751FEC42AD006780A9 /* TableCell.swift */,
+				A26823791FEC47CD006780A9 /* TableHeader.swift */,
+				A26823731FEC42A6006780A9 /* TableRow.swift */,
+				A26823851FEC4EF6006780A9 /* Strikethrough.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A268237B1FEC4DA9006780A9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A268237C1FEC4DC1006780A9 /* TableSpec.swift */,
+				A26823881FEC5159006780A9 /* StrikethroughSpec.swift */,
+				A268238E1FEC5517006780A9 /* AutolinkSpec.swift */,
+				A26823961FEC56E4006780A9 /* TagFilterSpec.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		A276D47A1FEB1EB2006D5715 = {
 			isa = PBXGroup;
 			children = (
@@ -555,6 +667,7 @@
 				A276D4AE1FEB21A9006D5715 /* CMDelimiterType.swift */,
 				A276D4B01FEB21A9006D5715 /* CMDocument.swift */,
 				A276D4AC1FEB21A9006D5715 /* CMDocumentOption.swift */,
+				A26823771FEC44DA006780A9 /* CMExtension.swift */,
 				A276D4AD1FEB21A9006D5715 /* CMIterator.swift */,
 				A276D4B31FEB21A9006D5715 /* CMListType.swift */,
 				A276D4B11FEB21A9006D5715 /* CMNode.swift */,
@@ -567,6 +680,7 @@
 		A276D4B41FEB21A9006D5715 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				A268236E1FEC4286006780A9 /* Extensions */,
 				A276D4BD1FEB21A9006D5715 /* Block.swift */,
 				A276D4D11FEB21A9006D5715 /* Document.swift */,
 				A276D4BC1FEB21A9006D5715 /* DocumentConverter.swift */,
@@ -626,7 +740,6 @@
 		A276D4D41FEB21A9006D5715 /* libcmark */ = {
 			isa = PBXGroup;
 			children = (
-				A276D5181FEB21A9006D5715 /* module.map */,
 				A276D4E31FEB21A9006D5715 /* libcmark_gfm */,
 			);
 			path = libcmark;
@@ -636,6 +749,8 @@
 			isa = PBXGroup;
 			children = (
 				A276D5011FEB21A9006D5715 /* arena.c */,
+				A26823331FEC3036006780A9 /* autolink.c */,
+				A268233F1FEC3037006780A9 /* autolink.h */,
 				A276D4E81FEB21A9006D5715 /* blocks.c */,
 				A276D4E71FEB21A9006D5715 /* buffer.c */,
 				A276D5041FEB21A9006D5715 /* buffer.h */,
@@ -648,9 +763,14 @@
 				A276D5021FEB21A9006D5715 /* cmark_version.h */,
 				A276D4E51FEB21A9006D5715 /* cmark.c */,
 				A276D5051FEB21A9006D5715 /* cmark.h */,
+				A268233B1FEC3037006780A9 /* cmarkextensions_export.h */,
 				A276D5091FEB21A9006D5715 /* commonmark.c */,
 				A276D4F11FEB21A9006D5715 /* config.h */,
+				A26823341FEC3036006780A9 /* core-extensions.c */,
+				A26823351FEC3036006780A9 /* core-extensions.h */,
 				A276D4F51FEB21A9006D5715 /* entities.inc */,
+				A268233E1FEC3037006780A9 /* ext_scanners.c */,
+				A26823361FEC3036006780A9 /* ext_scanners.h */,
 				A276D50F1FEB21A9006D5715 /* footnotes.c */,
 				A276D4F61FEB21A9006D5715 /* footnotes.h */,
 				A276D4EF1FEB21A9006D5715 /* houdini_href_e.c */,
@@ -664,10 +784,14 @@
 				A276D4FF1FEB21A9006D5715 /* iterator.c */,
 				A276D5111FEB21A9006D5715 /* iterator.h */,
 				A276D4EE1FEB21A9006D5715 /* latex.c */,
+				A26823671FEC3294006780A9 /* libcmark.h */,
 				A276D5071FEB21A9006D5715 /* linked_list.c */,
+				A268239F1FEC6F70006780A9 /* maaku.c */,
+				A268239E1FEC6F70006780A9 /* maaku.h */,
 				A276D4E61FEB21A9006D5715 /* man.c */,
 				A276D50A1FEB21A9006D5715 /* map.c */,
 				A276D4F01FEB21A9006D5715 /* map.h */,
+				A26823161FEC2E2D006780A9 /* module.map */,
 				A276D5151FEB21A9006D5715 /* node.c */,
 				A276D4FB1FEB21A9006D5715 /* node.h */,
 				A276D4F71FEB21A9006D5715 /* parser.h */,
@@ -682,8 +806,14 @@
 				A276D5171FEB21A9006D5715 /* render.h */,
 				A276D50E1FEB21A9006D5715 /* scanners.c */,
 				A276D4FA1FEB21A9006D5715 /* scanners.h */,
+				A268233D1FEC3037006780A9 /* strikethrough.c */,
+				A268233C1FEC3037006780A9 /* strikethrough.h */,
 				A276D4F31FEB21A9006D5715 /* syntax_extension.c */,
 				A276D5081FEB21A9006D5715 /* syntax_extension.h */,
+				A26823381FEC3037006780A9 /* table.c */,
+				A268233A1FEC3037006780A9 /* table.h */,
+				A26823391FEC3037006780A9 /* tagfilter.c */,
+				A26823371FEC3037006780A9 /* tagfilter.h */,
 				A276D4FC1FEB21A9006D5715 /* utf8.c */,
 				A276D5141FEB21A9006D5715 /* utf8.h */,
 				A276D4E41FEB21A9006D5715 /* xml.c */,
@@ -704,6 +834,7 @@
 			children = (
 				A276D6091FEB35F5006D5715 /* DocumentSpec.swift */,
 				A276D6101FEB3B6F006D5715 /* Container */,
+				A268237B1FEC4DA9006780A9 /* Extensions */,
 				A276D6111FEB3B7C006D5715 /* Inline */,
 				A276D6121FEB3B81006D5715 /* Leaf */,
 			);
@@ -731,6 +862,10 @@
 				A276D65B1FEB4693006D5715 /* softbreak.md */,
 				A276D65D1FEB469A006D5715 /* link.md */,
 				A276D65F1FEB46A4006D5715 /* strong.md */,
+				A268236C1FEC3330006780A9 /* table.md */,
+				A268238B1FEC517B006780A9 /* strikethrough.md */,
+				A26823911FEC5595006780A9 /* autolink.md */,
+				A26823981FEC5969006780A9 /* tagfilter.md */,
 			);
 			path = Markdown;
 			sourceTree = "<group>";
@@ -807,17 +942,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				A268227A1FEB8FAB006780A9 /* footnotes.h in Headers */,
+				A268235B1FEC3178006780A9 /* tagfilter.h in Headers */,
 				A26822731FEB8FAB006780A9 /* chunk.h in Headers */,
 				A26822801FEB8FAB006780A9 /* node.h in Headers */,
+				A26823521FEC3178006780A9 /* autolink.h in Headers */,
+				A26823691FEC329B006780A9 /* libcmark.h in Headers */,
 				A26822871FEB8FAB006780A9 /* syntax_extension.h in Headers */,
+				A26823571FEC3178006780A9 /* strikethrough.h in Headers */,
 				A268227E1FEB8FAB006780A9 /* iterator.h in Headers */,
 				A26822771FEB8FAB006780A9 /* cmark_version.h in Headers */,
 				A268227D1FEB8FAB006780A9 /* inlines.h in Headers */,
 				A26822791FEB8FAB006780A9 /* config.h in Headers */,
 				A26822741FEB8FAB006780A9 /* cmark_ctype.h in Headers */,
+				A268234E1FEC312A006780A9 /* core-extensions.h in Headers */,
 				A26822831FEB8FAB006780A9 /* references.h in Headers */,
 				A26822841FEB8FAB006780A9 /* registry.h in Headers */,
 				A26822781FEB8FAB006780A9 /* cmark.h in Headers */,
+				A26823591FEC3178006780A9 /* table.h in Headers */,
 				A26822851FEB8FAB006780A9 /* render.h in Headers */,
 				A26822721FEB8FAB006780A9 /* buffer.h in Headers */,
 				A26822811FEB8FAB006780A9 /* parser.h in Headers */,
@@ -829,6 +970,9 @@
 				A268227F1FEB8FAB006780A9 /* map.h in Headers */,
 				A268227B1FEB8FAB006780A9 /* houdini.h in Headers */,
 				A26822751FEB8FAB006780A9 /* cmark_export.h in Headers */,
+				A26823551FEC3178006780A9 /* ext_scanners.h in Headers */,
+				A26823A11FEC6F70006780A9 /* maaku.h in Headers */,
+				A26823531FEC3178006780A9 /* cmarkextensions_export.h in Headers */,
 				A26822861FEB8FAB006780A9 /* scanners.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -838,17 +982,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				A276D5881FEB21A9006D5715 /* render.h in Headers */,
+				A26823661FEC3179006780A9 /* tagfilter.h in Headers */,
 				A276D5761FEB21A9006D5715 /* cmark.h in Headers */,
 				A276D5811FEB21A9006D5715 /* houdini.h in Headers */,
+				A268235D1FEC3179006780A9 /* autolink.h in Headers */,
+				A26823681FEC329B006780A9 /* libcmark.h in Headers */,
 				A276D5821FEB21A9006D5715 /* iterator.h in Headers */,
+				A26823621FEC3179006780A9 /* strikethrough.h in Headers */,
 				A276D55B1FEB21A9006D5715 /* cmark_export.h in Headers */,
 				A276D4951FEB1EB2006D5715 /* Maaku.h in Headers */,
 				A276D57E1FEB21A9006D5715 /* inlines.h in Headers */,
 				A276D5671FEB21A9006D5715 /* footnotes.h in Headers */,
 				A276D56C1FEB21A9006D5715 /* node.h in Headers */,
+				A268234D1FEC3129006780A9 /* core-extensions.h in Headers */,
 				A276D55C1FEB21A9006D5715 /* html.h in Headers */,
 				A276D5731FEB21A9006D5715 /* cmark_version.h in Headers */,
 				A276D5851FEB21A9006D5715 /* utf8.h in Headers */,
+				A26823641FEC3179006780A9 /* table.h in Headers */,
 				A276D5631FEB21A9006D5715 /* chunk.h in Headers */,
 				A276D5681FEB21A9006D5715 /* parser.h in Headers */,
 				A276D5621FEB21A9006D5715 /* config.h in Headers */,
@@ -860,6 +1010,9 @@
 				A276D5751FEB21A9006D5715 /* buffer.h in Headers */,
 				A276D5711FEB21A9006D5715 /* registry.h in Headers */,
 				A276D56B1FEB21A9006D5715 /* scanners.h in Headers */,
+				A26823601FEC3179006780A9 /* ext_scanners.h in Headers */,
+				A26823A01FEC6F70006780A9 /* maaku.h in Headers */,
+				A268235E1FEC3179006780A9 /* cmarkextensions_export.h in Headers */,
 				A276D5771FEB21A9006D5715 /* cmark_extension_api.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1014,12 +1167,16 @@
 				A26822C41FEC274F006780A9 /* footnotedefinition.md in Resources */,
 				A26822C71FEC274F006780A9 /* emphasis.md in Resources */,
 				A26822CB1FEC274F006780A9 /* linebreak.md in Resources */,
+				A26823841FEC4DED006780A9 /* table.md in Resources */,
+				A268238D1FEC517B006780A9 /* strikethrough.md in Resources */,
 				A26822C31FEC274F006780A9 /* blockquote.md in Resources */,
 				A26822C11FEC274F006780A9 /* heading.md in Resources */,
 				A26822CD1FEC274F006780A9 /* link.md in Resources */,
 				A26822C51FEC274F006780A9 /* orderedlist.md in Resources */,
+				A268239A1FEC5969006780A9 /* tagfilter.md in Resources */,
 				A26822CA1FEC274F006780A9 /* inlinehtml.md in Resources */,
 				A26822CC1FEC274F006780A9 /* softbreak.md in Resources */,
+				A26823931FEC5595006780A9 /* autolink.md in Resources */,
 				A26822C91FEC274F006780A9 /* inlinecode.md in Resources */,
 				A26822C21FEC274F006780A9 /* horizontalrule.md in Resources */,
 				A26822BE1FEC274F006780A9 /* paragraph.md in Resources */,
@@ -1046,12 +1203,16 @@
 				A276D6361FEB3F5B006D5715 /* footnotedefinition.md in Resources */,
 				A276D6521FEB4657006D5715 /* emphasis.md in Resources */,
 				A276D65A1FEB4686006D5715 /* linebreak.md in Resources */,
+				A268236D1FEC3330006780A9 /* table.md in Resources */,
+				A268238C1FEC517B006780A9 /* strikethrough.md in Resources */,
 				A276D6341FEB3F50006D5715 /* blockquote.md in Resources */,
 				A276D63C1FEB3F72006D5715 /* unorderedlist.md in Resources */,
 				A276D65E1FEB469A006D5715 /* link.md in Resources */,
 				A276D6261FEB3D3A006D5715 /* heading.md in Resources */,
+				A26823991FEC5969006780A9 /* tagfilter.md in Resources */,
 				A276D6581FEB467D006D5715 /* inlinehtml.md in Resources */,
 				A276D65C1FEB4693006D5715 /* softbreak.md in Resources */,
+				A26823921FEC5595006780A9 /* autolink.md in Resources */,
 				A276D6561FEB4673006D5715 /* inlinecode.md in Resources */,
 				A276D6281FEB3D4D006D5715 /* horizontalrule.md in Resources */,
 				A276D61A1FEB3CA9006D5715 /* htmlblock.md in Resources */,
@@ -1178,20 +1339,28 @@
 				A268225C1FEB8FA2006780A9 /* commonmark.c in Sources */,
 				A268226C1FEB8FA2006780A9 /* registry.c in Sources */,
 				A26822551FEB8F78006780A9 /* LeafBlock.swift in Sources */,
+				A26823821FEC4DE0006780A9 /* CMExtension.swift in Sources */,
 				A26822441FEB8F6D006780A9 /* OrderedList.swift in Sources */,
 				A26822391FEB8F63006780A9 /* CMNodeType.swift in Sources */,
 				A26822681FEB8FA2006780A9 /* node.c in Sources */,
 				A26822381FEB8F63006780A9 /* CMNode.swift in Sources */,
+				A26823801FEC4DCF006780A9 /* TableHeader.swift in Sources */,
+				A26823511FEC3178006780A9 /* autolink.c in Sources */,
 				A268224B1FEB8F72006780A9 /* InlineHtml.swift in Sources */,
 				A26822351FEB8F63006780A9 /* CMDocumentOption.swift in Sources */,
+				A26823561FEC3178006780A9 /* strikethrough.c in Sources */,
 				A26822511FEB8F78006780A9 /* CodeBlock.swift in Sources */,
 				A268225E1FEB8FA2006780A9 /* houdini_href_e.c in Sources */,
 				A268223C1FEB8F68006780A9 /* Document.swift in Sources */,
+				A26823581FEC3178006780A9 /* table.c in Sources */,
 				A26822671FEB8FA2006780A9 /* map.c in Sources */,
 				A268223F1FEB8F68006780A9 /* Style.swift in Sources */,
+				A268237F1FEC4DCF006780A9 /* TableCell.swift in Sources */,
 				A26822361FEB8F63006780A9 /* CMIterator.swift in Sources */,
+				A26823811FEC4DCF006780A9 /* TableRow.swift in Sources */,
 				A268223E1FEB8F68006780A9 /* Plugin.swift in Sources */,
 				A26822481FEB8F72006780A9 /* Image.swift in Sources */,
+				A26823871FEC4EF6006780A9 /* Strikethrough.swift in Sources */,
 				A268226D1FEB8FA2006780A9 /* render.c in Sources */,
 				A26822531FEB8F78006780A9 /* HorizontalRule.swift in Sources */,
 				A26822701FEB8FA2006780A9 /* utf8.c in Sources */,
@@ -1223,10 +1392,13 @@
 				A268223B1FEB8F68006780A9 /* Block.swift in Sources */,
 				A26822631FEB8FA2006780A9 /* iterator.c in Sources */,
 				A268223A1FEB8F63006780A9 /* CMParser.swift in Sources */,
+				A26823A31FEC6F70006780A9 /* maaku.c in Sources */,
+				A268234F1FEC3137006780A9 /* core-extensions.c in Sources */,
 				A268224A1FEB8F72006780A9 /* InlineCode.swift in Sources */,
 				A26822691FEB8FA2006780A9 /* plaintext.c in Sources */,
 				A26822601FEB8FA2006780A9 /* houdini_html_u.c in Sources */,
 				A26822331FEB8F63006780A9 /* CMDelimiterType.swift in Sources */,
+				A268237E1FEC4DCF006780A9 /* Table.swift in Sources */,
 				A26822461FEB8F72006780A9 /* Emphasis.swift in Sources */,
 				A26822651FEB8FA2006780A9 /* linked_list.c in Sources */,
 				A268224E1FEB8F72006780A9 /* SoftBreak.swift in Sources */,
@@ -1234,9 +1406,11 @@
 				A26822581FEB8FA2006780A9 /* blocks.c in Sources */,
 				A26822641FEB8FA2006780A9 /* latex.c in Sources */,
 				A268225F1FEB8FA2006780A9 /* houdini_html_e.c in Sources */,
+				A26823541FEC3178006780A9 /* ext_scanners.c in Sources */,
 				A26822621FEB8FA2006780A9 /* inlines.c in Sources */,
 				A268225D1FEB8FA2006780A9 /* footnotes.c in Sources */,
 				A26822541FEB8F78006780A9 /* HtmlBlock.swift in Sources */,
+				A268235A1FEC3178006780A9 /* tagfilter.c in Sources */,
 				A268224F1FEB8F72006780A9 /* Strong.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1258,6 +1432,7 @@
 				A26822B31FEC2746006780A9 /* LineBreakSpec.swift in Sources */,
 				A26822AC1FEC2743006780A9 /* OrderedListSpec.swift in Sources */,
 				A26822B81FEC274A006780A9 /* ParagraphSpec.swift in Sources */,
+				A26823941FEC55B2006780A9 /* AutolinkSpec.swift in Sources */,
 				A26822A91FEC2743006780A9 /* BlockQuoteSpec.swift in Sources */,
 				A26822B11FEC2746006780A9 /* InlineCodeSpec.swift in Sources */,
 				A26822BA1FEC274A006780A9 /* CodeBlockSpec.swift in Sources */,
@@ -1267,8 +1442,10 @@
 				A26822B71FEC2746006780A9 /* TextSpec.swift in Sources */,
 				A26822AE1FEC2746006780A9 /* EmphasisSpec.swift in Sources */,
 				A26822B41FEC2746006780A9 /* LinkSpec.swift in Sources */,
+				A268238A1FEC515C006780A9 /* StrikethroughSpec.swift in Sources */,
 				A26822AB1FEC2743006780A9 /* ListItemSpec.swift in Sources */,
 				A26822B01FEC2746006780A9 /* ImageSpec.swift in Sources */,
+				A26823831FEC4DE5006780A9 /* TableSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1280,15 +1457,19 @@
 				A276D5351FEB21A9006D5715 /* InlineCode.swift in Sources */,
 				A276D55F1FEB21A9006D5715 /* latex.c in Sources */,
 				A276D53E1FEB21A9006D5715 /* FootnoteReference.swift in Sources */,
+				A26823781FEC44DA006780A9 /* CMExtension.swift in Sources */,
 				A276D56E1FEB21A9006D5715 /* references.c in Sources */,
 				A276D52E1FEB21A9006D5715 /* HorizontalRule.swift in Sources */,
 				A276D5461FEB21A9006D5715 /* Style.swift in Sources */,
 				A276D5831FEB21A9006D5715 /* houdini_html_u.c in Sources */,
+				A268235C1FEC3179006780A9 /* autolink.c in Sources */,
 				A276D5781FEB21A9006D5715 /* linked_list.c in Sources */,
 				A276D5471FEB21A9006D5715 /* Plugin.swift in Sources */,
+				A26823611FEC3179006780A9 /* strikethrough.c in Sources */,
 				A276D57D1FEB21A9006D5715 /* plugin.c in Sources */,
 				A276D57A1FEB21A9006D5715 /* commonmark.c in Sources */,
 				A276D57B1FEB21A9006D5715 /* map.c in Sources */,
+				A26823631FEC3179006780A9 /* table.c in Sources */,
 				A276D5401FEB21A9006D5715 /* OrderedList.swift in Sources */,
 				A276D5261FEB21A9006D5715 /* CMDelimiterType.swift in Sources */,
 				A276D57F1FEB21A9006D5715 /* scanners.c in Sources */,
@@ -1297,7 +1478,10 @@
 				A276D5551FEB21A9006D5715 /* xml.c in Sources */,
 				A276D5801FEB21A9006D5715 /* footnotes.c in Sources */,
 				A276D5451FEB21A9006D5715 /* Document.swift in Sources */,
+				A26823861FEC4EF6006780A9 /* Strikethrough.swift in Sources */,
 				A276D5641FEB21A9006D5715 /* syntax_extension.c in Sources */,
+				A268237A1FEC47CD006780A9 /* TableHeader.swift in Sources */,
+				A26823761FEC42AD006780A9 /* TableCell.swift in Sources */,
 				A276D5251FEB21A9006D5715 /* CMIterator.swift in Sources */,
 				A276D5601FEB21A9006D5715 /* houdini_href_e.c in Sources */,
 				A276D55A1FEB21A9006D5715 /* cmark_ctype.c in Sources */,
@@ -1313,6 +1497,7 @@
 				A276D5721FEB21A9006D5715 /* arena.c in Sources */,
 				A276D52C1FEB21A9006D5715 /* Paragraph.swift in Sources */,
 				A276D53D1FEB21A9006D5715 /* InlineHtml.swift in Sources */,
+				A26823741FEC42A6006780A9 /* TableRow.swift in Sources */,
 				A276D5381FEB21A9006D5715 /* Link.swift in Sources */,
 				A276D5411FEB21A9006D5715 /* ContainerBlock.swift in Sources */,
 				A276D5421FEB21A9006D5715 /* UnorderedList.swift in Sources */,
@@ -1325,10 +1510,13 @@
 				A276D5571FEB21A9006D5715 /* man.c in Sources */,
 				A276D5241FEB21A9006D5715 /* CMDocumentOption.swift in Sources */,
 				A276D5371FEB21A9006D5715 /* Emphasis.swift in Sources */,
+				A26823A21FEC6F70006780A9 /* maaku.c in Sources */,
+				A26823501FEC3137006780A9 /* core-extensions.c in Sources */,
 				A276D5271FEB21A9006D5715 /* CMNodeType.swift in Sources */,
 				A276D53B1FEB21A9006D5715 /* LineBreak.swift in Sources */,
 				A276D56A1FEB21A9006D5715 /* plaintext.c in Sources */,
 				A276D53A1FEB21A9006D5715 /* Inline.swift in Sources */,
+				A26823701FEC4293006780A9 /* Table.swift in Sources */,
 				A276D5331FEB21A9006D5715 /* Block.swift in Sources */,
 				A276D5441FEB21A9006D5715 /* FootnoteDefinition.swift in Sources */,
 				A276D51B1FEB21A9006D5715 /* YoutubePlugin.swift in Sources */,
@@ -1336,9 +1524,11 @@
 				A276D53F1FEB21A9006D5715 /* ListItem.swift in Sources */,
 				A276D5701FEB21A9006D5715 /* iterator.c in Sources */,
 				A276D5391FEB21A9006D5715 /* Image.swift in Sources */,
+				A268235F1FEC3179006780A9 /* ext_scanners.c in Sources */,
 				A276D55D1FEB21A9006D5715 /* inlines.c in Sources */,
 				A276D5341FEB21A9006D5715 /* SoftBreak.swift in Sources */,
 				A276D5591FEB21A9006D5715 /* blocks.c in Sources */,
+				A26823651FEC3179006780A9 /* tagfilter.c in Sources */,
 				A276D5861FEB21A9006D5715 /* node.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1360,17 +1550,21 @@
 				A276D6501FEB4648006D5715 /* TextSpec.swift in Sources */,
 				A276D62A1FEB3EDA006D5715 /* BlockQuoteSpec.swift in Sources */,
 				A276D63E1FEB45EC006D5715 /* EmphasisSpec.swift in Sources */,
+				A26823951FEC55B2006780A9 /* AutolinkSpec.swift in Sources */,
 				A276D6301FEB3F00006D5715 /* OrderedListSpec.swift in Sources */,
 				A276D64A1FEB462C006D5715 /* LinkSpec.swift in Sources */,
 				A276D62C1FEB3EE7006D5715 /* FootnoteDefinitionSpec.swift in Sources */,
 				A276D61E1FEB3D13006D5715 /* CodeBlockSpec.swift in Sources */,
 				A276D6201FEB3D1A006D5715 /* HeadingSpec.swift in Sources */,
+				A26823971FEC56E4006780A9 /* TagFilterSpec.swift in Sources */,
 				A276D60A1FEB35F5006D5715 /* DocumentSpec.swift in Sources */,
 				A276D6421FEB45FF006D5715 /* ImageSpec.swift in Sources */,
 				A276D6641FEB865B006D5715 /* CMDocumentSpec.swift in Sources */,
 				A276D6141FEB3BA4006D5715 /* ParagraphSpec.swift in Sources */,
+				A26823891FEC5159006780A9 /* StrikethroughSpec.swift in Sources */,
 				A276D64E1FEB4640006D5715 /* StrongSpec.swift in Sources */,
 				A276D6461FEB4612006D5715 /* InlineHtmlSpec.swift in Sources */,
+				A268237D1FEC4DC1006780A9 /* TableSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

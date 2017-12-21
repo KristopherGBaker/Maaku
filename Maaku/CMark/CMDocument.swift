@@ -28,6 +28,9 @@ public class CMDocument {
     /// The document options.
     private let options: CMDocumentOption
     
+    /// The enabled extensions.
+    private let extensions: CMExtensionOption
+    
     /// Creates a document initialized with the specified data using the default options.
     ///
     /// - Parameters:
@@ -49,7 +52,7 @@ public class CMDocument {
     /// - Returns:
     ///     The initialized and parsed document.
     public convenience init(text: String) throws {
-        try self.init(text: text, options: .default)
+        try self.init(text: text, options: .default, extensions: .all)
     }
     
     /// Creates a document initialized with the specified text.
@@ -65,7 +68,7 @@ public class CMDocument {
         guard let text = String(data: data, encoding: .utf8) else {
             throw CMDocumentError.parsingError
         }
-        try self.init(text: text, options: options)
+        try self.init(text: text, options: options, extensions: .all)
     }
     
     /// Creates a document initialized with the specified text.
@@ -73,14 +76,43 @@ public class CMDocument {
     /// - Parameters:
     ///     - text: The document text.
     ///     - options: The document options.
+    ///     - extensions: gfm extensions to enable.
     /// - Throws:
     ///     `CMDocumentError.parsingError` if there is an error parsing the text.
     /// - Returns:
     ///     The initialized and parsed document.
-    public init(text: String, options: CMDocumentOption) throws {
+    public init(text: String, options: CMDocumentOption, extensions: CMExtensionOption) throws {
         self.options = options
+        self.extensions = extensions
+        core_extensions_ensure_registered()
+
+        guard let parser = cmark_parser_new(options.rawValue) else {
+            throw CMDocumentError.parsingError
+        }
         
-        guard let cmarkNode = cmark_parse_document(text, text.utf8.count, options.rawValue) else {
+        defer {
+            cmark_parser_free(parser)
+        }
+        
+        if extensions.contains(.tables), let tableExtension = cmark_find_syntax_extension("table") {
+            cmark_parser_attach_syntax_extension(parser, tableExtension)
+        }
+        
+        if extensions.contains(.autolinks), let autolinkExtension = cmark_find_syntax_extension("autolink") {
+            cmark_parser_attach_syntax_extension(parser, autolinkExtension)
+        }
+        
+        if extensions.contains(.strikethrough), let strikethroughExtension = cmark_find_syntax_extension("strikethrough") {
+            cmark_parser_attach_syntax_extension(parser, strikethroughExtension)
+        }
+        
+        if extensions.contains(.tagfilters), let tagfilterExtension = cmark_find_syntax_extension("tagfilter") {
+            cmark_parser_attach_syntax_extension(parser, tagfilterExtension)
+        }
+        
+        cmark_parser_feed(parser, text, text.utf8.count)
+        
+        guard let cmarkNode = cmark_parser_finish(parser) else {
             throw CMDocumentError.parsingError
         }
         
@@ -99,7 +131,7 @@ public extension CMDocument {
     /// - Returns:
     ///     The HTML as a string.
     public func renderHtml() throws -> String {
-        return try node.renderHtml(options)
+        return try node.renderHtml(options, extensions: extensions)
     }
     
     /// Renders the document as XML.

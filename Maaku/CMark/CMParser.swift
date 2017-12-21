@@ -270,6 +270,65 @@ public protocol CMParserDelegate: class {
     ///     - reference: The footnote reference.
     func parser(parser: CMParser, foundFootnoteReference reference: String)
     
+    /// Sent by the parser object to the delegate when it encounters the start of a table.
+    ///
+    /// - Parameters:
+    ///     - parser: The parser.
+    func parserDidStartTable(parser: CMParser)
+    
+    /// Sent by the parser object to the delegate when it encounters the end of a table.
+    ///
+    /// - Parameters:
+    ///     - parser: The parser.
+    func parserDidEndTable(parser: CMParser)
+    
+    /// Sent by the parser object to the delegate when it encounters the start of a table header.
+    ///
+    /// - Parameters:
+    ///     - parser: The parser.
+    func parserDidStartTableHeader(parser: CMParser)
+    
+    /// Sent by the parser object to the delegate when it encounters the end of a table header.
+    ///
+    /// - Parameters:
+    ///     - parser: The parser.
+    func parserDidEndTableHeader(parser: CMParser)
+    
+    /// Sent by the parser object to the delegate when it encounters the start of a table row.
+    ///
+    /// - Parameters:
+    ///     - parser: The parser.
+    func parserDidStartTableRow(parser: CMParser)
+    
+    /// Sent by the parser object to the delegate when it encounters the end of a table row.
+    ///
+    /// - Parameters:
+    ///     - parser: The parser.
+    func parserDidEndTableRow(parser: CMParser)
+    
+    /// Sent by the parser object to the delegate when it encounters the start of a table cell.
+    ///
+    /// - Parameters:
+    ///     - parser: The parser.
+    func parserDidStartTableCell(parser: CMParser)
+    
+    /// Sent by the parser object to the delegate when it encounters the end of a table cell.
+    ///
+    /// - Parameters:
+    ///     - parser: The parser.
+    func parserDidEndTableCell(parser: CMParser)
+    
+    /// Sent by the parser object to the delegate when it encounters the start of a strikethrough.
+    ///
+    /// - Parameters:
+    ///     - parser: The parser.
+    func parserDidStartStrikethrough(parser: CMParser)
+    
+    /// Sent by the parser object to the delegate when it encounters the end of a strikethrough.
+    ///
+    /// - Parameters:
+    ///     - parser: The parser.
+    func parserDidEndStrikethrough(parser: CMParser)
 }
 
 /// Represents a parse error.
@@ -486,8 +545,70 @@ public class CMParser {
                 delegate?.parser(parser: self, foundFootnoteReference: node.stringValue ?? "")
             }
         default:
-            break
+            handleExtensions(node, eventType: eventType)
         }
+    }
+    
+    private func handleExtensions(_ node: CMNode, eventType: CMEventType) {
+        guard let nodeName = node.humanReadableType else {
+            return
+        }
+        
+        _ = handleTable(nodeName, eventType: eventType) || handleStrikethrough(nodeName, eventType: eventType)
+    }
+    
+    @discardableResult
+    private func handleStrikethrough(_ nodeName: String, eventType: CMEventType) -> Bool {
+        guard nodeName == Strikethrough.name else {
+            return false
+        }
+        
+        if eventType == .enter {
+            delegate?.parserDidStartStrikethrough(parser: self)
+        }
+        else {
+            delegate?.parserDidEndStrikethrough(parser: self)
+        }
+        
+        return true
+    }
+    
+    @discardableResult
+    private func handleTable(_ nodeName: String, eventType: CMEventType) -> Bool {
+        switch nodeName {
+        case Table.name:
+            if eventType == .enter {
+                delegate?.parserDidStartTable(parser: self)
+            }
+            else {
+                delegate?.parserDidEndTable(parser: self)
+            }
+        case TableHeader.name:
+            if eventType == .enter {
+                delegate?.parserDidStartTableHeader(parser: self)
+            }
+            else {
+                delegate?.parserDidEndTableHeader(parser: self)
+            }
+        case TableRow.name:
+            if eventType == .enter {
+                delegate?.parserDidStartTableRow(parser: self)
+            }
+            else {
+                delegate?.parserDidEndTableRow(parser: self)
+            }
+        case TableCell.name:
+            if eventType == .enter {
+                delegate?.parserDidStartTableCell(parser: self)
+            }
+            else {
+                delegate?.parserDidEndTableCell(parser: self)
+            }
+        default:
+            return false
+        }
+        
+        return true
     }
 
 }

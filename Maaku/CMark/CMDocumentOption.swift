@@ -67,4 +67,5 @@ public struct CMDocumentOption: OptionSet {
     
     /// Parse footnotes.
     public static let footnotes = CMDocumentOption(rawValue: CMARK_OPT_FOOTNOTES)
+    
 }
