@@ -1,0 +1,1550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		801C3172987C3362CA96421D /* Pods_MaakuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F29E2CB0C7AE4BBB780D0599 /* Pods_MaakuTests.framework */; };
+		A26822231FEB8B55006780A9 /* YoutubePluginSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26822221FEB8B55006780A9 /* YoutubePluginSpec.swift */; };
+		A26822321FEB8F50006780A9 /* Maaku.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4871FEB1EB2006D5715 /* Maaku.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A26822331FEB8F63006780A9 /* CMDelimiterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4AE1FEB21A9006D5715 /* CMDelimiterType.swift */; };
+		A26822341FEB8F63006780A9 /* CMDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4B01FEB21A9006D5715 /* CMDocument.swift */; };
+		A26822351FEB8F63006780A9 /* CMDocumentOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4AC1FEB21A9006D5715 /* CMDocumentOption.swift */; };
+		A26822361FEB8F63006780A9 /* CMIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4AD1FEB21A9006D5715 /* CMIterator.swift */; };
+		A26822371FEB8F63006780A9 /* CMListType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4B31FEB21A9006D5715 /* CMListType.swift */; };
+		A26822381FEB8F63006780A9 /* CMNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4B11FEB21A9006D5715 /* CMNode.swift */; };
+		A26822391FEB8F63006780A9 /* CMNodeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4AF1FEB21A9006D5715 /* CMNodeType.swift */; };
+		A268223A1FEB8F63006780A9 /* CMParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4B21FEB21A9006D5715 /* CMParser.swift */; };
+		A268223B1FEB8F68006780A9 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4BD1FEB21A9006D5715 /* Block.swift */; };
+		A268223C1FEB8F68006780A9 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4D11FEB21A9006D5715 /* Document.swift */; };
+		A268223D1FEB8F68006780A9 /* DocumentConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4BC1FEB21A9006D5715 /* DocumentConverter.swift */; };
+		A268223E1FEB8F68006780A9 /* Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4D31FEB21A9006D5715 /* Plugin.swift */; };
+		A268223F1FEB8F68006780A9 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4D21FEB21A9006D5715 /* Style.swift */; };
+		A26822401FEB8F6D006780A9 /* BlockQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4CF1FEB21A9006D5715 /* BlockQuote.swift */; };
+		A26822411FEB8F6D006780A9 /* ContainerBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4CD1FEB21A9006D5715 /* ContainerBlock.swift */; };
+		A26822421FEB8F6D006780A9 /* FootnoteDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4D01FEB21A9006D5715 /* FootnoteDefinition.swift */; };
+		A26822431FEB8F6D006780A9 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4CB1FEB21A9006D5715 /* ListItem.swift */; };
+		A26822441FEB8F6D006780A9 /* OrderedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4CC1FEB21A9006D5715 /* OrderedList.swift */; };
+		A26822451FEB8F6D006780A9 /* UnorderedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4CE1FEB21A9006D5715 /* UnorderedList.swift */; };
+		A26822461FEB8F72006780A9 /* Emphasis.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C21FEB21A9006D5715 /* Emphasis.swift */; };
+		A26822471FEB8F72006780A9 /* FootnoteReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C91FEB21A9006D5715 /* FootnoteReference.swift */; };
+		A26822481FEB8F72006780A9 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C41FEB21A9006D5715 /* Image.swift */; };
+		A26822491FEB8F72006780A9 /* Inline.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C51FEB21A9006D5715 /* Inline.swift */; };
+		A268224A1FEB8F72006780A9 /* InlineCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C01FEB21A9006D5715 /* InlineCode.swift */; };
+		A268224B1FEB8F72006780A9 /* InlineHtml.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C81FEB21A9006D5715 /* InlineHtml.swift */; };
+		A268224C1FEB8F72006780A9 /* LineBreak.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C61FEB21A9006D5715 /* LineBreak.swift */; };
+		A268224D1FEB8F72006780A9 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C31FEB21A9006D5715 /* Link.swift */; };
+		A268224E1FEB8F72006780A9 /* SoftBreak.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4BF1FEB21A9006D5715 /* SoftBreak.swift */; };
+		A268224F1FEB8F72006780A9 /* Strong.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C11FEB21A9006D5715 /* Strong.swift */; };
+		A26822501FEB8F72006780A9 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C71FEB21A9006D5715 /* Text.swift */; };
+		A26822511FEB8F78006780A9 /* CodeBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4B91FEB21A9006D5715 /* CodeBlock.swift */; };
+		A26822521FEB8F78006780A9 /* Heading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4BA1FEB21A9006D5715 /* Heading.swift */; };
+		A26822531FEB8F78006780A9 /* HorizontalRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4B81FEB21A9006D5715 /* HorizontalRule.swift */; };
+		A26822541FEB8F78006780A9 /* HtmlBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4BB1FEB21A9006D5715 /* HtmlBlock.swift */; };
+		A26822551FEB8F78006780A9 /* LeafBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4B71FEB21A9006D5715 /* LeafBlock.swift */; };
+		A26822561FEB8F78006780A9 /* Paragraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4B61FEB21A9006D5715 /* Paragraph.swift */; };
+		A26822571FEB8FA2006780A9 /* arena.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D5011FEB21A9006D5715 /* arena.c */; };
+		A26822581FEB8FA2006780A9 /* blocks.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4E81FEB21A9006D5715 /* blocks.c */; };
+		A26822591FEB8FA2006780A9 /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4E71FEB21A9006D5715 /* buffer.c */; };
+		A268225A1FEB8FA2006780A9 /* cmark_ctype.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4E91FEB21A9006D5715 /* cmark_ctype.c */; };
+		A268225B1FEB8FA2006780A9 /* cmark.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4E51FEB21A9006D5715 /* cmark.c */; };
+		A268225C1FEB8FA2006780A9 /* commonmark.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D5091FEB21A9006D5715 /* commonmark.c */; };
+		A268225D1FEB8FA2006780A9 /* footnotes.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D50F1FEB21A9006D5715 /* footnotes.c */; };
+		A268225E1FEB8FA2006780A9 /* houdini_href_e.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4EF1FEB21A9006D5715 /* houdini_href_e.c */; };
+		A268225F1FEB8FA2006780A9 /* houdini_html_e.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4F81FEB21A9006D5715 /* houdini_html_e.c */; };
+		A26822601FEB8FA2006780A9 /* houdini_html_u.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D5121FEB21A9006D5715 /* houdini_html_u.c */; };
+		A26822611FEB8FA2006780A9 /* html.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D50B1FEB21A9006D5715 /* html.c */; };
+		A26822621FEB8FA2006780A9 /* inlines.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4EC1FEB21A9006D5715 /* inlines.c */; };
+		A26822631FEB8FA2006780A9 /* iterator.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4FF1FEB21A9006D5715 /* iterator.c */; };
+		A26822641FEB8FA2006780A9 /* latex.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4EE1FEB21A9006D5715 /* latex.c */; };
+		A26822651FEB8FA2006780A9 /* linked_list.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D5071FEB21A9006D5715 /* linked_list.c */; };
+		A26822661FEB8FA2006780A9 /* man.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4E61FEB21A9006D5715 /* man.c */; };
+		A26822671FEB8FA2006780A9 /* map.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D50A1FEB21A9006D5715 /* map.c */; };
+		A26822681FEB8FA2006780A9 /* node.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D5151FEB21A9006D5715 /* node.c */; };
+		A26822691FEB8FA2006780A9 /* plaintext.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4F91FEB21A9006D5715 /* plaintext.c */; };
+		A268226A1FEB8FA2006780A9 /* plugin.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D50C1FEB21A9006D5715 /* plugin.c */; };
+		A268226B1FEB8FA2006780A9 /* references.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4FD1FEB21A9006D5715 /* references.c */; };
+		A268226C1FEB8FA2006780A9 /* registry.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D5131FEB21A9006D5715 /* registry.c */; };
+		A268226D1FEB8FA2006780A9 /* render.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4FE1FEB21A9006D5715 /* render.c */; };
+		A268226E1FEB8FA2006780A9 /* scanners.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D50E1FEB21A9006D5715 /* scanners.c */; };
+		A268226F1FEB8FA2006780A9 /* syntax_extension.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4F31FEB21A9006D5715 /* syntax_extension.c */; };
+		A26822701FEB8FA2006780A9 /* utf8.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4FC1FEB21A9006D5715 /* utf8.c */; };
+		A26822711FEB8FA2006780A9 /* xml.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4E41FEB21A9006D5715 /* xml.c */; };
+		A26822721FEB8FAB006780A9 /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5041FEB21A9006D5715 /* buffer.h */; };
+		A26822731FEB8FAB006780A9 /* chunk.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4F21FEB21A9006D5715 /* chunk.h */; };
+		A26822741FEB8FAB006780A9 /* cmark_ctype.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5031FEB21A9006D5715 /* cmark_ctype.h */; };
+		A26822751FEB8FAB006780A9 /* cmark_export.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4EA1FEB21A9006D5715 /* cmark_export.h */; };
+		A26822761FEB8FAB006780A9 /* cmark_extension_api.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5061FEB21A9006D5715 /* cmark_extension_api.h */; };
+		A26822771FEB8FAB006780A9 /* cmark_version.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5021FEB21A9006D5715 /* cmark_version.h */; };
+		A26822781FEB8FAB006780A9 /* cmark.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5051FEB21A9006D5715 /* cmark.h */; };
+		A26822791FEB8FAB006780A9 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4F11FEB21A9006D5715 /* config.h */; };
+		A268227A1FEB8FAB006780A9 /* footnotes.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4F61FEB21A9006D5715 /* footnotes.h */; };
+		A268227B1FEB8FAB006780A9 /* houdini.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5101FEB21A9006D5715 /* houdini.h */; };
+		A268227C1FEB8FAB006780A9 /* html.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4EB1FEB21A9006D5715 /* html.h */; };
+		A268227D1FEB8FAB006780A9 /* inlines.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D50D1FEB21A9006D5715 /* inlines.h */; };
+		A268227E1FEB8FAB006780A9 /* iterator.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5111FEB21A9006D5715 /* iterator.h */; };
+		A268227F1FEB8FAB006780A9 /* map.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4F01FEB21A9006D5715 /* map.h */; };
+		A26822801FEB8FAB006780A9 /* node.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4FB1FEB21A9006D5715 /* node.h */; };
+		A26822811FEB8FAB006780A9 /* parser.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4F71FEB21A9006D5715 /* parser.h */; };
+		A26822821FEB8FAB006780A9 /* plugin.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4ED1FEB21A9006D5715 /* plugin.h */; };
+		A26822831FEB8FAB006780A9 /* references.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5161FEB21A9006D5715 /* references.h */; };
+		A26822841FEB8FAB006780A9 /* registry.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5001FEB21A9006D5715 /* registry.h */; };
+		A26822851FEB8FAB006780A9 /* render.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5171FEB21A9006D5715 /* render.h */; };
+		A26822861FEB8FAB006780A9 /* scanners.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4FA1FEB21A9006D5715 /* scanners.h */; };
+		A26822871FEB8FAB006780A9 /* syntax_extension.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5081FEB21A9006D5715 /* syntax_extension.h */; };
+		A26822881FEB8FAB006780A9 /* utf8.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5141FEB21A9006D5715 /* utf8.h */; };
+		A26822891FEB8FBF006780A9 /* autolink.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4D81FEB21A9006D5715 /* autolink.c */; };
+		A268228A1FEB8FBF006780A9 /* core-extensions.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4E21FEB21A9006D5715 /* core-extensions.c */; };
+		A268228B1FEB8FBF006780A9 /* ext_scanners.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4DA1FEB21A9006D5715 /* ext_scanners.c */; };
+		A268228C1FEB8FBF006780A9 /* strikethrough.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4D71FEB21A9006D5715 /* strikethrough.c */; };
+		A268228D1FEB8FBF006780A9 /* table.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4D91FEB21A9006D5715 /* table.c */; };
+		A268228E1FEB8FBF006780A9 /* tagfilter.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4DB1FEB21A9006D5715 /* tagfilter.c */; };
+		A268228F1FEB8FC2006780A9 /* autolink.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4DD1FEB21A9006D5715 /* autolink.h */; };
+		A26822901FEB8FC2006780A9 /* cmarkextensions_export.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4D61FEB21A9006D5715 /* cmarkextensions_export.h */; };
+		A26822911FEB8FC2006780A9 /* core-extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4DC1FEB21A9006D5715 /* core-extensions.h */; };
+		A26822921FEB8FC2006780A9 /* ext_scanners.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4E11FEB21A9006D5715 /* ext_scanners.h */; };
+		A26822931FEB8FC2006780A9 /* strikethrough.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4DE1FEB21A9006D5715 /* strikethrough.h */; };
+		A26822941FEB8FC2006780A9 /* table.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4DF1FEB21A9006D5715 /* table.h */; };
+		A26822951FEB8FC2006780A9 /* tagfilter.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4E01FEB21A9006D5715 /* tagfilter.h */; };
+		A26822961FEB8FCF006780A9 /* YoutubePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4A21FEB21A9006D5715 /* YoutubePlugin.swift */; };
+		A276D48E1FEB1EB2006D5715 /* Maaku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A276D4841FEB1EB2006D5715 /* Maaku.framework */; };
+		A276D4951FEB1EB2006D5715 /* Maaku.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4871FEB1EB2006D5715 /* Maaku.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A276D51B1FEB21A9006D5715 /* YoutubePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4A21FEB21A9006D5715 /* YoutubePlugin.swift */; };
+		A276D5241FEB21A9006D5715 /* CMDocumentOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4AC1FEB21A9006D5715 /* CMDocumentOption.swift */; };
+		A276D5251FEB21A9006D5715 /* CMIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4AD1FEB21A9006D5715 /* CMIterator.swift */; };
+		A276D5261FEB21A9006D5715 /* CMDelimiterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4AE1FEB21A9006D5715 /* CMDelimiterType.swift */; };
+		A276D5271FEB21A9006D5715 /* CMNodeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4AF1FEB21A9006D5715 /* CMNodeType.swift */; };
+		A276D5281FEB21A9006D5715 /* CMDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4B01FEB21A9006D5715 /* CMDocument.swift */; };
+		A276D5291FEB21A9006D5715 /* CMNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4B11FEB21A9006D5715 /* CMNode.swift */; };
+		A276D52A1FEB21A9006D5715 /* CMParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4B21FEB21A9006D5715 /* CMParser.swift */; };
+		A276D52B1FEB21A9006D5715 /* CMListType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4B31FEB21A9006D5715 /* CMListType.swift */; };
+		A276D52C1FEB21A9006D5715 /* Paragraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4B61FEB21A9006D5715 /* Paragraph.swift */; };
+		A276D52D1FEB21A9006D5715 /* LeafBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4B71FEB21A9006D5715 /* LeafBlock.swift */; };
+		A276D52E1FEB21A9006D5715 /* HorizontalRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4B81FEB21A9006D5715 /* HorizontalRule.swift */; };
+		A276D52F1FEB21A9006D5715 /* CodeBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4B91FEB21A9006D5715 /* CodeBlock.swift */; };
+		A276D5301FEB21A9006D5715 /* Heading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4BA1FEB21A9006D5715 /* Heading.swift */; };
+		A276D5311FEB21A9006D5715 /* HtmlBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4BB1FEB21A9006D5715 /* HtmlBlock.swift */; };
+		A276D5321FEB21A9006D5715 /* DocumentConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4BC1FEB21A9006D5715 /* DocumentConverter.swift */; };
+		A276D5331FEB21A9006D5715 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4BD1FEB21A9006D5715 /* Block.swift */; };
+		A276D5341FEB21A9006D5715 /* SoftBreak.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4BF1FEB21A9006D5715 /* SoftBreak.swift */; };
+		A276D5351FEB21A9006D5715 /* InlineCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C01FEB21A9006D5715 /* InlineCode.swift */; };
+		A276D5361FEB21A9006D5715 /* Strong.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C11FEB21A9006D5715 /* Strong.swift */; };
+		A276D5371FEB21A9006D5715 /* Emphasis.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C21FEB21A9006D5715 /* Emphasis.swift */; };
+		A276D5381FEB21A9006D5715 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C31FEB21A9006D5715 /* Link.swift */; };
+		A276D5391FEB21A9006D5715 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C41FEB21A9006D5715 /* Image.swift */; };
+		A276D53A1FEB21A9006D5715 /* Inline.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C51FEB21A9006D5715 /* Inline.swift */; };
+		A276D53B1FEB21A9006D5715 /* LineBreak.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C61FEB21A9006D5715 /* LineBreak.swift */; };
+		A276D53C1FEB21A9006D5715 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C71FEB21A9006D5715 /* Text.swift */; };
+		A276D53D1FEB21A9006D5715 /* InlineHtml.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C81FEB21A9006D5715 /* InlineHtml.swift */; };
+		A276D53E1FEB21A9006D5715 /* FootnoteReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C91FEB21A9006D5715 /* FootnoteReference.swift */; };
+		A276D53F1FEB21A9006D5715 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4CB1FEB21A9006D5715 /* ListItem.swift */; };
+		A276D5401FEB21A9006D5715 /* OrderedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4CC1FEB21A9006D5715 /* OrderedList.swift */; };
+		A276D5411FEB21A9006D5715 /* ContainerBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4CD1FEB21A9006D5715 /* ContainerBlock.swift */; };
+		A276D5421FEB21A9006D5715 /* UnorderedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4CE1FEB21A9006D5715 /* UnorderedList.swift */; };
+		A276D5431FEB21A9006D5715 /* BlockQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4CF1FEB21A9006D5715 /* BlockQuote.swift */; };
+		A276D5441FEB21A9006D5715 /* FootnoteDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4D01FEB21A9006D5715 /* FootnoteDefinition.swift */; };
+		A276D5451FEB21A9006D5715 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4D11FEB21A9006D5715 /* Document.swift */; };
+		A276D5461FEB21A9006D5715 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4D21FEB21A9006D5715 /* Style.swift */; };
+		A276D5471FEB21A9006D5715 /* Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4D31FEB21A9006D5715 /* Plugin.swift */; };
+		A276D5481FEB21A9006D5715 /* cmarkextensions_export.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4D61FEB21A9006D5715 /* cmarkextensions_export.h */; };
+		A276D5491FEB21A9006D5715 /* strikethrough.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4D71FEB21A9006D5715 /* strikethrough.c */; };
+		A276D54A1FEB21A9006D5715 /* autolink.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4D81FEB21A9006D5715 /* autolink.c */; };
+		A276D54B1FEB21A9006D5715 /* table.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4D91FEB21A9006D5715 /* table.c */; };
+		A276D54C1FEB21A9006D5715 /* ext_scanners.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4DA1FEB21A9006D5715 /* ext_scanners.c */; };
+		A276D54D1FEB21A9006D5715 /* tagfilter.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4DB1FEB21A9006D5715 /* tagfilter.c */; };
+		A276D54E1FEB21A9006D5715 /* core-extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4DC1FEB21A9006D5715 /* core-extensions.h */; };
+		A276D54F1FEB21A9006D5715 /* autolink.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4DD1FEB21A9006D5715 /* autolink.h */; };
+		A276D5501FEB21A9006D5715 /* strikethrough.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4DE1FEB21A9006D5715 /* strikethrough.h */; };
+		A276D5511FEB21A9006D5715 /* table.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4DF1FEB21A9006D5715 /* table.h */; };
+		A276D5521FEB21A9006D5715 /* tagfilter.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4E01FEB21A9006D5715 /* tagfilter.h */; };
+		A276D5531FEB21A9006D5715 /* ext_scanners.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4E11FEB21A9006D5715 /* ext_scanners.h */; };
+		A276D5541FEB21A9006D5715 /* core-extensions.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4E21FEB21A9006D5715 /* core-extensions.c */; };
+		A276D5551FEB21A9006D5715 /* xml.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4E41FEB21A9006D5715 /* xml.c */; };
+		A276D5561FEB21A9006D5715 /* cmark.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4E51FEB21A9006D5715 /* cmark.c */; };
+		A276D5571FEB21A9006D5715 /* man.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4E61FEB21A9006D5715 /* man.c */; };
+		A276D5581FEB21A9006D5715 /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4E71FEB21A9006D5715 /* buffer.c */; };
+		A276D5591FEB21A9006D5715 /* blocks.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4E81FEB21A9006D5715 /* blocks.c */; };
+		A276D55A1FEB21A9006D5715 /* cmark_ctype.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4E91FEB21A9006D5715 /* cmark_ctype.c */; };
+		A276D55B1FEB21A9006D5715 /* cmark_export.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4EA1FEB21A9006D5715 /* cmark_export.h */; };
+		A276D55C1FEB21A9006D5715 /* html.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4EB1FEB21A9006D5715 /* html.h */; };
+		A276D55D1FEB21A9006D5715 /* inlines.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4EC1FEB21A9006D5715 /* inlines.c */; };
+		A276D55E1FEB21A9006D5715 /* plugin.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4ED1FEB21A9006D5715 /* plugin.h */; };
+		A276D55F1FEB21A9006D5715 /* latex.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4EE1FEB21A9006D5715 /* latex.c */; };
+		A276D5601FEB21A9006D5715 /* houdini_href_e.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4EF1FEB21A9006D5715 /* houdini_href_e.c */; };
+		A276D5611FEB21A9006D5715 /* map.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4F01FEB21A9006D5715 /* map.h */; };
+		A276D5621FEB21A9006D5715 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4F11FEB21A9006D5715 /* config.h */; };
+		A276D5631FEB21A9006D5715 /* chunk.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4F21FEB21A9006D5715 /* chunk.h */; };
+		A276D5641FEB21A9006D5715 /* syntax_extension.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4F31FEB21A9006D5715 /* syntax_extension.c */; };
+		A276D5671FEB21A9006D5715 /* footnotes.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4F61FEB21A9006D5715 /* footnotes.h */; };
+		A276D5681FEB21A9006D5715 /* parser.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4F71FEB21A9006D5715 /* parser.h */; };
+		A276D5691FEB21A9006D5715 /* houdini_html_e.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4F81FEB21A9006D5715 /* houdini_html_e.c */; };
+		A276D56A1FEB21A9006D5715 /* plaintext.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4F91FEB21A9006D5715 /* plaintext.c */; };
+		A276D56B1FEB21A9006D5715 /* scanners.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4FA1FEB21A9006D5715 /* scanners.h */; };
+		A276D56C1FEB21A9006D5715 /* node.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4FB1FEB21A9006D5715 /* node.h */; };
+		A276D56D1FEB21A9006D5715 /* utf8.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4FC1FEB21A9006D5715 /* utf8.c */; };
+		A276D56E1FEB21A9006D5715 /* references.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4FD1FEB21A9006D5715 /* references.c */; };
+		A276D56F1FEB21A9006D5715 /* render.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4FE1FEB21A9006D5715 /* render.c */; };
+		A276D5701FEB21A9006D5715 /* iterator.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4FF1FEB21A9006D5715 /* iterator.c */; };
+		A276D5711FEB21A9006D5715 /* registry.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5001FEB21A9006D5715 /* registry.h */; };
+		A276D5721FEB21A9006D5715 /* arena.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D5011FEB21A9006D5715 /* arena.c */; };
+		A276D5731FEB21A9006D5715 /* cmark_version.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5021FEB21A9006D5715 /* cmark_version.h */; };
+		A276D5741FEB21A9006D5715 /* cmark_ctype.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5031FEB21A9006D5715 /* cmark_ctype.h */; };
+		A276D5751FEB21A9006D5715 /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5041FEB21A9006D5715 /* buffer.h */; };
+		A276D5761FEB21A9006D5715 /* cmark.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5051FEB21A9006D5715 /* cmark.h */; };
+		A276D5771FEB21A9006D5715 /* cmark_extension_api.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5061FEB21A9006D5715 /* cmark_extension_api.h */; };
+		A276D5781FEB21A9006D5715 /* linked_list.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D5071FEB21A9006D5715 /* linked_list.c */; };
+		A276D5791FEB21A9006D5715 /* syntax_extension.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5081FEB21A9006D5715 /* syntax_extension.h */; };
+		A276D57A1FEB21A9006D5715 /* commonmark.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D5091FEB21A9006D5715 /* commonmark.c */; };
+		A276D57B1FEB21A9006D5715 /* map.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D50A1FEB21A9006D5715 /* map.c */; };
+		A276D57C1FEB21A9006D5715 /* html.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D50B1FEB21A9006D5715 /* html.c */; };
+		A276D57D1FEB21A9006D5715 /* plugin.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D50C1FEB21A9006D5715 /* plugin.c */; };
+		A276D57E1FEB21A9006D5715 /* inlines.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D50D1FEB21A9006D5715 /* inlines.h */; };
+		A276D57F1FEB21A9006D5715 /* scanners.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D50E1FEB21A9006D5715 /* scanners.c */; };
+		A276D5801FEB21A9006D5715 /* footnotes.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D50F1FEB21A9006D5715 /* footnotes.c */; };
+		A276D5811FEB21A9006D5715 /* houdini.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5101FEB21A9006D5715 /* houdini.h */; };
+		A276D5821FEB21A9006D5715 /* iterator.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5111FEB21A9006D5715 /* iterator.h */; };
+		A276D5831FEB21A9006D5715 /* houdini_html_u.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D5121FEB21A9006D5715 /* houdini_html_u.c */; };
+		A276D5841FEB21A9006D5715 /* registry.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D5131FEB21A9006D5715 /* registry.c */; };
+		A276D5851FEB21A9006D5715 /* utf8.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5141FEB21A9006D5715 /* utf8.h */; };
+		A276D5861FEB21A9006D5715 /* node.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D5151FEB21A9006D5715 /* node.c */; };
+		A276D5871FEB21A9006D5715 /* references.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5161FEB21A9006D5715 /* references.h */; };
+		A276D5881FEB21A9006D5715 /* render.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5171FEB21A9006D5715 /* render.h */; };
+		A276D60A1FEB35F5006D5715 /* DocumentSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D6091FEB35F5006D5715 /* DocumentSpec.swift */; };
+		A276D60D1FEB364A006D5715 /* document.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D60C1FEB364A006D5715 /* document.md */; };
+		A276D60F1FEB3676006D5715 /* Maaku+TestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D60E1FEB3676006D5715 /* Maaku+TestCase.swift */; };
+		A276D6141FEB3BA4006D5715 /* ParagraphSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D6131FEB3BA4006D5715 /* ParagraphSpec.swift */; };
+		A276D6161FEB3BDA006D5715 /* paragraph.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D6151FEB3BDA006D5715 /* paragraph.md */; };
+		A276D61A1FEB3CA9006D5715 /* htmlblock.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D6191FEB3CA9006D5715 /* htmlblock.md */; };
+		A276D61C1FEB3CCF006D5715 /* HtmlBlockSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D61B1FEB3CCF006D5715 /* HtmlBlockSpec.swift */; };
+		A276D61E1FEB3D13006D5715 /* CodeBlockSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D61D1FEB3D13006D5715 /* CodeBlockSpec.swift */; };
+		A276D6201FEB3D1A006D5715 /* HeadingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D61F1FEB3D1A006D5715 /* HeadingSpec.swift */; };
+		A276D6221FEB3D25006D5715 /* HorizontalRuleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D6211FEB3D25006D5715 /* HorizontalRuleSpec.swift */; };
+		A276D6241FEB3D31006D5715 /* codeblock.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D6231FEB3D31006D5715 /* codeblock.md */; };
+		A276D6261FEB3D3A006D5715 /* heading.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D6251FEB3D3A006D5715 /* heading.md */; };
+		A276D6281FEB3D4D006D5715 /* horizontalrule.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D6271FEB3D4D006D5715 /* horizontalrule.md */; };
+		A276D62A1FEB3EDA006D5715 /* BlockQuoteSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D6291FEB3EDA006D5715 /* BlockQuoteSpec.swift */; };
+		A276D62C1FEB3EE7006D5715 /* FootnoteDefinitionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D62B1FEB3EE7006D5715 /* FootnoteDefinitionSpec.swift */; };
+		A276D62E1FEB3EF7006D5715 /* ListItemSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D62D1FEB3EF7006D5715 /* ListItemSpec.swift */; };
+		A276D6301FEB3F00006D5715 /* OrderedListSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D62F1FEB3F00006D5715 /* OrderedListSpec.swift */; };
+		A276D6321FEB3F0A006D5715 /* UnorderedListSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D6311FEB3F0A006D5715 /* UnorderedListSpec.swift */; };
+		A276D6341FEB3F50006D5715 /* blockquote.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D6331FEB3F50006D5715 /* blockquote.md */; };
+		A276D6361FEB3F5B006D5715 /* footnotedefinition.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D6351FEB3F5B006D5715 /* footnotedefinition.md */; };
+		A276D63A1FEB3F69006D5715 /* orderedlist.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D6391FEB3F69006D5715 /* orderedlist.md */; };
+		A276D63C1FEB3F72006D5715 /* unorderedlist.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D63B1FEB3F72006D5715 /* unorderedlist.md */; };
+		A276D63E1FEB45EC006D5715 /* EmphasisSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D63D1FEB45EC006D5715 /* EmphasisSpec.swift */; };
+		A276D6401FEB45F6006D5715 /* FootnoteReferenceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D63F1FEB45F6006D5715 /* FootnoteReferenceSpec.swift */; };
+		A276D6421FEB45FF006D5715 /* ImageSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D6411FEB45FF006D5715 /* ImageSpec.swift */; };
+		A276D6441FEB4607006D5715 /* InlineCodeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D6431FEB4607006D5715 /* InlineCodeSpec.swift */; };
+		A276D6461FEB4612006D5715 /* InlineHtmlSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D6451FEB4612006D5715 /* InlineHtmlSpec.swift */; };
+		A276D6481FEB461C006D5715 /* LineBreakSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D6471FEB461C006D5715 /* LineBreakSpec.swift */; };
+		A276D64A1FEB462C006D5715 /* LinkSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D6491FEB462C006D5715 /* LinkSpec.swift */; };
+		A276D64C1FEB4634006D5715 /* SoftBreakSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D64B1FEB4634006D5715 /* SoftBreakSpec.swift */; };
+		A276D64E1FEB4640006D5715 /* StrongSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D64D1FEB4640006D5715 /* StrongSpec.swift */; };
+		A276D6501FEB4648006D5715 /* TextSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D64F1FEB4648006D5715 /* TextSpec.swift */; };
+		A276D6521FEB4657006D5715 /* emphasis.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D6511FEB4657006D5715 /* emphasis.md */; };
+		A276D6541FEB4665006D5715 /* image.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D6531FEB4665006D5715 /* image.md */; };
+		A276D6561FEB4673006D5715 /* inlinecode.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D6551FEB4673006D5715 /* inlinecode.md */; };
+		A276D6581FEB467D006D5715 /* inlinehtml.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D6571FEB467D006D5715 /* inlinehtml.md */; };
+		A276D65A1FEB4686006D5715 /* linebreak.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D6591FEB4686006D5715 /* linebreak.md */; };
+		A276D65C1FEB4693006D5715 /* softbreak.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D65B1FEB4693006D5715 /* softbreak.md */; };
+		A276D65E1FEB469A006D5715 /* link.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D65D1FEB469A006D5715 /* link.md */; };
+		A276D6601FEB46A4006D5715 /* strong.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D65F1FEB46A4006D5715 /* strong.md */; };
+		A276D6641FEB865B006D5715 /* CMDocumentSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D6631FEB865B006D5715 /* CMDocumentSpec.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A276D48F1FEB1EB2006D5715 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A276D47B1FEB1EB2006D5715 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A276D4831FEB1EB2006D5715;
+			remoteInfo = Maaku;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		236ED4760A54DDDE9B735705 /* Pods-MaakuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaakuTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MaakuTests/Pods-MaakuTests.release.xcconfig"; sourceTree = "<group>"; };
+		3BA96DED028785705AB22E33 /* Pods-MaakuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaakuTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MaakuTests/Pods-MaakuTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A26822221FEB8B55006780A9 /* YoutubePluginSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubePluginSpec.swift; sourceTree = "<group>"; };
+		A268222A1FEB8F17006780A9 /* Maaku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Maaku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A276D4841FEB1EB2006D5715 /* Maaku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Maaku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A276D4871FEB1EB2006D5715 /* Maaku.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Maaku.h; sourceTree = "<group>"; };
+		A276D4881FEB1EB2006D5715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A276D48D1FEB1EB2006D5715 /* MaakuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaakuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A276D4941FEB1EB2006D5715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A276D4A21FEB21A9006D5715 /* YoutubePlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubePlugin.swift; sourceTree = "<group>"; };
+		A276D4AC1FEB21A9006D5715 /* CMDocumentOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMDocumentOption.swift; sourceTree = "<group>"; };
+		A276D4AD1FEB21A9006D5715 /* CMIterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMIterator.swift; sourceTree = "<group>"; };
+		A276D4AE1FEB21A9006D5715 /* CMDelimiterType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMDelimiterType.swift; sourceTree = "<group>"; };
+		A276D4AF1FEB21A9006D5715 /* CMNodeType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMNodeType.swift; sourceTree = "<group>"; };
+		A276D4B01FEB21A9006D5715 /* CMDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMDocument.swift; sourceTree = "<group>"; };
+		A276D4B11FEB21A9006D5715 /* CMNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMNode.swift; sourceTree = "<group>"; };
+		A276D4B21FEB21A9006D5715 /* CMParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMParser.swift; sourceTree = "<group>"; };
+		A276D4B31FEB21A9006D5715 /* CMListType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMListType.swift; sourceTree = "<group>"; };
+		A276D4B61FEB21A9006D5715 /* Paragraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Paragraph.swift; sourceTree = "<group>"; };
+		A276D4B71FEB21A9006D5715 /* LeafBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeafBlock.swift; sourceTree = "<group>"; };
+		A276D4B81FEB21A9006D5715 /* HorizontalRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalRule.swift; sourceTree = "<group>"; };
+		A276D4B91FEB21A9006D5715 /* CodeBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeBlock.swift; sourceTree = "<group>"; };
+		A276D4BA1FEB21A9006D5715 /* Heading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Heading.swift; sourceTree = "<group>"; };
+		A276D4BB1FEB21A9006D5715 /* HtmlBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HtmlBlock.swift; sourceTree = "<group>"; };
+		A276D4BC1FEB21A9006D5715 /* DocumentConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentConverter.swift; sourceTree = "<group>"; };
+		A276D4BD1FEB21A9006D5715 /* Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		A276D4BF1FEB21A9006D5715 /* SoftBreak.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoftBreak.swift; sourceTree = "<group>"; };
+		A276D4C01FEB21A9006D5715 /* InlineCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InlineCode.swift; sourceTree = "<group>"; };
+		A276D4C11FEB21A9006D5715 /* Strong.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strong.swift; sourceTree = "<group>"; };
+		A276D4C21FEB21A9006D5715 /* Emphasis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emphasis.swift; sourceTree = "<group>"; };
+		A276D4C31FEB21A9006D5715 /* Link.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
+		A276D4C41FEB21A9006D5715 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		A276D4C51FEB21A9006D5715 /* Inline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inline.swift; sourceTree = "<group>"; };
+		A276D4C61FEB21A9006D5715 /* LineBreak.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineBreak.swift; sourceTree = "<group>"; };
+		A276D4C71FEB21A9006D5715 /* Text.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		A276D4C81FEB21A9006D5715 /* InlineHtml.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InlineHtml.swift; sourceTree = "<group>"; };
+		A276D4C91FEB21A9006D5715 /* FootnoteReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FootnoteReference.swift; sourceTree = "<group>"; };
+		A276D4CB1FEB21A9006D5715 /* ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		A276D4CC1FEB21A9006D5715 /* OrderedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderedList.swift; sourceTree = "<group>"; };
+		A276D4CD1FEB21A9006D5715 /* ContainerBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerBlock.swift; sourceTree = "<group>"; };
+		A276D4CE1FEB21A9006D5715 /* UnorderedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnorderedList.swift; sourceTree = "<group>"; };
+		A276D4CF1FEB21A9006D5715 /* BlockQuote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockQuote.swift; sourceTree = "<group>"; };
+		A276D4D01FEB21A9006D5715 /* FootnoteDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FootnoteDefinition.swift; sourceTree = "<group>"; };
+		A276D4D11FEB21A9006D5715 /* Document.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		A276D4D21FEB21A9006D5715 /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		A276D4D31FEB21A9006D5715 /* Plugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plugin.swift; sourceTree = "<group>"; };
+		A276D4D61FEB21A9006D5715 /* cmarkextensions_export.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmarkextensions_export.h; sourceTree = "<group>"; };
+		A276D4D71FEB21A9006D5715 /* strikethrough.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = strikethrough.c; sourceTree = "<group>"; };
+		A276D4D81FEB21A9006D5715 /* autolink.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = autolink.c; sourceTree = "<group>"; };
+		A276D4D91FEB21A9006D5715 /* table.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = table.c; sourceTree = "<group>"; };
+		A276D4DA1FEB21A9006D5715 /* ext_scanners.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ext_scanners.c; sourceTree = "<group>"; };
+		A276D4DB1FEB21A9006D5715 /* tagfilter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tagfilter.c; sourceTree = "<group>"; };
+		A276D4DC1FEB21A9006D5715 /* core-extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "core-extensions.h"; sourceTree = "<group>"; };
+		A276D4DD1FEB21A9006D5715 /* autolink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autolink.h; sourceTree = "<group>"; };
+		A276D4DE1FEB21A9006D5715 /* strikethrough.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = strikethrough.h; sourceTree = "<group>"; };
+		A276D4DF1FEB21A9006D5715 /* table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = table.h; sourceTree = "<group>"; };
+		A276D4E01FEB21A9006D5715 /* tagfilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tagfilter.h; sourceTree = "<group>"; };
+		A276D4E11FEB21A9006D5715 /* ext_scanners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ext_scanners.h; sourceTree = "<group>"; };
+		A276D4E21FEB21A9006D5715 /* core-extensions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "core-extensions.c"; sourceTree = "<group>"; };
+		A276D4E41FEB21A9006D5715 /* xml.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xml.c; sourceTree = "<group>"; };
+		A276D4E51FEB21A9006D5715 /* cmark.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmark.c; sourceTree = "<group>"; };
+		A276D4E61FEB21A9006D5715 /* man.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = man.c; sourceTree = "<group>"; };
+		A276D4E71FEB21A9006D5715 /* buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = buffer.c; sourceTree = "<group>"; };
+		A276D4E81FEB21A9006D5715 /* blocks.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = blocks.c; sourceTree = "<group>"; };
+		A276D4E91FEB21A9006D5715 /* cmark_ctype.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmark_ctype.c; sourceTree = "<group>"; };
+		A276D4EA1FEB21A9006D5715 /* cmark_export.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmark_export.h; sourceTree = "<group>"; };
+		A276D4EB1FEB21A9006D5715 /* html.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = html.h; sourceTree = "<group>"; };
+		A276D4EC1FEB21A9006D5715 /* inlines.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inlines.c; sourceTree = "<group>"; };
+		A276D4ED1FEB21A9006D5715 /* plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plugin.h; sourceTree = "<group>"; };
+		A276D4EE1FEB21A9006D5715 /* latex.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = latex.c; sourceTree = "<group>"; };
+		A276D4EF1FEB21A9006D5715 /* houdini_href_e.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = houdini_href_e.c; sourceTree = "<group>"; };
+		A276D4F01FEB21A9006D5715 /* map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = map.h; sourceTree = "<group>"; };
+		A276D4F11FEB21A9006D5715 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		A276D4F21FEB21A9006D5715 /* chunk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chunk.h; sourceTree = "<group>"; };
+		A276D4F31FEB21A9006D5715 /* syntax_extension.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = syntax_extension.c; sourceTree = "<group>"; };
+		A276D4F41FEB21A9006D5715 /* case_fold_switch.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = case_fold_switch.inc; sourceTree = "<group>"; };
+		A276D4F51FEB21A9006D5715 /* entities.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = entities.inc; sourceTree = "<group>"; };
+		A276D4F61FEB21A9006D5715 /* footnotes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = footnotes.h; sourceTree = "<group>"; };
+		A276D4F71FEB21A9006D5715 /* parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parser.h; sourceTree = "<group>"; };
+		A276D4F81FEB21A9006D5715 /* houdini_html_e.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = houdini_html_e.c; sourceTree = "<group>"; };
+		A276D4F91FEB21A9006D5715 /* plaintext.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = plaintext.c; sourceTree = "<group>"; };
+		A276D4FA1FEB21A9006D5715 /* scanners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scanners.h; sourceTree = "<group>"; };
+		A276D4FB1FEB21A9006D5715 /* node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = node.h; sourceTree = "<group>"; };
+		A276D4FC1FEB21A9006D5715 /* utf8.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utf8.c; sourceTree = "<group>"; };
+		A276D4FD1FEB21A9006D5715 /* references.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = references.c; sourceTree = "<group>"; };
+		A276D4FE1FEB21A9006D5715 /* render.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = render.c; sourceTree = "<group>"; };
+		A276D4FF1FEB21A9006D5715 /* iterator.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iterator.c; sourceTree = "<group>"; };
+		A276D5001FEB21A9006D5715 /* registry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = registry.h; sourceTree = "<group>"; };
+		A276D5011FEB21A9006D5715 /* arena.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = arena.c; sourceTree = "<group>"; };
+		A276D5021FEB21A9006D5715 /* cmark_version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmark_version.h; sourceTree = "<group>"; };
+		A276D5031FEB21A9006D5715 /* cmark_ctype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmark_ctype.h; sourceTree = "<group>"; };
+		A276D5041FEB21A9006D5715 /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffer.h; sourceTree = "<group>"; };
+		A276D5051FEB21A9006D5715 /* cmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmark.h; sourceTree = "<group>"; };
+		A276D5061FEB21A9006D5715 /* cmark_extension_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmark_extension_api.h; sourceTree = "<group>"; };
+		A276D5071FEB21A9006D5715 /* linked_list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = linked_list.c; sourceTree = "<group>"; };
+		A276D5081FEB21A9006D5715 /* syntax_extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = syntax_extension.h; sourceTree = "<group>"; };
+		A276D5091FEB21A9006D5715 /* commonmark.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = commonmark.c; sourceTree = "<group>"; };
+		A276D50A1FEB21A9006D5715 /* map.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = map.c; sourceTree = "<group>"; };
+		A276D50B1FEB21A9006D5715 /* html.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = html.c; sourceTree = "<group>"; };
+		A276D50C1FEB21A9006D5715 /* plugin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = plugin.c; sourceTree = "<group>"; };
+		A276D50D1FEB21A9006D5715 /* inlines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inlines.h; sourceTree = "<group>"; };
+		A276D50E1FEB21A9006D5715 /* scanners.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = scanners.c; sourceTree = "<group>"; };
+		A276D50F1FEB21A9006D5715 /* footnotes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = footnotes.c; sourceTree = "<group>"; };
+		A276D5101FEB21A9006D5715 /* houdini.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = houdini.h; sourceTree = "<group>"; };
+		A276D5111FEB21A9006D5715 /* iterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iterator.h; sourceTree = "<group>"; };
+		A276D5121FEB21A9006D5715 /* houdini_html_u.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = houdini_html_u.c; sourceTree = "<group>"; };
+		A276D5131FEB21A9006D5715 /* registry.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = registry.c; sourceTree = "<group>"; };
+		A276D5141FEB21A9006D5715 /* utf8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utf8.h; sourceTree = "<group>"; };
+		A276D5151FEB21A9006D5715 /* node.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = node.c; sourceTree = "<group>"; };
+		A276D5161FEB21A9006D5715 /* references.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = references.h; sourceTree = "<group>"; };
+		A276D5171FEB21A9006D5715 /* render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = render.h; sourceTree = "<group>"; };
+		A276D5181FEB21A9006D5715 /* module.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.map; sourceTree = "<group>"; };
+		A276D5891FEB220A006D5715 /* Maaku.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Maaku.podspec; sourceTree = "<group>"; };
+		A276D58A1FEB220B006D5715 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A276D58B1FEB220B006D5715 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A276D6091FEB35F5006D5715 /* DocumentSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentSpec.swift; sourceTree = "<group>"; };
+		A276D60C1FEB364A006D5715 /* document.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = document.md; sourceTree = "<group>"; };
+		A276D60E1FEB3676006D5715 /* Maaku+TestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Maaku+TestCase.swift"; sourceTree = "<group>"; };
+		A276D6131FEB3BA4006D5715 /* ParagraphSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParagraphSpec.swift; sourceTree = "<group>"; };
+		A276D6151FEB3BDA006D5715 /* paragraph.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = paragraph.md; sourceTree = "<group>"; };
+		A276D6191FEB3CA9006D5715 /* htmlblock.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = htmlblock.md; sourceTree = "<group>"; };
+		A276D61B1FEB3CCF006D5715 /* HtmlBlockSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HtmlBlockSpec.swift; sourceTree = "<group>"; };
+		A276D61D1FEB3D13006D5715 /* CodeBlockSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBlockSpec.swift; sourceTree = "<group>"; };
+		A276D61F1FEB3D1A006D5715 /* HeadingSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingSpec.swift; sourceTree = "<group>"; };
+		A276D6211FEB3D25006D5715 /* HorizontalRuleSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalRuleSpec.swift; sourceTree = "<group>"; };
+		A276D6231FEB3D31006D5715 /* codeblock.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = codeblock.md; sourceTree = "<group>"; };
+		A276D6251FEB3D3A006D5715 /* heading.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = heading.md; sourceTree = "<group>"; };
+		A276D6271FEB3D4D006D5715 /* horizontalrule.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = horizontalrule.md; sourceTree = "<group>"; };
+		A276D6291FEB3EDA006D5715 /* BlockQuoteSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockQuoteSpec.swift; sourceTree = "<group>"; };
+		A276D62B1FEB3EE7006D5715 /* FootnoteDefinitionSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootnoteDefinitionSpec.swift; sourceTree = "<group>"; };
+		A276D62D1FEB3EF7006D5715 /* ListItemSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemSpec.swift; sourceTree = "<group>"; };
+		A276D62F1FEB3F00006D5715 /* OrderedListSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderedListSpec.swift; sourceTree = "<group>"; };
+		A276D6311FEB3F0A006D5715 /* UnorderedListSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnorderedListSpec.swift; sourceTree = "<group>"; };
+		A276D6331FEB3F50006D5715 /* blockquote.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = blockquote.md; sourceTree = "<group>"; };
+		A276D6351FEB3F5B006D5715 /* footnotedefinition.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = footnotedefinition.md; sourceTree = "<group>"; };
+		A276D6391FEB3F69006D5715 /* orderedlist.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = orderedlist.md; sourceTree = "<group>"; };
+		A276D63B1FEB3F72006D5715 /* unorderedlist.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = unorderedlist.md; sourceTree = "<group>"; };
+		A276D63D1FEB45EC006D5715 /* EmphasisSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmphasisSpec.swift; sourceTree = "<group>"; };
+		A276D63F1FEB45F6006D5715 /* FootnoteReferenceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootnoteReferenceSpec.swift; sourceTree = "<group>"; };
+		A276D6411FEB45FF006D5715 /* ImageSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSpec.swift; sourceTree = "<group>"; };
+		A276D6431FEB4607006D5715 /* InlineCodeSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineCodeSpec.swift; sourceTree = "<group>"; };
+		A276D6451FEB4612006D5715 /* InlineHtmlSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineHtmlSpec.swift; sourceTree = "<group>"; };
+		A276D6471FEB461C006D5715 /* LineBreakSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineBreakSpec.swift; sourceTree = "<group>"; };
+		A276D6491FEB462C006D5715 /* LinkSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkSpec.swift; sourceTree = "<group>"; };
+		A276D64B1FEB4634006D5715 /* SoftBreakSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftBreakSpec.swift; sourceTree = "<group>"; };
+		A276D64D1FEB4640006D5715 /* StrongSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrongSpec.swift; sourceTree = "<group>"; };
+		A276D64F1FEB4648006D5715 /* TextSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSpec.swift; sourceTree = "<group>"; };
+		A276D6511FEB4657006D5715 /* emphasis.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = emphasis.md; sourceTree = "<group>"; };
+		A276D6531FEB4665006D5715 /* image.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = image.md; sourceTree = "<group>"; };
+		A276D6551FEB4673006D5715 /* inlinecode.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = inlinecode.md; sourceTree = "<group>"; };
+		A276D6571FEB467D006D5715 /* inlinehtml.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = inlinehtml.md; sourceTree = "<group>"; };
+		A276D6591FEB4686006D5715 /* linebreak.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = linebreak.md; sourceTree = "<group>"; };
+		A276D65B1FEB4693006D5715 /* softbreak.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = softbreak.md; sourceTree = "<group>"; };
+		A276D65D1FEB469A006D5715 /* link.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = link.md; sourceTree = "<group>"; };
+		A276D65F1FEB46A4006D5715 /* strong.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = strong.md; sourceTree = "<group>"; };
+		A276D6631FEB865B006D5715 /* CMDocumentSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMDocumentSpec.swift; sourceTree = "<group>"; };
+		F29E2CB0C7AE4BBB780D0599 /* Pods_MaakuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaakuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A26822261FEB8F17006780A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A276D4801FEB1EB2006D5715 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A276D48A1FEB1EB2006D5715 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A276D48E1FEB1EB2006D5715 /* Maaku.framework in Frameworks */,
+				801C3172987C3362CA96421D /* Pods_MaakuTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A26822211FEB8A5D006780A9 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				A26822221FEB8B55006780A9 /* YoutubePluginSpec.swift */,
+			);
+			path = Plugins;
+			sourceTree = "<group>";
+		};
+		A276D47A1FEB1EB2006D5715 = {
+			isa = PBXGroup;
+			children = (
+				A276D58B1FEB220B006D5715 /* LICENSE */,
+				A276D5891FEB220A006D5715 /* Maaku.podspec */,
+				A276D58A1FEB220B006D5715 /* README.md */,
+				A276D4861FEB1EB2006D5715 /* Maaku */,
+				A276D4911FEB1EB2006D5715 /* MaakuTests */,
+				A276D4851FEB1EB2006D5715 /* Products */,
+				DDC497F79D3DA0432966B0FE /* Pods */,
+				B6623996310DC2C70547BC0C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A276D4851FEB1EB2006D5715 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A276D4841FEB1EB2006D5715 /* Maaku.framework */,
+				A276D48D1FEB1EB2006D5715 /* MaakuTests.xctest */,
+				A268222A1FEB8F17006780A9 /* Maaku.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A276D4861FEB1EB2006D5715 /* Maaku */ = {
+			isa = PBXGroup;
+			children = (
+				A276D4871FEB1EB2006D5715 /* Maaku.h */,
+				A276D4881FEB1EB2006D5715 /* Info.plist */,
+				A276D4AB1FEB21A9006D5715 /* CMark */,
+				A276D4B41FEB21A9006D5715 /* Core */,
+				A276D4D41FEB21A9006D5715 /* libcmark */,
+				A276D49F1FEB21A9006D5715 /* Plugins */,
+			);
+			path = Maaku;
+			sourceTree = "<group>";
+		};
+		A276D4911FEB1EB2006D5715 /* MaakuTests */ = {
+			isa = PBXGroup;
+			children = (
+				A276D4941FEB1EB2006D5715 /* Info.plist */,
+				A276D60E1FEB3676006D5715 /* Maaku+TestCase.swift */,
+				A276D6071FEB35D2006D5715 /* CMark */,
+				A276D6081FEB35D8006D5715 /* Core */,
+				A276D60B1FEB363A006D5715 /* Markdown */,
+				A26822211FEB8A5D006780A9 /* Plugins */,
+			);
+			path = MaakuTests;
+			sourceTree = "<group>";
+		};
+		A276D49F1FEB21A9006D5715 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				A276D4A21FEB21A9006D5715 /* YoutubePlugin.swift */,
+			);
+			path = Plugins;
+			sourceTree = "<group>";
+		};
+		A276D4AB1FEB21A9006D5715 /* CMark */ = {
+			isa = PBXGroup;
+			children = (
+				A276D4AE1FEB21A9006D5715 /* CMDelimiterType.swift */,
+				A276D4B01FEB21A9006D5715 /* CMDocument.swift */,
+				A276D4AC1FEB21A9006D5715 /* CMDocumentOption.swift */,
+				A276D4AD1FEB21A9006D5715 /* CMIterator.swift */,
+				A276D4B31FEB21A9006D5715 /* CMListType.swift */,
+				A276D4B11FEB21A9006D5715 /* CMNode.swift */,
+				A276D4AF1FEB21A9006D5715 /* CMNodeType.swift */,
+				A276D4B21FEB21A9006D5715 /* CMParser.swift */,
+			);
+			path = CMark;
+			sourceTree = "<group>";
+		};
+		A276D4B41FEB21A9006D5715 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A276D4BD1FEB21A9006D5715 /* Block.swift */,
+				A276D4D11FEB21A9006D5715 /* Document.swift */,
+				A276D4BC1FEB21A9006D5715 /* DocumentConverter.swift */,
+				A276D4D31FEB21A9006D5715 /* Plugin.swift */,
+				A276D4D21FEB21A9006D5715 /* Style.swift */,
+				A276D4CA1FEB21A9006D5715 /* Container */,
+				A276D4BE1FEB21A9006D5715 /* Inline */,
+				A276D4B51FEB21A9006D5715 /* Leaf */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A276D4B51FEB21A9006D5715 /* Leaf */ = {
+			isa = PBXGroup;
+			children = (
+				A276D4B91FEB21A9006D5715 /* CodeBlock.swift */,
+				A276D4BA1FEB21A9006D5715 /* Heading.swift */,
+				A276D4B81FEB21A9006D5715 /* HorizontalRule.swift */,
+				A276D4BB1FEB21A9006D5715 /* HtmlBlock.swift */,
+				A276D4B71FEB21A9006D5715 /* LeafBlock.swift */,
+				A276D4B61FEB21A9006D5715 /* Paragraph.swift */,
+			);
+			path = Leaf;
+			sourceTree = "<group>";
+		};
+		A276D4BE1FEB21A9006D5715 /* Inline */ = {
+			isa = PBXGroup;
+			children = (
+				A276D4C21FEB21A9006D5715 /* Emphasis.swift */,
+				A276D4C91FEB21A9006D5715 /* FootnoteReference.swift */,
+				A276D4C41FEB21A9006D5715 /* Image.swift */,
+				A276D4C51FEB21A9006D5715 /* Inline.swift */,
+				A276D4C01FEB21A9006D5715 /* InlineCode.swift */,
+				A276D4C81FEB21A9006D5715 /* InlineHtml.swift */,
+				A276D4C61FEB21A9006D5715 /* LineBreak.swift */,
+				A276D4C31FEB21A9006D5715 /* Link.swift */,
+				A276D4BF1FEB21A9006D5715 /* SoftBreak.swift */,
+				A276D4C11FEB21A9006D5715 /* Strong.swift */,
+				A276D4C71FEB21A9006D5715 /* Text.swift */,
+			);
+			path = Inline;
+			sourceTree = "<group>";
+		};
+		A276D4CA1FEB21A9006D5715 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				A276D4CF1FEB21A9006D5715 /* BlockQuote.swift */,
+				A276D4CD1FEB21A9006D5715 /* ContainerBlock.swift */,
+				A276D4D01FEB21A9006D5715 /* FootnoteDefinition.swift */,
+				A276D4CB1FEB21A9006D5715 /* ListItem.swift */,
+				A276D4CC1FEB21A9006D5715 /* OrderedList.swift */,
+				A276D4CE1FEB21A9006D5715 /* UnorderedList.swift */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		A276D4D41FEB21A9006D5715 /* libcmark */ = {
+			isa = PBXGroup;
+			children = (
+				A276D5181FEB21A9006D5715 /* module.map */,
+				A276D4E31FEB21A9006D5715 /* libcmark_gfm */,
+				A276D4D51FEB21A9006D5715 /* libcmark_gfmextensions */,
+			);
+			path = libcmark;
+			sourceTree = "<group>";
+		};
+		A276D4D51FEB21A9006D5715 /* libcmark_gfmextensions */ = {
+			isa = PBXGroup;
+			children = (
+				A276D4D81FEB21A9006D5715 /* autolink.c */,
+				A276D4DD1FEB21A9006D5715 /* autolink.h */,
+				A276D4D61FEB21A9006D5715 /* cmarkextensions_export.h */,
+				A276D4E21FEB21A9006D5715 /* core-extensions.c */,
+				A276D4DC1FEB21A9006D5715 /* core-extensions.h */,
+				A276D4DA1FEB21A9006D5715 /* ext_scanners.c */,
+				A276D4E11FEB21A9006D5715 /* ext_scanners.h */,
+				A276D4D71FEB21A9006D5715 /* strikethrough.c */,
+				A276D4DE1FEB21A9006D5715 /* strikethrough.h */,
+				A276D4D91FEB21A9006D5715 /* table.c */,
+				A276D4DF1FEB21A9006D5715 /* table.h */,
+				A276D4DB1FEB21A9006D5715 /* tagfilter.c */,
+				A276D4E01FEB21A9006D5715 /* tagfilter.h */,
+			);
+			path = libcmark_gfmextensions;
+			sourceTree = "<group>";
+		};
+		A276D4E31FEB21A9006D5715 /* libcmark_gfm */ = {
+			isa = PBXGroup;
+			children = (
+				A276D5011FEB21A9006D5715 /* arena.c */,
+				A276D4E81FEB21A9006D5715 /* blocks.c */,
+				A276D4E71FEB21A9006D5715 /* buffer.c */,
+				A276D5041FEB21A9006D5715 /* buffer.h */,
+				A276D4F41FEB21A9006D5715 /* case_fold_switch.inc */,
+				A276D4F21FEB21A9006D5715 /* chunk.h */,
+				A276D4E91FEB21A9006D5715 /* cmark_ctype.c */,
+				A276D5031FEB21A9006D5715 /* cmark_ctype.h */,
+				A276D4EA1FEB21A9006D5715 /* cmark_export.h */,
+				A276D5061FEB21A9006D5715 /* cmark_extension_api.h */,
+				A276D5021FEB21A9006D5715 /* cmark_version.h */,
+				A276D4E51FEB21A9006D5715 /* cmark.c */,
+				A276D5051FEB21A9006D5715 /* cmark.h */,
+				A276D5091FEB21A9006D5715 /* commonmark.c */,
+				A276D4F11FEB21A9006D5715 /* config.h */,
+				A276D4F51FEB21A9006D5715 /* entities.inc */,
+				A276D50F1FEB21A9006D5715 /* footnotes.c */,
+				A276D4F61FEB21A9006D5715 /* footnotes.h */,
+				A276D4EF1FEB21A9006D5715 /* houdini_href_e.c */,
+				A276D4F81FEB21A9006D5715 /* houdini_html_e.c */,
+				A276D5121FEB21A9006D5715 /* houdini_html_u.c */,
+				A276D5101FEB21A9006D5715 /* houdini.h */,
+				A276D50B1FEB21A9006D5715 /* html.c */,
+				A276D4EB1FEB21A9006D5715 /* html.h */,
+				A276D4EC1FEB21A9006D5715 /* inlines.c */,
+				A276D50D1FEB21A9006D5715 /* inlines.h */,
+				A276D4FF1FEB21A9006D5715 /* iterator.c */,
+				A276D5111FEB21A9006D5715 /* iterator.h */,
+				A276D4EE1FEB21A9006D5715 /* latex.c */,
+				A276D5071FEB21A9006D5715 /* linked_list.c */,
+				A276D4E61FEB21A9006D5715 /* man.c */,
+				A276D50A1FEB21A9006D5715 /* map.c */,
+				A276D4F01FEB21A9006D5715 /* map.h */,
+				A276D5151FEB21A9006D5715 /* node.c */,
+				A276D4FB1FEB21A9006D5715 /* node.h */,
+				A276D4F71FEB21A9006D5715 /* parser.h */,
+				A276D4F91FEB21A9006D5715 /* plaintext.c */,
+				A276D50C1FEB21A9006D5715 /* plugin.c */,
+				A276D4ED1FEB21A9006D5715 /* plugin.h */,
+				A276D4FD1FEB21A9006D5715 /* references.c */,
+				A276D5161FEB21A9006D5715 /* references.h */,
+				A276D5131FEB21A9006D5715 /* registry.c */,
+				A276D5001FEB21A9006D5715 /* registry.h */,
+				A276D4FE1FEB21A9006D5715 /* render.c */,
+				A276D5171FEB21A9006D5715 /* render.h */,
+				A276D50E1FEB21A9006D5715 /* scanners.c */,
+				A276D4FA1FEB21A9006D5715 /* scanners.h */,
+				A276D4F31FEB21A9006D5715 /* syntax_extension.c */,
+				A276D5081FEB21A9006D5715 /* syntax_extension.h */,
+				A276D4FC1FEB21A9006D5715 /* utf8.c */,
+				A276D5141FEB21A9006D5715 /* utf8.h */,
+				A276D4E41FEB21A9006D5715 /* xml.c */,
+			);
+			path = libcmark_gfm;
+			sourceTree = "<group>";
+		};
+		A276D6071FEB35D2006D5715 /* CMark */ = {
+			isa = PBXGroup;
+			children = (
+				A276D6631FEB865B006D5715 /* CMDocumentSpec.swift */,
+			);
+			path = CMark;
+			sourceTree = "<group>";
+		};
+		A276D6081FEB35D8006D5715 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A276D6091FEB35F5006D5715 /* DocumentSpec.swift */,
+				A276D6101FEB3B6F006D5715 /* Container */,
+				A276D6111FEB3B7C006D5715 /* Inline */,
+				A276D6121FEB3B81006D5715 /* Leaf */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A276D60B1FEB363A006D5715 /* Markdown */ = {
+			isa = PBXGroup;
+			children = (
+				A276D60C1FEB364A006D5715 /* document.md */,
+				A276D6151FEB3BDA006D5715 /* paragraph.md */,
+				A276D6191FEB3CA9006D5715 /* htmlblock.md */,
+				A276D6231FEB3D31006D5715 /* codeblock.md */,
+				A276D6251FEB3D3A006D5715 /* heading.md */,
+				A276D6271FEB3D4D006D5715 /* horizontalrule.md */,
+				A276D6331FEB3F50006D5715 /* blockquote.md */,
+				A276D6351FEB3F5B006D5715 /* footnotedefinition.md */,
+				A276D6391FEB3F69006D5715 /* orderedlist.md */,
+				A276D63B1FEB3F72006D5715 /* unorderedlist.md */,
+				A276D6511FEB4657006D5715 /* emphasis.md */,
+				A276D6531FEB4665006D5715 /* image.md */,
+				A276D6551FEB4673006D5715 /* inlinecode.md */,
+				A276D6571FEB467D006D5715 /* inlinehtml.md */,
+				A276D6591FEB4686006D5715 /* linebreak.md */,
+				A276D65B1FEB4693006D5715 /* softbreak.md */,
+				A276D65D1FEB469A006D5715 /* link.md */,
+				A276D65F1FEB46A4006D5715 /* strong.md */,
+			);
+			path = Markdown;
+			sourceTree = "<group>";
+		};
+		A276D6101FEB3B6F006D5715 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				A276D6291FEB3EDA006D5715 /* BlockQuoteSpec.swift */,
+				A276D62B1FEB3EE7006D5715 /* FootnoteDefinitionSpec.swift */,
+				A276D62D1FEB3EF7006D5715 /* ListItemSpec.swift */,
+				A276D62F1FEB3F00006D5715 /* OrderedListSpec.swift */,
+				A276D6311FEB3F0A006D5715 /* UnorderedListSpec.swift */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		A276D6111FEB3B7C006D5715 /* Inline */ = {
+			isa = PBXGroup;
+			children = (
+				A276D63D1FEB45EC006D5715 /* EmphasisSpec.swift */,
+				A276D63F1FEB45F6006D5715 /* FootnoteReferenceSpec.swift */,
+				A276D6411FEB45FF006D5715 /* ImageSpec.swift */,
+				A276D6431FEB4607006D5715 /* InlineCodeSpec.swift */,
+				A276D6451FEB4612006D5715 /* InlineHtmlSpec.swift */,
+				A276D6471FEB461C006D5715 /* LineBreakSpec.swift */,
+				A276D6491FEB462C006D5715 /* LinkSpec.swift */,
+				A276D64B1FEB4634006D5715 /* SoftBreakSpec.swift */,
+				A276D64D1FEB4640006D5715 /* StrongSpec.swift */,
+				A276D64F1FEB4648006D5715 /* TextSpec.swift */,
+			);
+			path = Inline;
+			sourceTree = "<group>";
+		};
+		A276D6121FEB3B81006D5715 /* Leaf */ = {
+			isa = PBXGroup;
+			children = (
+				A276D6131FEB3BA4006D5715 /* ParagraphSpec.swift */,
+				A276D61B1FEB3CCF006D5715 /* HtmlBlockSpec.swift */,
+				A276D61D1FEB3D13006D5715 /* CodeBlockSpec.swift */,
+				A276D61F1FEB3D1A006D5715 /* HeadingSpec.swift */,
+				A276D6211FEB3D25006D5715 /* HorizontalRuleSpec.swift */,
+			);
+			path = Leaf;
+			sourceTree = "<group>";
+		};
+		B6623996310DC2C70547BC0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F29E2CB0C7AE4BBB780D0599 /* Pods_MaakuTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DDC497F79D3DA0432966B0FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3BA96DED028785705AB22E33 /* Pods-MaakuTests.debug.xcconfig */,
+				236ED4760A54DDDE9B735705 /* Pods-MaakuTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A26822271FEB8F17006780A9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A268227A1FEB8FAB006780A9 /* footnotes.h in Headers */,
+				A26822951FEB8FC2006780A9 /* tagfilter.h in Headers */,
+				A26822901FEB8FC2006780A9 /* cmarkextensions_export.h in Headers */,
+				A268228F1FEB8FC2006780A9 /* autolink.h in Headers */,
+				A26822731FEB8FAB006780A9 /* chunk.h in Headers */,
+				A26822801FEB8FAB006780A9 /* node.h in Headers */,
+				A26822931FEB8FC2006780A9 /* strikethrough.h in Headers */,
+				A26822871FEB8FAB006780A9 /* syntax_extension.h in Headers */,
+				A268227E1FEB8FAB006780A9 /* iterator.h in Headers */,
+				A26822771FEB8FAB006780A9 /* cmark_version.h in Headers */,
+				A268227D1FEB8FAB006780A9 /* inlines.h in Headers */,
+				A26822791FEB8FAB006780A9 /* config.h in Headers */,
+				A26822741FEB8FAB006780A9 /* cmark_ctype.h in Headers */,
+				A26822911FEB8FC2006780A9 /* core-extensions.h in Headers */,
+				A26822831FEB8FAB006780A9 /* references.h in Headers */,
+				A26822841FEB8FAB006780A9 /* registry.h in Headers */,
+				A26822941FEB8FC2006780A9 /* table.h in Headers */,
+				A26822781FEB8FAB006780A9 /* cmark.h in Headers */,
+				A26822851FEB8FAB006780A9 /* render.h in Headers */,
+				A26822721FEB8FAB006780A9 /* buffer.h in Headers */,
+				A26822811FEB8FAB006780A9 /* parser.h in Headers */,
+				A26822321FEB8F50006780A9 /* Maaku.h in Headers */,
+				A26822761FEB8FAB006780A9 /* cmark_extension_api.h in Headers */,
+				A26822821FEB8FAB006780A9 /* plugin.h in Headers */,
+				A268227C1FEB8FAB006780A9 /* html.h in Headers */,
+				A26822881FEB8FAB006780A9 /* utf8.h in Headers */,
+				A268227F1FEB8FAB006780A9 /* map.h in Headers */,
+				A268227B1FEB8FAB006780A9 /* houdini.h in Headers */,
+				A26822921FEB8FC2006780A9 /* ext_scanners.h in Headers */,
+				A26822751FEB8FAB006780A9 /* cmark_export.h in Headers */,
+				A26822861FEB8FAB006780A9 /* scanners.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A276D4811FEB1EB2006D5715 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A276D5881FEB21A9006D5715 /* render.h in Headers */,
+				A276D5761FEB21A9006D5715 /* cmark.h in Headers */,
+				A276D5811FEB21A9006D5715 /* houdini.h in Headers */,
+				A276D5821FEB21A9006D5715 /* iterator.h in Headers */,
+				A276D55B1FEB21A9006D5715 /* cmark_export.h in Headers */,
+				A276D4951FEB1EB2006D5715 /* Maaku.h in Headers */,
+				A276D57E1FEB21A9006D5715 /* inlines.h in Headers */,
+				A276D5531FEB21A9006D5715 /* ext_scanners.h in Headers */,
+				A276D5481FEB21A9006D5715 /* cmarkextensions_export.h in Headers */,
+				A276D5521FEB21A9006D5715 /* tagfilter.h in Headers */,
+				A276D5671FEB21A9006D5715 /* footnotes.h in Headers */,
+				A276D56C1FEB21A9006D5715 /* node.h in Headers */,
+				A276D55C1FEB21A9006D5715 /* html.h in Headers */,
+				A276D5731FEB21A9006D5715 /* cmark_version.h in Headers */,
+				A276D5851FEB21A9006D5715 /* utf8.h in Headers */,
+				A276D5631FEB21A9006D5715 /* chunk.h in Headers */,
+				A276D54E1FEB21A9006D5715 /* core-extensions.h in Headers */,
+				A276D5511FEB21A9006D5715 /* table.h in Headers */,
+				A276D5501FEB21A9006D5715 /* strikethrough.h in Headers */,
+				A276D5681FEB21A9006D5715 /* parser.h in Headers */,
+				A276D5621FEB21A9006D5715 /* config.h in Headers */,
+				A276D5791FEB21A9006D5715 /* syntax_extension.h in Headers */,
+				A276D5741FEB21A9006D5715 /* cmark_ctype.h in Headers */,
+				A276D5871FEB21A9006D5715 /* references.h in Headers */,
+				A276D5611FEB21A9006D5715 /* map.h in Headers */,
+				A276D55E1FEB21A9006D5715 /* plugin.h in Headers */,
+				A276D5751FEB21A9006D5715 /* buffer.h in Headers */,
+				A276D5711FEB21A9006D5715 /* registry.h in Headers */,
+				A276D56B1FEB21A9006D5715 /* scanners.h in Headers */,
+				A276D5771FEB21A9006D5715 /* cmark_extension_api.h in Headers */,
+				A276D54F1FEB21A9006D5715 /* autolink.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A26822291FEB8F17006780A9 /* Maaku-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A268222F1FEB8F17006780A9 /* Build configuration list for PBXNativeTarget "Maaku-macOS" */;
+			buildPhases = (
+				A26822251FEB8F17006780A9 /* Sources */,
+				A26822261FEB8F17006780A9 /* Frameworks */,
+				A26822271FEB8F17006780A9 /* Headers */,
+				A26822281FEB8F17006780A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Maaku-macOS";
+			productName = "Maaku-macOS";
+			productReference = A268222A1FEB8F17006780A9 /* Maaku.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A276D4831FEB1EB2006D5715 /* Maaku */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A276D4981FEB1EB2006D5715 /* Build configuration list for PBXNativeTarget "Maaku" */;
+			buildPhases = (
+				A276D47F1FEB1EB2006D5715 /* Sources */,
+				A276D4801FEB1EB2006D5715 /* Frameworks */,
+				A276D4811FEB1EB2006D5715 /* Headers */,
+				A276D4821FEB1EB2006D5715 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Maaku;
+			productName = Maaku;
+			productReference = A276D4841FEB1EB2006D5715 /* Maaku.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A276D48C1FEB1EB2006D5715 /* MaakuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A276D49B1FEB1EB2006D5715 /* Build configuration list for PBXNativeTarget "MaakuTests" */;
+			buildPhases = (
+				5158F5CA2392E5526980BB7A /* [CP] Check Pods Manifest.lock */,
+				A276D4891FEB1EB2006D5715 /* Sources */,
+				A276D48A1FEB1EB2006D5715 /* Frameworks */,
+				A276D48B1FEB1EB2006D5715 /* Resources */,
+				D8C4F81C119E164DECBD451A /* [CP] Embed Pods Frameworks */,
+				0A492798E611D372659E7BC5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A276D4901FEB1EB2006D5715 /* PBXTargetDependency */,
+			);
+			name = MaakuTests;
+			productName = MaakuTests;
+			productReference = A276D48D1FEB1EB2006D5715 /* MaakuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A276D47B1FEB1EB2006D5715 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Kristopher Baker";
+				TargetAttributes = {
+					A26822291FEB8F17006780A9 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+					};
+					A276D4831FEB1EB2006D5715 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+					};
+					A276D48C1FEB1EB2006D5715 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = A276D47E1FEB1EB2006D5715 /* Build configuration list for PBXProject "Maaku" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A276D47A1FEB1EB2006D5715;
+			productRefGroup = A276D4851FEB1EB2006D5715 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A276D4831FEB1EB2006D5715 /* Maaku */,
+				A276D48C1FEB1EB2006D5715 /* MaakuTests */,
+				A26822291FEB8F17006780A9 /* Maaku-macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A26822281FEB8F17006780A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A276D4821FEB1EB2006D5715 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A276D48B1FEB1EB2006D5715 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A276D60D1FEB364A006D5715 /* document.md in Resources */,
+				A276D6601FEB46A4006D5715 /* strong.md in Resources */,
+				A276D6241FEB3D31006D5715 /* codeblock.md in Resources */,
+				A276D6541FEB4665006D5715 /* image.md in Resources */,
+				A276D6161FEB3BDA006D5715 /* paragraph.md in Resources */,
+				A276D63A1FEB3F69006D5715 /* orderedlist.md in Resources */,
+				A276D6361FEB3F5B006D5715 /* footnotedefinition.md in Resources */,
+				A276D6521FEB4657006D5715 /* emphasis.md in Resources */,
+				A276D65A1FEB4686006D5715 /* linebreak.md in Resources */,
+				A276D6341FEB3F50006D5715 /* blockquote.md in Resources */,
+				A276D63C1FEB3F72006D5715 /* unorderedlist.md in Resources */,
+				A276D65E1FEB469A006D5715 /* link.md in Resources */,
+				A276D6261FEB3D3A006D5715 /* heading.md in Resources */,
+				A276D6581FEB467D006D5715 /* inlinehtml.md in Resources */,
+				A276D65C1FEB4693006D5715 /* softbreak.md in Resources */,
+				A276D6561FEB4673006D5715 /* inlinecode.md in Resources */,
+				A276D6281FEB3D4D006D5715 /* horizontalrule.md in Resources */,
+				A276D61A1FEB3CA9006D5715 /* htmlblock.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A492798E611D372659E7BC5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaakuTests/Pods-MaakuTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5158F5CA2392E5526980BB7A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MaakuTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8C4F81C119E164DECBD451A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MaakuTests/Pods-MaakuTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaakuTests/Pods-MaakuTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A26822251FEB8F17006780A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A26822371FEB8F63006780A9 /* CMListType.swift in Sources */,
+				A268225C1FEB8FA2006780A9 /* commonmark.c in Sources */,
+				A26822891FEB8FBF006780A9 /* autolink.c in Sources */,
+				A268226C1FEB8FA2006780A9 /* registry.c in Sources */,
+				A26822551FEB8F78006780A9 /* LeafBlock.swift in Sources */,
+				A26822441FEB8F6D006780A9 /* OrderedList.swift in Sources */,
+				A26822391FEB8F63006780A9 /* CMNodeType.swift in Sources */,
+				A26822681FEB8FA2006780A9 /* node.c in Sources */,
+				A26822381FEB8F63006780A9 /* CMNode.swift in Sources */,
+				A268224B1FEB8F72006780A9 /* InlineHtml.swift in Sources */,
+				A26822351FEB8F63006780A9 /* CMDocumentOption.swift in Sources */,
+				A26822511FEB8F78006780A9 /* CodeBlock.swift in Sources */,
+				A268228C1FEB8FBF006780A9 /* strikethrough.c in Sources */,
+				A268225E1FEB8FA2006780A9 /* houdini_href_e.c in Sources */,
+				A268223C1FEB8F68006780A9 /* Document.swift in Sources */,
+				A26822671FEB8FA2006780A9 /* map.c in Sources */,
+				A268223F1FEB8F68006780A9 /* Style.swift in Sources */,
+				A26822361FEB8F63006780A9 /* CMIterator.swift in Sources */,
+				A268223E1FEB8F68006780A9 /* Plugin.swift in Sources */,
+				A26822481FEB8F72006780A9 /* Image.swift in Sources */,
+				A268226D1FEB8FA2006780A9 /* render.c in Sources */,
+				A26822531FEB8F78006780A9 /* HorizontalRule.swift in Sources */,
+				A26822701FEB8FA2006780A9 /* utf8.c in Sources */,
+				A26822471FEB8F72006780A9 /* FootnoteReference.swift in Sources */,
+				A26822411FEB8F6D006780A9 /* ContainerBlock.swift in Sources */,
+				A26822661FEB8FA2006780A9 /* man.c in Sources */,
+				A26822711FEB8FA2006780A9 /* xml.c in Sources */,
+				A26822571FEB8FA2006780A9 /* arena.c in Sources */,
+				A268228D1FEB8FBF006780A9 /* table.c in Sources */,
+				A26822491FEB8F72006780A9 /* Inline.swift in Sources */,
+				A26822401FEB8F6D006780A9 /* BlockQuote.swift in Sources */,
+				A268226B1FEB8FA2006780A9 /* references.c in Sources */,
+				A26822591FEB8FA2006780A9 /* buffer.c in Sources */,
+				A268224D1FEB8F72006780A9 /* Link.swift in Sources */,
+				A26822501FEB8F72006780A9 /* Text.swift in Sources */,
+				A26822421FEB8F6D006780A9 /* FootnoteDefinition.swift in Sources */,
+				A268223D1FEB8F68006780A9 /* DocumentConverter.swift in Sources */,
+				A268225A1FEB8FA2006780A9 /* cmark_ctype.c in Sources */,
+				A26822611FEB8FA2006780A9 /* html.c in Sources */,
+				A268224C1FEB8F72006780A9 /* LineBreak.swift in Sources */,
+				A268226A1FEB8FA2006780A9 /* plugin.c in Sources */,
+				A268226F1FEB8FA2006780A9 /* syntax_extension.c in Sources */,
+				A268225B1FEB8FA2006780A9 /* cmark.c in Sources */,
+				A26822431FEB8F6D006780A9 /* ListItem.swift in Sources */,
+				A26822961FEB8FCF006780A9 /* YoutubePlugin.swift in Sources */,
+				A268228E1FEB8FBF006780A9 /* tagfilter.c in Sources */,
+				A26822561FEB8F78006780A9 /* Paragraph.swift in Sources */,
+				A26822341FEB8F63006780A9 /* CMDocument.swift in Sources */,
+				A26822451FEB8F6D006780A9 /* UnorderedList.swift in Sources */,
+				A26822521FEB8F78006780A9 /* Heading.swift in Sources */,
+				A268223B1FEB8F68006780A9 /* Block.swift in Sources */,
+				A26822631FEB8FA2006780A9 /* iterator.c in Sources */,
+				A268228B1FEB8FBF006780A9 /* ext_scanners.c in Sources */,
+				A268223A1FEB8F63006780A9 /* CMParser.swift in Sources */,
+				A268228A1FEB8FBF006780A9 /* core-extensions.c in Sources */,
+				A268224A1FEB8F72006780A9 /* InlineCode.swift in Sources */,
+				A26822691FEB8FA2006780A9 /* plaintext.c in Sources */,
+				A26822601FEB8FA2006780A9 /* houdini_html_u.c in Sources */,
+				A26822331FEB8F63006780A9 /* CMDelimiterType.swift in Sources */,
+				A26822461FEB8F72006780A9 /* Emphasis.swift in Sources */,
+				A26822651FEB8FA2006780A9 /* linked_list.c in Sources */,
+				A268224E1FEB8F72006780A9 /* SoftBreak.swift in Sources */,
+				A268226E1FEB8FA2006780A9 /* scanners.c in Sources */,
+				A26822581FEB8FA2006780A9 /* blocks.c in Sources */,
+				A26822641FEB8FA2006780A9 /* latex.c in Sources */,
+				A268225F1FEB8FA2006780A9 /* houdini_html_e.c in Sources */,
+				A26822621FEB8FA2006780A9 /* inlines.c in Sources */,
+				A268225D1FEB8FA2006780A9 /* footnotes.c in Sources */,
+				A26822541FEB8F78006780A9 /* HtmlBlock.swift in Sources */,
+				A268224F1FEB8F72006780A9 /* Strong.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A276D47F1FEB1EB2006D5715 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A276D5301FEB21A9006D5715 /* Heading.swift in Sources */,
+				A276D5351FEB21A9006D5715 /* InlineCode.swift in Sources */,
+				A276D54D1FEB21A9006D5715 /* tagfilter.c in Sources */,
+				A276D55F1FEB21A9006D5715 /* latex.c in Sources */,
+				A276D53E1FEB21A9006D5715 /* FootnoteReference.swift in Sources */,
+				A276D56E1FEB21A9006D5715 /* references.c in Sources */,
+				A276D52E1FEB21A9006D5715 /* HorizontalRule.swift in Sources */,
+				A276D5461FEB21A9006D5715 /* Style.swift in Sources */,
+				A276D5831FEB21A9006D5715 /* houdini_html_u.c in Sources */,
+				A276D5781FEB21A9006D5715 /* linked_list.c in Sources */,
+				A276D5471FEB21A9006D5715 /* Plugin.swift in Sources */,
+				A276D57D1FEB21A9006D5715 /* plugin.c in Sources */,
+				A276D57A1FEB21A9006D5715 /* commonmark.c in Sources */,
+				A276D57B1FEB21A9006D5715 /* map.c in Sources */,
+				A276D5401FEB21A9006D5715 /* OrderedList.swift in Sources */,
+				A276D5261FEB21A9006D5715 /* CMDelimiterType.swift in Sources */,
+				A276D57F1FEB21A9006D5715 /* scanners.c in Sources */,
+				A276D5361FEB21A9006D5715 /* Strong.swift in Sources */,
+				A276D5561FEB21A9006D5715 /* cmark.c in Sources */,
+				A276D5551FEB21A9006D5715 /* xml.c in Sources */,
+				A276D5801FEB21A9006D5715 /* footnotes.c in Sources */,
+				A276D54A1FEB21A9006D5715 /* autolink.c in Sources */,
+				A276D5451FEB21A9006D5715 /* Document.swift in Sources */,
+				A276D5641FEB21A9006D5715 /* syntax_extension.c in Sources */,
+				A276D5251FEB21A9006D5715 /* CMIterator.swift in Sources */,
+				A276D54B1FEB21A9006D5715 /* table.c in Sources */,
+				A276D5601FEB21A9006D5715 /* houdini_href_e.c in Sources */,
+				A276D55A1FEB21A9006D5715 /* cmark_ctype.c in Sources */,
+				A276D5491FEB21A9006D5715 /* strikethrough.c in Sources */,
+				A276D5581FEB21A9006D5715 /* buffer.c in Sources */,
+				A276D57C1FEB21A9006D5715 /* html.c in Sources */,
+				A276D5841FEB21A9006D5715 /* registry.c in Sources */,
+				A276D5291FEB21A9006D5715 /* CMNode.swift in Sources */,
+				A276D5321FEB21A9006D5715 /* DocumentConverter.swift in Sources */,
+				A276D56D1FEB21A9006D5715 /* utf8.c in Sources */,
+				A276D5311FEB21A9006D5715 /* HtmlBlock.swift in Sources */,
+				A276D5691FEB21A9006D5715 /* houdini_html_e.c in Sources */,
+				A276D5281FEB21A9006D5715 /* CMDocument.swift in Sources */,
+				A276D5721FEB21A9006D5715 /* arena.c in Sources */,
+				A276D52C1FEB21A9006D5715 /* Paragraph.swift in Sources */,
+				A276D53D1FEB21A9006D5715 /* InlineHtml.swift in Sources */,
+				A276D5381FEB21A9006D5715 /* Link.swift in Sources */,
+				A276D5411FEB21A9006D5715 /* ContainerBlock.swift in Sources */,
+				A276D5421FEB21A9006D5715 /* UnorderedList.swift in Sources */,
+				A276D52F1FEB21A9006D5715 /* CodeBlock.swift in Sources */,
+				A276D52A1FEB21A9006D5715 /* CMParser.swift in Sources */,
+				A276D5431FEB21A9006D5715 /* BlockQuote.swift in Sources */,
+				A276D53C1FEB21A9006D5715 /* Text.swift in Sources */,
+				A276D54C1FEB21A9006D5715 /* ext_scanners.c in Sources */,
+				A276D52D1FEB21A9006D5715 /* LeafBlock.swift in Sources */,
+				A276D52B1FEB21A9006D5715 /* CMListType.swift in Sources */,
+				A276D5571FEB21A9006D5715 /* man.c in Sources */,
+				A276D5241FEB21A9006D5715 /* CMDocumentOption.swift in Sources */,
+				A276D5371FEB21A9006D5715 /* Emphasis.swift in Sources */,
+				A276D5271FEB21A9006D5715 /* CMNodeType.swift in Sources */,
+				A276D53B1FEB21A9006D5715 /* LineBreak.swift in Sources */,
+				A276D56A1FEB21A9006D5715 /* plaintext.c in Sources */,
+				A276D53A1FEB21A9006D5715 /* Inline.swift in Sources */,
+				A276D5331FEB21A9006D5715 /* Block.swift in Sources */,
+				A276D5441FEB21A9006D5715 /* FootnoteDefinition.swift in Sources */,
+				A276D51B1FEB21A9006D5715 /* YoutubePlugin.swift in Sources */,
+				A276D56F1FEB21A9006D5715 /* render.c in Sources */,
+				A276D53F1FEB21A9006D5715 /* ListItem.swift in Sources */,
+				A276D5701FEB21A9006D5715 /* iterator.c in Sources */,
+				A276D5391FEB21A9006D5715 /* Image.swift in Sources */,
+				A276D55D1FEB21A9006D5715 /* inlines.c in Sources */,
+				A276D5541FEB21A9006D5715 /* core-extensions.c in Sources */,
+				A276D5341FEB21A9006D5715 /* SoftBreak.swift in Sources */,
+				A276D5591FEB21A9006D5715 /* blocks.c in Sources */,
+				A276D5861FEB21A9006D5715 /* node.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A276D4891FEB1EB2006D5715 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A276D60F1FEB3676006D5715 /* Maaku+TestCase.swift in Sources */,
+				A276D6321FEB3F0A006D5715 /* UnorderedListSpec.swift in Sources */,
+				A276D64C1FEB4634006D5715 /* SoftBreakSpec.swift in Sources */,
+				A276D61C1FEB3CCF006D5715 /* HtmlBlockSpec.swift in Sources */,
+				A276D6221FEB3D25006D5715 /* HorizontalRuleSpec.swift in Sources */,
+				A276D6481FEB461C006D5715 /* LineBreakSpec.swift in Sources */,
+				A276D6441FEB4607006D5715 /* InlineCodeSpec.swift in Sources */,
+				A276D6401FEB45F6006D5715 /* FootnoteReferenceSpec.swift in Sources */,
+				A276D62E1FEB3EF7006D5715 /* ListItemSpec.swift in Sources */,
+				A26822231FEB8B55006780A9 /* YoutubePluginSpec.swift in Sources */,
+				A276D6501FEB4648006D5715 /* TextSpec.swift in Sources */,
+				A276D62A1FEB3EDA006D5715 /* BlockQuoteSpec.swift in Sources */,
+				A276D63E1FEB45EC006D5715 /* EmphasisSpec.swift in Sources */,
+				A276D6301FEB3F00006D5715 /* OrderedListSpec.swift in Sources */,
+				A276D64A1FEB462C006D5715 /* LinkSpec.swift in Sources */,
+				A276D62C1FEB3EE7006D5715 /* FootnoteDefinitionSpec.swift in Sources */,
+				A276D61E1FEB3D13006D5715 /* CodeBlockSpec.swift in Sources */,
+				A276D6201FEB3D1A006D5715 /* HeadingSpec.swift in Sources */,
+				A276D60A1FEB35F5006D5715 /* DocumentSpec.swift in Sources */,
+				A276D6421FEB45FF006D5715 /* ImageSpec.swift in Sources */,
+				A276D6641FEB865B006D5715 /* CMDocumentSpec.swift in Sources */,
+				A276D6141FEB3BA4006D5715 /* ParagraphSpec.swift in Sources */,
+				A276D64E1FEB4640006D5715 /* StrongSpec.swift in Sources */,
+				A276D6461FEB4612006D5715 /* InlineHtmlSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A276D4901FEB1EB2006D5715 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A276D4831FEB1EB2006D5715 /* Maaku */;
+			targetProxy = A276D48F1FEB1EB2006D5715 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A26822301FEB8F17006780A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Maaku/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.krisbaker.Maaku;
+				PRODUCT_NAME = Maaku;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/Maaku/libcmark";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		A26822311FEB8F17006780A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Maaku/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.krisbaker.Maaku;
+				PRODUCT_NAME = Maaku;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/Maaku/libcmark";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		A276D4961FEB1EB2006D5715 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A276D4971FEB1EB2006D5715 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A276D4991FEB1EB2006D5715 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Maaku/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.krisbaker.Maaku;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/Maaku/libcmark";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A276D49A1FEB1EB2006D5715 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Maaku/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.krisbaker.Maaku;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/Maaku/libcmark";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A276D49C1FEB1EB2006D5715 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BA96DED028785705AB22E33 /* Pods-MaakuTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = MaakuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.krisbaker.MaakuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A276D49D1FEB1EB2006D5715 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 236ED4760A54DDDE9B735705 /* Pods-MaakuTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = MaakuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.krisbaker.MaakuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A268222F1FEB8F17006780A9 /* Build configuration list for PBXNativeTarget "Maaku-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A26822301FEB8F17006780A9 /* Debug */,
+				A26822311FEB8F17006780A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A276D47E1FEB1EB2006D5715 /* Build configuration list for PBXProject "Maaku" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A276D4961FEB1EB2006D5715 /* Debug */,
+				A276D4971FEB1EB2006D5715 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A276D4981FEB1EB2006D5715 /* Build configuration list for PBXNativeTarget "Maaku" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A276D4991FEB1EB2006D5715 /* Debug */,
+				A276D49A1FEB1EB2006D5715 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A276D49B1FEB1EB2006D5715 /* Build configuration list for PBXNativeTarget "MaakuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A276D49C1FEB1EB2006D5715 /* Debug */,
+				A276D49D1FEB1EB2006D5715 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A276D47B1FEB1EB2006D5715 /* Project object */;
+}
