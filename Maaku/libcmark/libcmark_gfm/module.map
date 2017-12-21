@@ -1,0 +1,5 @@
+module libcmark_gfm [system] {
+    header "libcmark.h"
+    export *
+}
+

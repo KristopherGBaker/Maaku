@@ -270,6 +270,23 @@ public protocol CMParserDelegate: class {
     ///     - reference: The footnote reference.
     func parser(parser: CMParser, foundFootnoteReference reference: String)
     
+    func parserDidStartTable(parser: CMParser)
+    
+    func parserDidEndTable(parser: CMParser)
+    
+    func parserDidStartTableHeader(parser: CMParser)
+    
+    func parserDidEndTableHeader(parser: CMParser)
+    
+    func parserDidStartTableRow(parser: CMParser)
+    
+    func parserDidEndTableRow(parser: CMParser)
+    
+    func parserDidStartTableCell(parser: CMParser)
+    
+    func parserDidEndTableCell(parser: CMParser)
+    
+    
 }
 
 /// Represents a parse error.
@@ -486,8 +503,55 @@ public class CMParser {
                 delegate?.parser(parser: self, foundFootnoteReference: node.stringValue ?? "")
             }
         default:
-            break
+            handleExtensions(node, eventType: eventType)
         }
+    }
+    
+    private func handleExtensions(_ node: CMNode, eventType: CMEventType) {
+        guard let nodeName = node.humanReadableType else {
+            return
+        }
+        
+        if handleTable(nodeName, eventType: eventType) {
+            return
+        }
+    }
+    
+    private func handleTable(_ nodeName: String, eventType: CMEventType) -> Bool {
+        switch nodeName {
+        case Table.name:
+            if eventType == .enter {
+                delegate?.parserDidStartTable(parser: self)
+            }
+            else {
+                delegate?.parserDidEndTable(parser: self)
+            }
+        case TableHeader.name:
+            if eventType == .enter {
+                delegate?.parserDidStartTableHeader(parser: self)
+            }
+            else {
+                delegate?.parserDidEndTableHeader(parser: self)
+            }
+        case TableRow.name:
+            if eventType == .enter {
+                delegate?.parserDidStartTableRow(parser: self)
+            }
+            else {
+                delegate?.parserDidEndTableRow(parser: self)
+            }
+        case TableCell.name:
+            if eventType == .enter {
+                delegate?.parserDidStartTableCell(parser: self)
+            }
+            else {
+                delegate?.parserDidEndTableCell(parser: self)
+            }
+        default:
+            return false
+        }
+        
+        return true
     }
 
 }
