@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A26822291FEB8F17006780A9"
-               BuildableName = "Maaku_macOS.framework"
+               BuildableName = "Maaku.framework"
                BlueprintName = "Maaku-macOS"
                ReferencedContainer = "container:Maaku.xcodeproj">
             </BuildableReference>
@@ -29,12 +29,22 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A268229A1FEC2703006780A9"
+               BuildableName = "MaakuTests.xctest"
+               BlueprintName = "MaakuMacOSTests"
+               ReferencedContainer = "container:Maaku.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A26822291FEB8F17006780A9"
-            BuildableName = "Maaku_macOS.framework"
+            BuildableName = "Maaku.framework"
             BlueprintName = "Maaku-macOS"
             ReferencedContainer = "container:Maaku.xcodeproj">
          </BuildableReference>
@@ -57,7 +67,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A26822291FEB8F17006780A9"
-            BuildableName = "Maaku_macOS.framework"
+            BuildableName = "Maaku.framework"
             BlueprintName = "Maaku-macOS"
             ReferencedContainer = "container:Maaku.xcodeproj">
          </BuildableReference>
@@ -75,7 +85,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A26822291FEB8F17006780A9"
-            BuildableName = "Maaku_macOS.framework"
+            BuildableName = "Maaku.framework"
             BlueprintName = "Maaku-macOS"
             ReferencedContainer = "container:Maaku.xcodeproj">
          </BuildableReference>

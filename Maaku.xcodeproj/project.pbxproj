@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		801C3172987C3362CA96421D /* Pods_MaakuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F29E2CB0C7AE4BBB780D0599 /* Pods_MaakuTests.framework */; };
+		895981C305FD061D5E84D8F6 /* Pods_MaakuTestTargets_MaakuMacOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83CD3694E3D0C6F8A2A3E946 /* Pods_MaakuTestTargets_MaakuMacOSTests.framework */; };
 		A26822231FEB8B55006780A9 /* YoutubePluginSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26822221FEB8B55006780A9 /* YoutubePluginSpec.swift */; };
 		A26822321FEB8F50006780A9 /* Maaku.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4871FEB1EB2006D5715 /* Maaku.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A26822331FEB8F63006780A9 /* CMDelimiterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4AE1FEB21A9006D5715 /* CMDelimiterType.swift */; };
@@ -110,6 +111,49 @@
 		A26822941FEB8FC2006780A9 /* table.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4DF1FEB21A9006D5715 /* table.h */; };
 		A26822951FEB8FC2006780A9 /* tagfilter.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4E01FEB21A9006D5715 /* tagfilter.h */; };
 		A26822961FEB8FCF006780A9 /* YoutubePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4A21FEB21A9006D5715 /* YoutubePlugin.swift */; };
+		A26822A01FEC2703006780A9 /* Maaku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A268222A1FEB8F17006780A9 /* Maaku.framework */; };
+		A26822A61FEC2738006780A9 /* Maaku+TestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D60E1FEB3676006D5715 /* Maaku+TestCase.swift */; };
+		A26822A71FEC273D006780A9 /* CMDocumentSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D6631FEB865B006D5715 /* CMDocumentSpec.swift */; };
+		A26822A81FEC273F006780A9 /* DocumentSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D6091FEB35F5006D5715 /* DocumentSpec.swift */; };
+		A26822A91FEC2743006780A9 /* BlockQuoteSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D6291FEB3EDA006D5715 /* BlockQuoteSpec.swift */; };
+		A26822AA1FEC2743006780A9 /* FootnoteDefinitionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D62B1FEB3EE7006D5715 /* FootnoteDefinitionSpec.swift */; };
+		A26822AB1FEC2743006780A9 /* ListItemSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D62D1FEB3EF7006D5715 /* ListItemSpec.swift */; };
+		A26822AC1FEC2743006780A9 /* OrderedListSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D62F1FEB3F00006D5715 /* OrderedListSpec.swift */; };
+		A26822AD1FEC2743006780A9 /* UnorderedListSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D6311FEB3F0A006D5715 /* UnorderedListSpec.swift */; };
+		A26822AE1FEC2746006780A9 /* EmphasisSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D63D1FEB45EC006D5715 /* EmphasisSpec.swift */; };
+		A26822AF1FEC2746006780A9 /* FootnoteReferenceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D63F1FEB45F6006D5715 /* FootnoteReferenceSpec.swift */; };
+		A26822B01FEC2746006780A9 /* ImageSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D6411FEB45FF006D5715 /* ImageSpec.swift */; };
+		A26822B11FEC2746006780A9 /* InlineCodeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D6431FEB4607006D5715 /* InlineCodeSpec.swift */; };
+		A26822B21FEC2746006780A9 /* InlineHtmlSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D6451FEB4612006D5715 /* InlineHtmlSpec.swift */; };
+		A26822B31FEC2746006780A9 /* LineBreakSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D6471FEB461C006D5715 /* LineBreakSpec.swift */; };
+		A26822B41FEC2746006780A9 /* LinkSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D6491FEB462C006D5715 /* LinkSpec.swift */; };
+		A26822B51FEC2746006780A9 /* SoftBreakSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D64B1FEB4634006D5715 /* SoftBreakSpec.swift */; };
+		A26822B61FEC2746006780A9 /* StrongSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D64D1FEB4640006D5715 /* StrongSpec.swift */; };
+		A26822B71FEC2746006780A9 /* TextSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D64F1FEB4648006D5715 /* TextSpec.swift */; };
+		A26822B81FEC274A006780A9 /* ParagraphSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D6131FEB3BA4006D5715 /* ParagraphSpec.swift */; };
+		A26822B91FEC274A006780A9 /* HtmlBlockSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D61B1FEB3CCF006D5715 /* HtmlBlockSpec.swift */; };
+		A26822BA1FEC274A006780A9 /* CodeBlockSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D61D1FEB3D13006D5715 /* CodeBlockSpec.swift */; };
+		A26822BB1FEC274A006780A9 /* HeadingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D61F1FEB3D1A006D5715 /* HeadingSpec.swift */; };
+		A26822BC1FEC274A006780A9 /* HorizontalRuleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D6211FEB3D25006D5715 /* HorizontalRuleSpec.swift */; };
+		A26822BD1FEC274F006780A9 /* document.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D60C1FEB364A006D5715 /* document.md */; };
+		A26822BE1FEC274F006780A9 /* paragraph.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D6151FEB3BDA006D5715 /* paragraph.md */; };
+		A26822BF1FEC274F006780A9 /* htmlblock.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D6191FEB3CA9006D5715 /* htmlblock.md */; };
+		A26822C01FEC274F006780A9 /* codeblock.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D6231FEB3D31006D5715 /* codeblock.md */; };
+		A26822C11FEC274F006780A9 /* heading.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D6251FEB3D3A006D5715 /* heading.md */; };
+		A26822C21FEC274F006780A9 /* horizontalrule.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D6271FEB3D4D006D5715 /* horizontalrule.md */; };
+		A26822C31FEC274F006780A9 /* blockquote.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D6331FEB3F50006D5715 /* blockquote.md */; };
+		A26822C41FEC274F006780A9 /* footnotedefinition.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D6351FEB3F5B006D5715 /* footnotedefinition.md */; };
+		A26822C51FEC274F006780A9 /* orderedlist.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D6391FEB3F69006D5715 /* orderedlist.md */; };
+		A26822C61FEC274F006780A9 /* unorderedlist.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D63B1FEB3F72006D5715 /* unorderedlist.md */; };
+		A26822C71FEC274F006780A9 /* emphasis.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D6511FEB4657006D5715 /* emphasis.md */; };
+		A26822C81FEC274F006780A9 /* image.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D6531FEB4665006D5715 /* image.md */; };
+		A26822C91FEC274F006780A9 /* inlinecode.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D6551FEB4673006D5715 /* inlinecode.md */; };
+		A26822CA1FEC274F006780A9 /* inlinehtml.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D6571FEB467D006D5715 /* inlinehtml.md */; };
+		A26822CB1FEC274F006780A9 /* linebreak.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D6591FEB4686006D5715 /* linebreak.md */; };
+		A26822CC1FEC274F006780A9 /* softbreak.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D65B1FEB4693006D5715 /* softbreak.md */; };
+		A26822CD1FEC274F006780A9 /* link.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D65D1FEB469A006D5715 /* link.md */; };
+		A26822CE1FEC274F006780A9 /* strong.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D65F1FEB46A4006D5715 /* strong.md */; };
+		A26822CF1FEC2751006780A9 /* YoutubePluginSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26822221FEB8B55006780A9 /* YoutubePluginSpec.swift */; };
 		A276D48E1FEB1EB2006D5715 /* Maaku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A276D4841FEB1EB2006D5715 /* Maaku.framework */; };
 		A276D4951FEB1EB2006D5715 /* Maaku.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4871FEB1EB2006D5715 /* Maaku.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A276D51B1FEB21A9006D5715 /* YoutubePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4A21FEB21A9006D5715 /* YoutubePlugin.swift */; };
@@ -253,9 +297,17 @@
 		A276D65E1FEB469A006D5715 /* link.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D65D1FEB469A006D5715 /* link.md */; };
 		A276D6601FEB46A4006D5715 /* strong.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D65F1FEB46A4006D5715 /* strong.md */; };
 		A276D6641FEB865B006D5715 /* CMDocumentSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D6631FEB865B006D5715 /* CMDocumentSpec.swift */; };
+		C5EFFBA95511FBA24EFAD5BF /* Pods_MaakuTestTargets_MaakuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFFA783883DCAC1DE9F9FED2 /* Pods_MaakuTestTargets_MaakuTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A26822A11FEC2703006780A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A276D47B1FEB1EB2006D5715 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A26822291FEB8F17006780A9;
+			remoteInfo = "Maaku-macOS";
+		};
 		A276D48F1FEB1EB2006D5715 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A276D47B1FEB1EB2006D5715 /* Project object */;
@@ -268,8 +320,13 @@
 /* Begin PBXFileReference section */
 		236ED4760A54DDDE9B735705 /* Pods-MaakuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaakuTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MaakuTests/Pods-MaakuTests.release.xcconfig"; sourceTree = "<group>"; };
 		3BA96DED028785705AB22E33 /* Pods-MaakuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaakuTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MaakuTests/Pods-MaakuTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5F5716AF084128CF113209B1 /* Pods-MaakuTestTargets-MaakuMacOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaakuTestTargets-MaakuMacOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MaakuTestTargets-MaakuMacOSTests/Pods-MaakuTestTargets-MaakuMacOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		6E526636F0C7775A0837AA90 /* Pods-MaakuTestTargets-MaakuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaakuTestTargets-MaakuTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MaakuTestTargets-MaakuTests/Pods-MaakuTestTargets-MaakuTests.release.xcconfig"; sourceTree = "<group>"; };
+		83CD3694E3D0C6F8A2A3E946 /* Pods_MaakuTestTargets_MaakuMacOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaakuTestTargets_MaakuMacOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FF6833C4388CAB4BC4924AB /* Pods-MaakuTestTargets-MaakuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaakuTestTargets-MaakuTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MaakuTestTargets-MaakuTests/Pods-MaakuTestTargets-MaakuTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A26822221FEB8B55006780A9 /* YoutubePluginSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubePluginSpec.swift; sourceTree = "<group>"; };
 		A268222A1FEB8F17006780A9 /* Maaku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Maaku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A268229B1FEC2703006780A9 /* MaakuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaakuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A276D4841FEB1EB2006D5715 /* Maaku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Maaku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A276D4871FEB1EB2006D5715 /* Maaku.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Maaku.h; sourceTree = "<group>"; };
 		A276D4881FEB1EB2006D5715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -422,7 +479,9 @@
 		A276D65D1FEB469A006D5715 /* link.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = link.md; sourceTree = "<group>"; };
 		A276D65F1FEB46A4006D5715 /* strong.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = strong.md; sourceTree = "<group>"; };
 		A276D6631FEB865B006D5715 /* CMDocumentSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMDocumentSpec.swift; sourceTree = "<group>"; };
+		EFFA783883DCAC1DE9F9FED2 /* Pods_MaakuTestTargets_MaakuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaakuTestTargets_MaakuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29E2CB0C7AE4BBB780D0599 /* Pods_MaakuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaakuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F599482638E9E56BFB99184C /* Pods-MaakuTestTargets-MaakuMacOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaakuTestTargets-MaakuMacOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MaakuTestTargets-MaakuMacOSTests/Pods-MaakuTestTargets-MaakuMacOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -430,6 +489,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26822981FEC2703006780A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A26822A01FEC2703006780A9 /* Maaku.framework in Frameworks */,
+				895981C305FD061D5E84D8F6 /* Pods_MaakuTestTargets_MaakuMacOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +514,7 @@
 			files = (
 				A276D48E1FEB1EB2006D5715 /* Maaku.framework in Frameworks */,
 				801C3172987C3362CA96421D /* Pods_MaakuTests.framework in Frameworks */,
+				C5EFFBA95511FBA24EFAD5BF /* Pods_MaakuTestTargets_MaakuTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +549,7 @@
 				A276D4841FEB1EB2006D5715 /* Maaku.framework */,
 				A276D48D1FEB1EB2006D5715 /* MaakuTests.xctest */,
 				A268222A1FEB8F17006780A9 /* Maaku.framework */,
+				A268229B1FEC2703006780A9 /* MaakuTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -770,6 +840,8 @@
 			isa = PBXGroup;
 			children = (
 				F29E2CB0C7AE4BBB780D0599 /* Pods_MaakuTests.framework */,
+				83CD3694E3D0C6F8A2A3E946 /* Pods_MaakuTestTargets_MaakuMacOSTests.framework */,
+				EFFA783883DCAC1DE9F9FED2 /* Pods_MaakuTestTargets_MaakuTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -779,6 +851,10 @@
 			children = (
 				3BA96DED028785705AB22E33 /* Pods-MaakuTests.debug.xcconfig */,
 				236ED4760A54DDDE9B735705 /* Pods-MaakuTests.release.xcconfig */,
+				F599482638E9E56BFB99184C /* Pods-MaakuTestTargets-MaakuMacOSTests.debug.xcconfig */,
+				5F5716AF084128CF113209B1 /* Pods-MaakuTestTargets-MaakuMacOSTests.release.xcconfig */,
+				8FF6833C4388CAB4BC4924AB /* Pods-MaakuTestTargets-MaakuTests.debug.xcconfig */,
+				6E526636F0C7775A0837AA90 /* Pods-MaakuTestTargets-MaakuTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -883,6 +959,27 @@
 			productReference = A268222A1FEB8F17006780A9 /* Maaku.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		A268229A1FEC2703006780A9 /* MaakuMacOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A26822A51FEC2703006780A9 /* Build configuration list for PBXNativeTarget "MaakuMacOSTests" */;
+			buildPhases = (
+				92C48F46F7EF7EAB5816E83E /* [CP] Check Pods Manifest.lock */,
+				A26822971FEC2703006780A9 /* Sources */,
+				A26822981FEC2703006780A9 /* Frameworks */,
+				A26822991FEC2703006780A9 /* Resources */,
+				AE12C2C269289CBFE9F1A7F5 /* [CP] Embed Pods Frameworks */,
+				2AA6BF3CD8EDCF30BCE72A5A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A26822A21FEC2703006780A9 /* PBXTargetDependency */,
+			);
+			name = MaakuMacOSTests;
+			productName = MaakuMacOSTests;
+			productReference = A268229B1FEC2703006780A9 /* MaakuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A276D4831FEB1EB2006D5715 /* Maaku */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A276D4981FEB1EB2006D5715 /* Build configuration list for PBXNativeTarget "Maaku" */;
@@ -936,6 +1033,10 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Manual;
 					};
+					A268229A1FEC2703006780A9 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					A276D4831FEB1EB2006D5715 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Manual;
@@ -961,6 +1062,7 @@
 				A276D4831FEB1EB2006D5715 /* Maaku */,
 				A276D48C1FEB1EB2006D5715 /* MaakuTests */,
 				A26822291FEB8F17006780A9 /* Maaku-macOS */,
+				A268229A1FEC2703006780A9 /* MaakuMacOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -970,6 +1072,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26822991FEC2703006780A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A26822BF1FEC274F006780A9 /* htmlblock.md in Resources */,
+				A26822CE1FEC274F006780A9 /* strong.md in Resources */,
+				A26822C61FEC274F006780A9 /* unorderedlist.md in Resources */,
+				A26822C81FEC274F006780A9 /* image.md in Resources */,
+				A26822C01FEC274F006780A9 /* codeblock.md in Resources */,
+				A26822BD1FEC274F006780A9 /* document.md in Resources */,
+				A26822C41FEC274F006780A9 /* footnotedefinition.md in Resources */,
+				A26822C71FEC274F006780A9 /* emphasis.md in Resources */,
+				A26822CB1FEC274F006780A9 /* linebreak.md in Resources */,
+				A26822C31FEC274F006780A9 /* blockquote.md in Resources */,
+				A26822C11FEC274F006780A9 /* heading.md in Resources */,
+				A26822CD1FEC274F006780A9 /* link.md in Resources */,
+				A26822C51FEC274F006780A9 /* orderedlist.md in Resources */,
+				A26822CA1FEC274F006780A9 /* inlinehtml.md in Resources */,
+				A26822CC1FEC274F006780A9 /* softbreak.md in Resources */,
+				A26822C91FEC274F006780A9 /* inlinecode.md in Resources */,
+				A26822C21FEC274F006780A9 /* horizontalrule.md in Resources */,
+				A26822BE1FEC274F006780A9 /* paragraph.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1020,7 +1147,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaakuTests/Pods-MaakuTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaakuTestTargets-MaakuTests/Pods-MaakuTestTargets-MaakuTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2AA6BF3CD8EDCF30BCE72A5A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaakuTestTargets-MaakuMacOSTests/Pods-MaakuTestTargets-MaakuMacOSTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5158F5CA2392E5526980BB7A /* [CP] Check Pods Manifest.lock */ = {
@@ -1034,22 +1176,40 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MaakuTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-MaakuTestTargets-MaakuTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D8C4F81C119E164DECBD451A /* [CP] Embed Pods Frameworks */ = {
+		92C48F46F7EF7EAB5816E83E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MaakuTests/Pods-MaakuTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MaakuTestTargets-MaakuMacOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE12C2C269289CBFE9F1A7F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MaakuTestTargets-MaakuMacOSTests/Pods-MaakuTestTargets-MaakuMacOSTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble-macOS/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick-macOS/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -1058,7 +1218,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaakuTests/Pods-MaakuTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaakuTestTargets-MaakuMacOSTests/Pods-MaakuTestTargets-MaakuMacOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8C4F81C119E164DECBD451A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MaakuTestTargets-MaakuTests/Pods-MaakuTestTargets-MaakuTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble-iOS/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick-iOS/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaakuTestTargets-MaakuTests/Pods-MaakuTestTargets-MaakuTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1138,6 +1318,37 @@
 				A268225D1FEB8FA2006780A9 /* footnotes.c in Sources */,
 				A26822541FEB8F78006780A9 /* HtmlBlock.swift in Sources */,
 				A268224F1FEB8F72006780A9 /* Strong.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26822971FEC2703006780A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A26822AF1FEC2746006780A9 /* FootnoteReferenceSpec.swift in Sources */,
+				A26822B91FEC274A006780A9 /* HtmlBlockSpec.swift in Sources */,
+				A26822A81FEC273F006780A9 /* DocumentSpec.swift in Sources */,
+				A26822BB1FEC274A006780A9 /* HeadingSpec.swift in Sources */,
+				A26822AD1FEC2743006780A9 /* UnorderedListSpec.swift in Sources */,
+				A26822A61FEC2738006780A9 /* Maaku+TestCase.swift in Sources */,
+				A26822B61FEC2746006780A9 /* StrongSpec.swift in Sources */,
+				A26822A71FEC273D006780A9 /* CMDocumentSpec.swift in Sources */,
+				A26822AA1FEC2743006780A9 /* FootnoteDefinitionSpec.swift in Sources */,
+				A26822CF1FEC2751006780A9 /* YoutubePluginSpec.swift in Sources */,
+				A26822B31FEC2746006780A9 /* LineBreakSpec.swift in Sources */,
+				A26822AC1FEC2743006780A9 /* OrderedListSpec.swift in Sources */,
+				A26822B81FEC274A006780A9 /* ParagraphSpec.swift in Sources */,
+				A26822A91FEC2743006780A9 /* BlockQuoteSpec.swift in Sources */,
+				A26822B11FEC2746006780A9 /* InlineCodeSpec.swift in Sources */,
+				A26822BA1FEC274A006780A9 /* CodeBlockSpec.swift in Sources */,
+				A26822B51FEC2746006780A9 /* SoftBreakSpec.swift in Sources */,
+				A26822B21FEC2746006780A9 /* InlineHtmlSpec.swift in Sources */,
+				A26822BC1FEC274A006780A9 /* HorizontalRuleSpec.swift in Sources */,
+				A26822B71FEC2746006780A9 /* TextSpec.swift in Sources */,
+				A26822AE1FEC2746006780A9 /* EmphasisSpec.swift in Sources */,
+				A26822B41FEC2746006780A9 /* LinkSpec.swift in Sources */,
+				A26822AB1FEC2743006780A9 /* ListItemSpec.swift in Sources */,
+				A26822B01FEC2746006780A9 /* ImageSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1252,6 +1463,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A26822A21FEC2703006780A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A26822291FEB8F17006780A9 /* Maaku-macOS */;
+			targetProxy = A26822A11FEC2703006780A9 /* PBXContainerItemProxy */;
+		};
 		A276D4901FEB1EB2006D5715 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A276D4831FEB1EB2006D5715 /* Maaku */;
@@ -1308,6 +1524,42 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "${SRCROOT}/Maaku/libcmark";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		A26822A31FEC2703006780A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F599482638E9E56BFB99184C /* Pods-MaakuTestTargets-MaakuMacOSTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MaakuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.krisbaker.MaakuTests;
+				PRODUCT_NAME = MaakuTests;
+				SDKROOT = macosx;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "MaakuTests-Swift.h";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		A26822A41FEC2703006780A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F5716AF084128CF113209B1 /* Pods-MaakuTestTargets-MaakuMacOSTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MaakuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.krisbaker.MaakuTests;
+				PRODUCT_NAME = MaakuTests;
+				SDKROOT = macosx;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "MaakuTests-Swift.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -1473,7 +1725,7 @@
 		};
 		A276D49C1FEB1EB2006D5715 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3BA96DED028785705AB22E33 /* Pods-MaakuTests.debug.xcconfig */;
+			baseConfigurationReference = 8FF6833C4388CAB4BC4924AB /* Pods-MaakuTestTargets-MaakuTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Manual;
@@ -1490,7 +1742,7 @@
 		};
 		A276D49D1FEB1EB2006D5715 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 236ED4760A54DDDE9B735705 /* Pods-MaakuTests.release.xcconfig */;
+			baseConfigurationReference = 6E526636F0C7775A0837AA90 /* Pods-MaakuTestTargets-MaakuTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Manual;
@@ -1513,6 +1765,15 @@
 			buildConfigurations = (
 				A26822301FEB8F17006780A9 /* Debug */,
 				A26822311FEB8F17006780A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A26822A51FEC2703006780A9 /* Build configuration list for PBXNativeTarget "MaakuMacOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A26822A31FEC2703006780A9 /* Debug */,
+				A26822A41FEC2703006780A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
