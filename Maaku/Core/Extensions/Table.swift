@@ -20,9 +20,6 @@ public protocol TableLine: Node {
 /// Represents a markdown table.
 public struct Table: LeafBlock {
     
-    /// Node name for parsing.
-    static let name = "table"
-    
     /// The table header.
     public let header: TableHeader
     

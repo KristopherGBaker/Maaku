@@ -9,6 +9,25 @@
 import Foundation
 import libcmark_gfm
 
+/// cmark gfm extension names
+enum CMExtensionName: String {
+    
+    /// Strikethrough
+    case strikethrough
+    
+    /// Table
+    case table
+    
+    /// Table Cell
+    case tableCell = "table_cell"
+    
+    /// Table Header
+    case tableHeader = "table_header"
+    
+    /// Table Row
+    case tableRow = "table_row"
+}
+
 /// The interface a markdown parser uses to inform its delegate
 /// about the content of the parsed document.
 public protocol CMParserDelegate: class {
@@ -559,7 +578,7 @@ public class CMParser {
     
     @discardableResult
     private func handleStrikethrough(_ nodeName: String, eventType: CMEventType) -> Bool {
-        guard nodeName == Strikethrough.name else {
+        guard nodeName == CMExtensionName.strikethrough.rawValue else {
             return false
         }
         
@@ -576,28 +595,28 @@ public class CMParser {
     @discardableResult
     private func handleTable(_ nodeName: String, eventType: CMEventType) -> Bool {
         switch nodeName {
-        case Table.name:
+        case CMExtensionName.table.rawValue:
             if eventType == .enter {
                 delegate?.parserDidStartTable(parser: self)
             }
             else {
                 delegate?.parserDidEndTable(parser: self)
             }
-        case TableHeader.name:
+        case CMExtensionName.tableHeader.rawValue:
             if eventType == .enter {
                 delegate?.parserDidStartTableHeader(parser: self)
             }
             else {
                 delegate?.parserDidEndTableHeader(parser: self)
             }
-        case TableRow.name:
+        case CMExtensionName.tableRow.rawValue:
             if eventType == .enter {
                 delegate?.parserDidStartTableRow(parser: self)
             }
             else {
                 delegate?.parserDidEndTableRow(parser: self)
             }
-        case TableCell.name:
+        case CMExtensionName.tableCell.rawValue:
             if eventType == .enter {
                 delegate?.parserDidStartTableCell(parser: self)
             }

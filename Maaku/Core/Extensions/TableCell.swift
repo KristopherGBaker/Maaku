@@ -8,9 +8,6 @@
 
 /// Represents a markdown table cell.
 public struct TableCell: Node {
-
-    /// Node name for parsing.
-    static let name = "table_cell"
     
     /// The inline items.
     public let items: [Inline]

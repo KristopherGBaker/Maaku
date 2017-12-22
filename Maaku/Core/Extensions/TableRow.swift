@@ -8,9 +8,6 @@
 
 /// Represents a markdown table row.
 public struct TableRow: TableLine {
-    
-    /// Node name for parsing.
-    static let name = "table_row"
 
     /// The table cells.
     public let cells: [TableCell]

@@ -9,9 +9,6 @@
 /// Represents a markdown table header.
 public struct TableHeader: TableLine {
     
-    /// Node name for parsing.
-    static let name = "table_header"
-    
     /// The table cells.
     public let cells: [TableCell]
     

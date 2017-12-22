@@ -9,9 +9,6 @@
 /// Represents a markdown strikethrough.
 public struct Strikethrough: Inline {
     
-    /// Node name for parsing.
-    static let name = "strikethrough"
-    
     /// The inline items.
     public let items: [Inline]
     
