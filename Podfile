@@ -13,7 +13,11 @@ abstract_target 'MaakuTestTargets' do
   end
   
   target 'MaakuMacOSTests' do
-    platform :osx, '10.10'
+    platform :osx, '10.11'
+  end
+  
+  target 'Maaku-tvOSTests' do
+      platform :tvos, '9.0'
   end
   
 end

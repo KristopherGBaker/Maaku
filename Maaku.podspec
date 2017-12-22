@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Maaku"
-  s.version      = "0.1.2"
+  s.version      = "0.1.3"
   s.summary      = "Swift cmark wrapper with a Swift friendly representation of the AST"
 
   s.description  = <<-DESC
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.default_subspec = 'Core'
   
   s.subspec 'CMark' do |core|
-      core.source_files = "Maaku/*.h", "Maaku/CMark/**/*.swift", "Maaku/libcmark/**/*"
+      core.source_files = "Maaku/*.h", "Maaku/CMark/**/*.swift", "Maaku/libcmark/**/*{.c,.h}"
       core.preserve_paths = "Maaku/libcmark/**/*"
       core.public_header_files = "Maaku/*.h"
       core.pod_target_xcconfig = { "SWIFT_INCLUDE_PATHS" => "$(PODS_TARGET_SRCROOT)/Maaku/libcmark/**", "LIBRARY_SEARCH_PATHS" => "$(PODS_TARGET_SRCROOT)/Maaku/" }

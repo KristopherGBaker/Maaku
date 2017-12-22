@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6B7E5B848BD5D5F291FBC32C /* Pods_MaakuTestTargets_MaakuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B29771D941B338100E9AE4C /* Pods_MaakuTestTargets_MaakuTests.framework */; };
+		17649405248FAAFEE117F34C /* Pods_MaakuTestTargets_Maaku_tvOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B36A2A592CD2BAB7BA1C431 /* Pods_MaakuTestTargets_Maaku_tvOSTests.framework */; };
+		25FAB41D47754C8A8E77BBCF /* Pods_MaakuTestTargets_MaakuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8BE9758EB3D6AF90C8AD72B /* Pods_MaakuTestTargets_MaakuTests.framework */; };
+		896300E57540772CB53C4E4C /* Pods_MaakuTestTargets_MaakuMacOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1454E0F5F3B889B08D70D0D7 /* Pods_MaakuTestTargets_MaakuMacOSTests.framework */; };
 		A26822231FEB8B55006780A9 /* YoutubePluginSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26822221FEB8B55006780A9 /* YoutubePluginSpec.swift */; };
 		A26822321FEB8F50006780A9 /* Maaku.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4871FEB1EB2006D5715 /* Maaku.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A26822331FEB8F63006780A9 /* CMDelimiterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4AE1FEB21A9006D5715 /* CMDelimiterType.swift */; };
@@ -199,6 +201,277 @@
 		A26823A11FEC6F70006780A9 /* maaku.h in Headers */ = {isa = PBXBuildFile; fileRef = A268239E1FEC6F70006780A9 /* maaku.h */; };
 		A26823A21FEC6F70006780A9 /* maaku.c in Sources */ = {isa = PBXBuildFile; fileRef = A268239F1FEC6F70006780A9 /* maaku.c */; };
 		A26823A31FEC6F70006780A9 /* maaku.c in Sources */ = {isa = PBXBuildFile; fileRef = A268239F1FEC6F70006780A9 /* maaku.c */; };
+		A26823C21FECBD0D006780A9 /* Maaku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A26823B91FECBD0D006780A9 /* Maaku.framework */; };
+		A26823D01FECBE86006780A9 /* Maaku.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4871FEB1EB2006D5715 /* Maaku.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A26823D11FECBE87006780A9 /* Maaku.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4871FEB1EB2006D5715 /* Maaku.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A26823D21FECBEB5006780A9 /* arena.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D5011FEB21A9006D5715 /* arena.c */; };
+		A26823D31FECBEB5006780A9 /* autolink.c in Sources */ = {isa = PBXBuildFile; fileRef = A26823331FEC3036006780A9 /* autolink.c */; };
+		A26823D41FECBEB5006780A9 /* autolink.h in Headers */ = {isa = PBXBuildFile; fileRef = A268233F1FEC3037006780A9 /* autolink.h */; };
+		A26823D51FECBEB5006780A9 /* blocks.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4E81FEB21A9006D5715 /* blocks.c */; };
+		A26823D61FECBEB5006780A9 /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4E71FEB21A9006D5715 /* buffer.c */; };
+		A26823D71FECBEB5006780A9 /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5041FEB21A9006D5715 /* buffer.h */; };
+		A26823D81FECBEB5006780A9 /* chunk.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4F21FEB21A9006D5715 /* chunk.h */; };
+		A26823D91FECBEB5006780A9 /* cmark_ctype.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4E91FEB21A9006D5715 /* cmark_ctype.c */; };
+		A26823DA1FECBEB5006780A9 /* cmark_ctype.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5031FEB21A9006D5715 /* cmark_ctype.h */; };
+		A26823DB1FECBEB5006780A9 /* cmark_export.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4EA1FEB21A9006D5715 /* cmark_export.h */; };
+		A26823DC1FECBEB5006780A9 /* cmark_extension_api.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5061FEB21A9006D5715 /* cmark_extension_api.h */; };
+		A26823DD1FECBEB5006780A9 /* cmark_version.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5021FEB21A9006D5715 /* cmark_version.h */; };
+		A26823DE1FECBEB5006780A9 /* cmark.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4E51FEB21A9006D5715 /* cmark.c */; };
+		A26823DF1FECBEB5006780A9 /* cmark.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5051FEB21A9006D5715 /* cmark.h */; };
+		A26823E01FECBEB5006780A9 /* cmarkextensions_export.h in Headers */ = {isa = PBXBuildFile; fileRef = A268233B1FEC3037006780A9 /* cmarkextensions_export.h */; };
+		A26823E11FECBEB5006780A9 /* commonmark.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D5091FEB21A9006D5715 /* commonmark.c */; };
+		A26823E21FECBEB5006780A9 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4F11FEB21A9006D5715 /* config.h */; };
+		A26823E31FECBEB5006780A9 /* core-extensions.c in Sources */ = {isa = PBXBuildFile; fileRef = A26823341FEC3036006780A9 /* core-extensions.c */; };
+		A26823E41FECBEB5006780A9 /* core-extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = A26823351FEC3036006780A9 /* core-extensions.h */; };
+		A26823E51FECBEB5006780A9 /* ext_scanners.c in Sources */ = {isa = PBXBuildFile; fileRef = A268233E1FEC3037006780A9 /* ext_scanners.c */; };
+		A26823E61FECBEB5006780A9 /* ext_scanners.h in Headers */ = {isa = PBXBuildFile; fileRef = A26823361FEC3036006780A9 /* ext_scanners.h */; };
+		A26823E71FECBEB5006780A9 /* footnotes.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D50F1FEB21A9006D5715 /* footnotes.c */; };
+		A26823E81FECBEB5006780A9 /* footnotes.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4F61FEB21A9006D5715 /* footnotes.h */; };
+		A26823E91FECBEB5006780A9 /* houdini_href_e.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4EF1FEB21A9006D5715 /* houdini_href_e.c */; };
+		A26823EA1FECBEB5006780A9 /* houdini_html_e.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4F81FEB21A9006D5715 /* houdini_html_e.c */; };
+		A26823EB1FECBEB5006780A9 /* houdini_html_u.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D5121FEB21A9006D5715 /* houdini_html_u.c */; };
+		A26823EC1FECBEB5006780A9 /* houdini.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5101FEB21A9006D5715 /* houdini.h */; };
+		A26823ED1FECBEB5006780A9 /* html.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D50B1FEB21A9006D5715 /* html.c */; };
+		A26823EE1FECBEB5006780A9 /* html.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4EB1FEB21A9006D5715 /* html.h */; };
+		A26823EF1FECBEB5006780A9 /* inlines.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4EC1FEB21A9006D5715 /* inlines.c */; };
+		A26823F01FECBEB5006780A9 /* inlines.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D50D1FEB21A9006D5715 /* inlines.h */; };
+		A26823F11FECBEB5006780A9 /* iterator.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4FF1FEB21A9006D5715 /* iterator.c */; };
+		A26823F21FECBEB5006780A9 /* iterator.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5111FEB21A9006D5715 /* iterator.h */; };
+		A26823F31FECBEB5006780A9 /* latex.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4EE1FEB21A9006D5715 /* latex.c */; };
+		A26823F41FECBEB5006780A9 /* libcmark.h in Headers */ = {isa = PBXBuildFile; fileRef = A26823671FEC3294006780A9 /* libcmark.h */; };
+		A26823F51FECBEB5006780A9 /* linked_list.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D5071FEB21A9006D5715 /* linked_list.c */; };
+		A26823F61FECBEB5006780A9 /* maaku.c in Sources */ = {isa = PBXBuildFile; fileRef = A268239F1FEC6F70006780A9 /* maaku.c */; };
+		A26823F71FECBEB5006780A9 /* maaku.h in Headers */ = {isa = PBXBuildFile; fileRef = A268239E1FEC6F70006780A9 /* maaku.h */; };
+		A26823F81FECBEB5006780A9 /* man.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4E61FEB21A9006D5715 /* man.c */; };
+		A26823F91FECBEB5006780A9 /* map.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D50A1FEB21A9006D5715 /* map.c */; };
+		A26823FA1FECBEB5006780A9 /* map.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4F01FEB21A9006D5715 /* map.h */; };
+		A26823FB1FECBEB5006780A9 /* node.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D5151FEB21A9006D5715 /* node.c */; };
+		A26823FC1FECBEB5006780A9 /* node.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4FB1FEB21A9006D5715 /* node.h */; };
+		A26823FD1FECBEB5006780A9 /* parser.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4F71FEB21A9006D5715 /* parser.h */; };
+		A26823FE1FECBEB5006780A9 /* plaintext.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4F91FEB21A9006D5715 /* plaintext.c */; };
+		A26823FF1FECBEB5006780A9 /* plugin.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D50C1FEB21A9006D5715 /* plugin.c */; };
+		A26824001FECBEB5006780A9 /* plugin.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4ED1FEB21A9006D5715 /* plugin.h */; };
+		A26824011FECBEB5006780A9 /* references.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4FD1FEB21A9006D5715 /* references.c */; };
+		A26824021FECBEB5006780A9 /* references.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5161FEB21A9006D5715 /* references.h */; };
+		A26824031FECBEB5006780A9 /* registry.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D5131FEB21A9006D5715 /* registry.c */; };
+		A26824041FECBEB5006780A9 /* registry.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5001FEB21A9006D5715 /* registry.h */; };
+		A26824051FECBEB5006780A9 /* render.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4FE1FEB21A9006D5715 /* render.c */; };
+		A26824061FECBEB5006780A9 /* render.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5171FEB21A9006D5715 /* render.h */; };
+		A26824071FECBEB5006780A9 /* scanners.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D50E1FEB21A9006D5715 /* scanners.c */; };
+		A26824081FECBEB5006780A9 /* scanners.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4FA1FEB21A9006D5715 /* scanners.h */; };
+		A26824091FECBEB5006780A9 /* strikethrough.c in Sources */ = {isa = PBXBuildFile; fileRef = A268233D1FEC3037006780A9 /* strikethrough.c */; };
+		A268240A1FECBEB5006780A9 /* strikethrough.h in Headers */ = {isa = PBXBuildFile; fileRef = A268233C1FEC3037006780A9 /* strikethrough.h */; };
+		A268240B1FECBEB5006780A9 /* syntax_extension.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4F31FEB21A9006D5715 /* syntax_extension.c */; };
+		A268240C1FECBEB5006780A9 /* syntax_extension.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5081FEB21A9006D5715 /* syntax_extension.h */; };
+		A268240D1FECBEB5006780A9 /* table.c in Sources */ = {isa = PBXBuildFile; fileRef = A26823381FEC3037006780A9 /* table.c */; };
+		A268240E1FECBEB5006780A9 /* table.h in Headers */ = {isa = PBXBuildFile; fileRef = A268233A1FEC3037006780A9 /* table.h */; };
+		A268240F1FECBEB5006780A9 /* tagfilter.c in Sources */ = {isa = PBXBuildFile; fileRef = A26823391FEC3037006780A9 /* tagfilter.c */; };
+		A26824101FECBEB5006780A9 /* tagfilter.h in Headers */ = {isa = PBXBuildFile; fileRef = A26823371FEC3037006780A9 /* tagfilter.h */; };
+		A26824111FECBEB5006780A9 /* utf8.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4FC1FEB21A9006D5715 /* utf8.c */; };
+		A26824121FECBEB5006780A9 /* utf8.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5141FEB21A9006D5715 /* utf8.h */; };
+		A26824131FECBEB5006780A9 /* xml.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4E41FEB21A9006D5715 /* xml.c */; };
+		A26824141FECBEB5006780A9 /* arena.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D5011FEB21A9006D5715 /* arena.c */; };
+		A26824151FECBEB5006780A9 /* autolink.c in Sources */ = {isa = PBXBuildFile; fileRef = A26823331FEC3036006780A9 /* autolink.c */; };
+		A26824161FECBEB5006780A9 /* autolink.h in Headers */ = {isa = PBXBuildFile; fileRef = A268233F1FEC3037006780A9 /* autolink.h */; };
+		A26824171FECBEB5006780A9 /* blocks.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4E81FEB21A9006D5715 /* blocks.c */; };
+		A26824181FECBEB5006780A9 /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4E71FEB21A9006D5715 /* buffer.c */; };
+		A26824191FECBEB5006780A9 /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5041FEB21A9006D5715 /* buffer.h */; };
+		A268241A1FECBEB5006780A9 /* chunk.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4F21FEB21A9006D5715 /* chunk.h */; };
+		A268241B1FECBEB5006780A9 /* cmark_ctype.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4E91FEB21A9006D5715 /* cmark_ctype.c */; };
+		A268241C1FECBEB5006780A9 /* cmark_ctype.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5031FEB21A9006D5715 /* cmark_ctype.h */; };
+		A268241D1FECBEB5006780A9 /* cmark_export.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4EA1FEB21A9006D5715 /* cmark_export.h */; };
+		A268241E1FECBEB5006780A9 /* cmark_extension_api.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5061FEB21A9006D5715 /* cmark_extension_api.h */; };
+		A268241F1FECBEB5006780A9 /* cmark_version.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5021FEB21A9006D5715 /* cmark_version.h */; };
+		A26824201FECBEB5006780A9 /* cmark.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4E51FEB21A9006D5715 /* cmark.c */; };
+		A26824211FECBEB5006780A9 /* cmark.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5051FEB21A9006D5715 /* cmark.h */; };
+		A26824221FECBEB5006780A9 /* cmarkextensions_export.h in Headers */ = {isa = PBXBuildFile; fileRef = A268233B1FEC3037006780A9 /* cmarkextensions_export.h */; };
+		A26824231FECBEB5006780A9 /* commonmark.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D5091FEB21A9006D5715 /* commonmark.c */; };
+		A26824241FECBEB5006780A9 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4F11FEB21A9006D5715 /* config.h */; };
+		A26824251FECBEB5006780A9 /* core-extensions.c in Sources */ = {isa = PBXBuildFile; fileRef = A26823341FEC3036006780A9 /* core-extensions.c */; };
+		A26824261FECBEB5006780A9 /* core-extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = A26823351FEC3036006780A9 /* core-extensions.h */; };
+		A26824271FECBEB5006780A9 /* ext_scanners.c in Sources */ = {isa = PBXBuildFile; fileRef = A268233E1FEC3037006780A9 /* ext_scanners.c */; };
+		A26824281FECBEB5006780A9 /* ext_scanners.h in Headers */ = {isa = PBXBuildFile; fileRef = A26823361FEC3036006780A9 /* ext_scanners.h */; };
+		A26824291FECBEB5006780A9 /* footnotes.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D50F1FEB21A9006D5715 /* footnotes.c */; };
+		A268242A1FECBEB5006780A9 /* footnotes.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4F61FEB21A9006D5715 /* footnotes.h */; };
+		A268242B1FECBEB5006780A9 /* houdini_href_e.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4EF1FEB21A9006D5715 /* houdini_href_e.c */; };
+		A268242C1FECBEB5006780A9 /* houdini_html_e.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4F81FEB21A9006D5715 /* houdini_html_e.c */; };
+		A268242D1FECBEB5006780A9 /* houdini_html_u.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D5121FEB21A9006D5715 /* houdini_html_u.c */; };
+		A268242E1FECBEB5006780A9 /* houdini.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5101FEB21A9006D5715 /* houdini.h */; };
+		A268242F1FECBEB5006780A9 /* html.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D50B1FEB21A9006D5715 /* html.c */; };
+		A26824301FECBEB5006780A9 /* html.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4EB1FEB21A9006D5715 /* html.h */; };
+		A26824311FECBEB5006780A9 /* inlines.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4EC1FEB21A9006D5715 /* inlines.c */; };
+		A26824321FECBEB5006780A9 /* inlines.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D50D1FEB21A9006D5715 /* inlines.h */; };
+		A26824331FECBEB5006780A9 /* iterator.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4FF1FEB21A9006D5715 /* iterator.c */; };
+		A26824341FECBEB5006780A9 /* iterator.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5111FEB21A9006D5715 /* iterator.h */; };
+		A26824351FECBEB5006780A9 /* latex.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4EE1FEB21A9006D5715 /* latex.c */; };
+		A26824361FECBEB5006780A9 /* libcmark.h in Headers */ = {isa = PBXBuildFile; fileRef = A26823671FEC3294006780A9 /* libcmark.h */; };
+		A26824371FECBEB5006780A9 /* linked_list.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D5071FEB21A9006D5715 /* linked_list.c */; };
+		A26824381FECBEB5006780A9 /* maaku.c in Sources */ = {isa = PBXBuildFile; fileRef = A268239F1FEC6F70006780A9 /* maaku.c */; };
+		A26824391FECBEB5006780A9 /* maaku.h in Headers */ = {isa = PBXBuildFile; fileRef = A268239E1FEC6F70006780A9 /* maaku.h */; };
+		A268243A1FECBEB5006780A9 /* man.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4E61FEB21A9006D5715 /* man.c */; };
+		A268243B1FECBEB5006780A9 /* map.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D50A1FEB21A9006D5715 /* map.c */; };
+		A268243C1FECBEB5006780A9 /* map.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4F01FEB21A9006D5715 /* map.h */; };
+		A268243D1FECBEB5006780A9 /* node.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D5151FEB21A9006D5715 /* node.c */; };
+		A268243E1FECBEB5006780A9 /* node.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4FB1FEB21A9006D5715 /* node.h */; };
+		A268243F1FECBEB5006780A9 /* parser.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4F71FEB21A9006D5715 /* parser.h */; };
+		A26824401FECBEB5006780A9 /* plaintext.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4F91FEB21A9006D5715 /* plaintext.c */; };
+		A26824411FECBEB5006780A9 /* plugin.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D50C1FEB21A9006D5715 /* plugin.c */; };
+		A26824421FECBEB5006780A9 /* plugin.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4ED1FEB21A9006D5715 /* plugin.h */; };
+		A26824431FECBEB5006780A9 /* references.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4FD1FEB21A9006D5715 /* references.c */; };
+		A26824441FECBEB5006780A9 /* references.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5161FEB21A9006D5715 /* references.h */; };
+		A26824451FECBEB5006780A9 /* registry.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D5131FEB21A9006D5715 /* registry.c */; };
+		A26824461FECBEB5006780A9 /* registry.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5001FEB21A9006D5715 /* registry.h */; };
+		A26824471FECBEB5006780A9 /* render.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4FE1FEB21A9006D5715 /* render.c */; };
+		A26824481FECBEB5006780A9 /* render.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5171FEB21A9006D5715 /* render.h */; };
+		A26824491FECBEB5006780A9 /* scanners.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D50E1FEB21A9006D5715 /* scanners.c */; };
+		A268244A1FECBEB5006780A9 /* scanners.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4FA1FEB21A9006D5715 /* scanners.h */; };
+		A268244B1FECBEB5006780A9 /* strikethrough.c in Sources */ = {isa = PBXBuildFile; fileRef = A268233D1FEC3037006780A9 /* strikethrough.c */; };
+		A268244C1FECBEB5006780A9 /* strikethrough.h in Headers */ = {isa = PBXBuildFile; fileRef = A268233C1FEC3037006780A9 /* strikethrough.h */; };
+		A268244D1FECBEB5006780A9 /* syntax_extension.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4F31FEB21A9006D5715 /* syntax_extension.c */; };
+		A268244E1FECBEB5006780A9 /* syntax_extension.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5081FEB21A9006D5715 /* syntax_extension.h */; };
+		A268244F1FECBEB5006780A9 /* table.c in Sources */ = {isa = PBXBuildFile; fileRef = A26823381FEC3037006780A9 /* table.c */; };
+		A26824501FECBEB5006780A9 /* table.h in Headers */ = {isa = PBXBuildFile; fileRef = A268233A1FEC3037006780A9 /* table.h */; };
+		A26824511FECBEB5006780A9 /* tagfilter.c in Sources */ = {isa = PBXBuildFile; fileRef = A26823391FEC3037006780A9 /* tagfilter.c */; };
+		A26824521FECBEB5006780A9 /* tagfilter.h in Headers */ = {isa = PBXBuildFile; fileRef = A26823371FEC3037006780A9 /* tagfilter.h */; };
+		A26824531FECBEB5006780A9 /* utf8.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4FC1FEB21A9006D5715 /* utf8.c */; };
+		A26824541FECBEB5006780A9 /* utf8.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D5141FEB21A9006D5715 /* utf8.h */; };
+		A26824551FECBEB5006780A9 /* xml.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D4E41FEB21A9006D5715 /* xml.c */; };
+		A26824561FECBECA006780A9 /* CMDelimiterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4AE1FEB21A9006D5715 /* CMDelimiterType.swift */; };
+		A26824571FECBECA006780A9 /* CMDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4B01FEB21A9006D5715 /* CMDocument.swift */; };
+		A26824581FECBECA006780A9 /* CMDocumentOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4AC1FEB21A9006D5715 /* CMDocumentOption.swift */; };
+		A26824591FECBECA006780A9 /* CMExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26823771FEC44DA006780A9 /* CMExtension.swift */; };
+		A268245A1FECBECA006780A9 /* CMIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4AD1FEB21A9006D5715 /* CMIterator.swift */; };
+		A268245B1FECBECA006780A9 /* CMListType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4B31FEB21A9006D5715 /* CMListType.swift */; };
+		A268245C1FECBECA006780A9 /* CMNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4B11FEB21A9006D5715 /* CMNode.swift */; };
+		A268245D1FECBECA006780A9 /* CMNodeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4AF1FEB21A9006D5715 /* CMNodeType.swift */; };
+		A268245E1FECBECA006780A9 /* CMParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4B21FEB21A9006D5715 /* CMParser.swift */; };
+		A268245F1FECBECA006780A9 /* CMDelimiterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4AE1FEB21A9006D5715 /* CMDelimiterType.swift */; };
+		A26824601FECBECA006780A9 /* CMDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4B01FEB21A9006D5715 /* CMDocument.swift */; };
+		A26824611FECBECA006780A9 /* CMDocumentOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4AC1FEB21A9006D5715 /* CMDocumentOption.swift */; };
+		A26824621FECBECA006780A9 /* CMExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26823771FEC44DA006780A9 /* CMExtension.swift */; };
+		A26824631FECBECA006780A9 /* CMIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4AD1FEB21A9006D5715 /* CMIterator.swift */; };
+		A26824641FECBECA006780A9 /* CMListType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4B31FEB21A9006D5715 /* CMListType.swift */; };
+		A26824651FECBECA006780A9 /* CMNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4B11FEB21A9006D5715 /* CMNode.swift */; };
+		A26824661FECBECA006780A9 /* CMNodeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4AF1FEB21A9006D5715 /* CMNodeType.swift */; };
+		A26824671FECBECA006780A9 /* CMParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4B21FEB21A9006D5715 /* CMParser.swift */; };
+		A26824681FECBF14006780A9 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4BD1FEB21A9006D5715 /* Block.swift */; };
+		A26824691FECBF14006780A9 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4D11FEB21A9006D5715 /* Document.swift */; };
+		A268246A1FECBF14006780A9 /* DocumentConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4BC1FEB21A9006D5715 /* DocumentConverter.swift */; };
+		A268246B1FECBF14006780A9 /* Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4D31FEB21A9006D5715 /* Plugin.swift */; };
+		A268246C1FECBF14006780A9 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4D21FEB21A9006D5715 /* Style.swift */; };
+		A268246D1FECBF14006780A9 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4BD1FEB21A9006D5715 /* Block.swift */; };
+		A268246E1FECBF14006780A9 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4D11FEB21A9006D5715 /* Document.swift */; };
+		A268246F1FECBF14006780A9 /* DocumentConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4BC1FEB21A9006D5715 /* DocumentConverter.swift */; };
+		A26824701FECBF14006780A9 /* Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4D31FEB21A9006D5715 /* Plugin.swift */; };
+		A26824711FECBF14006780A9 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4D21FEB21A9006D5715 /* Style.swift */; };
+		A26824721FECBF19006780A9 /* BlockQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4CF1FEB21A9006D5715 /* BlockQuote.swift */; };
+		A26824731FECBF19006780A9 /* ContainerBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4CD1FEB21A9006D5715 /* ContainerBlock.swift */; };
+		A26824741FECBF19006780A9 /* FootnoteDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4D01FEB21A9006D5715 /* FootnoteDefinition.swift */; };
+		A26824751FECBF19006780A9 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4CB1FEB21A9006D5715 /* ListItem.swift */; };
+		A26824761FECBF19006780A9 /* OrderedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4CC1FEB21A9006D5715 /* OrderedList.swift */; };
+		A26824771FECBF19006780A9 /* UnorderedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4CE1FEB21A9006D5715 /* UnorderedList.swift */; };
+		A26824781FECBF19006780A9 /* BlockQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4CF1FEB21A9006D5715 /* BlockQuote.swift */; };
+		A26824791FECBF19006780A9 /* ContainerBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4CD1FEB21A9006D5715 /* ContainerBlock.swift */; };
+		A268247A1FECBF19006780A9 /* FootnoteDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4D01FEB21A9006D5715 /* FootnoteDefinition.swift */; };
+		A268247B1FECBF19006780A9 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4CB1FEB21A9006D5715 /* ListItem.swift */; };
+		A268247C1FECBF19006780A9 /* OrderedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4CC1FEB21A9006D5715 /* OrderedList.swift */; };
+		A268247D1FECBF1A006780A9 /* UnorderedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4CE1FEB21A9006D5715 /* UnorderedList.swift */; };
+		A268247E1FECBF1E006780A9 /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = A268236F1FEC4293006780A9 /* Table.swift */; };
+		A268247F1FECBF1E006780A9 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26823751FEC42AD006780A9 /* TableCell.swift */; };
+		A26824801FECBF1E006780A9 /* TableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26823791FEC47CD006780A9 /* TableHeader.swift */; };
+		A26824811FECBF1E006780A9 /* TableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26823731FEC42A6006780A9 /* TableRow.swift */; };
+		A26824821FECBF1E006780A9 /* Strikethrough.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26823851FEC4EF6006780A9 /* Strikethrough.swift */; };
+		A26824831FECBF1E006780A9 /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = A268236F1FEC4293006780A9 /* Table.swift */; };
+		A26824841FECBF1E006780A9 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26823751FEC42AD006780A9 /* TableCell.swift */; };
+		A26824851FECBF1E006780A9 /* TableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26823791FEC47CD006780A9 /* TableHeader.swift */; };
+		A26824861FECBF1E006780A9 /* TableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26823731FEC42A6006780A9 /* TableRow.swift */; };
+		A26824871FECBF1E006780A9 /* Strikethrough.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26823851FEC4EF6006780A9 /* Strikethrough.swift */; };
+		A26824881FECBF23006780A9 /* Emphasis.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C21FEB21A9006D5715 /* Emphasis.swift */; };
+		A26824891FECBF23006780A9 /* FootnoteReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C91FEB21A9006D5715 /* FootnoteReference.swift */; };
+		A268248A1FECBF23006780A9 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C41FEB21A9006D5715 /* Image.swift */; };
+		A268248B1FECBF23006780A9 /* Inline.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C51FEB21A9006D5715 /* Inline.swift */; };
+		A268248C1FECBF23006780A9 /* InlineCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C01FEB21A9006D5715 /* InlineCode.swift */; };
+		A268248D1FECBF23006780A9 /* InlineHtml.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C81FEB21A9006D5715 /* InlineHtml.swift */; };
+		A268248E1FECBF23006780A9 /* LineBreak.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C61FEB21A9006D5715 /* LineBreak.swift */; };
+		A268248F1FECBF23006780A9 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C31FEB21A9006D5715 /* Link.swift */; };
+		A26824901FECBF23006780A9 /* SoftBreak.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4BF1FEB21A9006D5715 /* SoftBreak.swift */; };
+		A26824911FECBF23006780A9 /* Strong.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C11FEB21A9006D5715 /* Strong.swift */; };
+		A26824921FECBF23006780A9 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C71FEB21A9006D5715 /* Text.swift */; };
+		A26824931FECBF23006780A9 /* Emphasis.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C21FEB21A9006D5715 /* Emphasis.swift */; };
+		A26824941FECBF23006780A9 /* FootnoteReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C91FEB21A9006D5715 /* FootnoteReference.swift */; };
+		A26824951FECBF23006780A9 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C41FEB21A9006D5715 /* Image.swift */; };
+		A26824961FECBF23006780A9 /* Inline.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C51FEB21A9006D5715 /* Inline.swift */; };
+		A26824971FECBF23006780A9 /* InlineCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C01FEB21A9006D5715 /* InlineCode.swift */; };
+		A26824981FECBF23006780A9 /* InlineHtml.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C81FEB21A9006D5715 /* InlineHtml.swift */; };
+		A26824991FECBF23006780A9 /* LineBreak.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C61FEB21A9006D5715 /* LineBreak.swift */; };
+		A268249A1FECBF23006780A9 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C31FEB21A9006D5715 /* Link.swift */; };
+		A268249B1FECBF23006780A9 /* SoftBreak.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4BF1FEB21A9006D5715 /* SoftBreak.swift */; };
+		A268249C1FECBF23006780A9 /* Strong.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C11FEB21A9006D5715 /* Strong.swift */; };
+		A268249D1FECBF23006780A9 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4C71FEB21A9006D5715 /* Text.swift */; };
+		A268249E1FECBF28006780A9 /* CodeBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4B91FEB21A9006D5715 /* CodeBlock.swift */; };
+		A268249F1FECBF28006780A9 /* Heading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4BA1FEB21A9006D5715 /* Heading.swift */; };
+		A26824A01FECBF28006780A9 /* HorizontalRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4B81FEB21A9006D5715 /* HorizontalRule.swift */; };
+		A26824A11FECBF28006780A9 /* HtmlBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4BB1FEB21A9006D5715 /* HtmlBlock.swift */; };
+		A26824A21FECBF28006780A9 /* LeafBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4B71FEB21A9006D5715 /* LeafBlock.swift */; };
+		A26824A31FECBF28006780A9 /* Paragraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4B61FEB21A9006D5715 /* Paragraph.swift */; };
+		A26824A41FECBF29006780A9 /* CodeBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4B91FEB21A9006D5715 /* CodeBlock.swift */; };
+		A26824A51FECBF29006780A9 /* Heading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4BA1FEB21A9006D5715 /* Heading.swift */; };
+		A26824A61FECBF29006780A9 /* HorizontalRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4B81FEB21A9006D5715 /* HorizontalRule.swift */; };
+		A26824A71FECBF29006780A9 /* HtmlBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4BB1FEB21A9006D5715 /* HtmlBlock.swift */; };
+		A26824A81FECBF29006780A9 /* LeafBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4B71FEB21A9006D5715 /* LeafBlock.swift */; };
+		A26824A91FECBF29006780A9 /* Paragraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4B61FEB21A9006D5715 /* Paragraph.swift */; };
+		A26824AA1FECBF33006780A9 /* YoutubePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4A21FEB21A9006D5715 /* YoutubePlugin.swift */; };
+		A26824AB1FECBF33006780A9 /* YoutubePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4A21FEB21A9006D5715 /* YoutubePlugin.swift */; };
+		A26824AC1FECBF64006780A9 /* Maaku+TestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D60E1FEB3676006D5715 /* Maaku+TestCase.swift */; };
+		A26824AD1FECBF69006780A9 /* CMDocumentSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D6631FEB865B006D5715 /* CMDocumentSpec.swift */; };
+		A26824AE1FECBF6C006780A9 /* DocumentSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D6091FEB35F5006D5715 /* DocumentSpec.swift */; };
+		A26824AF1FECBF72006780A9 /* document.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D60C1FEB364A006D5715 /* document.md */; };
+		A26824B01FECBF72006780A9 /* paragraph.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D6151FEB3BDA006D5715 /* paragraph.md */; };
+		A26824B11FECBF72006780A9 /* htmlblock.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D6191FEB3CA9006D5715 /* htmlblock.md */; };
+		A26824B21FECBF72006780A9 /* codeblock.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D6231FEB3D31006D5715 /* codeblock.md */; };
+		A26824B31FECBF72006780A9 /* heading.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D6251FEB3D3A006D5715 /* heading.md */; };
+		A26824B41FECBF72006780A9 /* horizontalrule.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D6271FEB3D4D006D5715 /* horizontalrule.md */; };
+		A26824B51FECBF72006780A9 /* blockquote.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D6331FEB3F50006D5715 /* blockquote.md */; };
+		A26824B61FECBF72006780A9 /* footnotedefinition.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D6351FEB3F5B006D5715 /* footnotedefinition.md */; };
+		A26824B71FECBF72006780A9 /* orderedlist.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D6391FEB3F69006D5715 /* orderedlist.md */; };
+		A26824B81FECBF72006780A9 /* unorderedlist.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D63B1FEB3F72006D5715 /* unorderedlist.md */; };
+		A26824B91FECBF72006780A9 /* emphasis.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D6511FEB4657006D5715 /* emphasis.md */; };
+		A26824BA1FECBF72006780A9 /* image.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D6531FEB4665006D5715 /* image.md */; };
+		A26824BB1FECBF72006780A9 /* inlinecode.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D6551FEB4673006D5715 /* inlinecode.md */; };
+		A26824BC1FECBF72006780A9 /* inlinehtml.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D6571FEB467D006D5715 /* inlinehtml.md */; };
+		A26824BD1FECBF72006780A9 /* linebreak.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D6591FEB4686006D5715 /* linebreak.md */; };
+		A26824BE1FECBF72006780A9 /* softbreak.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D65B1FEB4693006D5715 /* softbreak.md */; };
+		A26824BF1FECBF72006780A9 /* link.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D65D1FEB469A006D5715 /* link.md */; };
+		A26824C01FECBF72006780A9 /* strong.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D65F1FEB46A4006D5715 /* strong.md */; };
+		A26824C11FECBF72006780A9 /* table.md in Resources */ = {isa = PBXBuildFile; fileRef = A268236C1FEC3330006780A9 /* table.md */; };
+		A26824C21FECBF72006780A9 /* strikethrough.md in Resources */ = {isa = PBXBuildFile; fileRef = A268238B1FEC517B006780A9 /* strikethrough.md */; };
+		A26824C31FECBF72006780A9 /* autolink.md in Resources */ = {isa = PBXBuildFile; fileRef = A26823911FEC5595006780A9 /* autolink.md */; };
+		A26824C41FECBF72006780A9 /* tagfilter.md in Resources */ = {isa = PBXBuildFile; fileRef = A26823981FEC5969006780A9 /* tagfilter.md */; };
+		A26824C51FECBF77006780A9 /* YoutubePluginSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26822221FEB8B55006780A9 /* YoutubePluginSpec.swift */; };
+		A26824C61FECBF7C006780A9 /* BlockQuoteSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D6291FEB3EDA006D5715 /* BlockQuoteSpec.swift */; };
+		A26824C71FECBF7C006780A9 /* FootnoteDefinitionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D62B1FEB3EE7006D5715 /* FootnoteDefinitionSpec.swift */; };
+		A26824C81FECBF7C006780A9 /* ListItemSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D62D1FEB3EF7006D5715 /* ListItemSpec.swift */; };
+		A26824C91FECBF7C006780A9 /* OrderedListSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D62F1FEB3F00006D5715 /* OrderedListSpec.swift */; };
+		A26824CA1FECBF7C006780A9 /* UnorderedListSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D6311FEB3F0A006D5715 /* UnorderedListSpec.swift */; };
+		A26824CB1FECBF80006780A9 /* TableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A268237C1FEC4DC1006780A9 /* TableSpec.swift */; };
+		A26824CC1FECBF80006780A9 /* StrikethroughSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26823881FEC5159006780A9 /* StrikethroughSpec.swift */; };
+		A26824CD1FECBF80006780A9 /* AutolinkSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A268238E1FEC5517006780A9 /* AutolinkSpec.swift */; };
+		A26824CE1FECBF80006780A9 /* TagFilterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26823961FEC56E4006780A9 /* TagFilterSpec.swift */; };
+		A26824CF1FECBF85006780A9 /* EmphasisSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D63D1FEB45EC006D5715 /* EmphasisSpec.swift */; };
+		A26824D01FECBF85006780A9 /* FootnoteReferenceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D63F1FEB45F6006D5715 /* FootnoteReferenceSpec.swift */; };
+		A26824D11FECBF85006780A9 /* ImageSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D6411FEB45FF006D5715 /* ImageSpec.swift */; };
+		A26824D21FECBF85006780A9 /* InlineCodeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D6431FEB4607006D5715 /* InlineCodeSpec.swift */; };
+		A26824D31FECBF85006780A9 /* InlineHtmlSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D6451FEB4612006D5715 /* InlineHtmlSpec.swift */; };
+		A26824D41FECBF85006780A9 /* LineBreakSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D6471FEB461C006D5715 /* LineBreakSpec.swift */; };
+		A26824D51FECBF85006780A9 /* LinkSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D6491FEB462C006D5715 /* LinkSpec.swift */; };
+		A26824D61FECBF85006780A9 /* SoftBreakSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D64B1FEB4634006D5715 /* SoftBreakSpec.swift */; };
+		A26824D71FECBF85006780A9 /* StrongSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D64D1FEB4640006D5715 /* StrongSpec.swift */; };
+		A26824D81FECBF85006780A9 /* TextSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D64F1FEB4648006D5715 /* TextSpec.swift */; };
+		A26824D91FECBF8B006780A9 /* ParagraphSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D6131FEB3BA4006D5715 /* ParagraphSpec.swift */; };
+		A26824DA1FECBF8B006780A9 /* HtmlBlockSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D61B1FEB3CCF006D5715 /* HtmlBlockSpec.swift */; };
+		A26824DB1FECBF8B006780A9 /* CodeBlockSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D61D1FEB3D13006D5715 /* CodeBlockSpec.swift */; };
+		A26824DC1FECBF8B006780A9 /* HeadingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D61F1FEB3D1A006D5715 /* HeadingSpec.swift */; };
+		A26824DD1FECBF8B006780A9 /* HorizontalRuleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D6211FEB3D25006D5715 /* HorizontalRuleSpec.swift */; };
 		A276D48E1FEB1EB2006D5715 /* Maaku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A276D4841FEB1EB2006D5715 /* Maaku.framework */; };
 		A276D4951FEB1EB2006D5715 /* Maaku.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4871FEB1EB2006D5715 /* Maaku.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A276D51B1FEB21A9006D5715 /* YoutubePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4A21FEB21A9006D5715 /* YoutubePlugin.swift */; };
@@ -329,7 +602,6 @@
 		A276D65E1FEB469A006D5715 /* link.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D65D1FEB469A006D5715 /* link.md */; };
 		A276D6601FEB46A4006D5715 /* strong.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D65F1FEB46A4006D5715 /* strong.md */; };
 		A276D6641FEB865B006D5715 /* CMDocumentSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D6631FEB865B006D5715 /* CMDocumentSpec.swift */; };
-		FB632AA2E93CCFCA04A61447 /* Pods_MaakuTestTargets_MaakuMacOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FF1F3C2C923C8FEF016503 /* Pods_MaakuTestTargets_MaakuMacOSTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -339,6 +611,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = A26822291FEB8F17006780A9;
 			remoteInfo = "Maaku-macOS";
+		};
+		A26823C31FECBD0D006780A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A276D47B1FEB1EB2006D5715 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A26823B81FECBD0D006780A9;
+			remoteInfo = "Maaku-tvOS";
 		};
 		A276D48F1FEB1EB2006D5715 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -350,11 +629,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1BB3C7923F37BCBA2C2FC2D7 /* Pods-MaakuTestTargets-MaakuMacOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaakuTestTargets-MaakuMacOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MaakuTestTargets-MaakuMacOSTests/Pods-MaakuTestTargets-MaakuMacOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		1F90BF4E8E01CFEFD9AE82E2 /* Pods-MaakuTestTargets-MaakuMacOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaakuTestTargets-MaakuMacOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MaakuTestTargets-MaakuMacOSTests/Pods-MaakuTestTargets-MaakuMacOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		76DB28C9E677D3391DFEA5FD /* Pods-MaakuTestTargets-MaakuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaakuTestTargets-MaakuTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MaakuTestTargets-MaakuTests/Pods-MaakuTestTargets-MaakuTests.release.xcconfig"; sourceTree = "<group>"; };
-		8B29771D941B338100E9AE4C /* Pods_MaakuTestTargets_MaakuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaakuTestTargets_MaakuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9431C77BF01C7A9E4A9B85E2 /* Pods-MaakuTestTargets-MaakuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaakuTestTargets-MaakuTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MaakuTestTargets-MaakuTests/Pods-MaakuTestTargets-MaakuTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1454E0F5F3B889B08D70D0D7 /* Pods_MaakuTestTargets_MaakuMacOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaakuTestTargets_MaakuMacOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21D29B678621FC22FF37CEDE /* Pods-MaakuTestTargets-MaakuMacOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaakuTestTargets-MaakuMacOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MaakuTestTargets-MaakuMacOSTests/Pods-MaakuTestTargets-MaakuMacOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		7731A0BFEB8BF425290832F0 /* Pods-MaakuTestTargets-MaakuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaakuTestTargets-MaakuTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MaakuTestTargets-MaakuTests/Pods-MaakuTestTargets-MaakuTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8B36A2A592CD2BAB7BA1C431 /* Pods_MaakuTestTargets_Maaku_tvOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaakuTestTargets_Maaku_tvOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F945BF16E83D8C1DA2A4716 /* Pods-MaakuTestTargets-Maaku-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaakuTestTargets-Maaku-tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MaakuTestTargets-Maaku-tvOSTests/Pods-MaakuTestTargets-Maaku-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9B6AE0BC6CCFF378FDE156F9 /* Pods-MaakuTestTargets-Maaku-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaakuTestTargets-Maaku-tvOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MaakuTestTargets-Maaku-tvOSTests/Pods-MaakuTestTargets-Maaku-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		A26822221FEB8B55006780A9 /* YoutubePluginSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubePluginSpec.swift; sourceTree = "<group>"; };
 		A268222A1FEB8F17006780A9 /* Maaku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Maaku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A268229B1FEC2703006780A9 /* MaakuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaakuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -390,6 +670,9 @@
 		A268239E1FEC6F70006780A9 /* maaku.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = maaku.h; sourceTree = "<group>"; };
 		A268239F1FEC6F70006780A9 /* maaku.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = maaku.c; sourceTree = "<group>"; };
 		A26823A41FEC8A5F006780A9 /* .travis.yml */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = .travis.yml; sourceTree = "<group>"; };
+		A26823AC1FECBCE3006780A9 /* Maaku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Maaku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A26823B91FECBD0D006780A9 /* Maaku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Maaku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A26823C11FECBD0D006780A9 /* MaakuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaakuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A276D4841FEB1EB2006D5715 /* Maaku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Maaku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A276D4871FEB1EB2006D5715 /* Maaku.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Maaku.h; sourceTree = "<group>"; };
 		A276D4881FEB1EB2006D5715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -528,7 +811,9 @@
 		A276D65D1FEB469A006D5715 /* link.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = link.md; sourceTree = "<group>"; };
 		A276D65F1FEB46A4006D5715 /* strong.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = strong.md; sourceTree = "<group>"; };
 		A276D6631FEB865B006D5715 /* CMDocumentSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMDocumentSpec.swift; sourceTree = "<group>"; };
-		E7FF1F3C2C923C8FEF016503 /* Pods_MaakuTestTargets_MaakuMacOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaakuTestTargets_MaakuMacOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8BE9758EB3D6AF90C8AD72B /* Pods_MaakuTestTargets_MaakuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaakuTestTargets_MaakuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C169C4F0E9DC6FB064986031 /* Pods-MaakuTestTargets-MaakuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaakuTestTargets-MaakuTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MaakuTestTargets-MaakuTests/Pods-MaakuTestTargets-MaakuTests.release.xcconfig"; sourceTree = "<group>"; };
+		EE7A9954F8A856945A83345C /* Pods-MaakuTestTargets-MaakuMacOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaakuTestTargets-MaakuMacOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MaakuTestTargets-MaakuMacOSTests/Pods-MaakuTestTargets-MaakuMacOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -544,7 +829,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				A26822A01FEC2703006780A9 /* Maaku.framework in Frameworks */,
-				FB632AA2E93CCFCA04A61447 /* Pods_MaakuTestTargets_MaakuMacOSTests.framework in Frameworks */,
+				896300E57540772CB53C4E4C /* Pods_MaakuTestTargets_MaakuMacOSTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26823A81FECBCE3006780A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26823B51FECBD0D006780A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26823BE1FECBD0D006780A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A26823C21FECBD0D006780A9 /* Maaku.framework in Frameworks */,
+				17649405248FAAFEE117F34C /* Pods_MaakuTestTargets_Maaku_tvOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -560,13 +868,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				A276D48E1FEB1EB2006D5715 /* Maaku.framework in Frameworks */,
-				6B7E5B848BD5D5F291FBC32C /* Pods_MaakuTestTargets_MaakuTests.framework in Frameworks */,
+				25FAB41D47754C8A8E77BBCF /* Pods_MaakuTestTargets_MaakuTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1EC1CAE0BD2427FD64A839BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F945BF16E83D8C1DA2A4716 /* Pods-MaakuTestTargets-Maaku-tvOSTests.debug.xcconfig */,
+				9B6AE0BC6CCFF378FDE156F9 /* Pods-MaakuTestTargets-Maaku-tvOSTests.release.xcconfig */,
+				EE7A9954F8A856945A83345C /* Pods-MaakuTestTargets-MaakuMacOSTests.debug.xcconfig */,
+				21D29B678621FC22FF37CEDE /* Pods-MaakuTestTargets-MaakuMacOSTests.release.xcconfig */,
+				7731A0BFEB8BF425290832F0 /* Pods-MaakuTestTargets-MaakuTests.debug.xcconfig */,
+				C169C4F0E9DC6FB064986031 /* Pods-MaakuTestTargets-MaakuTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5496DA95438C8A56A1F2D227 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B36A2A592CD2BAB7BA1C431 /* Pods_MaakuTestTargets_Maaku_tvOSTests.framework */,
+				1454E0F5F3B889B08D70D0D7 /* Pods_MaakuTestTargets_MaakuMacOSTests.framework */,
+				B8BE9758EB3D6AF90C8AD72B /* Pods_MaakuTestTargets_MaakuTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A26822211FEB8A5D006780A9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
@@ -608,8 +939,8 @@
 				A276D4861FEB1EB2006D5715 /* Maaku */,
 				A276D4911FEB1EB2006D5715 /* MaakuTests */,
 				A276D4851FEB1EB2006D5715 /* Products */,
-				EBEDA1D19AC6B3DCFF0A1DB5 /* Pods */,
-				D1232019ABAD7F3AE81743F2 /* Frameworks */,
+				1EC1CAE0BD2427FD64A839BD /* Pods */,
+				5496DA95438C8A56A1F2D227 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -620,6 +951,9 @@
 				A276D48D1FEB1EB2006D5715 /* MaakuTests.xctest */,
 				A268222A1FEB8F17006780A9 /* Maaku.framework */,
 				A268229B1FEC2703006780A9 /* MaakuTests.xctest */,
+				A26823AC1FECBCE3006780A9 /* Maaku.framework */,
+				A26823B91FECBD0D006780A9 /* Maaku.framework */,
+				A26823C11FECBD0D006780A9 /* MaakuTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -908,26 +1242,6 @@
 			path = Leaf;
 			sourceTree = "<group>";
 		};
-		D1232019ABAD7F3AE81743F2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E7FF1F3C2C923C8FEF016503 /* Pods_MaakuTestTargets_MaakuMacOSTests.framework */,
-				8B29771D941B338100E9AE4C /* Pods_MaakuTestTargets_MaakuTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		EBEDA1D19AC6B3DCFF0A1DB5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1F90BF4E8E01CFEFD9AE82E2 /* Pods-MaakuTestTargets-MaakuMacOSTests.debug.xcconfig */,
-				1BB3C7923F37BCBA2C2FC2D7 /* Pods-MaakuTestTargets-MaakuMacOSTests.release.xcconfig */,
-				9431C77BF01C7A9E4A9B85E2 /* Pods-MaakuTestTargets-MaakuTests.debug.xcconfig */,
-				76DB28C9E677D3391DFEA5FD /* Pods-MaakuTestTargets-MaakuTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -968,6 +1282,86 @@
 				A26823A11FEC6F70006780A9 /* maaku.h in Headers */,
 				A26823531FEC3178006780A9 /* cmarkextensions_export.h in Headers */,
 				A26822861FEB8FAB006780A9 /* scanners.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26823A91FECBCE3006780A9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A26823DF1FECBEB5006780A9 /* cmark.h in Headers */,
+				A26823EE1FECBEB5006780A9 /* html.h in Headers */,
+				A26824061FECBEB5006780A9 /* render.h in Headers */,
+				A26824101FECBEB5006780A9 /* tagfilter.h in Headers */,
+				A26824121FECBEB5006780A9 /* utf8.h in Headers */,
+				A26823DD1FECBEB5006780A9 /* cmark_version.h in Headers */,
+				A26823D01FECBE86006780A9 /* Maaku.h in Headers */,
+				A268240A1FECBEB5006780A9 /* strikethrough.h in Headers */,
+				A26823D41FECBEB5006780A9 /* autolink.h in Headers */,
+				A26823FD1FECBEB5006780A9 /* parser.h in Headers */,
+				A26823DC1FECBEB5006780A9 /* cmark_extension_api.h in Headers */,
+				A26824021FECBEB5006780A9 /* references.h in Headers */,
+				A26823FC1FECBEB5006780A9 /* node.h in Headers */,
+				A268240C1FECBEB5006780A9 /* syntax_extension.h in Headers */,
+				A26824041FECBEB5006780A9 /* registry.h in Headers */,
+				A26823F41FECBEB5006780A9 /* libcmark.h in Headers */,
+				A26823E41FECBEB5006780A9 /* core-extensions.h in Headers */,
+				A26823F71FECBEB5006780A9 /* maaku.h in Headers */,
+				A26823FA1FECBEB5006780A9 /* map.h in Headers */,
+				A26823E61FECBEB5006780A9 /* ext_scanners.h in Headers */,
+				A26824001FECBEB5006780A9 /* plugin.h in Headers */,
+				A26823F21FECBEB5006780A9 /* iterator.h in Headers */,
+				A26823D81FECBEB5006780A9 /* chunk.h in Headers */,
+				A26823F01FECBEB5006780A9 /* inlines.h in Headers */,
+				A26823DB1FECBEB5006780A9 /* cmark_export.h in Headers */,
+				A268240E1FECBEB5006780A9 /* table.h in Headers */,
+				A26823D71FECBEB5006780A9 /* buffer.h in Headers */,
+				A26823EC1FECBEB5006780A9 /* houdini.h in Headers */,
+				A26823E81FECBEB5006780A9 /* footnotes.h in Headers */,
+				A26823E21FECBEB5006780A9 /* config.h in Headers */,
+				A26824081FECBEB5006780A9 /* scanners.h in Headers */,
+				A26823DA1FECBEB5006780A9 /* cmark_ctype.h in Headers */,
+				A26823E01FECBEB5006780A9 /* cmarkextensions_export.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26823B61FECBD0D006780A9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A26824211FECBEB5006780A9 /* cmark.h in Headers */,
+				A26824301FECBEB5006780A9 /* html.h in Headers */,
+				A26824481FECBEB5006780A9 /* render.h in Headers */,
+				A26824521FECBEB5006780A9 /* tagfilter.h in Headers */,
+				A26824541FECBEB5006780A9 /* utf8.h in Headers */,
+				A268241F1FECBEB5006780A9 /* cmark_version.h in Headers */,
+				A26823D11FECBE87006780A9 /* Maaku.h in Headers */,
+				A268244C1FECBEB5006780A9 /* strikethrough.h in Headers */,
+				A26824161FECBEB5006780A9 /* autolink.h in Headers */,
+				A268243F1FECBEB5006780A9 /* parser.h in Headers */,
+				A268241E1FECBEB5006780A9 /* cmark_extension_api.h in Headers */,
+				A26824441FECBEB5006780A9 /* references.h in Headers */,
+				A268243E1FECBEB5006780A9 /* node.h in Headers */,
+				A268244E1FECBEB5006780A9 /* syntax_extension.h in Headers */,
+				A26824461FECBEB5006780A9 /* registry.h in Headers */,
+				A26824361FECBEB5006780A9 /* libcmark.h in Headers */,
+				A26824261FECBEB5006780A9 /* core-extensions.h in Headers */,
+				A26824391FECBEB5006780A9 /* maaku.h in Headers */,
+				A268243C1FECBEB5006780A9 /* map.h in Headers */,
+				A26824281FECBEB5006780A9 /* ext_scanners.h in Headers */,
+				A26824421FECBEB5006780A9 /* plugin.h in Headers */,
+				A26824341FECBEB5006780A9 /* iterator.h in Headers */,
+				A268241A1FECBEB5006780A9 /* chunk.h in Headers */,
+				A26824321FECBEB5006780A9 /* inlines.h in Headers */,
+				A268241D1FECBEB5006780A9 /* cmark_export.h in Headers */,
+				A26824501FECBEB5006780A9 /* table.h in Headers */,
+				A26824191FECBEB5006780A9 /* buffer.h in Headers */,
+				A268242E1FECBEB5006780A9 /* houdini.h in Headers */,
+				A268242A1FECBEB5006780A9 /* footnotes.h in Headers */,
+				A26824241FECBEB5006780A9 /* config.h in Headers */,
+				A268244A1FECBEB5006780A9 /* scanners.h in Headers */,
+				A268241C1FECBEB5006780A9 /* cmark_ctype.h in Headers */,
+				A26824221FECBEB5006780A9 /* cmarkextensions_export.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1036,12 +1430,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A26822A51FEC2703006780A9 /* Build configuration list for PBXNativeTarget "MaakuMacOSTests" */;
 			buildPhases = (
-				D9557BE9A92561FA76C44F75 /* [CP] Check Pods Manifest.lock */,
+				152AFDD669029BA62504BC6B /* [CP] Check Pods Manifest.lock */,
 				A26822971FEC2703006780A9 /* Sources */,
 				A26822981FEC2703006780A9 /* Frameworks */,
 				A26822991FEC2703006780A9 /* Resources */,
-				25D4DC65FAEBF242D8700D3D /* [CP] Embed Pods Frameworks */,
-				F527F8AFECF5CA1A0E9C5CD2 /* [CP] Copy Pods Resources */,
+				A5BE9506A5A916FDFF415712 /* [CP] Embed Pods Frameworks */,
+				6116370F3CAE9D0ACABE7CFE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1051,6 +1445,63 @@
 			name = MaakuMacOSTests;
 			productName = MaakuMacOSTests;
 			productReference = A268229B1FEC2703006780A9 /* MaakuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A26823AB1FECBCE3006780A9 /* Maaku-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A26823B31FECBCE3006780A9 /* Build configuration list for PBXNativeTarget "Maaku-watchOS" */;
+			buildPhases = (
+				A26823A71FECBCE3006780A9 /* Sources */,
+				A26823A81FECBCE3006780A9 /* Frameworks */,
+				A26823A91FECBCE3006780A9 /* Headers */,
+				A26823AA1FECBCE3006780A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Maaku-watchOS";
+			productName = "Maaku-watchOS";
+			productReference = A26823AC1FECBCE3006780A9 /* Maaku.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A26823B81FECBD0D006780A9 /* Maaku-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A26823CA1FECBD0D006780A9 /* Build configuration list for PBXNativeTarget "Maaku-tvOS" */;
+			buildPhases = (
+				A26823B41FECBD0D006780A9 /* Sources */,
+				A26823B51FECBD0D006780A9 /* Frameworks */,
+				A26823B61FECBD0D006780A9 /* Headers */,
+				A26823B71FECBD0D006780A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Maaku-tvOS";
+			productName = "Maaku-tvOS";
+			productReference = A26823B91FECBD0D006780A9 /* Maaku.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A26823C01FECBD0D006780A9 /* Maaku-tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A26823CD1FECBD0D006780A9 /* Build configuration list for PBXNativeTarget "Maaku-tvOSTests" */;
+			buildPhases = (
+				9C55D90E632CEBB092931445 /* [CP] Check Pods Manifest.lock */,
+				A26823BD1FECBD0D006780A9 /* Sources */,
+				A26823BE1FECBD0D006780A9 /* Frameworks */,
+				A26823BF1FECBD0D006780A9 /* Resources */,
+				BA8EF331357FF293CD1D8A4C /* [CP] Embed Pods Frameworks */,
+				9688CF6212F34F57E59A71C9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A26823C41FECBD0D006780A9 /* PBXTargetDependency */,
+			);
+			name = "Maaku-tvOSTests";
+			productName = "Maaku-tvOSTests";
+			productReference = A26823C11FECBD0D006780A9 /* MaakuTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		A276D4831FEB1EB2006D5715 /* Maaku */ = {
@@ -1075,12 +1526,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A276D49B1FEB1EB2006D5715 /* Build configuration list for PBXNativeTarget "MaakuTests" */;
 			buildPhases = (
-				C8ABE02AA045FDFE055C414A /* [CP] Check Pods Manifest.lock */,
+				371A08827821D56BF5090B50 /* [CP] Check Pods Manifest.lock */,
 				A276D4891FEB1EB2006D5715 /* Sources */,
 				A276D48A1FEB1EB2006D5715 /* Frameworks */,
 				A276D48B1FEB1EB2006D5715 /* Resources */,
-				48A0D46FA9E4C3767A1D7DFC /* [CP] Embed Pods Frameworks */,
-				3F13E01147226962B5869692 /* [CP] Copy Pods Resources */,
+				4AE5C886805689244E354835 /* [CP] Embed Pods Frameworks */,
+				27E034797780CF53D14B84AF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1110,6 +1561,18 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
+					A26823AB1FECBCE3006780A9 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					A26823B81FECBD0D006780A9 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					A26823C01FECBD0D006780A9 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					A276D4831FEB1EB2006D5715 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Manual;
@@ -1136,6 +1599,9 @@
 				A276D48C1FEB1EB2006D5715 /* MaakuTests */,
 				A26822291FEB8F17006780A9 /* Maaku-macOS */,
 				A268229A1FEC2703006780A9 /* MaakuMacOSTests */,
+				A26823AB1FECBCE3006780A9 /* Maaku-watchOS */,
+				A26823B81FECBD0D006780A9 /* Maaku-tvOS */,
+				A26823C01FECBD0D006780A9 /* Maaku-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1174,6 +1640,49 @@
 				A26822C91FEC274F006780A9 /* inlinecode.md in Resources */,
 				A26822C21FEC274F006780A9 /* horizontalrule.md in Resources */,
 				A26822BE1FEC274F006780A9 /* paragraph.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26823AA1FECBCE3006780A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26823B71FECBD0D006780A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26823BF1FECBD0D006780A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A26824B11FECBF72006780A9 /* htmlblock.md in Resources */,
+				A26824C01FECBF72006780A9 /* strong.md in Resources */,
+				A26824B81FECBF72006780A9 /* unorderedlist.md in Resources */,
+				A26824BA1FECBF72006780A9 /* image.md in Resources */,
+				A26824B21FECBF72006780A9 /* codeblock.md in Resources */,
+				A26824AF1FECBF72006780A9 /* document.md in Resources */,
+				A26824B61FECBF72006780A9 /* footnotedefinition.md in Resources */,
+				A26824B91FECBF72006780A9 /* emphasis.md in Resources */,
+				A26824BD1FECBF72006780A9 /* linebreak.md in Resources */,
+				A26824C11FECBF72006780A9 /* table.md in Resources */,
+				A26824C21FECBF72006780A9 /* strikethrough.md in Resources */,
+				A26824B51FECBF72006780A9 /* blockquote.md in Resources */,
+				A26824B31FECBF72006780A9 /* heading.md in Resources */,
+				A26824BF1FECBF72006780A9 /* link.md in Resources */,
+				A26824B71FECBF72006780A9 /* orderedlist.md in Resources */,
+				A26824C41FECBF72006780A9 /* tagfilter.md in Resources */,
+				A26824BC1FECBF72006780A9 /* inlinehtml.md in Resources */,
+				A26824BE1FECBF72006780A9 /* softbreak.md in Resources */,
+				A26824C31FECBF72006780A9 /* autolink.md in Resources */,
+				A26824BB1FECBF72006780A9 /* inlinecode.md in Resources */,
+				A26824B41FECBF72006780A9 /* horizontalrule.md in Resources */,
+				A26824B01FECBF72006780A9 /* paragraph.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1216,27 +1725,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		25D4DC65FAEBF242D8700D3D /* [CP] Embed Pods Frameworks */ = {
+		152AFDD669029BA62504BC6B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MaakuTestTargets-MaakuMacOSTests/Pods-MaakuTestTargets-MaakuMacOSTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Nimble-macOS/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Quick-macOS/Quick.framework",
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"$(DERIVED_FILE_DIR)/Pods-MaakuTestTargets-MaakuMacOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaakuTestTargets-MaakuMacOSTests/Pods-MaakuTestTargets-MaakuMacOSTests-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3F13E01147226962B5869692 /* [CP] Copy Pods Resources */ = {
+		27E034797780CF53D14B84AF /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1251,7 +1758,25 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaakuTestTargets-MaakuTests/Pods-MaakuTestTargets-MaakuTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		48A0D46FA9E4C3767A1D7DFC /* [CP] Embed Pods Frameworks */ = {
+		371A08827821D56BF5090B50 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MaakuTestTargets-MaakuTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4AE5C886805689244E354835 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1271,43 +1796,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaakuTestTargets-MaakuTests/Pods-MaakuTestTargets-MaakuTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C8ABE02AA045FDFE055C414A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MaakuTestTargets-MaakuTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D9557BE9A92561FA76C44F75 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MaakuTestTargets-MaakuMacOSTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F527F8AFECF5CA1A0E9C5CD2 /* [CP] Copy Pods Resources */ = {
+		6116370F3CAE9D0ACABE7CFE /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1320,6 +1809,79 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaakuTestTargets-MaakuMacOSTests/Pods-MaakuTestTargets-MaakuMacOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9688CF6212F34F57E59A71C9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaakuTestTargets-Maaku-tvOSTests/Pods-MaakuTestTargets-Maaku-tvOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C55D90E632CEBB092931445 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MaakuTestTargets-Maaku-tvOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5BE9506A5A916FDFF415712 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MaakuTestTargets-MaakuMacOSTests/Pods-MaakuTestTargets-MaakuMacOSTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble-macOS/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick-macOS/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaakuTestTargets-MaakuMacOSTests/Pods-MaakuTestTargets-MaakuMacOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA8EF331357FF293CD1D8A4C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MaakuTestTargets-Maaku-tvOSTests/Pods-MaakuTestTargets-Maaku-tvOSTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble-tvOS/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick-tvOS/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaakuTestTargets-Maaku-tvOSTests/Pods-MaakuTestTargets-Maaku-tvOSTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1440,6 +2002,209 @@
 				A26822AB1FEC2743006780A9 /* ListItemSpec.swift in Sources */,
 				A26822B01FEC2746006780A9 /* ImageSpec.swift in Sources */,
 				A26823831FEC4DE5006780A9 /* TableSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26823A71FECBCE3006780A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A268249F1FECBF28006780A9 /* Heading.swift in Sources */,
+				A26823FF1FECBEB5006780A9 /* plugin.c in Sources */,
+				A268246A1FECBF14006780A9 /* DocumentConverter.swift in Sources */,
+				A26824681FECBF14006780A9 /* Block.swift in Sources */,
+				A26824731FECBF19006780A9 /* ContainerBlock.swift in Sources */,
+				A268248D1FECBF23006780A9 /* InlineHtml.swift in Sources */,
+				A26824A11FECBF28006780A9 /* HtmlBlock.swift in Sources */,
+				A26823FE1FECBEB5006780A9 /* plaintext.c in Sources */,
+				A268248C1FECBF23006780A9 /* InlineCode.swift in Sources */,
+				A26823ED1FECBEB5006780A9 /* html.c in Sources */,
+				A26823E51FECBEB5006780A9 /* ext_scanners.c in Sources */,
+				A268246B1FECBF14006780A9 /* Plugin.swift in Sources */,
+				A268246C1FECBF14006780A9 /* Style.swift in Sources */,
+				A26824811FECBF1E006780A9 /* TableRow.swift in Sources */,
+				A26823E31FECBEB5006780A9 /* core-extensions.c in Sources */,
+				A268247F1FECBF1E006780A9 /* TableCell.swift in Sources */,
+				A26824131FECBEB5006780A9 /* xml.c in Sources */,
+				A26824581FECBECA006780A9 /* CMDocumentOption.swift in Sources */,
+				A26824771FECBF19006780A9 /* UnorderedList.swift in Sources */,
+				A268245A1FECBECA006780A9 /* CMIterator.swift in Sources */,
+				A26824821FECBF1E006780A9 /* Strikethrough.swift in Sources */,
+				A26824A21FECBF28006780A9 /* LeafBlock.swift in Sources */,
+				A26823DE1FECBEB5006780A9 /* cmark.c in Sources */,
+				A26824031FECBEB5006780A9 /* registry.c in Sources */,
+				A26824911FECBF23006780A9 /* Strong.swift in Sources */,
+				A26824881FECBF23006780A9 /* Emphasis.swift in Sources */,
+				A26824561FECBECA006780A9 /* CMDelimiterType.swift in Sources */,
+				A268248B1FECBF23006780A9 /* Inline.swift in Sources */,
+				A26824721FECBF19006780A9 /* BlockQuote.swift in Sources */,
+				A26824891FECBF23006780A9 /* FootnoteReference.swift in Sources */,
+				A26823E11FECBEB5006780A9 /* commonmark.c in Sources */,
+				A26823F11FECBEB5006780A9 /* iterator.c in Sources */,
+				A26824691FECBF14006780A9 /* Document.swift in Sources */,
+				A268247E1FECBF1E006780A9 /* Table.swift in Sources */,
+				A26824111FECBEB5006780A9 /* utf8.c in Sources */,
+				A26823D51FECBEB5006780A9 /* blocks.c in Sources */,
+				A268245D1FECBECA006780A9 /* CMNodeType.swift in Sources */,
+				A268249E1FECBF28006780A9 /* CodeBlock.swift in Sources */,
+				A26824091FECBEB5006780A9 /* strikethrough.c in Sources */,
+				A26824A01FECBF28006780A9 /* HorizontalRule.swift in Sources */,
+				A26824571FECBECA006780A9 /* CMDocument.swift in Sources */,
+				A26823EA1FECBEB5006780A9 /* houdini_html_e.c in Sources */,
+				A268248A1FECBF23006780A9 /* Image.swift in Sources */,
+				A26824801FECBF1E006780A9 /* TableHeader.swift in Sources */,
+				A26824741FECBF19006780A9 /* FootnoteDefinition.swift in Sources */,
+				A26824901FECBF23006780A9 /* SoftBreak.swift in Sources */,
+				A26823E71FECBEB5006780A9 /* footnotes.c in Sources */,
+				A26823D31FECBEB5006780A9 /* autolink.c in Sources */,
+				A26824051FECBEB5006780A9 /* render.c in Sources */,
+				A26823D21FECBEB5006780A9 /* arena.c in Sources */,
+				A268248F1FECBF23006780A9 /* Link.swift in Sources */,
+				A26824591FECBECA006780A9 /* CMExtension.swift in Sources */,
+				A26824A31FECBF28006780A9 /* Paragraph.swift in Sources */,
+				A268240B1FECBEB5006780A9 /* syntax_extension.c in Sources */,
+				A268248E1FECBF23006780A9 /* LineBreak.swift in Sources */,
+				A26823FB1FECBEB5006780A9 /* node.c in Sources */,
+				A268245B1FECBECA006780A9 /* CMListType.swift in Sources */,
+				A26823F31FECBEB5006780A9 /* latex.c in Sources */,
+				A26824751FECBF19006780A9 /* ListItem.swift in Sources */,
+				A26823F91FECBEB5006780A9 /* map.c in Sources */,
+				A26823F61FECBEB5006780A9 /* maaku.c in Sources */,
+				A26823F51FECBEB5006780A9 /* linked_list.c in Sources */,
+				A26823D61FECBEB5006780A9 /* buffer.c in Sources */,
+				A268245C1FECBECA006780A9 /* CMNode.swift in Sources */,
+				A26823EF1FECBEB5006780A9 /* inlines.c in Sources */,
+				A26823EB1FECBEB5006780A9 /* houdini_html_u.c in Sources */,
+				A26823E91FECBEB5006780A9 /* houdini_href_e.c in Sources */,
+				A26824071FECBEB5006780A9 /* scanners.c in Sources */,
+				A26824011FECBEB5006780A9 /* references.c in Sources */,
+				A26823F81FECBEB5006780A9 /* man.c in Sources */,
+				A268240D1FECBEB5006780A9 /* table.c in Sources */,
+				A268240F1FECBEB5006780A9 /* tagfilter.c in Sources */,
+				A26824AA1FECBF33006780A9 /* YoutubePlugin.swift in Sources */,
+				A26824921FECBF23006780A9 /* Text.swift in Sources */,
+				A26824761FECBF19006780A9 /* OrderedList.swift in Sources */,
+				A26823D91FECBEB5006780A9 /* cmark_ctype.c in Sources */,
+				A268245E1FECBECA006780A9 /* CMParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26823B41FECBD0D006780A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A26824A51FECBF29006780A9 /* Heading.swift in Sources */,
+				A26824411FECBEB5006780A9 /* plugin.c in Sources */,
+				A268246F1FECBF14006780A9 /* DocumentConverter.swift in Sources */,
+				A268246D1FECBF14006780A9 /* Block.swift in Sources */,
+				A26824791FECBF19006780A9 /* ContainerBlock.swift in Sources */,
+				A26824981FECBF23006780A9 /* InlineHtml.swift in Sources */,
+				A26824A71FECBF29006780A9 /* HtmlBlock.swift in Sources */,
+				A26824401FECBEB5006780A9 /* plaintext.c in Sources */,
+				A26824971FECBF23006780A9 /* InlineCode.swift in Sources */,
+				A268242F1FECBEB5006780A9 /* html.c in Sources */,
+				A26824271FECBEB5006780A9 /* ext_scanners.c in Sources */,
+				A26824701FECBF14006780A9 /* Plugin.swift in Sources */,
+				A26824711FECBF14006780A9 /* Style.swift in Sources */,
+				A26824861FECBF1E006780A9 /* TableRow.swift in Sources */,
+				A26824251FECBEB5006780A9 /* core-extensions.c in Sources */,
+				A26824841FECBF1E006780A9 /* TableCell.swift in Sources */,
+				A26824551FECBEB5006780A9 /* xml.c in Sources */,
+				A26824611FECBECA006780A9 /* CMDocumentOption.swift in Sources */,
+				A268247D1FECBF1A006780A9 /* UnorderedList.swift in Sources */,
+				A26824631FECBECA006780A9 /* CMIterator.swift in Sources */,
+				A26824871FECBF1E006780A9 /* Strikethrough.swift in Sources */,
+				A26824A81FECBF29006780A9 /* LeafBlock.swift in Sources */,
+				A26824201FECBEB5006780A9 /* cmark.c in Sources */,
+				A26824451FECBEB5006780A9 /* registry.c in Sources */,
+				A268249C1FECBF23006780A9 /* Strong.swift in Sources */,
+				A26824931FECBF23006780A9 /* Emphasis.swift in Sources */,
+				A268245F1FECBECA006780A9 /* CMDelimiterType.swift in Sources */,
+				A26824961FECBF23006780A9 /* Inline.swift in Sources */,
+				A26824781FECBF19006780A9 /* BlockQuote.swift in Sources */,
+				A26824941FECBF23006780A9 /* FootnoteReference.swift in Sources */,
+				A26824231FECBEB5006780A9 /* commonmark.c in Sources */,
+				A26824331FECBEB5006780A9 /* iterator.c in Sources */,
+				A268246E1FECBF14006780A9 /* Document.swift in Sources */,
+				A26824831FECBF1E006780A9 /* Table.swift in Sources */,
+				A26824531FECBEB5006780A9 /* utf8.c in Sources */,
+				A26824171FECBEB5006780A9 /* blocks.c in Sources */,
+				A26824661FECBECA006780A9 /* CMNodeType.swift in Sources */,
+				A26824A41FECBF29006780A9 /* CodeBlock.swift in Sources */,
+				A268244B1FECBEB5006780A9 /* strikethrough.c in Sources */,
+				A26824A61FECBF29006780A9 /* HorizontalRule.swift in Sources */,
+				A26824601FECBECA006780A9 /* CMDocument.swift in Sources */,
+				A268242C1FECBEB5006780A9 /* houdini_html_e.c in Sources */,
+				A26824951FECBF23006780A9 /* Image.swift in Sources */,
+				A26824851FECBF1E006780A9 /* TableHeader.swift in Sources */,
+				A268247A1FECBF19006780A9 /* FootnoteDefinition.swift in Sources */,
+				A268249B1FECBF23006780A9 /* SoftBreak.swift in Sources */,
+				A26824291FECBEB5006780A9 /* footnotes.c in Sources */,
+				A26824151FECBEB5006780A9 /* autolink.c in Sources */,
+				A26824471FECBEB5006780A9 /* render.c in Sources */,
+				A26824141FECBEB5006780A9 /* arena.c in Sources */,
+				A268249A1FECBF23006780A9 /* Link.swift in Sources */,
+				A26824621FECBECA006780A9 /* CMExtension.swift in Sources */,
+				A26824A91FECBF29006780A9 /* Paragraph.swift in Sources */,
+				A268244D1FECBEB5006780A9 /* syntax_extension.c in Sources */,
+				A26824991FECBF23006780A9 /* LineBreak.swift in Sources */,
+				A268243D1FECBEB5006780A9 /* node.c in Sources */,
+				A26824641FECBECA006780A9 /* CMListType.swift in Sources */,
+				A26824351FECBEB5006780A9 /* latex.c in Sources */,
+				A268247B1FECBF19006780A9 /* ListItem.swift in Sources */,
+				A268243B1FECBEB5006780A9 /* map.c in Sources */,
+				A26824381FECBEB5006780A9 /* maaku.c in Sources */,
+				A26824371FECBEB5006780A9 /* linked_list.c in Sources */,
+				A26824181FECBEB5006780A9 /* buffer.c in Sources */,
+				A26824651FECBECA006780A9 /* CMNode.swift in Sources */,
+				A26824311FECBEB5006780A9 /* inlines.c in Sources */,
+				A268242D1FECBEB5006780A9 /* houdini_html_u.c in Sources */,
+				A268242B1FECBEB5006780A9 /* houdini_href_e.c in Sources */,
+				A26824491FECBEB5006780A9 /* scanners.c in Sources */,
+				A26824431FECBEB5006780A9 /* references.c in Sources */,
+				A268243A1FECBEB5006780A9 /* man.c in Sources */,
+				A268244F1FECBEB5006780A9 /* table.c in Sources */,
+				A26824511FECBEB5006780A9 /* tagfilter.c in Sources */,
+				A26824AB1FECBF33006780A9 /* YoutubePlugin.swift in Sources */,
+				A268249D1FECBF23006780A9 /* Text.swift in Sources */,
+				A268247C1FECBF19006780A9 /* OrderedList.swift in Sources */,
+				A268241B1FECBEB5006780A9 /* cmark_ctype.c in Sources */,
+				A26824671FECBECA006780A9 /* CMParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26823BD1FECBD0D006780A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A26824DC1FECBF8B006780A9 /* HeadingSpec.swift in Sources */,
+				A26824D31FECBF85006780A9 /* InlineHtmlSpec.swift in Sources */,
+				A26824DA1FECBF8B006780A9 /* HtmlBlockSpec.swift in Sources */,
+				A26824D81FECBF85006780A9 /* TextSpec.swift in Sources */,
+				A26824D01FECBF85006780A9 /* FootnoteReferenceSpec.swift in Sources */,
+				A26824D51FECBF85006780A9 /* LinkSpec.swift in Sources */,
+				A26824CE1FECBF80006780A9 /* TagFilterSpec.swift in Sources */,
+				A26824C61FECBF7C006780A9 /* BlockQuoteSpec.swift in Sources */,
+				A26824CC1FECBF80006780A9 /* StrikethroughSpec.swift in Sources */,
+				A26824D21FECBF85006780A9 /* InlineCodeSpec.swift in Sources */,
+				A26824D71FECBF85006780A9 /* StrongSpec.swift in Sources */,
+				A26824D41FECBF85006780A9 /* LineBreakSpec.swift in Sources */,
+				A26824C71FECBF7C006780A9 /* FootnoteDefinitionSpec.swift in Sources */,
+				A26824AE1FECBF6C006780A9 /* DocumentSpec.swift in Sources */,
+				A26824C81FECBF7C006780A9 /* ListItemSpec.swift in Sources */,
+				A26824C91FECBF7C006780A9 /* OrderedListSpec.swift in Sources */,
+				A26824DD1FECBF8B006780A9 /* HorizontalRuleSpec.swift in Sources */,
+				A26824D11FECBF85006780A9 /* ImageSpec.swift in Sources */,
+				A26824D61FECBF85006780A9 /* SoftBreakSpec.swift in Sources */,
+				A26824C51FECBF77006780A9 /* YoutubePluginSpec.swift in Sources */,
+				A26824CD1FECBF80006780A9 /* AutolinkSpec.swift in Sources */,
+				A26824AC1FECBF64006780A9 /* Maaku+TestCase.swift in Sources */,
+				A26824CF1FECBF85006780A9 /* EmphasisSpec.swift in Sources */,
+				A26824CA1FECBF7C006780A9 /* UnorderedListSpec.swift in Sources */,
+				A26824AD1FECBF69006780A9 /* CMDocumentSpec.swift in Sources */,
+				A26824CB1FECBF80006780A9 /* TableSpec.swift in Sources */,
+				A26824D91FECBF8B006780A9 /* ParagraphSpec.swift in Sources */,
+				A26824DB1FECBF8B006780A9 /* CodeBlockSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1570,6 +2335,11 @@
 			target = A26822291FEB8F17006780A9 /* Maaku-macOS */;
 			targetProxy = A26822A11FEC2703006780A9 /* PBXContainerItemProxy */;
 		};
+		A26823C41FECBD0D006780A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A26823B81FECBD0D006780A9 /* Maaku-tvOS */;
+			targetProxy = A26823C31FECBD0D006780A9 /* PBXContainerItemProxy */;
+		};
 		A276D4901FEB1EB2006D5715 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A276D4831FEB1EB2006D5715 /* Maaku */;
@@ -1632,7 +2402,7 @@
 		};
 		A26822A31FEC2703006780A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F90BF4E8E01CFEFD9AE82E2 /* Pods-MaakuTestTargets-MaakuMacOSTests.debug.xcconfig */;
+			baseConfigurationReference = EE7A9954F8A856945A83345C /* Pods-MaakuTestTargets-MaakuMacOSTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
@@ -1650,7 +2420,7 @@
 		};
 		A26822A41FEC2703006780A9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1BB3C7923F37BCBA2C2FC2D7 /* Pods-MaakuTestTargets-MaakuMacOSTests.release.xcconfig */;
+			baseConfigurationReference = 21D29B678621FC22FF37CEDE /* Pods-MaakuTestTargets-MaakuMacOSTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
@@ -1663,6 +2433,132 @@
 				SDKROOT = macosx;
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "MaakuTests-Swift.h";
 				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		A26823B11FECBCE3006780A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Maaku/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.krisbaker.Maaku;
+				PRODUCT_NAME = Maaku;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/Maaku/libcmark";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		A26823B21FECBCE3006780A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Maaku/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.krisbaker.Maaku;
+				PRODUCT_NAME = Maaku;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/Maaku/libcmark";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		A26823CB1FECBD0D006780A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Maaku/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.krisbaker.Maaku;
+				PRODUCT_NAME = Maaku;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/Maaku/libcmark";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		A26823CC1FECBD0D006780A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Maaku/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.krisbaker.Maaku;
+				PRODUCT_NAME = Maaku;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/Maaku/libcmark";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
+		A26823CE1FECBD0D006780A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F945BF16E83D8C1DA2A4716 /* Pods-MaakuTestTargets-Maaku-tvOSTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MaakuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.krisbaker.MaakuTests;
+				PRODUCT_NAME = MaakuTests;
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		A26823CF1FECBD0D006780A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B6AE0BC6CCFF378FDE156F9 /* Pods-MaakuTestTargets-Maaku-tvOSTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MaakuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.krisbaker.MaakuTests;
+				PRODUCT_NAME = MaakuTests;
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.2;
 			};
 			name = Release;
 		};
@@ -1827,7 +2723,7 @@
 		};
 		A276D49C1FEB1EB2006D5715 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9431C77BF01C7A9E4A9B85E2 /* Pods-MaakuTestTargets-MaakuTests.debug.xcconfig */;
+			baseConfigurationReference = 7731A0BFEB8BF425290832F0 /* Pods-MaakuTestTargets-MaakuTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
@@ -1843,7 +2739,7 @@
 		};
 		A276D49D1FEB1EB2006D5715 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 76DB28C9E677D3391DFEA5FD /* Pods-MaakuTestTargets-MaakuTests.release.xcconfig */;
+			baseConfigurationReference = C169C4F0E9DC6FB064986031 /* Pods-MaakuTestTargets-MaakuTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
@@ -1874,6 +2770,33 @@
 			buildConfigurations = (
 				A26822A31FEC2703006780A9 /* Debug */,
 				A26822A41FEC2703006780A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A26823B31FECBCE3006780A9 /* Build configuration list for PBXNativeTarget "Maaku-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A26823B11FECBCE3006780A9 /* Debug */,
+				A26823B21FECBCE3006780A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A26823CA1FECBD0D006780A9 /* Build configuration list for PBXNativeTarget "Maaku-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A26823CB1FECBD0D006780A9 /* Debug */,
+				A26823CC1FECBD0D006780A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A26823CD1FECBD0D006780A9 /* Build configuration list for PBXNativeTarget "Maaku-tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A26823CE1FECBD0D006780A9 /* Debug */,
+				A26823CF1FECBD0D006780A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
