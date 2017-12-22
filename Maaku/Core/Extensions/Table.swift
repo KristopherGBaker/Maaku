@@ -17,6 +17,42 @@ public protocol TableLine: Node {
     
 }
 
+/// Represents a table alignment.
+public enum TableAlignment: String {
+    
+    /// Center alignment.
+    case center = "c"
+    
+    /// Left alignment.
+    case left = "l"
+    
+    /// No alignment.
+    case none = ""
+    
+    /// Right alignment.
+    case right = "r"
+    
+    /// Creates a TableAlignment matching the raw value.
+    ///
+    /// - Parameters:
+    ///     - rawValue: The raw alignment value.
+    /// - Returns:
+    ///     - The table alignment matching the raw value,
+    ///       TableAlignment.none if there is no match.
+    public init(rawValue: String) {
+        switch rawValue {
+        case TableAlignment.center.rawValue:
+            self = .center
+        case TableAlignment.left.rawValue:
+            self = .left
+        case TableAlignment.right.rawValue:
+            self = .right
+        default:
+            self = .none
+        }
+    }
+}
+
 /// Represents a markdown table.
 public struct Table: LeafBlock {
     
@@ -26,36 +62,45 @@ public struct Table: LeafBlock {
     /// The table rows.
     public let rows: [TableRow]
     
+    /// The number of columns.
+    public let columns: Int
+    
+    /// The table alignments.
+    public let alignments: [TableAlignment]
+    
     /// Creates a Table.
     ///
     /// - Returns:
     ///     The initialized Table.
     public init() {
-        self.header = TableHeader()
-        rows = []
+        self.init(header: TableHeader(), rows: [], columns: 0, alignments: [])
     }
     
-    /// Creates a Table.
+    /// Creates a Paragraph with the specified values.
     ///
     /// - Parameters:
-    ///     - header: The table header.
+    ///     - columns: The number of columns in the table.
+    ///     - alignments: The table alignments.
     /// - Returns:
     ///     The initialized Table.
-    public init(header: TableHeader) {
-        self.header = header
-        rows = []
+    public init(columns: Int, alignments: [String]) {
+        self.init(header: TableHeader(), rows: [], columns: columns, alignments: alignments)
     }
     
-    /// Creates a Paragraph with the specified items.
+    /// Creates a Paragraph with the specified values.
     ///
     /// - Parameters:
     ///     - header: The table header.
     ///     - rows: The table rows.
+    ///     - columns: The number of columns in the table.
+    ///     - alignments: The table alignments.
     /// - Returns:
-    ///     The initialized Paragraph.
-    public init(header: TableHeader, rows: [TableRow]) {
+    ///     The initialized Table.
+    public init(header: TableHeader, rows: [TableRow], columns: Int, alignments: [String]) {
         self.header = header
         self.rows = rows
+        self.columns = columns
+        self.alignments = alignments.map { TableAlignment(rawValue: $0) }
     }
 }
 

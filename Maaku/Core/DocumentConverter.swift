@@ -339,11 +339,11 @@ extension DocumentConverter: CMParserDelegate {
         nodes.append(FootnoteReference(reference: reference))
     }
     
-    public func parserDidStartTable(parser: CMParser) {
+    public func parser(parser: CMParser, didStartTableWithColumns columns: UInt16, alignments: [String]) {
         nodes.append(Table())
     }
     
-    public func parserDidEndTable(parser: CMParser) {
+    public func parser(parser: CMParser, didEndTableWithColumns columns: UInt16, alignments: [String]) {
         var rows: [TableRow] = []
         var header = TableHeader()
         
@@ -360,7 +360,7 @@ extension DocumentConverter: CMParserDelegate {
         
         if let _ = nodes.last as? Table {
             nodes.removeLast()
-            nodes.append(Table(header: header, rows: rows))
+            nodes.append(Table(header: header, rows: rows, columns: Int(columns), alignments: alignments))
         }
     }
     
