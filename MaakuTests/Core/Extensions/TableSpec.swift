@@ -37,7 +37,7 @@ class TableSpec: QuickSpec {
                 let table = document[0] as! Table
                 
                 it("parses the header") {
-                    expect(table.header.cells.count).to(equal(2))
+                    expect(table.header.cells.count).to(equal(3))
                 }
                 
                 it("parses the rows") {
@@ -45,11 +45,19 @@ class TableSpec: QuickSpec {
                 }
                 
                 it("parses the first row") {
-                    expect(table.rows[0].cells.count).to(equal(2))
+                    expect(table.rows[0].cells.count).to(equal(3))
                 }
                 
                 it("parses the second row") {
-                    expect(table.rows[1].cells.count).to(equal(2))
+                    expect(table.rows[1].cells.count).to(equal(3))
+                }
+                
+                it("parses the number of columns") {
+                    expect(table.columns).to(equal(3))
+                }
+                
+                it("parses the alignments") {
+                    expect(table.alignments).to(equal([.left, .center, .right]))
                 }
             }
             catch let error {

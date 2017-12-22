@@ -293,13 +293,17 @@ public protocol CMParserDelegate: class {
     ///
     /// - Parameters:
     ///     - parser: The parser.
-    func parserDidStartTable(parser: CMParser)
+    ///     - columns: The number of table columns.
+    ///     - alignemnts: The table alignments.
+    func parser(parser: CMParser, didStartTableWithColumns columns: UInt16, alignments: [String])
     
     /// Sent by the parser object to the delegate when it encounters the end of a table.
     ///
     /// - Parameters:
     ///     - parser: The parser.
-    func parserDidEndTable(parser: CMParser)
+    ///     - columns: The number of table columns.
+    ///     - alignemnts: The table alignments.
+    func parser(parser: CMParser, didEndTableWithColumns columns: UInt16, alignments: [String])
     
     /// Sent by the parser object to the delegate when it encounters the start of a table header.
     ///
@@ -578,7 +582,8 @@ public class CMParser {
             return
         }
         
-        _ = handleTable(nodeName, eventType: eventType) || handleStrikethrough(nodeName, eventType: eventType)
+        _ = handleTable(node, nodeName: nodeName, eventType: eventType) ||
+            handleStrikethrough(nodeName, eventType: eventType)
     }
     
     /// Handles strikethrough extensions for the current node.
@@ -607,19 +612,35 @@ public class CMParser {
     /// Handles table extensions for the current node.
     ///
     /// - Parameters:
+    ///     - node: The current node.
     ///     - nodeName: The human readable node name.
     ///     - eventType: The event type.
     /// - Returns:
     ///     true if the node was handled as a table, table header, table row, or table cell, false otherwise.
     @discardableResult
-    private func handleTable(_ nodeName: String, eventType: CMEventType) -> Bool {
+    private func handleTable(_ node: CMNode, nodeName: String, eventType: CMEventType) -> Bool {
         switch nodeName {
         case CMExtensionName.table.rawValue:
+            let columns = cmarkextensions_get_table_columns(node.cmarkNode)
+            var alignments = cmarkextensions_get_table_alignments(node.cmarkNode)
+            
+            var align: [String] = []
+            
+            for i in 0..<columns {
+                if let val =  alignments?.pointee, let str = String(bytes: [val], encoding: .utf8) {
+                    align.append(str)
+                }
+                
+                if i < (columns - 1) {
+                    alignments = alignments?.successor()
+                }
+            }
+            
             if eventType == .enter {
-                delegate?.parserDidStartTable(parser: self)
+                delegate?.parser(parser: self, didStartTableWithColumns: columns, alignments: align)
             }
             else {
-                delegate?.parserDidEndTable(parser: self)
+                delegate?.parser(parser: self, didEndTableWithColumns: columns, alignments: align)
             }
         case CMExtensionName.tableHeader.rawValue:
             if eventType == .enter {
