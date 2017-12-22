@@ -568,6 +568,11 @@ public class CMParser {
         }
     }
     
+    /// Handles extensions for the current node.
+    ///
+    /// - Parameters:
+    ///     - node: The current node.
+    ///     - eventType: The event type.
     private func handleExtensions(_ node: CMNode, eventType: CMEventType) {
         guard let nodeName = node.humanReadableType else {
             return
@@ -576,6 +581,13 @@ public class CMParser {
         _ = handleTable(nodeName, eventType: eventType) || handleStrikethrough(nodeName, eventType: eventType)
     }
     
+    /// Handles strikethrough extensions for the current node.
+    ///
+    /// - Parameters:
+    ///     - nodeName: The human readable node name.
+    ///     - eventType: The event type.
+    /// - Returns:
+    ///     true if the node was handled as a strikethrough, false otherwise.
     @discardableResult
     private func handleStrikethrough(_ nodeName: String, eventType: CMEventType) -> Bool {
         guard nodeName == CMExtensionName.strikethrough.rawValue else {
@@ -592,6 +604,13 @@ public class CMParser {
         return true
     }
     
+    /// Handles table extensions for the current node.
+    ///
+    /// - Parameters:
+    ///     - nodeName: The human readable node name.
+    ///     - eventType: The event type.
+    /// - Returns:
+    ///     true if the node was handled as a table, table header, table row, or table cell, false otherwise.
     @discardableResult
     private func handleTable(_ nodeName: String, eventType: CMEventType) -> Bool {
         switch nodeName {
