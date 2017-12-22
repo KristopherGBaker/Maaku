@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		801C3172987C3362CA96421D /* Pods_MaakuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F29E2CB0C7AE4BBB780D0599 /* Pods_MaakuTests.framework */; };
-		895981C305FD061D5E84D8F6 /* Pods_MaakuTestTargets_MaakuMacOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83CD3694E3D0C6F8A2A3E946 /* Pods_MaakuTestTargets_MaakuMacOSTests.framework */; };
+		6B7E5B848BD5D5F291FBC32C /* Pods_MaakuTestTargets_MaakuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B29771D941B338100E9AE4C /* Pods_MaakuTestTargets_MaakuTests.framework */; };
 		A26822231FEB8B55006780A9 /* YoutubePluginSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26822221FEB8B55006780A9 /* YoutubePluginSpec.swift */; };
 		A26822321FEB8F50006780A9 /* Maaku.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4871FEB1EB2006D5715 /* Maaku.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A26822331FEB8F63006780A9 /* CMDelimiterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4AE1FEB21A9006D5715 /* CMDelimiterType.swift */; };
@@ -330,7 +329,7 @@
 		A276D65E1FEB469A006D5715 /* link.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D65D1FEB469A006D5715 /* link.md */; };
 		A276D6601FEB46A4006D5715 /* strong.md in Resources */ = {isa = PBXBuildFile; fileRef = A276D65F1FEB46A4006D5715 /* strong.md */; };
 		A276D6641FEB865B006D5715 /* CMDocumentSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D6631FEB865B006D5715 /* CMDocumentSpec.swift */; };
-		C5EFFBA95511FBA24EFAD5BF /* Pods_MaakuTestTargets_MaakuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFFA783883DCAC1DE9F9FED2 /* Pods_MaakuTestTargets_MaakuTests.framework */; };
+		FB632AA2E93CCFCA04A61447 /* Pods_MaakuTestTargets_MaakuMacOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FF1F3C2C923C8FEF016503 /* Pods_MaakuTestTargets_MaakuMacOSTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -351,12 +350,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		236ED4760A54DDDE9B735705 /* Pods-MaakuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaakuTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MaakuTests/Pods-MaakuTests.release.xcconfig"; sourceTree = "<group>"; };
-		3BA96DED028785705AB22E33 /* Pods-MaakuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaakuTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MaakuTests/Pods-MaakuTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5F5716AF084128CF113209B1 /* Pods-MaakuTestTargets-MaakuMacOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaakuTestTargets-MaakuMacOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MaakuTestTargets-MaakuMacOSTests/Pods-MaakuTestTargets-MaakuMacOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		6E526636F0C7775A0837AA90 /* Pods-MaakuTestTargets-MaakuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaakuTestTargets-MaakuTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MaakuTestTargets-MaakuTests/Pods-MaakuTestTargets-MaakuTests.release.xcconfig"; sourceTree = "<group>"; };
-		83CD3694E3D0C6F8A2A3E946 /* Pods_MaakuTestTargets_MaakuMacOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaakuTestTargets_MaakuMacOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8FF6833C4388CAB4BC4924AB /* Pods-MaakuTestTargets-MaakuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaakuTestTargets-MaakuTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MaakuTestTargets-MaakuTests/Pods-MaakuTestTargets-MaakuTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1BB3C7923F37BCBA2C2FC2D7 /* Pods-MaakuTestTargets-MaakuMacOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaakuTestTargets-MaakuMacOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MaakuTestTargets-MaakuMacOSTests/Pods-MaakuTestTargets-MaakuMacOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		1F90BF4E8E01CFEFD9AE82E2 /* Pods-MaakuTestTargets-MaakuMacOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaakuTestTargets-MaakuMacOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MaakuTestTargets-MaakuMacOSTests/Pods-MaakuTestTargets-MaakuMacOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		76DB28C9E677D3391DFEA5FD /* Pods-MaakuTestTargets-MaakuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaakuTestTargets-MaakuTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MaakuTestTargets-MaakuTests/Pods-MaakuTestTargets-MaakuTests.release.xcconfig"; sourceTree = "<group>"; };
+		8B29771D941B338100E9AE4C /* Pods_MaakuTestTargets_MaakuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaakuTestTargets_MaakuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9431C77BF01C7A9E4A9B85E2 /* Pods-MaakuTestTargets-MaakuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaakuTestTargets-MaakuTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MaakuTestTargets-MaakuTests/Pods-MaakuTestTargets-MaakuTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A26822221FEB8B55006780A9 /* YoutubePluginSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubePluginSpec.swift; sourceTree = "<group>"; };
 		A268222A1FEB8F17006780A9 /* Maaku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Maaku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A268229B1FEC2703006780A9 /* MaakuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaakuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -391,6 +389,7 @@
 		A26823981FEC5969006780A9 /* tagfilter.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = tagfilter.md; sourceTree = "<group>"; };
 		A268239E1FEC6F70006780A9 /* maaku.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = maaku.h; sourceTree = "<group>"; };
 		A268239F1FEC6F70006780A9 /* maaku.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = maaku.c; sourceTree = "<group>"; };
+		A26823A41FEC8A5F006780A9 /* .travis.yml */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = .travis.yml; sourceTree = "<group>"; };
 		A276D4841FEB1EB2006D5715 /* Maaku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Maaku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A276D4871FEB1EB2006D5715 /* Maaku.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Maaku.h; sourceTree = "<group>"; };
 		A276D4881FEB1EB2006D5715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -529,9 +528,7 @@
 		A276D65D1FEB469A006D5715 /* link.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = link.md; sourceTree = "<group>"; };
 		A276D65F1FEB46A4006D5715 /* strong.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = strong.md; sourceTree = "<group>"; };
 		A276D6631FEB865B006D5715 /* CMDocumentSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMDocumentSpec.swift; sourceTree = "<group>"; };
-		EFFA783883DCAC1DE9F9FED2 /* Pods_MaakuTestTargets_MaakuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaakuTestTargets_MaakuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F29E2CB0C7AE4BBB780D0599 /* Pods_MaakuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaakuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F599482638E9E56BFB99184C /* Pods-MaakuTestTargets-MaakuMacOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaakuTestTargets-MaakuMacOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MaakuTestTargets-MaakuMacOSTests/Pods-MaakuTestTargets-MaakuMacOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E7FF1F3C2C923C8FEF016503 /* Pods_MaakuTestTargets_MaakuMacOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaakuTestTargets_MaakuMacOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -547,7 +544,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A26822A01FEC2703006780A9 /* Maaku.framework in Frameworks */,
-				895981C305FD061D5E84D8F6 /* Pods_MaakuTestTargets_MaakuMacOSTests.framework in Frameworks */,
+				FB632AA2E93CCFCA04A61447 /* Pods_MaakuTestTargets_MaakuMacOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,8 +560,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A276D48E1FEB1EB2006D5715 /* Maaku.framework in Frameworks */,
-				801C3172987C3362CA96421D /* Pods_MaakuTests.framework in Frameworks */,
-				C5EFFBA95511FBA24EFAD5BF /* Pods_MaakuTestTargets_MaakuTests.framework in Frameworks */,
+				6B7E5B848BD5D5F291FBC32C /* Pods_MaakuTestTargets_MaakuTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,14 +601,15 @@
 		A276D47A1FEB1EB2006D5715 = {
 			isa = PBXGroup;
 			children = (
+				A26823A41FEC8A5F006780A9 /* .travis.yml */,
 				A276D58B1FEB220B006D5715 /* LICENSE */,
 				A276D5891FEB220A006D5715 /* Maaku.podspec */,
 				A276D58A1FEB220B006D5715 /* README.md */,
 				A276D4861FEB1EB2006D5715 /* Maaku */,
 				A276D4911FEB1EB2006D5715 /* MaakuTests */,
 				A276D4851FEB1EB2006D5715 /* Products */,
-				DDC497F79D3DA0432966B0FE /* Pods */,
-				B6623996310DC2C70547BC0C /* Frameworks */,
+				EBEDA1D19AC6B3DCFF0A1DB5 /* Pods */,
+				D1232019ABAD7F3AE81743F2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -911,25 +908,22 @@
 			path = Leaf;
 			sourceTree = "<group>";
 		};
-		B6623996310DC2C70547BC0C /* Frameworks */ = {
+		D1232019ABAD7F3AE81743F2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F29E2CB0C7AE4BBB780D0599 /* Pods_MaakuTests.framework */,
-				83CD3694E3D0C6F8A2A3E946 /* Pods_MaakuTestTargets_MaakuMacOSTests.framework */,
-				EFFA783883DCAC1DE9F9FED2 /* Pods_MaakuTestTargets_MaakuTests.framework */,
+				E7FF1F3C2C923C8FEF016503 /* Pods_MaakuTestTargets_MaakuMacOSTests.framework */,
+				8B29771D941B338100E9AE4C /* Pods_MaakuTestTargets_MaakuTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DDC497F79D3DA0432966B0FE /* Pods */ = {
+		EBEDA1D19AC6B3DCFF0A1DB5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3BA96DED028785705AB22E33 /* Pods-MaakuTests.debug.xcconfig */,
-				236ED4760A54DDDE9B735705 /* Pods-MaakuTests.release.xcconfig */,
-				F599482638E9E56BFB99184C /* Pods-MaakuTestTargets-MaakuMacOSTests.debug.xcconfig */,
-				5F5716AF084128CF113209B1 /* Pods-MaakuTestTargets-MaakuMacOSTests.release.xcconfig */,
-				8FF6833C4388CAB4BC4924AB /* Pods-MaakuTestTargets-MaakuTests.debug.xcconfig */,
-				6E526636F0C7775A0837AA90 /* Pods-MaakuTestTargets-MaakuTests.release.xcconfig */,
+				1F90BF4E8E01CFEFD9AE82E2 /* Pods-MaakuTestTargets-MaakuMacOSTests.debug.xcconfig */,
+				1BB3C7923F37BCBA2C2FC2D7 /* Pods-MaakuTestTargets-MaakuMacOSTests.release.xcconfig */,
+				9431C77BF01C7A9E4A9B85E2 /* Pods-MaakuTestTargets-MaakuTests.debug.xcconfig */,
+				76DB28C9E677D3391DFEA5FD /* Pods-MaakuTestTargets-MaakuTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -1042,12 +1036,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A26822A51FEC2703006780A9 /* Build configuration list for PBXNativeTarget "MaakuMacOSTests" */;
 			buildPhases = (
-				92C48F46F7EF7EAB5816E83E /* [CP] Check Pods Manifest.lock */,
+				D9557BE9A92561FA76C44F75 /* [CP] Check Pods Manifest.lock */,
 				A26822971FEC2703006780A9 /* Sources */,
 				A26822981FEC2703006780A9 /* Frameworks */,
 				A26822991FEC2703006780A9 /* Resources */,
-				AE12C2C269289CBFE9F1A7F5 /* [CP] Embed Pods Frameworks */,
-				2AA6BF3CD8EDCF30BCE72A5A /* [CP] Copy Pods Resources */,
+				25D4DC65FAEBF242D8700D3D /* [CP] Embed Pods Frameworks */,
+				F527F8AFECF5CA1A0E9C5CD2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1081,12 +1075,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A276D49B1FEB1EB2006D5715 /* Build configuration list for PBXNativeTarget "MaakuTests" */;
 			buildPhases = (
-				5158F5CA2392E5526980BB7A /* [CP] Check Pods Manifest.lock */,
+				C8ABE02AA045FDFE055C414A /* [CP] Check Pods Manifest.lock */,
 				A276D4891FEB1EB2006D5715 /* Sources */,
 				A276D48A1FEB1EB2006D5715 /* Frameworks */,
 				A276D48B1FEB1EB2006D5715 /* Resources */,
-				D8C4F81C119E164DECBD451A /* [CP] Embed Pods Frameworks */,
-				0A492798E611D372659E7BC5 /* [CP] Copy Pods Resources */,
+				48A0D46FA9E4C3767A1D7DFC /* [CP] Embed Pods Frameworks */,
+				3F13E01147226962B5869692 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1222,73 +1216,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0A492798E611D372659E7BC5 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaakuTestTargets-MaakuTests/Pods-MaakuTestTargets-MaakuTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2AA6BF3CD8EDCF30BCE72A5A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaakuTestTargets-MaakuMacOSTests/Pods-MaakuTestTargets-MaakuMacOSTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5158F5CA2392E5526980BB7A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MaakuTestTargets-MaakuTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		92C48F46F7EF7EAB5816E83E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MaakuTestTargets-MaakuMacOSTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AE12C2C269289CBFE9F1A7F5 /* [CP] Embed Pods Frameworks */ = {
+		25D4DC65FAEBF242D8700D3D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1308,7 +1236,22 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaakuTestTargets-MaakuMacOSTests/Pods-MaakuTestTargets-MaakuMacOSTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D8C4F81C119E164DECBD451A /* [CP] Embed Pods Frameworks */ = {
+		3F13E01147226962B5869692 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaakuTestTargets-MaakuTests/Pods-MaakuTestTargets-MaakuTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48A0D46FA9E4C3767A1D7DFC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1326,6 +1269,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaakuTestTargets-MaakuTests/Pods-MaakuTestTargets-MaakuTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8ABE02AA045FDFE055C414A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MaakuTestTargets-MaakuTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9557BE9A92561FA76C44F75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MaakuTestTargets-MaakuMacOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F527F8AFECF5CA1A0E9C5CD2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaakuTestTargets-MaakuMacOSTests/Pods-MaakuTestTargets-MaakuMacOSTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1638,7 +1632,7 @@
 		};
 		A26822A31FEC2703006780A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F599482638E9E56BFB99184C /* Pods-MaakuTestTargets-MaakuMacOSTests.debug.xcconfig */;
+			baseConfigurationReference = 1F90BF4E8E01CFEFD9AE82E2 /* Pods-MaakuTestTargets-MaakuMacOSTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
@@ -1656,7 +1650,7 @@
 		};
 		A26822A41FEC2703006780A9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F5716AF084128CF113209B1 /* Pods-MaakuTestTargets-MaakuMacOSTests.release.xcconfig */;
+			baseConfigurationReference = 1BB3C7923F37BCBA2C2FC2D7 /* Pods-MaakuTestTargets-MaakuMacOSTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
@@ -1833,9 +1827,8 @@
 		};
 		A276D49C1FEB1EB2006D5715 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8FF6833C4388CAB4BC4924AB /* Pods-MaakuTestTargets-MaakuTests.debug.xcconfig */;
+			baseConfigurationReference = 9431C77BF01C7A9E4A9B85E2 /* Pods-MaakuTestTargets-MaakuTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MaakuTests/Info.plist;
@@ -1850,9 +1843,8 @@
 		};
 		A276D49D1FEB1EB2006D5715 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E526636F0C7775A0837AA90 /* Pods-MaakuTestTargets-MaakuTests.release.xcconfig */;
+			baseConfigurationReference = 76DB28C9E677D3391DFEA5FD /* Pods-MaakuTestTargets-MaakuTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MaakuTests/Info.plist;
