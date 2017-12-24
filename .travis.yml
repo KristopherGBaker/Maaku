@@ -25,7 +25,8 @@ env:
 before_install:
   - gem install cocoapods --pre --no-rdoc --no-ri --no-document --quiet
 script:
-  - pod update
+  - pod repo update
+  - pod install
   - set -o pipefail
   - xcodebuild -version
   - xcodebuild -showsdks
