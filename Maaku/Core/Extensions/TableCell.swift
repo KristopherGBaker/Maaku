@@ -35,7 +35,13 @@ public struct TableCell: Node {
 public extension TableCell {
     
     public func attributedText(style: Style) -> NSAttributedString {
-        return NSAttributedString()
+        let attributed = NSMutableAttributedString()
+        
+        for item in items {
+            attributed.append(item.attributedText(style: style.font(current: style.currentFont)))
+        }
+        
+        return attributed
     }
     
 }

@@ -351,6 +351,58 @@ public extension Style {
         return Style(currentFont: currentFont, h1Font: h1Font, h2Font: h2Font, h3Font: h3Font, h4Font: h4Font, h5Font: h5Font, h6Font: h6Font, paragraphFont: paragraphFont, currentForegroundColor: currentForegroundColor, h1ForegroundColor: h1ForegroundColor, h2ForegroundColor: h2ForegroundColor, h3ForegroundColor: h3ForegroundColor, h4ForegroundColor: h4ForegroundColor, h5ForegroundColor: h5ForegroundColor, h6ForegroundColor: h6ForegroundColor, paragraphForegroundColor: paragraphForegroundColor, linkForegroundColor: linkForegroundColor, hasStrikethrough: false)
     }
     
+    /// Returns an updated Style with a bold/strong font.
+    ///
+    /// - Returns:
+    ///     - The updated Style.
+    public func strong() -> Style {
+        var strongFont = currentFont
+        var traits = currentFont.fontDescriptor.symbolicTraits
+        
+        #if os(OSX)
+            traits.insert(.bold)
+            let descriptor = currentFont.fontDescriptor.withSymbolicTraits(traits)
+            
+            if let font = Font(descriptor: descriptor, size: 0.0) {
+                strongFont = font
+            }
+        #else
+            traits.insert(.traitBold)
+            
+            if let descriptor = currentFont.fontDescriptor.withSymbolicTraits(traits) {
+                strongFont = UIFont(descriptor: descriptor, size: 0.0)
+            }
+        #endif
+        
+        return Style(currentFont: strongFont, h1Font: h1Font, h2Font: h2Font, h3Font: h3Font, h4Font: h4Font, h5Font: h5Font, h6Font: h6Font, paragraphFont: paragraphFont, currentForegroundColor: currentForegroundColor, h1ForegroundColor: h1ForegroundColor, h2ForegroundColor: h2ForegroundColor, h3ForegroundColor: h3ForegroundColor, h4ForegroundColor: h4ForegroundColor, h5ForegroundColor: h5ForegroundColor, h6ForegroundColor: h6ForegroundColor, paragraphForegroundColor: paragraphForegroundColor, linkForegroundColor: linkForegroundColor, hasStrikethrough: false)
+    }
+    
+    /// Returns an updated Style with an italic/emphasis font.
+    ///
+    /// - Returns:
+    ///     - The updated Style.
+    public func emphasis() -> Style {
+        var emphasisFont = currentFont
+        var traits = currentFont.fontDescriptor.symbolicTraits
+        
+        #if os(OSX)
+            traits.insert(.italic)
+            let descriptor = currentFont.fontDescriptor.withSymbolicTraits(traits)
+            
+            if let font = Font(descriptor: descriptor, size: 0.0) {
+                emphasisFont = font
+            }
+        #else
+            traits.insert(.traitItalic)
+            
+            if let descriptor = currentFont.fontDescriptor.withSymbolicTraits(traits) {
+                emphasisFont = UIFont(descriptor: descriptor, size: 0.0)
+            }
+        #endif
+        
+        return Style(currentFont: emphasisFont, h1Font: h1Font, h2Font: h2Font, h3Font: h3Font, h4Font: h4Font, h5Font: h5Font, h6Font: h6Font, paragraphFont: paragraphFont, currentForegroundColor: currentForegroundColor, h1ForegroundColor: h1ForegroundColor, h2ForegroundColor: h2ForegroundColor, h3ForegroundColor: h3ForegroundColor, h4ForegroundColor: h4ForegroundColor, h5ForegroundColor: h5ForegroundColor, h6ForegroundColor: h6ForegroundColor, paragraphForegroundColor: paragraphForegroundColor, linkForegroundColor: linkForegroundColor, hasStrikethrough: false)
+    }
+    
     /// Returns the font for the specified heading.
     ///
     /// - Parameters:

@@ -41,6 +41,11 @@ public struct YoutubePlugin: Plugin {
     /// The youtube video URL.
     public let url: URL
     
+    /// The youtube video id.
+    public var videoId: String? {
+        return url.path.components(separatedBy: "/").last
+    }
+    
     public init(url: URL) {
         self.url = url
     }

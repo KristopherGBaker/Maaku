@@ -10,8 +10,14 @@
 		17649405248FAAFEE117F34C /* Pods_MaakuTestTargets_Maaku_tvOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B36A2A592CD2BAB7BA1C431 /* Pods_MaakuTestTargets_Maaku_tvOSTests.framework */; };
 		25FAB41D47754C8A8E77BBCF /* Pods_MaakuTestTargets_MaakuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8BE9758EB3D6AF90C8AD72B /* Pods_MaakuTestTargets_MaakuTests.framework */; };
 		896300E57540772CB53C4E4C /* Pods_MaakuTestTargets_MaakuMacOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1454E0F5F3B889B08D70D0D7 /* Pods_MaakuTestTargets_MaakuMacOSTests.framework */; };
+		A2298AE21FEEEF5400A0E275 /* nestedblockquote.md in Resources */ = {isa = PBXBuildFile; fileRef = A2298AE11FEEEF5400A0E275 /* nestedblockquote.md */; };
+		A2298AE31FEEEF5400A0E275 /* nestedblockquote.md in Resources */ = {isa = PBXBuildFile; fileRef = A2298AE11FEEEF5400A0E275 /* nestedblockquote.md */; };
+		A2298AE41FEEEF5400A0E275 /* nestedblockquote.md in Resources */ = {isa = PBXBuildFile; fileRef = A2298AE11FEEEF5400A0E275 /* nestedblockquote.md */; };
+		A2298AE81FEF270800A0E275 /* Maaku.h in Headers */ = {isa = PBXBuildFile; fileRef = A2298AE71FEF270700A0E275 /* Maaku.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2298AE91FEF270800A0E275 /* Maaku.h in Headers */ = {isa = PBXBuildFile; fileRef = A2298AE71FEF270700A0E275 /* Maaku.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2298AEA1FEF270800A0E275 /* Maaku.h in Headers */ = {isa = PBXBuildFile; fileRef = A2298AE71FEF270700A0E275 /* Maaku.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2298AEB1FEF270800A0E275 /* Maaku.h in Headers */ = {isa = PBXBuildFile; fileRef = A2298AE71FEF270700A0E275 /* Maaku.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A26822231FEB8B55006780A9 /* YoutubePluginSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26822221FEB8B55006780A9 /* YoutubePluginSpec.swift */; };
-		A26822321FEB8F50006780A9 /* Maaku.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4871FEB1EB2006D5715 /* Maaku.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A26822331FEB8F63006780A9 /* CMDelimiterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4AE1FEB21A9006D5715 /* CMDelimiterType.swift */; };
 		A26822341FEB8F63006780A9 /* CMDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4B01FEB21A9006D5715 /* CMDocument.swift */; };
 		A26822351FEB8F63006780A9 /* CMDocumentOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4AC1FEB21A9006D5715 /* CMDocumentOption.swift */; };
@@ -202,8 +208,6 @@
 		A26823A21FEC6F70006780A9 /* maaku.c in Sources */ = {isa = PBXBuildFile; fileRef = A268239F1FEC6F70006780A9 /* maaku.c */; };
 		A26823A31FEC6F70006780A9 /* maaku.c in Sources */ = {isa = PBXBuildFile; fileRef = A268239F1FEC6F70006780A9 /* maaku.c */; };
 		A26823C21FECBD0D006780A9 /* Maaku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A26823B91FECBD0D006780A9 /* Maaku.framework */; };
-		A26823D01FECBE86006780A9 /* Maaku.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4871FEB1EB2006D5715 /* Maaku.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A26823D11FECBE87006780A9 /* Maaku.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4871FEB1EB2006D5715 /* Maaku.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A26823D21FECBEB5006780A9 /* arena.c in Sources */ = {isa = PBXBuildFile; fileRef = A276D5011FEB21A9006D5715 /* arena.c */; };
 		A26823D31FECBEB5006780A9 /* autolink.c in Sources */ = {isa = PBXBuildFile; fileRef = A26823331FEC3036006780A9 /* autolink.c */; };
 		A26823D41FECBEB5006780A9 /* autolink.h in Headers */ = {isa = PBXBuildFile; fileRef = A268233F1FEC3037006780A9 /* autolink.h */; };
@@ -473,7 +477,6 @@
 		A26824DC1FECBF8B006780A9 /* HeadingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D61F1FEB3D1A006D5715 /* HeadingSpec.swift */; };
 		A26824DD1FECBF8B006780A9 /* HorizontalRuleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D6211FEB3D25006D5715 /* HorizontalRuleSpec.swift */; };
 		A276D48E1FEB1EB2006D5715 /* Maaku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A276D4841FEB1EB2006D5715 /* Maaku.framework */; };
-		A276D4951FEB1EB2006D5715 /* Maaku.h in Headers */ = {isa = PBXBuildFile; fileRef = A276D4871FEB1EB2006D5715 /* Maaku.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A276D51B1FEB21A9006D5715 /* YoutubePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4A21FEB21A9006D5715 /* YoutubePlugin.swift */; };
 		A276D5241FEB21A9006D5715 /* CMDocumentOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4AC1FEB21A9006D5715 /* CMDocumentOption.swift */; };
 		A276D5251FEB21A9006D5715 /* CMIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D4AD1FEB21A9006D5715 /* CMIterator.swift */; };
@@ -635,6 +638,8 @@
 		8B36A2A592CD2BAB7BA1C431 /* Pods_MaakuTestTargets_Maaku_tvOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaakuTestTargets_Maaku_tvOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F945BF16E83D8C1DA2A4716 /* Pods-MaakuTestTargets-Maaku-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaakuTestTargets-Maaku-tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MaakuTestTargets-Maaku-tvOSTests/Pods-MaakuTestTargets-Maaku-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9B6AE0BC6CCFF378FDE156F9 /* Pods-MaakuTestTargets-Maaku-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaakuTestTargets-Maaku-tvOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MaakuTestTargets-Maaku-tvOSTests/Pods-MaakuTestTargets-Maaku-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		A2298AE11FEEEF5400A0E275 /* nestedblockquote.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = nestedblockquote.md; sourceTree = "<group>"; };
+		A2298AE71FEF270700A0E275 /* Maaku.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Maaku.h; sourceTree = "<group>"; };
 		A26822221FEB8B55006780A9 /* YoutubePluginSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubePluginSpec.swift; sourceTree = "<group>"; };
 		A268222A1FEB8F17006780A9 /* Maaku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Maaku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A268229B1FEC2703006780A9 /* MaakuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaakuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -674,7 +679,6 @@
 		A26823B91FECBD0D006780A9 /* Maaku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Maaku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A26823C11FECBD0D006780A9 /* MaakuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaakuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A276D4841FEB1EB2006D5715 /* Maaku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Maaku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A276D4871FEB1EB2006D5715 /* Maaku.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Maaku.h; sourceTree = "<group>"; };
 		A276D4881FEB1EB2006D5715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A276D48D1FEB1EB2006D5715 /* MaakuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaakuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A276D4941FEB1EB2006D5715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -961,7 +965,7 @@
 		A276D4861FEB1EB2006D5715 /* Maaku */ = {
 			isa = PBXGroup;
 			children = (
-				A276D4871FEB1EB2006D5715 /* Maaku.h */,
+				A2298AE71FEF270700A0E275 /* Maaku.h */,
 				A276D4881FEB1EB2006D5715 /* Info.plist */,
 				A276D4AB1FEB21A9006D5715 /* CMark */,
 				A276D4B41FEB21A9006D5715 /* Core */,
@@ -1175,28 +1179,29 @@
 		A276D60B1FEB363A006D5715 /* Markdown */ = {
 			isa = PBXGroup;
 			children = (
-				A276D60C1FEB364A006D5715 /* document.md */,
-				A276D6151FEB3BDA006D5715 /* paragraph.md */,
-				A276D6191FEB3CA9006D5715 /* htmlblock.md */,
+				A26823911FEC5595006780A9 /* autolink.md */,
+				A276D6331FEB3F50006D5715 /* blockquote.md */,
 				A276D6231FEB3D31006D5715 /* codeblock.md */,
+				A276D60C1FEB364A006D5715 /* document.md */,
+				A276D6511FEB4657006D5715 /* emphasis.md */,
+				A276D6351FEB3F5B006D5715 /* footnotedefinition.md */,
 				A276D6251FEB3D3A006D5715 /* heading.md */,
 				A276D6271FEB3D4D006D5715 /* horizontalrule.md */,
-				A276D6331FEB3F50006D5715 /* blockquote.md */,
-				A276D6351FEB3F5B006D5715 /* footnotedefinition.md */,
-				A276D6391FEB3F69006D5715 /* orderedlist.md */,
-				A276D63B1FEB3F72006D5715 /* unorderedlist.md */,
-				A276D6511FEB4657006D5715 /* emphasis.md */,
+				A276D6191FEB3CA9006D5715 /* htmlblock.md */,
 				A276D6531FEB4665006D5715 /* image.md */,
 				A276D6551FEB4673006D5715 /* inlinecode.md */,
 				A276D6571FEB467D006D5715 /* inlinehtml.md */,
 				A276D6591FEB4686006D5715 /* linebreak.md */,
-				A276D65B1FEB4693006D5715 /* softbreak.md */,
 				A276D65D1FEB469A006D5715 /* link.md */,
+				A2298AE11FEEEF5400A0E275 /* nestedblockquote.md */,
+				A276D6391FEB3F69006D5715 /* orderedlist.md */,
+				A276D6151FEB3BDA006D5715 /* paragraph.md */,
+				A276D65B1FEB4693006D5715 /* softbreak.md */,
+				A268238B1FEC517B006780A9 /* strikethrough.md */,
 				A276D65F1FEB46A4006D5715 /* strong.md */,
 				A268236C1FEC3330006780A9 /* table.md */,
-				A268238B1FEC517B006780A9 /* strikethrough.md */,
-				A26823911FEC5595006780A9 /* autolink.md */,
 				A26823981FEC5969006780A9 /* tagfilter.md */,
+				A276D63B1FEB3F72006D5715 /* unorderedlist.md */,
 			);
 			path = Markdown;
 			sourceTree = "<group>";
@@ -1267,10 +1272,10 @@
 				A26822841FEB8FAB006780A9 /* registry.h in Headers */,
 				A26822781FEB8FAB006780A9 /* cmark.h in Headers */,
 				A26823591FEC3178006780A9 /* table.h in Headers */,
+				A2298AE91FEF270800A0E275 /* Maaku.h in Headers */,
 				A26822851FEB8FAB006780A9 /* render.h in Headers */,
 				A26822721FEB8FAB006780A9 /* buffer.h in Headers */,
 				A26822811FEB8FAB006780A9 /* parser.h in Headers */,
-				A26822321FEB8F50006780A9 /* Maaku.h in Headers */,
 				A26822761FEB8FAB006780A9 /* cmark_extension_api.h in Headers */,
 				A26822821FEB8FAB006780A9 /* plugin.h in Headers */,
 				A268227C1FEB8FAB006780A9 /* html.h in Headers */,
@@ -1295,7 +1300,6 @@
 				A26824101FECBEB5006780A9 /* tagfilter.h in Headers */,
 				A26824121FECBEB5006780A9 /* utf8.h in Headers */,
 				A26823DD1FECBEB5006780A9 /* cmark_version.h in Headers */,
-				A26823D01FECBE86006780A9 /* Maaku.h in Headers */,
 				A268240A1FECBEB5006780A9 /* strikethrough.h in Headers */,
 				A26823D41FECBEB5006780A9 /* autolink.h in Headers */,
 				A26823FD1FECBEB5006780A9 /* parser.h in Headers */,
@@ -1308,6 +1312,7 @@
 				A26823E41FECBEB5006780A9 /* core-extensions.h in Headers */,
 				A26823F71FECBEB5006780A9 /* maaku.h in Headers */,
 				A26823FA1FECBEB5006780A9 /* map.h in Headers */,
+				A2298AEA1FEF270800A0E275 /* Maaku.h in Headers */,
 				A26823E61FECBEB5006780A9 /* ext_scanners.h in Headers */,
 				A26824001FECBEB5006780A9 /* plugin.h in Headers */,
 				A26823F21FECBEB5006780A9 /* iterator.h in Headers */,
@@ -1335,7 +1340,6 @@
 				A26824521FECBEB5006780A9 /* tagfilter.h in Headers */,
 				A26824541FECBEB5006780A9 /* utf8.h in Headers */,
 				A268241F1FECBEB5006780A9 /* cmark_version.h in Headers */,
-				A26823D11FECBE87006780A9 /* Maaku.h in Headers */,
 				A268244C1FECBEB5006780A9 /* strikethrough.h in Headers */,
 				A26824161FECBEB5006780A9 /* autolink.h in Headers */,
 				A268243F1FECBEB5006780A9 /* parser.h in Headers */,
@@ -1348,6 +1352,7 @@
 				A26824261FECBEB5006780A9 /* core-extensions.h in Headers */,
 				A26824391FECBEB5006780A9 /* maaku.h in Headers */,
 				A268243C1FECBEB5006780A9 /* map.h in Headers */,
+				A2298AEB1FEF270800A0E275 /* Maaku.h in Headers */,
 				A26824281FECBEB5006780A9 /* ext_scanners.h in Headers */,
 				A26824421FECBEB5006780A9 /* plugin.h in Headers */,
 				A26824341FECBEB5006780A9 /* iterator.h in Headers */,
@@ -1378,7 +1383,6 @@
 				A276D5821FEB21A9006D5715 /* iterator.h in Headers */,
 				A26823621FEC3179006780A9 /* strikethrough.h in Headers */,
 				A276D55B1FEB21A9006D5715 /* cmark_export.h in Headers */,
-				A276D4951FEB1EB2006D5715 /* Maaku.h in Headers */,
 				A276D57E1FEB21A9006D5715 /* inlines.h in Headers */,
 				A276D5671FEB21A9006D5715 /* footnotes.h in Headers */,
 				A276D56C1FEB21A9006D5715 /* node.h in Headers */,
@@ -1388,6 +1392,7 @@
 				A276D5851FEB21A9006D5715 /* utf8.h in Headers */,
 				A26823641FEC3179006780A9 /* table.h in Headers */,
 				A276D5631FEB21A9006D5715 /* chunk.h in Headers */,
+				A2298AE81FEF270800A0E275 /* Maaku.h in Headers */,
 				A276D5681FEB21A9006D5715 /* parser.h in Headers */,
 				A276D5621FEB21A9006D5715 /* config.h in Headers */,
 				A276D5791FEB21A9006D5715 /* syntax_extension.h in Headers */,
@@ -1626,6 +1631,7 @@
 				A26822BD1FEC274F006780A9 /* document.md in Resources */,
 				A26822C41FEC274F006780A9 /* footnotedefinition.md in Resources */,
 				A26822C71FEC274F006780A9 /* emphasis.md in Resources */,
+				A2298AE31FEEEF5400A0E275 /* nestedblockquote.md in Resources */,
 				A26822CB1FEC274F006780A9 /* linebreak.md in Resources */,
 				A26823841FEC4DED006780A9 /* table.md in Resources */,
 				A268238D1FEC517B006780A9 /* strikethrough.md in Resources */,
@@ -1669,6 +1675,7 @@
 				A26824AF1FECBF72006780A9 /* document.md in Resources */,
 				A26824B61FECBF72006780A9 /* footnotedefinition.md in Resources */,
 				A26824B91FECBF72006780A9 /* emphasis.md in Resources */,
+				A2298AE41FEEEF5400A0E275 /* nestedblockquote.md in Resources */,
 				A26824BD1FECBF72006780A9 /* linebreak.md in Resources */,
 				A26824C11FECBF72006780A9 /* table.md in Resources */,
 				A26824C21FECBF72006780A9 /* strikethrough.md in Resources */,
@@ -1705,6 +1712,7 @@
 				A276D63A1FEB3F69006D5715 /* orderedlist.md in Resources */,
 				A276D6361FEB3F5B006D5715 /* footnotedefinition.md in Resources */,
 				A276D6521FEB4657006D5715 /* emphasis.md in Resources */,
+				A2298AE21FEEEF5400A0E275 /* nestedblockquote.md in Resources */,
 				A276D65A1FEB4686006D5715 /* linebreak.md in Resources */,
 				A268236D1FEC3330006780A9 /* table.md in Resources */,
 				A268238C1FEC517B006780A9 /* strikethrough.md in Resources */,

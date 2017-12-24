@@ -236,7 +236,11 @@ extension DocumentConverter: CMParserDelegate {
     public func parserDidEndBlockQuote(parser: CMParser) {
         var blockItems: [Block] = []
         
-        while let item = nodes.last as? Block, !(item is BlockQuote) {
+        while let item = nodes.last as? Block {
+            if let quote = item as? BlockQuote, quote.items.count == 0 {
+                break
+            }
+            
             blockItems.insert(item, at: 0)
             nodes.removeLast()
         }

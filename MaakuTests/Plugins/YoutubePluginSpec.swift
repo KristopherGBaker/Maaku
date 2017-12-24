@@ -18,7 +18,7 @@ class YoutubePluginSpec: QuickSpec {
         describe("YoutubePlugin") {
             do {
                 PluginManager.registerParsers(parsers: [YoutubePluginParser()])
-                let document = try Document(text: "[youtubevideo](source::https://youtu.be/cugj1h6PuK0)\n")
+                let document = try Document(text: "[youtubevideo](source::https://youtu.be/kkdBB1hVLX0)\n")
                 
                 it("initializes the document") {
                     expect(document.count).to(equal(1))
@@ -26,8 +26,16 @@ class YoutubePluginSpec: QuickSpec {
                 
                 it("parses the plugin") {
                     expect(document[0]).to(beAKindOf(YoutubePlugin.self))
-                    let plugin = document[0] as! YoutubePlugin
-                    expect(plugin.url).to(equal(URL(string: "https://youtu.be/cugj1h6PuK0")))
+                }
+                
+                let plugin = document[0] as! YoutubePlugin
+                
+                it("sets the url") {
+                    expect(plugin.url).to(equal(URL(string: "https://youtu.be/kkdBB1hVLX0")))
+                }
+                
+                it("gets the video id") {
+                    expect(plugin.videoId).to(equal("kkdBB1hVLX0"))
                 }
             }
             catch let error {

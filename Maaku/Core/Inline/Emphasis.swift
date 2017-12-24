@@ -36,26 +36,8 @@ public extension Emphasis {
     public func attributedText(style: Style) -> NSAttributedString {
         let attributed = NSMutableAttributedString()
         
-        var emphasisFont = style.currentFont
-        var traits = style.currentFont.fontDescriptor.symbolicTraits
-        
-        #if os(OSX)
-            traits.insert(.italic)
-            let descriptor = style.currentFont.fontDescriptor.withSymbolicTraits(traits)
-            
-            if let font = Font(descriptor: descriptor, size: 0.0) {
-                emphasisFont = font
-            }
-        #else
-            traits.insert(.traitItalic)
-            
-            if let descriptor = style.currentFont.fontDescriptor.withSymbolicTraits(traits) {
-                emphasisFont = UIFont(descriptor: descriptor, size: 0.0)
-            }
-        #endif
-        
         for item in items {
-            attributed.append(item.attributedText(style: style.font(current: emphasisFont)))
+            attributed.append(item.attributedText(style: style.emphasis()))
         }
         
         return attributed

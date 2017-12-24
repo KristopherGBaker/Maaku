@@ -40,6 +40,44 @@ class BlockQuoteSpec: QuickSpec {
                 XCTFail("\(error.localizedDescription)")
             }
         }
+        
+        describe("Nested BlockQuote") {
+            let md = loadExample("nestedblockquote")
+            
+            guard let text = md else {
+                XCTFail("example blockquote nil")
+                return
+            }
+            
+            do {
+                let document = try Document(text: text)
+                
+                it("initializes the document") {
+                    expect(document.count).to(equal(2))
+                }
+                
+                it("parses the blockquote") {
+                    expect(document[1]).to(beAKindOf(BlockQuote.self))
+                }
+                
+                let blockquote = document[1] as! BlockQuote
+                
+                it("parses the nested blockquote") {
+                    expect(blockquote.items.count).to(equal(2))
+                    expect(blockquote.items[1]).to(beAKindOf(BlockQuote.self))
+                }
+                
+                let nestedBlockquote = blockquote.items[1] as! BlockQuote
+                
+                it("parses the next nested blockquote") {
+                    expect(nestedBlockquote.items.count).to(equal(2))
+                    expect(nestedBlockquote.items[1]).to(beAKindOf(BlockQuote.self))
+                }
+            }
+            catch let error {
+                XCTFail("\(error.localizedDescription)")
+            }
+        }
     }
     
 }
