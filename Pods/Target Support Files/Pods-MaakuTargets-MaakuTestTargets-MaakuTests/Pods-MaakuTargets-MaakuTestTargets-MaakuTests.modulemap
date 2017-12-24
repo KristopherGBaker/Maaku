@@ -1,0 +1,6 @@
+framework module Pods_MaakuTargets_MaakuTestTargets_MaakuTests {
+  umbrella header "Pods-MaakuTargets-MaakuTestTargets-MaakuTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

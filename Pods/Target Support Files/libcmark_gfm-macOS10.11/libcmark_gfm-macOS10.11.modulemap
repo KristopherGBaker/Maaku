@@ -1,0 +1,6 @@
+framework module libcmark_gfm {
+  umbrella header "libcmark_gfm-macOS10.11-umbrella.h"
+
+  export *
+  module * { export * }
+}

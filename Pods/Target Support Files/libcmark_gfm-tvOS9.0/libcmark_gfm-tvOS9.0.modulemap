@@ -1,0 +1,6 @@
+framework module libcmark_gfm {
+  umbrella header "libcmark_gfm-tvOS9.0-umbrella.h"
+
+  export *
+  module * { export * }
+}
