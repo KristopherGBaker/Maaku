@@ -1,3 +1,0 @@
-Footnotes[^1] are added in-text like so ...
-
-[^1]: Footnotes are the mind killer.

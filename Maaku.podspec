@@ -22,18 +22,17 @@ Pod::Spec.new do |s|
   s.default_subspec = 'Core'
   
   s.subspec 'CMark' do |core|
-      core.source_files = "Maaku/CMark/**/*.swift", "Maaku/libcmark/**/*{.c,.h}"
-      core.preserve_paths = "Maaku/libcmark/**/*"
-      core.pod_target_xcconfig = { "SWIFT_INCLUDE_PATHS" => "$(PODS_TARGET_SRCROOT)/Maaku/libcmark/**", "LIBRARY_SEARCH_PATHS" => "$(PODS_TARGET_SRCROOT)/Maaku/" }
+      core.source_files = "Sources/Maaku/CMark/**/*.swift"
+      core.dependency 'libcmark_gfm'
   end
   
   s.subspec 'Core' do |md|
-      md.source_files = "Maaku/Core/**/*.swift"
+      md.source_files = "Sources/Maaku/Core/**/*.swift"
       md.dependency 'Maaku/CMark'
   end
   
   s.subspec 'Plugins' do |plugins|
-      plugins.source_files = "Maaku/Plugins/**/*.swift"
+      plugins.source_files = "Sources/Maaku/Plugins/**/*.swift"
       plugins.dependency 'Maaku/CMark'
       plugins.dependency 'Maaku/Core'
   end

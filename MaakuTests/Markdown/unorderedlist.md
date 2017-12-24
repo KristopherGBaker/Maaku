@@ -1,3 +1,0 @@
-+  Swift
-+  Objective-C
-+  C
