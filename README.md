@@ -7,4 +7,5 @@ Install with CocoaPods, Carthage, or Swift Package Manager.
 
 
 `swift build -Xswiftc "-target" -Xswiftc "x86_64-apple-macosx10.11"`
+
 `swift test -Xswiftc "-target" -Xswiftc "x86_64-apple-macosx10.11"`

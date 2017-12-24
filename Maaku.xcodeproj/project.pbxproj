@@ -14,9 +14,6 @@
 		A2298AE91FEF270800A0E275 /* Maaku.h in Headers */ = {isa = PBXBuildFile; fileRef = A2298AE71FEF270700A0E275 /* Maaku.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A2298AEA1FEF270800A0E275 /* Maaku.h in Headers */ = {isa = PBXBuildFile; fileRef = A2298AE71FEF270700A0E275 /* Maaku.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A2298AEB1FEF270800A0E275 /* Maaku.h in Headers */ = {isa = PBXBuildFile; fileRef = A2298AE71FEF270700A0E275 /* Maaku.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A254E2DB1FEF7F7000C48E71 /* Maaku+TestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A254E2D81FEF7F6A00C48E71 /* Maaku+TestCase.swift */; };
-		A254E2DC1FEF7F7100C48E71 /* Maaku+TestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A254E2D81FEF7F6A00C48E71 /* Maaku+TestCase.swift */; };
-		A254E2DD1FEF7F7200C48E71 /* Maaku+TestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A254E2D81FEF7F6A00C48E71 /* Maaku+TestCase.swift */; };
 		A254E2DE1FEF7F7B00C48E71 /* CMDocumentSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A254E2B91FEF7F6A00C48E71 /* CMDocumentSpec.swift */; };
 		A254E2DF1FEF7F7B00C48E71 /* CMDocumentSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A254E2B91FEF7F6A00C48E71 /* CMDocumentSpec.swift */; };
 		A254E2E01FEF7F7C00C48E71 /* CMDocumentSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A254E2B91FEF7F6A00C48E71 /* CMDocumentSpec.swift */; };
@@ -350,7 +347,6 @@
 		A254E2D51FEF7F6A00C48E71 /* ListItemSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemSpec.swift; sourceTree = "<group>"; };
 		A254E2D61FEF7F6A00C48E71 /* BlockQuoteSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockQuoteSpec.swift; sourceTree = "<group>"; };
 		A254E2D71FEF7F6A00C48E71 /* FootnoteDefinitionSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootnoteDefinitionSpec.swift; sourceTree = "<group>"; };
-		A254E2D81FEF7F6A00C48E71 /* Maaku+TestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Maaku+TestCase.swift"; sourceTree = "<group>"; };
 		A268222A1FEB8F17006780A9 /* Maaku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Maaku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A268229B1FEC2703006780A9 /* MaakuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaakuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A26823A41FEC8A5F006780A9 /* .travis.yml */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = .travis.yml; sourceTree = "<group>"; };
@@ -530,7 +526,6 @@
 		A254E29D1FEF7F0A00C48E71 /* MaakuTests */ = {
 			isa = PBXGroup;
 			children = (
-				A254E2D81FEF7F6A00C48E71 /* Maaku+TestCase.swift */,
 				A254E2B81FEF7F6A00C48E71 /* CMark */,
 				A254E2BA1FEF7F6A00C48E71 /* Core */,
 				A254E29E1FEF7F6A00C48E71 /* Plugins */,
@@ -1442,7 +1437,6 @@
 				A254E2EB1FEF7F8800C48E71 /* HeadingSpec.swift in Sources */,
 				A254E3111FEF7F9500C48E71 /* InlineHtmlSpec.swift in Sources */,
 				A254E3221FEF7F9C00C48E71 /* OrderedListSpec.swift in Sources */,
-				A254E2DC1FEF7F7100C48E71 /* Maaku+TestCase.swift in Sources */,
 				A254E2FA1FEF7F8E00C48E71 /* StrikethroughSpec.swift in Sources */,
 				A254E2DF1FEF7F7B00C48E71 /* CMDocumentSpec.swift in Sources */,
 				A254E2ED1FEF7F8800C48E71 /* CodeBlockSpec.swift in Sources */,
@@ -1577,7 +1571,6 @@
 				A254E2F01FEF7F8800C48E71 /* HeadingSpec.swift in Sources */,
 				A254E31B1FEF7F9600C48E71 /* InlineHtmlSpec.swift in Sources */,
 				A254E3271FEF7F9D00C48E71 /* OrderedListSpec.swift in Sources */,
-				A254E2DD1FEF7F7200C48E71 /* Maaku+TestCase.swift in Sources */,
 				A254E2FE1FEF7F8F00C48E71 /* StrikethroughSpec.swift in Sources */,
 				A254E2E01FEF7F7C00C48E71 /* CMDocumentSpec.swift in Sources */,
 				A254E2F21FEF7F8800C48E71 /* CodeBlockSpec.swift in Sources */,
@@ -1662,7 +1655,6 @@
 				A254E2E61FEF7F8700C48E71 /* HeadingSpec.swift in Sources */,
 				A254E3071FEF7F9400C48E71 /* InlineHtmlSpec.swift in Sources */,
 				A254E31D1FEF7F9B00C48E71 /* OrderedListSpec.swift in Sources */,
-				A254E2DB1FEF7F7000C48E71 /* Maaku+TestCase.swift in Sources */,
 				A254E2F61FEF7F8D00C48E71 /* StrikethroughSpec.swift in Sources */,
 				A254E2DE1FEF7F7B00C48E71 /* CMDocumentSpec.swift in Sources */,
 				A254E2E81FEF7F8700C48E71 /* CodeBlockSpec.swift in Sources */,
