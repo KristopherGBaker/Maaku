@@ -98,6 +98,9 @@
 		A26822A01FEC2703006780A9 /* Maaku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A268222A1FEB8F17006780A9 /* Maaku.framework */; };
 		A26823C21FECBD0D006780A9 /* Maaku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A26823B91FECBD0D006780A9 /* Maaku.framework */; };
 		A276D48E1FEB1EB2006D5715 /* Maaku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A276D4841FEB1EB2006D5715 /* Maaku.framework */; };
+		A28847411FF5890A00558555 /* StyleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28847401FF5890A00558555 /* StyleSpec.swift */; };
+		A28847421FF5890A00558555 /* StyleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28847401FF5890A00558555 /* StyleSpec.swift */; };
+		A28847431FF5890A00558555 /* StyleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28847401FF5890A00558555 /* StyleSpec.swift */; };
 		A288C47A1FEF29AB00667F4A /* CMDocumentOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A288C4491FEF29AA00667F4A /* CMDocumentOption.swift */; };
 		A288C47B1FEF29AB00667F4A /* CMDocumentOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A288C4491FEF29AA00667F4A /* CMDocumentOption.swift */; };
 		A288C47C1FEF29AB00667F4A /* CMDocumentOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A288C4491FEF29AA00667F4A /* CMDocumentOption.swift */; };
@@ -361,6 +364,7 @@
 		A276D58A1FEB220B006D5715 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A276D58B1FEB220B006D5715 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A28847351FF49D2800558555 /* .swiftlint.yml */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = .swiftlint.yml; sourceTree = "<group>"; };
+		A28847401FF5890A00558555 /* StyleSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleSpec.swift; sourceTree = "<group>"; };
 		A288C4491FEF29AA00667F4A /* CMDocumentOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMDocumentOption.swift; sourceTree = "<group>"; };
 		A288C44A1FEF29AA00667F4A /* CMIterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMIterator.swift; sourceTree = "<group>"; };
 		A288C44B1FEF29AA00667F4A /* CMDelimiterType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMDelimiterType.swift; sourceTree = "<group>"; };
@@ -554,6 +558,7 @@
 			isa = PBXGroup;
 			children = (
 				A254E2BB1FEF7F6A00C48E71 /* DocumentSpec.swift */,
+				A28847401FF5890A00558555 /* StyleSpec.swift */,
 				A254E2D21FEF7F6A00C48E71 /* Container */,
 				A254E2C21FEF7F6A00C48E71 /* Extensions */,
 				A254E2C71FEF7F6A00C48E71 /* Inline */,
@@ -1525,6 +1530,7 @@
 				A254E3091FEF7F9500C48E71 /* SoftBreakSpec.swift in Sources */,
 				A254E2EC1FEF7F8800C48E71 /* HorizontalRuleSpec.swift in Sources */,
 				A254E2F71FEF7F8E00C48E71 /* TagFilterSpec.swift in Sources */,
+				A28847421FF5890A00558555 /* StyleSpec.swift in Sources */,
 				A254E3121FEF7F9500C48E71 /* StrongSpec.swift in Sources */,
 				A254E2E91FEF7F8800C48E71 /* HtmlBlockSpec.swift in Sources */,
 				A254E30A1FEF7F9500C48E71 /* LineBreakSpec.swift in Sources */,
@@ -1659,6 +1665,7 @@
 				A254E3131FEF7F9600C48E71 /* SoftBreakSpec.swift in Sources */,
 				A254E2F11FEF7F8800C48E71 /* HorizontalRuleSpec.swift in Sources */,
 				A254E2FB1FEF7F8F00C48E71 /* TagFilterSpec.swift in Sources */,
+				A28847431FF5890A00558555 /* StyleSpec.swift in Sources */,
 				A254E31C1FEF7F9600C48E71 /* StrongSpec.swift in Sources */,
 				A254E2EE1FEF7F8800C48E71 /* HtmlBlockSpec.swift in Sources */,
 				A254E3141FEF7F9600C48E71 /* LineBreakSpec.swift in Sources */,
@@ -1743,6 +1750,7 @@
 				A254E2FF1FEF7F9400C48E71 /* SoftBreakSpec.swift in Sources */,
 				A254E2E71FEF7F8700C48E71 /* HorizontalRuleSpec.swift in Sources */,
 				A254E2F31FEF7F8D00C48E71 /* TagFilterSpec.swift in Sources */,
+				A28847411FF5890A00558555 /* StyleSpec.swift in Sources */,
 				A254E3081FEF7F9400C48E71 /* StrongSpec.swift in Sources */,
 				A254E2E41FEF7F8700C48E71 /* HtmlBlockSpec.swift in Sources */,
 				A254E3001FEF7F9400C48E71 /* LineBreakSpec.swift in Sources */,

@@ -250,15 +250,19 @@ public extension Style {
                      hasStrikethrough: hasStrikethrough)
     }
 
-    /// Returns an updated Style with specified foreground color.
+    /// Returns an updated Style with specified color.
     ///
     /// - Parameters:
-    ///     - current: The current foreground color.
+    ///     - type: The color type.
+    ///     - color: The color.
     /// - Returns:
     ///     - The updated Style.
-    public func color(current currentForegroundColor: Color) -> Style {
+    public func color(type: ColorType, color: Color) -> Style {
+        var updatedColors = colors
+        updatedColors[type] = color
+
         return Style(fonts: fonts,
-                     colors: colors,
+                     colors: updatedColors,
                      hasStrikethrough: hasStrikethrough)
     }
 
