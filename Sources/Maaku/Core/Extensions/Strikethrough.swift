@@ -10,10 +10,10 @@ import Foundation
 
 /// Represents a markdown strikethrough.
 public struct Strikethrough: Inline {
-    
+
     /// The inline items.
     public let items: [Inline]
-    
+
     /// Creates a Strikethrough.
     ///
     /// - Returns:
@@ -21,7 +21,7 @@ public struct Strikethrough: Inline {
     public init() {
         items = []
     }
-    
+
     /// Creates a Strikethrough with the specified items.
     ///
     /// - Parameters:
@@ -34,15 +34,15 @@ public struct Strikethrough: Inline {
 }
 
 public extension Strikethrough {
-    
+
     public func attributedText(style: Style) -> NSAttributedString {
         let attributed = NSMutableAttributedString()
-        
+
         for item in items {
             attributed.append(item.attributedText(style: style.enableStrikethrough()))
         }
-        
+
         return attributed
     }
-    
+
 }

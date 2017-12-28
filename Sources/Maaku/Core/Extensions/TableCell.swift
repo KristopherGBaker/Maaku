@@ -10,10 +10,10 @@ import Foundation
 
 /// Represents a markdown table cell.
 public struct TableCell: Node {
-    
+
     /// The inline items.
     public let items: [Inline]
-    
+
     /// Creates a TableCell.
     ///
     /// - Returns:
@@ -21,7 +21,7 @@ public struct TableCell: Node {
     public init() {
         items = []
     }
-    
+
     /// Creates a TableCell with the specified items.
     ///
     /// - Parameters:
@@ -31,19 +31,19 @@ public struct TableCell: Node {
     public init(items: [Inline]) {
         self.items = items
     }
-    
+
 }
 
 public extension TableCell {
-    
+
     public func attributedText(style: Style) -> NSAttributedString {
         let attributed = NSMutableAttributedString()
-        
+
         for item in items {
             attributed.append(item.attributedText(style: style.font(current: style.currentFont)))
         }
-        
+
         return attributed
     }
-    
+
 }

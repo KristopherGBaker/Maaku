@@ -10,13 +10,13 @@ import Foundation
 
 /// Represents a markdown footnote definition.
 public struct FootnoteDefinition: ContainerBlock {
-    
+
     /// The block items.
     public let items: [Block]
-    
+
     /// The footnote number.
     public let number: Int
-    
+
     /// Creates a FootnoteDefinition with the specified number.
     ///
     /// - Parameters:
@@ -27,7 +27,7 @@ public struct FootnoteDefinition: ContainerBlock {
         items = []
         self.number = number
     }
-    
+
     /// Creates a FootnoteDefinition with the specified number and items.
     ///
     /// - Parameters:
@@ -39,22 +39,22 @@ public struct FootnoteDefinition: ContainerBlock {
         self.number = number
         self.items = items
     }
-    
+
 }
 
 public extension FootnoteDefinition {
-    
+
     public func attributedText(style: Style) -> NSAttributedString {
         let attributed = NSMutableAttributedString(
             string: "\(number). ",
             attributes: [.font: style.currentFont, .foregroundColor: style.currentForegroundColor]
         )
-        
+
         for item in items {
             attributed.append(item.attributedText(style: style))
         }
-        
+
         return attributed
     }
-    
+
 }

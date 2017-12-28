@@ -11,13 +11,13 @@ import libcmark_gfm
 
 /// Represents a cmark list type.
 public enum CMListType: UInt32 {
-    
+
     /// The none list type.
     case none
-    
+
     /// The unordered list type.
     case unordered
-    
+
     /// The ordered list type.
     case ordered
 }

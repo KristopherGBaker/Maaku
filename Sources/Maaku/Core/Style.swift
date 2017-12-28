@@ -6,7 +6,7 @@
 //  Copyright © 2017 Kristopher Baker. All rights reserved.
 //
 
-
+// swiftlint:disable file_length
 
 #if os(OSX)
     import AppKit
@@ -20,61 +20,61 @@
 
 /// Represents the styles (fonts, colors) to apply to attributed strings created from markdown.
 public struct Style {
-    
+
     /// Has strikethrough enabled.
     public let hasStrikethrough: Bool
-    
+
     /// The current font.
     public let currentFont: Font
-    
+
     /// The H1 font.
     public let h1Font: Font
-    
+
     /// The H2 font.
     public let h2Font: Font
-    
+
     /// The H3 font.
     public let h3Font: Font
-    
+
     /// The H4 font.
     public let h4Font: Font
-    
+
     /// The H5 font.
     public let h5Font: Font
-    
+
     /// The H6 font.
     public let h6Font: Font
-    
+
     /// The paragraph font.
     public let paragraphFont: Font
-    
+
     /// The current foreground color.
     public let currentForegroundColor: Color
-    
+
     /// The H1 foreground color.
     public let h1ForegroundColor: Color
-    
+
     /// The H2 foreground color.
     public let h2ForegroundColor: Color
-    
+
     /// The H3 foreground color.
     public let h3ForegroundColor: Color
-    
+
     /// The H4 foreground color.
     public let h4ForegroundColor: Color
-    
+
     /// The H5 foreground color.
     public let h5ForegroundColor: Color
-    
+
     /// The H6 foreground color.
     public let h6ForegroundColor: Color
-    
+
     /// The paragraph foreground color.
     public let paragraphForegroundColor: Color
-    
+
     /// The link foreground color.
     public let linkForegroundColor: Color
-    
+
     /// Initializes a Style with the default values.
     ///
     /// - Returns:
@@ -98,7 +98,7 @@ public struct Style {
         paragraphFont = Font.preferredFont(forTextStyle: .body)
         #endif
         currentFont = paragraphFont
-        
+
         h1ForegroundColor = .black
         h2ForegroundColor = .black
         h3ForegroundColor = .black
@@ -110,7 +110,7 @@ public struct Style {
         currentForegroundColor = paragraphForegroundColor
         hasStrikethrough = false
     }
-    
+
     /// Initializes a Style with the specified values.
     ///
     /// - Parameters:
@@ -133,7 +133,24 @@ public struct Style {
     ///     - linkForegroundColor: The link foreground color.
     /// - Returns:
     ///     The initialized Style.
-    public init(currentFont: Font, h1Font: Font, h2Font: Font, h3Font: Font, h4Font: Font, h5Font: Font, h6Font: Font, paragraphFont: Font, currentForegroundColor: Color, h1ForegroundColor: Color, h2ForegroundColor: Color, h3ForegroundColor: Color, h4ForegroundColor: Color, h5ForegroundColor: Color, h6ForegroundColor: Color, paragraphForegroundColor: Color, linkForegroundColor: Color, hasStrikethrough: Bool) {
+    public init(currentFont: Font,
+                h1Font: Font,
+                h2Font: Font,
+                h3Font: Font,
+                h4Font: Font,
+                h5Font: Font,
+                h6Font: Font,
+                paragraphFont: Font,
+                currentForegroundColor: Color,
+                h1ForegroundColor: Color,
+                h2ForegroundColor: Color,
+                h3ForegroundColor: Color,
+                h4ForegroundColor: Color,
+                h5ForegroundColor: Color,
+                h6ForegroundColor: Color,
+                paragraphForegroundColor: Color,
+                linkForegroundColor: Color,
+                hasStrikethrough: Bool) {
         self.currentFont = currentFont
         self.h1Font = h1Font
         self.h2Font = h2Font
@@ -153,12 +170,12 @@ public struct Style {
         self.currentForegroundColor = currentForegroundColor
         self.hasStrikethrough = hasStrikethrough
     }
-    
+
 }
 
 /// Defines Style extension methods.
 public extension Style {
-    
+
     /// Returns an updated Style with specified font.
     ///
     /// - Parameters:
@@ -166,9 +183,26 @@ public extension Style {
     /// - Returns:
     ///     - The updated Style.
     public func font(current currentFont: Font) -> Style {
-        return Style(currentFont: currentFont, h1Font: h1Font, h2Font: h2Font, h3Font: h3Font, h4Font: h4Font, h5Font: h5Font, h6Font: h6Font, paragraphFont: paragraphFont, currentForegroundColor: currentForegroundColor, h1ForegroundColor: h1ForegroundColor, h2ForegroundColor: h2ForegroundColor, h3ForegroundColor: h3ForegroundColor, h4ForegroundColor: h4ForegroundColor, h5ForegroundColor: h5ForegroundColor, h6ForegroundColor: h6ForegroundColor, paragraphForegroundColor: paragraphForegroundColor, linkForegroundColor: linkForegroundColor, hasStrikethrough: hasStrikethrough)
+        return Style(currentFont: currentFont,
+                     h1Font: h1Font,
+                     h2Font: h2Font,
+                     h3Font: h3Font,
+                     h4Font: h4Font,
+                     h5Font: h5Font,
+                     h6Font: h6Font,
+                     paragraphFont: paragraphFont,
+                     currentForegroundColor: currentForegroundColor,
+                     h1ForegroundColor: h1ForegroundColor,
+                     h2ForegroundColor: h2ForegroundColor,
+                     h3ForegroundColor: h3ForegroundColor,
+                     h4ForegroundColor: h4ForegroundColor,
+                     h5ForegroundColor: h5ForegroundColor,
+                     h6ForegroundColor: h6ForegroundColor,
+                     paragraphForegroundColor: paragraphForegroundColor,
+                     linkForegroundColor: linkForegroundColor,
+                     hasStrikethrough: hasStrikethrough)
     }
-    
+
     /// Returns an updated Style with specified font.
     ///
     /// - Parameters:
@@ -176,9 +210,26 @@ public extension Style {
     /// - Returns:
     ///     - The updated Style.
     public func font(h1 h1Font: Font) -> Style {
-        return Style(currentFont: currentFont, h1Font: h1Font, h2Font: h2Font, h3Font: h3Font, h4Font: h4Font, h5Font: h5Font, h6Font: h6Font, paragraphFont: paragraphFont, currentForegroundColor: currentForegroundColor, h1ForegroundColor: h1ForegroundColor, h2ForegroundColor: h2ForegroundColor, h3ForegroundColor: h3ForegroundColor, h4ForegroundColor: h4ForegroundColor, h5ForegroundColor: h5ForegroundColor, h6ForegroundColor: h6ForegroundColor, paragraphForegroundColor: paragraphForegroundColor, linkForegroundColor: linkForegroundColor, hasStrikethrough: hasStrikethrough)
+        return Style(currentFont: currentFont,
+                     h1Font: h1Font,
+                     h2Font: h2Font,
+                     h3Font: h3Font,
+                     h4Font: h4Font,
+                     h5Font: h5Font,
+                     h6Font: h6Font,
+                     paragraphFont: paragraphFont,
+                     currentForegroundColor: currentForegroundColor,
+                     h1ForegroundColor: h1ForegroundColor,
+                     h2ForegroundColor: h2ForegroundColor,
+                     h3ForegroundColor: h3ForegroundColor,
+                     h4ForegroundColor: h4ForegroundColor,
+                     h5ForegroundColor: h5ForegroundColor,
+                     h6ForegroundColor: h6ForegroundColor,
+                     paragraphForegroundColor: paragraphForegroundColor,
+                     linkForegroundColor: linkForegroundColor,
+                     hasStrikethrough: hasStrikethrough)
     }
-    
+
     /// Returns an updated Style with specified font.
     ///
     /// - Parameters:
@@ -186,9 +237,26 @@ public extension Style {
     /// - Returns:
     ///     - The updated Style.
     public func font(h2 h2Font: Font) -> Style {
-        return Style(currentFont: currentFont, h1Font: h1Font, h2Font: h2Font, h3Font: h3Font, h4Font: h4Font, h5Font: h5Font, h6Font: h6Font, paragraphFont: paragraphFont, currentForegroundColor: currentForegroundColor, h1ForegroundColor: h1ForegroundColor, h2ForegroundColor: h2ForegroundColor, h3ForegroundColor: h3ForegroundColor, h4ForegroundColor: h4ForegroundColor, h5ForegroundColor: h5ForegroundColor, h6ForegroundColor: h6ForegroundColor, paragraphForegroundColor: paragraphForegroundColor, linkForegroundColor: linkForegroundColor, hasStrikethrough: hasStrikethrough)
+        return Style(currentFont: currentFont,
+                     h1Font: h1Font,
+                     h2Font: h2Font,
+                     h3Font: h3Font,
+                     h4Font: h4Font,
+                     h5Font: h5Font,
+                     h6Font: h6Font,
+                     paragraphFont: paragraphFont,
+                     currentForegroundColor: currentForegroundColor,
+                     h1ForegroundColor: h1ForegroundColor,
+                     h2ForegroundColor: h2ForegroundColor,
+                     h3ForegroundColor: h3ForegroundColor,
+                     h4ForegroundColor: h4ForegroundColor,
+                     h5ForegroundColor: h5ForegroundColor,
+                     h6ForegroundColor: h6ForegroundColor,
+                     paragraphForegroundColor: paragraphForegroundColor,
+                     linkForegroundColor: linkForegroundColor,
+                     hasStrikethrough: hasStrikethrough)
     }
-    
+
     /// Returns an updated Style with specified font.
     ///
     /// - Parameters:
@@ -196,9 +264,26 @@ public extension Style {
     /// - Returns:
     ///     - The updated Style.
     public func font(h3 h3Font: Font) -> Style {
-        return Style(currentFont: currentFont, h1Font: h1Font, h2Font: h2Font, h3Font: h3Font, h4Font: h4Font, h5Font: h5Font, h6Font: h6Font, paragraphFont: paragraphFont, currentForegroundColor: currentForegroundColor, h1ForegroundColor: h1ForegroundColor, h2ForegroundColor: h2ForegroundColor, h3ForegroundColor: h3ForegroundColor, h4ForegroundColor: h4ForegroundColor, h5ForegroundColor: h5ForegroundColor, h6ForegroundColor: h6ForegroundColor, paragraphForegroundColor: paragraphForegroundColor, linkForegroundColor: linkForegroundColor, hasStrikethrough: hasStrikethrough)
+        return Style(currentFont: currentFont,
+                     h1Font: h1Font,
+                     h2Font: h2Font,
+                     h3Font: h3Font,
+                     h4Font: h4Font,
+                     h5Font: h5Font,
+                     h6Font: h6Font,
+                     paragraphFont: paragraphFont,
+                     currentForegroundColor: currentForegroundColor,
+                     h1ForegroundColor: h1ForegroundColor,
+                     h2ForegroundColor: h2ForegroundColor,
+                     h3ForegroundColor: h3ForegroundColor,
+                     h4ForegroundColor: h4ForegroundColor,
+                     h5ForegroundColor: h5ForegroundColor,
+                     h6ForegroundColor: h6ForegroundColor,
+                     paragraphForegroundColor: paragraphForegroundColor,
+                     linkForegroundColor: linkForegroundColor,
+                     hasStrikethrough: hasStrikethrough)
     }
-    
+
     /// Returns an updated Style with specified font.
     ///
     /// - Parameters:
@@ -206,9 +291,26 @@ public extension Style {
     /// - Returns:
     ///     - The updated Style.
     public func font(h4 h4Font: Font) -> Style {
-        return Style(currentFont: currentFont, h1Font: h1Font, h2Font: h2Font, h3Font: h3Font, h4Font: h4Font, h5Font: h5Font, h6Font: h6Font, paragraphFont: paragraphFont, currentForegroundColor: currentForegroundColor, h1ForegroundColor: h1ForegroundColor, h2ForegroundColor: h2ForegroundColor, h3ForegroundColor: h3ForegroundColor, h4ForegroundColor: h4ForegroundColor, h5ForegroundColor: h5ForegroundColor, h6ForegroundColor: h6ForegroundColor, paragraphForegroundColor: paragraphForegroundColor, linkForegroundColor: linkForegroundColor, hasStrikethrough: hasStrikethrough)
+        return Style(currentFont: currentFont,
+                     h1Font: h1Font,
+                     h2Font: h2Font,
+                     h3Font: h3Font,
+                     h4Font: h4Font,
+                     h5Font: h5Font,
+                     h6Font: h6Font,
+                     paragraphFont: paragraphFont,
+                     currentForegroundColor: currentForegroundColor,
+                     h1ForegroundColor: h1ForegroundColor,
+                     h2ForegroundColor: h2ForegroundColor,
+                     h3ForegroundColor: h3ForegroundColor,
+                     h4ForegroundColor: h4ForegroundColor,
+                     h5ForegroundColor: h5ForegroundColor,
+                     h6ForegroundColor: h6ForegroundColor,
+                     paragraphForegroundColor: paragraphForegroundColor,
+                     linkForegroundColor: linkForegroundColor,
+                     hasStrikethrough: hasStrikethrough)
     }
-    
+
     /// Returns an updated Style with specified font.
     ///
     /// - Parameters:
@@ -216,9 +318,26 @@ public extension Style {
     /// - Returns:
     ///     - The updated Style.
     public func font(h5 h5Font: Font) -> Style {
-        return Style(currentFont: currentFont, h1Font: h1Font, h2Font: h2Font, h3Font: h3Font, h4Font: h4Font, h5Font: h5Font, h6Font: h6Font, paragraphFont: paragraphFont, currentForegroundColor: currentForegroundColor, h1ForegroundColor: h1ForegroundColor, h2ForegroundColor: h2ForegroundColor, h3ForegroundColor: h3ForegroundColor, h4ForegroundColor: h4ForegroundColor, h5ForegroundColor: h5ForegroundColor, h6ForegroundColor: h6ForegroundColor, paragraphForegroundColor: paragraphForegroundColor, linkForegroundColor: linkForegroundColor, hasStrikethrough: hasStrikethrough)
+        return Style(currentFont: currentFont,
+                     h1Font: h1Font,
+                     h2Font: h2Font,
+                     h3Font: h3Font,
+                     h4Font: h4Font,
+                     h5Font: h5Font,
+                     h6Font: h6Font,
+                     paragraphFont: paragraphFont,
+                     currentForegroundColor: currentForegroundColor,
+                     h1ForegroundColor: h1ForegroundColor,
+                     h2ForegroundColor: h2ForegroundColor,
+                     h3ForegroundColor: h3ForegroundColor,
+                     h4ForegroundColor: h4ForegroundColor,
+                     h5ForegroundColor: h5ForegroundColor,
+                     h6ForegroundColor: h6ForegroundColor,
+                     paragraphForegroundColor: paragraphForegroundColor,
+                     linkForegroundColor: linkForegroundColor,
+                     hasStrikethrough: hasStrikethrough)
     }
-    
+
     /// Returns an updated Style with specified font.
     ///
     /// - Parameters:
@@ -226,9 +345,26 @@ public extension Style {
     /// - Returns:
     ///     - The updated Style.
     public func font(h6 h6Font: Font) -> Style {
-        return Style(currentFont: currentFont, h1Font: h1Font, h2Font: h2Font, h3Font: h3Font, h4Font: h4Font, h5Font: h5Font, h6Font: h6Font, paragraphFont: paragraphFont, currentForegroundColor: currentForegroundColor, h1ForegroundColor: h1ForegroundColor, h2ForegroundColor: h2ForegroundColor, h3ForegroundColor: h3ForegroundColor, h4ForegroundColor: h4ForegroundColor, h5ForegroundColor: h5ForegroundColor, h6ForegroundColor: h6ForegroundColor, paragraphForegroundColor: paragraphForegroundColor, linkForegroundColor: linkForegroundColor, hasStrikethrough: hasStrikethrough)
+        return Style(currentFont: currentFont,
+                     h1Font: h1Font,
+                     h2Font: h2Font,
+                     h3Font: h3Font,
+                     h4Font: h4Font,
+                     h5Font: h5Font,
+                     h6Font: h6Font,
+                     paragraphFont: paragraphFont,
+                     currentForegroundColor: currentForegroundColor,
+                     h1ForegroundColor: h1ForegroundColor,
+                     h2ForegroundColor: h2ForegroundColor,
+                     h3ForegroundColor: h3ForegroundColor,
+                     h4ForegroundColor: h4ForegroundColor,
+                     h5ForegroundColor: h5ForegroundColor,
+                     h6ForegroundColor: h6ForegroundColor,
+                     paragraphForegroundColor: paragraphForegroundColor,
+                     linkForegroundColor: linkForegroundColor,
+                     hasStrikethrough: hasStrikethrough)
     }
-    
+
     /// Returns an updated Style with specified heading.
     ///
     /// - Parameters:
@@ -236,9 +372,26 @@ public extension Style {
     /// - Returns:
     ///     - The updated Style.
     public func font(heading: Heading) -> Style {
-        return Style(currentFont: font(forHeading: heading), h1Font: h1Font, h2Font: h2Font, h3Font: h3Font, h4Font: h4Font, h5Font: h5Font, h6Font: h6Font, paragraphFont: paragraphFont, currentForegroundColor: currentForegroundColor, h1ForegroundColor: h1ForegroundColor, h2ForegroundColor: h2ForegroundColor, h3ForegroundColor: h3ForegroundColor, h4ForegroundColor: h4ForegroundColor, h5ForegroundColor: h5ForegroundColor, h6ForegroundColor: h6ForegroundColor, paragraphForegroundColor: paragraphForegroundColor, linkForegroundColor: linkForegroundColor, hasStrikethrough: hasStrikethrough)
+        return Style(currentFont: currentFont,
+                     h1Font: h1Font,
+                     h2Font: h2Font,
+                     h3Font: h3Font,
+                     h4Font: h4Font,
+                     h5Font: h5Font,
+                     h6Font: h6Font,
+                     paragraphFont: paragraphFont,
+                     currentForegroundColor: currentForegroundColor,
+                     h1ForegroundColor: h1ForegroundColor,
+                     h2ForegroundColor: h2ForegroundColor,
+                     h3ForegroundColor: h3ForegroundColor,
+                     h4ForegroundColor: h4ForegroundColor,
+                     h5ForegroundColor: h5ForegroundColor,
+                     h6ForegroundColor: h6ForegroundColor,
+                     paragraphForegroundColor: paragraphForegroundColor,
+                     linkForegroundColor: linkForegroundColor,
+                     hasStrikethrough: hasStrikethrough)
     }
-    
+
     /// Returns an updated Style with specified font.
     ///
     /// - Parameters:
@@ -246,9 +399,26 @@ public extension Style {
     /// - Returns:
     ///     - The updated Style.
     public func font(paragraph paragraphFont: Font) -> Style {
-        return Style(currentFont: currentFont, h1Font: h1Font, h2Font: h2Font, h3Font: h3Font, h4Font: h4Font, h5Font: h5Font, h6Font: h6Font, paragraphFont: paragraphFont, currentForegroundColor: currentForegroundColor, h1ForegroundColor: h1ForegroundColor, h2ForegroundColor: h2ForegroundColor, h3ForegroundColor: h3ForegroundColor, h4ForegroundColor: h4ForegroundColor, h5ForegroundColor: h5ForegroundColor, h6ForegroundColor: h6ForegroundColor, paragraphForegroundColor: paragraphForegroundColor, linkForegroundColor: linkForegroundColor, hasStrikethrough: hasStrikethrough)
+        return Style(currentFont: currentFont,
+                     h1Font: h1Font,
+                     h2Font: h2Font,
+                     h3Font: h3Font,
+                     h4Font: h4Font,
+                     h5Font: h5Font,
+                     h6Font: h6Font,
+                     paragraphFont: paragraphFont,
+                     currentForegroundColor: currentForegroundColor,
+                     h1ForegroundColor: h1ForegroundColor,
+                     h2ForegroundColor: h2ForegroundColor,
+                     h3ForegroundColor: h3ForegroundColor,
+                     h4ForegroundColor: h4ForegroundColor,
+                     h5ForegroundColor: h5ForegroundColor,
+                     h6ForegroundColor: h6ForegroundColor,
+                     paragraphForegroundColor: paragraphForegroundColor,
+                     linkForegroundColor: linkForegroundColor,
+                     hasStrikethrough: hasStrikethrough)
     }
-    
+
     /// Returns an updated Style with specified foreground color.
     ///
     /// - Parameters:
@@ -256,9 +426,26 @@ public extension Style {
     /// - Returns:
     ///     - The updated Style.
     public func color(current currentForegroundColor: Color) -> Style {
-        return Style(currentFont: currentFont, h1Font: h1Font, h2Font: h2Font, h3Font: h3Font, h4Font: h4Font, h5Font: h5Font, h6Font: h6Font, paragraphFont: paragraphFont, currentForegroundColor: currentForegroundColor, h1ForegroundColor: h1ForegroundColor, h2ForegroundColor: h2ForegroundColor, h3ForegroundColor: h3ForegroundColor, h4ForegroundColor: h4ForegroundColor, h5ForegroundColor: h5ForegroundColor, h6ForegroundColor: h6ForegroundColor, paragraphForegroundColor: paragraphForegroundColor, linkForegroundColor: linkForegroundColor, hasStrikethrough: hasStrikethrough)
+        return Style(currentFont: currentFont,
+                     h1Font: h1Font,
+                     h2Font: h2Font,
+                     h3Font: h3Font,
+                     h4Font: h4Font,
+                     h5Font: h5Font,
+                     h6Font: h6Font,
+                     paragraphFont: paragraphFont,
+                     currentForegroundColor: currentForegroundColor,
+                     h1ForegroundColor: h1ForegroundColor,
+                     h2ForegroundColor: h2ForegroundColor,
+                     h3ForegroundColor: h3ForegroundColor,
+                     h4ForegroundColor: h4ForegroundColor,
+                     h5ForegroundColor: h5ForegroundColor,
+                     h6ForegroundColor: h6ForegroundColor,
+                     paragraphForegroundColor: paragraphForegroundColor,
+                     linkForegroundColor: linkForegroundColor,
+                     hasStrikethrough: hasStrikethrough)
     }
-    
+
     /// Returns an updated Style with specified foreground color.
     ///
     /// - Parameters:
@@ -266,9 +453,26 @@ public extension Style {
     /// - Returns:
     ///     - The updated Style.
     public func color(h1 h1ForegroundColor: Color) -> Style {
-        return Style(currentFont: currentFont, h1Font: h1Font, h2Font: h2Font, h3Font: h3Font, h4Font: h4Font, h5Font: h5Font, h6Font: h6Font, paragraphFont: paragraphFont, currentForegroundColor: currentForegroundColor, h1ForegroundColor: h1ForegroundColor, h2ForegroundColor: h2ForegroundColor, h3ForegroundColor: h3ForegroundColor, h4ForegroundColor: h4ForegroundColor, h5ForegroundColor: h5ForegroundColor, h6ForegroundColor: h6ForegroundColor, paragraphForegroundColor: paragraphForegroundColor, linkForegroundColor: linkForegroundColor, hasStrikethrough: hasStrikethrough)
+        return Style(currentFont: currentFont,
+                     h1Font: h1Font,
+                     h2Font: h2Font,
+                     h3Font: h3Font,
+                     h4Font: h4Font,
+                     h5Font: h5Font,
+                     h6Font: h6Font,
+                     paragraphFont: paragraphFont,
+                     currentForegroundColor: currentForegroundColor,
+                     h1ForegroundColor: h1ForegroundColor,
+                     h2ForegroundColor: h2ForegroundColor,
+                     h3ForegroundColor: h3ForegroundColor,
+                     h4ForegroundColor: h4ForegroundColor,
+                     h5ForegroundColor: h5ForegroundColor,
+                     h6ForegroundColor: h6ForegroundColor,
+                     paragraphForegroundColor: paragraphForegroundColor,
+                     linkForegroundColor: linkForegroundColor,
+                     hasStrikethrough: hasStrikethrough)
     }
-    
+
     /// Returns an updated Style with specified foreground color.
     ///
     /// - Parameters:
@@ -276,9 +480,26 @@ public extension Style {
     /// - Returns:
     ///     - The updated Style.
     public func color(h2 h2ForegroundColor: Color) -> Style {
-        return Style(currentFont: currentFont, h1Font: h1Font, h2Font: h2Font, h3Font: h3Font, h4Font: h4Font, h5Font: h5Font, h6Font: h6Font, paragraphFont: paragraphFont, currentForegroundColor: currentForegroundColor, h1ForegroundColor: h1ForegroundColor, h2ForegroundColor: h2ForegroundColor, h3ForegroundColor: h3ForegroundColor, h4ForegroundColor: h4ForegroundColor, h5ForegroundColor: h5ForegroundColor, h6ForegroundColor: h6ForegroundColor, paragraphForegroundColor: paragraphForegroundColor, linkForegroundColor: linkForegroundColor, hasStrikethrough: hasStrikethrough)
+        return Style(currentFont: currentFont,
+                     h1Font: h1Font,
+                     h2Font: h2Font,
+                     h3Font: h3Font,
+                     h4Font: h4Font,
+                     h5Font: h5Font,
+                     h6Font: h6Font,
+                     paragraphFont: paragraphFont,
+                     currentForegroundColor: currentForegroundColor,
+                     h1ForegroundColor: h1ForegroundColor,
+                     h2ForegroundColor: h2ForegroundColor,
+                     h3ForegroundColor: h3ForegroundColor,
+                     h4ForegroundColor: h4ForegroundColor,
+                     h5ForegroundColor: h5ForegroundColor,
+                     h6ForegroundColor: h6ForegroundColor,
+                     paragraphForegroundColor: paragraphForegroundColor,
+                     linkForegroundColor: linkForegroundColor,
+                     hasStrikethrough: hasStrikethrough)
     }
-    
+
     /// Returns an updated Style with specified foreground color.
     ///
     /// - Parameters:
@@ -286,9 +507,26 @@ public extension Style {
     /// - Returns:
     ///     - The updated Style.
     public func color(h3 h3ForegroundColor: Color) -> Style {
-        return Style(currentFont: currentFont, h1Font: h1Font, h2Font: h2Font, h3Font: h3Font, h4Font: h4Font, h5Font: h5Font, h6Font: h6Font, paragraphFont: paragraphFont, currentForegroundColor: currentForegroundColor, h1ForegroundColor: h1ForegroundColor, h2ForegroundColor: h2ForegroundColor, h3ForegroundColor: h3ForegroundColor, h4ForegroundColor: h4ForegroundColor, h5ForegroundColor: h5ForegroundColor, h6ForegroundColor: h6ForegroundColor, paragraphForegroundColor: paragraphForegroundColor, linkForegroundColor: linkForegroundColor, hasStrikethrough: hasStrikethrough)
+        return Style(currentFont: currentFont,
+                     h1Font: h1Font,
+                     h2Font: h2Font,
+                     h3Font: h3Font,
+                     h4Font: h4Font,
+                     h5Font: h5Font,
+                     h6Font: h6Font,
+                     paragraphFont: paragraphFont,
+                     currentForegroundColor: currentForegroundColor,
+                     h1ForegroundColor: h1ForegroundColor,
+                     h2ForegroundColor: h2ForegroundColor,
+                     h3ForegroundColor: h3ForegroundColor,
+                     h4ForegroundColor: h4ForegroundColor,
+                     h5ForegroundColor: h5ForegroundColor,
+                     h6ForegroundColor: h6ForegroundColor,
+                     paragraphForegroundColor: paragraphForegroundColor,
+                     linkForegroundColor: linkForegroundColor,
+                     hasStrikethrough: hasStrikethrough)
     }
-    
+
     /// Returns an updated Style with specified foreground color.
     ///
     /// - Parameters:
@@ -296,9 +534,26 @@ public extension Style {
     /// - Returns:
     ///     - The updated Style.
     public func color(h4 h4ForegroundColor: Color) -> Style {
-        return Style(currentFont: currentFont, h1Font: h1Font, h2Font: h2Font, h3Font: h3Font, h4Font: h4Font, h5Font: h5Font, h6Font: h6Font, paragraphFont: paragraphFont, currentForegroundColor: currentForegroundColor, h1ForegroundColor: h1ForegroundColor, h2ForegroundColor: h2ForegroundColor, h3ForegroundColor: h3ForegroundColor, h4ForegroundColor: h4ForegroundColor, h5ForegroundColor: h5ForegroundColor, h6ForegroundColor: h6ForegroundColor, paragraphForegroundColor: paragraphForegroundColor, linkForegroundColor: linkForegroundColor, hasStrikethrough: hasStrikethrough)
+        return Style(currentFont: currentFont,
+                     h1Font: h1Font,
+                     h2Font: h2Font,
+                     h3Font: h3Font,
+                     h4Font: h4Font,
+                     h5Font: h5Font,
+                     h6Font: h6Font,
+                     paragraphFont: paragraphFont,
+                     currentForegroundColor: currentForegroundColor,
+                     h1ForegroundColor: h1ForegroundColor,
+                     h2ForegroundColor: h2ForegroundColor,
+                     h3ForegroundColor: h3ForegroundColor,
+                     h4ForegroundColor: h4ForegroundColor,
+                     h5ForegroundColor: h5ForegroundColor,
+                     h6ForegroundColor: h6ForegroundColor,
+                     paragraphForegroundColor: paragraphForegroundColor,
+                     linkForegroundColor: linkForegroundColor,
+                     hasStrikethrough: hasStrikethrough)
     }
-    
+
     /// Returns an updated Style with specified foreground color.
     ///
     /// - Parameters:
@@ -306,9 +561,26 @@ public extension Style {
     /// - Returns:
     ///     - The updated Style.
     public func color(h5 h5ForegroundColor: Color) -> Style {
-        return Style(currentFont: currentFont, h1Font: h1Font, h2Font: h2Font, h3Font: h3Font, h4Font: h4Font, h5Font: h5Font, h6Font: h6Font, paragraphFont: paragraphFont, currentForegroundColor: currentForegroundColor, h1ForegroundColor: h1ForegroundColor, h2ForegroundColor: h2ForegroundColor, h3ForegroundColor: h3ForegroundColor, h4ForegroundColor: h4ForegroundColor, h5ForegroundColor: h5ForegroundColor, h6ForegroundColor: h6ForegroundColor, paragraphForegroundColor: paragraphForegroundColor, linkForegroundColor: linkForegroundColor, hasStrikethrough: hasStrikethrough)
+        return Style(currentFont: currentFont,
+                     h1Font: h1Font,
+                     h2Font: h2Font,
+                     h3Font: h3Font,
+                     h4Font: h4Font,
+                     h5Font: h5Font,
+                     h6Font: h6Font,
+                     paragraphFont: paragraphFont,
+                     currentForegroundColor: currentForegroundColor,
+                     h1ForegroundColor: h1ForegroundColor,
+                     h2ForegroundColor: h2ForegroundColor,
+                     h3ForegroundColor: h3ForegroundColor,
+                     h4ForegroundColor: h4ForegroundColor,
+                     h5ForegroundColor: h5ForegroundColor,
+                     h6ForegroundColor: h6ForegroundColor,
+                     paragraphForegroundColor: paragraphForegroundColor,
+                     linkForegroundColor: linkForegroundColor,
+                     hasStrikethrough: hasStrikethrough)
     }
-    
+
     /// Returns an updated Style with specified foreground color.
     ///
     /// - Parameters:
@@ -316,9 +588,26 @@ public extension Style {
     /// - Returns:
     ///     - The updated Style.
     public func color(h6 h6ForegroundColor: Color) -> Style {
-        return Style(currentFont: currentFont, h1Font: h1Font, h2Font: h2Font, h3Font: h3Font, h4Font: h4Font, h5Font: h5Font, h6Font: h6Font, paragraphFont: paragraphFont, currentForegroundColor: currentForegroundColor, h1ForegroundColor: h1ForegroundColor, h2ForegroundColor: h2ForegroundColor, h3ForegroundColor: h3ForegroundColor, h4ForegroundColor: h4ForegroundColor, h5ForegroundColor: h5ForegroundColor, h6ForegroundColor: h6ForegroundColor, paragraphForegroundColor: paragraphForegroundColor, linkForegroundColor: linkForegroundColor, hasStrikethrough: hasStrikethrough)
+        return Style(currentFont: currentFont,
+                     h1Font: h1Font,
+                     h2Font: h2Font,
+                     h3Font: h3Font,
+                     h4Font: h4Font,
+                     h5Font: h5Font,
+                     h6Font: h6Font,
+                     paragraphFont: paragraphFont,
+                     currentForegroundColor: currentForegroundColor,
+                     h1ForegroundColor: h1ForegroundColor,
+                     h2ForegroundColor: h2ForegroundColor,
+                     h3ForegroundColor: h3ForegroundColor,
+                     h4ForegroundColor: h4ForegroundColor,
+                     h5ForegroundColor: h5ForegroundColor,
+                     h6ForegroundColor: h6ForegroundColor,
+                     paragraphForegroundColor: paragraphForegroundColor,
+                     linkForegroundColor: linkForegroundColor,
+                     hasStrikethrough: hasStrikethrough)
     }
-    
+
     /// Returns an updated Style with specified foreground color.
     ///
     /// - Parameters:
@@ -326,9 +615,26 @@ public extension Style {
     /// - Returns:
     ///     - The updated Style.
     public func color(paragraph paragraphForegroundColor: Color) -> Style {
-        return Style(currentFont: currentFont, h1Font: h1Font, h2Font: h2Font, h3Font: h3Font, h4Font: h4Font, h5Font: h5Font, h6Font: h6Font, paragraphFont: paragraphFont, currentForegroundColor: currentForegroundColor, h1ForegroundColor: h1ForegroundColor, h2ForegroundColor: h2ForegroundColor, h3ForegroundColor: h3ForegroundColor, h4ForegroundColor: h4ForegroundColor, h5ForegroundColor: h5ForegroundColor, h6ForegroundColor: h6ForegroundColor, paragraphForegroundColor: paragraphForegroundColor, linkForegroundColor: linkForegroundColor, hasStrikethrough: hasStrikethrough)
+        return Style(currentFont: currentFont,
+                     h1Font: h1Font,
+                     h2Font: h2Font,
+                     h3Font: h3Font,
+                     h4Font: h4Font,
+                     h5Font: h5Font,
+                     h6Font: h6Font,
+                     paragraphFont: paragraphFont,
+                     currentForegroundColor: currentForegroundColor,
+                     h1ForegroundColor: h1ForegroundColor,
+                     h2ForegroundColor: h2ForegroundColor,
+                     h3ForegroundColor: h3ForegroundColor,
+                     h4ForegroundColor: h4ForegroundColor,
+                     h5ForegroundColor: h5ForegroundColor,
+                     h6ForegroundColor: h6ForegroundColor,
+                     paragraphForegroundColor: paragraphForegroundColor,
+                     linkForegroundColor: linkForegroundColor,
+                     hasStrikethrough: hasStrikethrough)
     }
-    
+
     /// Returns an updated Style with specified foreground color.
     ///
     /// - Parameters:
@@ -336,25 +642,76 @@ public extension Style {
     /// - Returns:
     ///     - The updated Style.
     public func color(link linkForegroundColor: Color) -> Style {
-        return Style(currentFont: currentFont, h1Font: h1Font, h2Font: h2Font, h3Font: h3Font, h4Font: h4Font, h5Font: h5Font, h6Font: h6Font, paragraphFont: paragraphFont, currentForegroundColor: currentForegroundColor, h1ForegroundColor: h1ForegroundColor, h2ForegroundColor: h2ForegroundColor, h3ForegroundColor: h3ForegroundColor, h4ForegroundColor: h4ForegroundColor, h5ForegroundColor: h5ForegroundColor, h6ForegroundColor: h6ForegroundColor, paragraphForegroundColor: paragraphForegroundColor, linkForegroundColor: linkForegroundColor, hasStrikethrough: hasStrikethrough)
+        return Style(currentFont: currentFont,
+                     h1Font: h1Font,
+                     h2Font: h2Font,
+                     h3Font: h3Font,
+                     h4Font: h4Font,
+                     h5Font: h5Font,
+                     h6Font: h6Font,
+                     paragraphFont: paragraphFont,
+                     currentForegroundColor: currentForegroundColor,
+                     h1ForegroundColor: h1ForegroundColor,
+                     h2ForegroundColor: h2ForegroundColor,
+                     h3ForegroundColor: h3ForegroundColor,
+                     h4ForegroundColor: h4ForegroundColor,
+                     h5ForegroundColor: h5ForegroundColor,
+                     h6ForegroundColor: h6ForegroundColor,
+                     paragraphForegroundColor: paragraphForegroundColor,
+                     linkForegroundColor: linkForegroundColor,
+                     hasStrikethrough: hasStrikethrough)
     }
-    
+
     /// Returns an updated Style with strikethrough enabled.
     ///
     /// - Returns:
     ///     - The updated Style.
     public func enableStrikethrough() -> Style {
-        return Style(currentFont: currentFont, h1Font: h1Font, h2Font: h2Font, h3Font: h3Font, h4Font: h4Font, h5Font: h5Font, h6Font: h6Font, paragraphFont: paragraphFont, currentForegroundColor: currentForegroundColor, h1ForegroundColor: h1ForegroundColor, h2ForegroundColor: h2ForegroundColor, h3ForegroundColor: h3ForegroundColor, h4ForegroundColor: h4ForegroundColor, h5ForegroundColor: h5ForegroundColor, h6ForegroundColor: h6ForegroundColor, paragraphForegroundColor: paragraphForegroundColor, linkForegroundColor: linkForegroundColor, hasStrikethrough: true)
+        return Style(currentFont: currentFont,
+                     h1Font: h1Font,
+                     h2Font: h2Font,
+                     h3Font: h3Font,
+                     h4Font: h4Font,
+                     h5Font: h5Font,
+                     h6Font: h6Font,
+                     paragraphFont: paragraphFont,
+                     currentForegroundColor: currentForegroundColor,
+                     h1ForegroundColor: h1ForegroundColor,
+                     h2ForegroundColor: h2ForegroundColor,
+                     h3ForegroundColor: h3ForegroundColor,
+                     h4ForegroundColor: h4ForegroundColor,
+                     h5ForegroundColor: h5ForegroundColor,
+                     h6ForegroundColor: h6ForegroundColor,
+                     paragraphForegroundColor: paragraphForegroundColor,
+                     linkForegroundColor: linkForegroundColor,
+                     hasStrikethrough: true)
     }
-    
+
     /// Returns an updated Style with strikethrough disabled.
     ///
     /// - Returns:
     ///     - The updated Style.
     public func disableStrikethrough() -> Style {
-        return Style(currentFont: currentFont, h1Font: h1Font, h2Font: h2Font, h3Font: h3Font, h4Font: h4Font, h5Font: h5Font, h6Font: h6Font, paragraphFont: paragraphFont, currentForegroundColor: currentForegroundColor, h1ForegroundColor: h1ForegroundColor, h2ForegroundColor: h2ForegroundColor, h3ForegroundColor: h3ForegroundColor, h4ForegroundColor: h4ForegroundColor, h5ForegroundColor: h5ForegroundColor, h6ForegroundColor: h6ForegroundColor, paragraphForegroundColor: paragraphForegroundColor, linkForegroundColor: linkForegroundColor, hasStrikethrough: false)
+        return Style(currentFont: currentFont,
+                     h1Font: h1Font,
+                     h2Font: h2Font,
+                     h3Font: h3Font,
+                     h4Font: h4Font,
+                     h5Font: h5Font,
+                     h6Font: h6Font,
+                     paragraphFont: paragraphFont,
+                     currentForegroundColor: currentForegroundColor,
+                     h1ForegroundColor: h1ForegroundColor,
+                     h2ForegroundColor: h2ForegroundColor,
+                     h3ForegroundColor: h3ForegroundColor,
+                     h4ForegroundColor: h4ForegroundColor,
+                     h5ForegroundColor: h5ForegroundColor,
+                     h6ForegroundColor: h6ForegroundColor,
+                     paragraphForegroundColor: paragraphForegroundColor,
+                     linkForegroundColor: linkForegroundColor,
+                     hasStrikethrough: false)
     }
-    
+
     /// Returns an updated Style with a bold/strong font.
     ///
     /// - Returns:
@@ -362,25 +719,42 @@ public extension Style {
     public func strong() -> Style {
         var strongFont = currentFont
         var traits = currentFont.fontDescriptor.symbolicTraits
-        
+
         #if os(OSX)
             traits.insert(.bold)
             let descriptor = currentFont.fontDescriptor.withSymbolicTraits(traits)
-            
+
             if let font = Font(descriptor: descriptor, size: 0.0) {
                 strongFont = font
             }
         #else
             traits.insert(.traitBold)
-            
+
             if let descriptor = currentFont.fontDescriptor.withSymbolicTraits(traits) {
                 strongFont = UIFont(descriptor: descriptor, size: 0.0)
             }
         #endif
-        
-        return Style(currentFont: strongFont, h1Font: h1Font, h2Font: h2Font, h3Font: h3Font, h4Font: h4Font, h5Font: h5Font, h6Font: h6Font, paragraphFont: paragraphFont, currentForegroundColor: currentForegroundColor, h1ForegroundColor: h1ForegroundColor, h2ForegroundColor: h2ForegroundColor, h3ForegroundColor: h3ForegroundColor, h4ForegroundColor: h4ForegroundColor, h5ForegroundColor: h5ForegroundColor, h6ForegroundColor: h6ForegroundColor, paragraphForegroundColor: paragraphForegroundColor, linkForegroundColor: linkForegroundColor, hasStrikethrough: false)
+
+        return Style(currentFont: strongFont,
+                     h1Font: h1Font,
+                     h2Font: h2Font,
+                     h3Font: h3Font,
+                     h4Font: h4Font,
+                     h5Font: h5Font,
+                     h6Font: h6Font,
+                     paragraphFont: paragraphFont,
+                     currentForegroundColor: currentForegroundColor,
+                     h1ForegroundColor: h1ForegroundColor,
+                     h2ForegroundColor: h2ForegroundColor,
+                     h3ForegroundColor: h3ForegroundColor,
+                     h4ForegroundColor: h4ForegroundColor,
+                     h5ForegroundColor: h5ForegroundColor,
+                     h6ForegroundColor: h6ForegroundColor,
+                     paragraphForegroundColor: paragraphForegroundColor,
+                     linkForegroundColor: linkForegroundColor,
+                     hasStrikethrough: hasStrikethrough)
     }
-    
+
     /// Returns an updated Style with an italic/emphasis font.
     ///
     /// - Returns:
@@ -388,25 +762,42 @@ public extension Style {
     public func emphasis() -> Style {
         var emphasisFont = currentFont
         var traits = currentFont.fontDescriptor.symbolicTraits
-        
+
         #if os(OSX)
             traits.insert(.italic)
             let descriptor = currentFont.fontDescriptor.withSymbolicTraits(traits)
-            
+
             if let font = Font(descriptor: descriptor, size: 0.0) {
                 emphasisFont = font
             }
         #else
             traits.insert(.traitItalic)
-            
+
             if let descriptor = currentFont.fontDescriptor.withSymbolicTraits(traits) {
                 emphasisFont = UIFont(descriptor: descriptor, size: 0.0)
             }
         #endif
-        
-        return Style(currentFont: emphasisFont, h1Font: h1Font, h2Font: h2Font, h3Font: h3Font, h4Font: h4Font, h5Font: h5Font, h6Font: h6Font, paragraphFont: paragraphFont, currentForegroundColor: currentForegroundColor, h1ForegroundColor: h1ForegroundColor, h2ForegroundColor: h2ForegroundColor, h3ForegroundColor: h3ForegroundColor, h4ForegroundColor: h4ForegroundColor, h5ForegroundColor: h5ForegroundColor, h6ForegroundColor: h6ForegroundColor, paragraphForegroundColor: paragraphForegroundColor, linkForegroundColor: linkForegroundColor, hasStrikethrough: false)
+
+        return Style(currentFont: emphasisFont,
+                     h1Font: h1Font,
+                     h2Font: h2Font,
+                     h3Font: h3Font,
+                     h4Font: h4Font,
+                     h5Font: h5Font,
+                     h6Font: h6Font,
+                     paragraphFont: paragraphFont,
+                     currentForegroundColor: currentForegroundColor,
+                     h1ForegroundColor: h1ForegroundColor,
+                     h2ForegroundColor: h2ForegroundColor,
+                     h3ForegroundColor: h3ForegroundColor,
+                     h4ForegroundColor: h4ForegroundColor,
+                     h5ForegroundColor: h5ForegroundColor,
+                     h6ForegroundColor: h6ForegroundColor,
+                     paragraphForegroundColor: paragraphForegroundColor,
+                     linkForegroundColor: linkForegroundColor,
+                     hasStrikethrough: hasStrikethrough)
     }
-    
+
     /// Returns the font for the specified heading.
     ///
     /// - Parameters:
@@ -431,5 +822,5 @@ public extension Style {
             return paragraphFont
         }
     }
-    
+
 }

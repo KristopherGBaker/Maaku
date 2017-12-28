@@ -11,19 +11,19 @@ import libcmark_gfm
 
 /// Represents a cmark event type.
 public enum CMEventType: UInt32 {
-    
+
     /// The none event type.
     case none
-    
+
     /// The done event type.
     case done
-    
+
     /// The enter event type.
     case enter
-    
+
     /// The exit event type.
     case exit
-    
+
     /// The underlying cmark event type.
     var cmarkEventType: cmark_event_type {
         switch self {
@@ -44,7 +44,7 @@ public class Iterator {
 
     /// The underlying cmark iterator pointer.
     private let iterator: UnsafeMutablePointer<cmark_iter>
-    
+
     /// Creates an iterator for the specified node.
     ///
     /// - Parameters:
@@ -55,25 +55,25 @@ public class Iterator {
         guard let iter = cmark_iter_new(node.cmarkNode) else {
             return nil
         }
-        
+
         iterator = iter
     }
-    
+
     /// Frees the underlying cmark iterator.
     deinit {
         cmark_iter_free(iterator)
     }
-    
+
     /// The current node for the iterator.
     public var currentNode: CMNode {
         return CMNode(cmarkNode: cmark_iter_get_node(iterator), freeWhenDone: false)
     }
-    
+
     /// The current event type for the iterator.
     public var currentEvent: CMEventType {
         return CMEventType(rawValue: cmark_iter_get_event_type(iterator).rawValue) ?? .none
     }
- 
+
     /// Resets the iterator to the specified node and event type.
     ///
     /// - Parameters:
@@ -82,7 +82,7 @@ public class Iterator {
     public func reset(to node: CMNode, eventType: CMEventType) {
         cmark_iter_reset(iterator, node.cmarkNode, eventType.cmarkEventType)
     }
-    
+
     /// Enumerates the iterator, calling the body closure for each node.
     ///
     /// - Parameters:
@@ -90,13 +90,13 @@ public class Iterator {
     /// The closure should return true if the enumeration should stop, false otherwise.
     public func enumerate(_ body: ((_ node: CMNode, _ event: CMEventType) throws -> Bool)) throws {
         var stop = false
-        
-        while (!stop) {
+
+        while !stop {
             let event = cmark_iter_next(iterator)
             guard event != CMARK_EVENT_DONE else {
                 break
             }
-            
+
             stop = try body(currentNode, currentEvent)
         }
     }

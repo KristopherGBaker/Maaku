@@ -10,10 +10,10 @@ import Foundation
 
 /// Represents a markdown list item.
 public struct ListItem: ContainerBlock {
-    
+
     /// The block items.
     public let items: [Block]
-    
+
     /// Creates a ListItem.
     ///
     /// - Returns:
@@ -21,7 +21,7 @@ public struct ListItem: ContainerBlock {
     public init() {
         items = []
     }
-    
+
     /// Creates a ListItem with the specified items.
     ///
     /// - Parameters:
@@ -31,19 +31,19 @@ public struct ListItem: ContainerBlock {
     public init(items: [Block]) {
         self.items = items
     }
-    
+
 }
 
 public extension ListItem {
-    
+
     public func attributedText(style: Style) -> NSAttributedString {
         let attributed = NSMutableAttributedString()
-        
+
         for item in items {
             attributed.append(item.attributedText(style: style))
         }
-        
+
         return attributed
     }
-    
+
 }

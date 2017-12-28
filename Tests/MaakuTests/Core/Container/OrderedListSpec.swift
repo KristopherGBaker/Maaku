@@ -12,35 +12,35 @@ import Quick
 import XCTest
 
 class OrderedListSpec: QuickSpec {
-    
+
     override func spec() {
-        
+
         describe("OrderedList") {
             let text = """
 1.  Swift
 2.  Objective-C
 3.  C
 """
-            
+
             do {
                 let document = try Document(text: text)
-                
+
                 it("initializes the document") {
                     expect(document.count).to(equal(1))
                 }
-                
+
                 it("parses the ordered list") {
                     expect(document[0]).to(beAKindOf(OrderedList.self))
+                    // swiftlint:disable force_cast
                     let list = document[0] as! OrderedList
                     expect(list.items.count).to(equal(3))
                 }
-            }
-            catch let error {
+            } catch let error {
                 it("fails to initialize the document") {
                     fail("\(error.localizedDescription)")
                 }
             }
         }
     }
-    
+
 }

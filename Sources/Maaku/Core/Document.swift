@@ -10,7 +10,7 @@ import Foundation
 
 /// Defines methods for converting a markdown element to an attributed string.
 public protocol MarkdownAttributedString {
-    
+
     /// Returns an attributed string using the specified style.
     ///
     /// - Parameters:
@@ -18,20 +18,20 @@ public protocol MarkdownAttributedString {
     /// - Returns:
     ///     An attributed string.
     func attributedText(style: Style) -> NSAttributedString
-    
+
 }
 
 /// Represnts a markdown node, which can be either a markdown block or inline element.
 public protocol Node: MarkdownAttributedString {
-    
+
 }
 
 /// Represents a markdown document, which is a sequence of markdown block elements.
 public struct Document: MarkdownAttributedString {
-    
+
     /// The items (block elements).
     public let items: [Block]
-    
+
     /// Gets the markdown block at the specified index.
     ///
     /// - Parameters:
@@ -41,12 +41,12 @@ public struct Document: MarkdownAttributedString {
     public subscript(index: Int) -> Block {
         return items[index]
     }
-    
+
     /// The number of items in the document.
     public var count: Int {
         return items.count
     }
-    
+
     /// Creates a document initialized with the specified items.
     ///
     /// - Parameters:
@@ -56,7 +56,7 @@ public struct Document: MarkdownAttributedString {
     public init(items: [Block]) {
         self.items = items
     }
-    
+
     /// Creates a document initialized with the specified data using the default options.
     ///
     /// - Parameters:
@@ -68,7 +68,7 @@ public struct Document: MarkdownAttributedString {
     public init(data: Data) throws {
         try self.init(data: data, options: .default)
     }
-    
+
     /// Creates a document initialized with the specified text using the default options.
     ///
     /// - Parameters:
@@ -80,7 +80,7 @@ public struct Document: MarkdownAttributedString {
     public init(text: String) throws {
         try self.init(text: text, options: .default)
     }
-    
+
     /// Creates a document initialized with the specified text.
     ///
     /// - Parameters:
@@ -96,7 +96,7 @@ public struct Document: MarkdownAttributedString {
         }
         try self.init(text: text, options: options)
     }
-    
+
     /// Creates a document initialized with the specified text.
     ///
     /// - Parameters:
@@ -109,7 +109,7 @@ public struct Document: MarkdownAttributedString {
     public init(text: String, options: CMDocumentOption) throws {
         try self.init(text: text, options: options, extensions: .all)
     }
-    
+
     /// Creates a document initialized with the specified text.
     ///
     /// - Parameters:
@@ -128,7 +128,7 @@ public struct Document: MarkdownAttributedString {
 }
 
 public extension Document {
-    
+
     /// Returns an attributed string using the specified style.
     ///
     /// - Parameters:
@@ -137,12 +137,12 @@ public extension Document {
     ///     An attributed string representing the document.
     public func attributedText(style: Style) -> NSAttributedString {
         let attributed = NSMutableAttributedString()
-        
+
         for item in items {
             attributed.append(item.attributedText(style: style))
         }
-        
+
         return attributed
     }
-    
+
 }

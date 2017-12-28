@@ -10,30 +10,30 @@ import Foundation
 
 /// Represents a markdown row / header.
 public protocol TableLine: Node {
-    
+
     var cells: [TableCell] { get }
-    
+
     init()
-    
+
     init(cells: [TableCell])
-    
+
 }
 
 /// Represents a table alignment.
 public enum TableAlignment: String {
-    
+
     /// Center alignment.
     case center = "c"
-    
+
     /// Left alignment.
     case left = "l"
-    
+
     /// No alignment.
     case none = ""
-    
+
     /// Right alignment.
     case right = "r"
-    
+
     /// Creates a TableAlignment matching the raw value.
     ///
     /// - Parameters:
@@ -57,19 +57,19 @@ public enum TableAlignment: String {
 
 /// Represents a markdown table.
 public struct Table: LeafBlock {
-    
+
     /// The table header.
     public let header: TableHeader
-    
+
     /// The table rows.
     public let rows: [TableRow]
-    
+
     /// The number of columns.
     public let columns: Int
-    
+
     /// The table alignments.
     public let alignments: [TableAlignment]
-    
+
     /// Creates a Table.
     ///
     /// - Returns:
@@ -77,7 +77,7 @@ public struct Table: LeafBlock {
     public init() {
         self.init(header: TableHeader(), rows: [], columns: 0, alignments: [])
     }
-    
+
     /// Creates a Paragraph with the specified values.
     ///
     /// - Parameters:
@@ -88,7 +88,7 @@ public struct Table: LeafBlock {
     public init(columns: Int, alignments: [String]) {
         self.init(header: TableHeader(), rows: [], columns: columns, alignments: alignments)
     }
-    
+
     /// Creates a Paragraph with the specified values.
     ///
     /// - Parameters:
@@ -107,9 +107,9 @@ public struct Table: LeafBlock {
 }
 
 public extension Table {
-    
+
     public func attributedText(style: Style) -> NSAttributedString {
         return NSAttributedString()
     }
-    
+
 }

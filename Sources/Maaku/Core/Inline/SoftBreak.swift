@@ -10,13 +10,13 @@ import Foundation
 
 /// Represents a markdown soft break.
 public struct SoftBreak: Inline {
-    
+
 }
 
 public extension SoftBreak {
-    
+
     public func attributedText(style: Style) -> NSAttributedString {
         return NSAttributedString(string: " ")
     }
-    
+
 }

@@ -10,10 +10,10 @@ import Foundation
 
 /// Represents markdown inline code.
 public struct InlineCode: Inline {
-    
+
     /// The code.
     public let code: String
-    
+
     /// Creates an InlineCode with the specified code.
     ///
     /// - Parameters:
@@ -26,9 +26,13 @@ public struct InlineCode: Inline {
 }
 
 public extension InlineCode {
-    
+
     public func attributedText(style: Style) -> NSAttributedString {
-        return NSAttributedString(string: code, attributes: [.font: style.currentFont, .foregroundColor: style.currentForegroundColor])
+        let attributes: [NSAttributedStringKey: Any] = [
+            .font: style.currentFont,
+            .foregroundColor: style.currentForegroundColor
+        ]
+        return NSAttributedString(string: code, attributes: attributes)
     }
-    
+
 }

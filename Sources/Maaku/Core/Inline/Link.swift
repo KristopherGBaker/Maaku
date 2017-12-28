@@ -10,28 +10,28 @@ import Foundation
 
 /// Represents a markdown link.
 public struct Link: Inline {
-    
+
     /// Used for matching links that don't strictly conform to common mark syntax.
     private static let regex = try? NSRegularExpression(pattern: "^\\[\\w+\\]\\(\\w+\\)$", options: [])
-    
+
     /// The inline text.
     public let text: [Inline]
-    
+
     /// The link destination.
     public let destination: String?
-    
+
     /// The link title.
     public let title: String?
-    
+
     /// Returns the destination as a URL.
     public var url: URL? {
         guard let destination = destination else {
             return nil
         }
-        
+
         return URL(string: destination)
     }
-    
+
     /// Creates a Link with the specified values.
     ///
     /// - Parameters:
@@ -45,7 +45,7 @@ public struct Link: Inline {
         self.destination = destination
         self.title = title
     }
-    
+
     /// Creates a Link with the specified values.
     ///
     /// - Parameters:
@@ -56,7 +56,7 @@ public struct Link: Inline {
     init(destination: String?, title: String?) {
         self.init(text: [], destination: destination, title: title)
     }
-    
+
     /// Creates a Link with the specified Text.
     ///
     /// - Parameters:
@@ -67,30 +67,29 @@ public struct Link: Inline {
         guard let regex = Link.regex else {
             return nil
         }
-        
+
         title = nil
-        
-        let matches = regex.matches(in: text.text, options: [], range: NSRange(location: 0, length: text.text.utf16.count))
-        
+
+        let range = NSRange(location: 0, length: text.text.utf16.count)
+        let matches = regex.matches(in: text.text, options: [], range: range)
+
         if matches.count == 0 {
             let parts = text.text.components(separatedBy: "](")
-            
+
             if parts.count == 2 {
                 let linkName = parts[0].replacingOccurrences(of: "[", with: "")
                 let dest = parts[1].replacingOccurrences(of: ")", with: "")
-                
+
                 self.text = [Text(text: linkName)]
                 destination = dest
-            }
-            else {
+            } else {
                 return nil
             }
-        }
-        else {
+        } else {
             return nil
         }
     }
-    
+
     /// Creates an updated Link with the specified inline text.
     ///
     /// - Parameters:
@@ -100,23 +99,27 @@ public struct Link: Inline {
     func with(text: [Inline]) -> Link {
         return Link(text: text, destination: destination, title: title)
     }
-    
+
 }
 
 public extension Link {
-    
+
     public func attributedText(style: Style) -> NSAttributedString {
         let attributed = NSMutableAttributedString()
-        
+
         for item in text {
             attributed.append(item.attributedText(style: style))
         }
-        
+
         if let url = self.url {
-            attributed.addAttributes([.font: style.currentFont, .foregroundColor: style.linkForegroundColor, .link: url], range: NSMakeRange(0, attributed.string.utf16.count))
+            let attributes: [NSAttributedStringKey: Any] = [
+                .font: style.currentFont,
+                .foregroundColor: style.linkForegroundColor, .link: url
+            ]
+            attributed.addAttributes(attributes, range: NSRange(location: 0, length: attributed.string.utf16.count))
         }
-        
+
         return attributed
     }
-    
+
 }

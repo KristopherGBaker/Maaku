@@ -10,13 +10,13 @@ import Foundation
 
 /// Represents a markdown line break.
 public struct LineBreak: Inline {
-    
+
 }
 
 public extension LineBreak {
-    
+
     public func attributedText(style: Style) -> NSAttributedString {
         return NSAttributedString(string: "\n")
     }
-    
+
 }

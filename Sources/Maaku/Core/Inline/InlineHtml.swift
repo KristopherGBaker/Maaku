@@ -10,10 +10,10 @@ import Foundation
 
 /// Represents markdown inline HTML.
 public struct InlineHtml: Inline {
-    
+
     /// The HTML.
     public let html: String
-    
+
     /// Creates an InlineHtml with the specified HTML.
     ///
     /// - Parameters:
@@ -26,16 +26,24 @@ public struct InlineHtml: Inline {
 }
 
 public extension InlineHtml {
-    
+
     public func attributedText(style: Style) -> NSAttributedString {
-        // TODO: update DocumentConverter to properly deal with inline HTML, for now, just render the inline HTML as a string.        
+        // TODO: update DocumentConverter to properly deal with inline HTML,
+        // for now, just render the inline HTML as a string.        
 //        guard let data = html.data(using: .utf16, allowLossyConversion: false),
-//            let attributedString = try?  NSAttributedString(data: data, options: [.documentType: NSAttributedString.DocumentType.html, .characterEncoding: String.Encoding.utf8.rawValue], documentAttributes: nil) else {
-//            return NSAttributedString(string: html, attributes: [.font: style.currentFont, .foregroundColor: style.currentForegroundColor])
+//            let attributedString = try?  NSAttributedString(data: data, options: [.documentType:
+//        NSAttributedString.DocumentType.html, .characterEncoding: String.Encoding.utf8.rawValue],
+//        documentAttributes: nil) else {
+//            return NSAttributedString(string: html, attributes:
+//        [.font: style.currentFont, .foregroundColor: style.currentForegroundColor])
 //        }
 //        return attributedString
-        
-        return NSAttributedString(string: html, attributes: [.font: style.currentFont, .foregroundColor: style.currentForegroundColor])
+
+        let attributes: [NSAttributedStringKey: Any] = [
+            .font: style.currentFont,
+            .foregroundColor: style.currentForegroundColor
+        ]
+        return NSAttributedString(string: html, attributes: attributes)
     }
-    
+
 }

@@ -8,12 +8,12 @@
 
 /// Represents a markdown container block.
 public protocol ContainerBlock: Block {
-    
+
     /// The block items.
     var items: [Block] { get }
 }
 
 /// Represents a markdown list.
 public protocol List: ContainerBlock {
-    
+
 }

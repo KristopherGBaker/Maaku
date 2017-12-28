@@ -11,13 +11,13 @@ import libcmark_gfm
 
 /// Represents a cmark delimiter type.
 public enum CMDelimiterType: UInt32 {
-    
+
     /// The none delimiter type.
     case none
-    
+
     /// The period delimiter type.
     case period
-    
+
     /// The paren delimiter type.
     case paren
 }

@@ -10,13 +10,13 @@ import Foundation
 
 /// Represents a markdown code block.
 public struct CodeBlock: LeafBlock {
-    
+
     /// The code.
     public let code: String
-    
+
     /// The info (language).
     public let info: String?
-    
+
     /// Creates a CodeBlock with the specified code and info.
     ///
     /// - Parameters:
@@ -31,9 +31,13 @@ public struct CodeBlock: LeafBlock {
 }
 
 public extension CodeBlock {
-    
+
     public func attributedText(style: Style) -> NSAttributedString {
-        return NSAttributedString(string: code, attributes: [.font: style.currentFont, .foregroundColor: style.currentForegroundColor])
+        let attributes: [NSAttributedStringKey: Any] = [
+            .font: style.currentFont,
+            .foregroundColor: style.currentForegroundColor
+        ]
+        return NSAttributedString(string: code, attributes: attributes)
     }
-    
+
 }

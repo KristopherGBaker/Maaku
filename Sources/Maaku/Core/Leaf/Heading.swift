@@ -10,39 +10,45 @@ import Foundation
 
 /// Represents a markdown heading level.
 public enum HeadingLevel: Int {
-    
+
     /// Unknown heading level.
     case unknown
-    
+
     /// H1.
+    // swiftlint:disable identifier_name
     case h1 = 1
-    
+
     /// H2.
+    // swiftlint:disable identifier_name
     case h2 = 2
-    
+
     /// H3.
+    // swiftlint:disable identifier_name
     case h3 = 3
-    
+
     /// H4.
+    // swiftlint:disable identifier_name
     case h4 = 4
-    
+
     /// H5.
+    // swiftlint:disable identifier_name
     case h5 = 5
-    
+
     /// H6.
+    // swiftlint:disable identifier_name
     case h6 = 6
-    
+
 }
 
 /// Represents a markdown heading.
 public struct Heading: LeafBlock {
-    
+
     /// The heading level.
     public let level: HeadingLevel
-    
+
     /// The inline items.
     public let items: [Inline]
-    
+
     /// Creates a Heading with the specified level.
     ///
     /// - Parameters:
@@ -53,7 +59,7 @@ public struct Heading: LeafBlock {
         self.level = level
         items = []
     }
-    
+
     /// Creates a Heading with the specified level and items.
     ///
     /// - Parameters:
@@ -65,7 +71,7 @@ public struct Heading: LeafBlock {
         self.level = level
         self.items = items
     }
-    
+
     /// Creates an updated Heading with the specified items.
     ///
     /// - Parameters:
@@ -78,15 +84,15 @@ public struct Heading: LeafBlock {
 }
 
 public extension Heading {
-    
+
     public func attributedText(style: Style) -> NSAttributedString {
         let attributed = NSMutableAttributedString()
-        
+
         for item in items {
             attributed.append(item.attributedText(style: style.font(heading: self)))
         }
-        
+
         return attributed
     }
-    
+
 }

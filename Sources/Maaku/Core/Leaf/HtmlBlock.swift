@@ -10,10 +10,10 @@ import Foundation
 
 /// Represents a markdown HTML block.
 public struct HtmlBlock: LeafBlock {
-    
+
     /// The HTML.
     public let html: String
-    
+
     /// Creates a HtmlBlock with the specified HTML.
     ///
     /// - Parameters:
@@ -26,14 +26,23 @@ public struct HtmlBlock: LeafBlock {
 }
 
 public extension HtmlBlock {
-    
+
     public func attributedText(style: Style) -> NSAttributedString {
+        let options: [NSAttributedString.DocumentReadingOptionKey: Any] = [
+            .documentType: NSAttributedString.DocumentType.html,
+            .characterEncoding: String.Encoding.utf8.rawValue
+        ]
+
         guard let data = html.data(using: .utf16, allowLossyConversion: false),
-            let attributedString = try?  NSAttributedString(data: data, options: [.documentType: NSAttributedString.DocumentType.html, .characterEncoding: String.Encoding.utf8.rawValue], documentAttributes: nil) else {
-                return NSAttributedString(string: html, attributes: [.font: style.currentFont, .foregroundColor: style.currentForegroundColor])
+            let attributed = try? NSAttributedString(data: data, options: options, documentAttributes: nil) else {
+                let attributes: [NSAttributedStringKey: Any] = [
+                    .font: style.currentFont,
+                    .foregroundColor: style.currentForegroundColor
+                ]
+                return NSAttributedString(string: html, attributes: attributes)
         }
-        
-        return attributedString
+
+        return attributed
     }
-    
+
 }

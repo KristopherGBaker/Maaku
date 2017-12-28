@@ -10,10 +10,10 @@ import Foundation
 
 /// Represents a markdown strong.
 public struct Strong: Inline {
-    
+
     /// The inline items.
     public let items: [Inline]
-    
+
     /// Creates a Strong.
     ///
     /// - Returns:
@@ -21,7 +21,7 @@ public struct Strong: Inline {
     public init() {
         items = []
     }
-    
+
     /// Creates a Strong with the specified items.
     ///
     /// - Parameters:
@@ -35,15 +35,15 @@ public struct Strong: Inline {
 }
 
 public extension Strong {
-    
+
     public func attributedText(style: Style) -> NSAttributedString {
         let attributed = NSMutableAttributedString()
-        
+
         for item in items {
             attributed.append(item.attributedText(style: style.strong()))
         }
-        
+
         return attributed
     }
-    
+
 }

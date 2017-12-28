@@ -10,10 +10,10 @@ import Foundation
 
 /// Represents a markdown footnote reference.
 public struct FootnoteReference: Inline {
-    
+
     /// The reference.
     public let reference: String
-    
+
     /// Creates a FootnoteReference with the specified reference.
     ///
     /// - Parameters:
@@ -26,15 +26,20 @@ public struct FootnoteReference: Inline {
 }
 
 public extension FootnoteReference {
-    
+
     public func attributedText(style: Style) -> NSAttributedString {
-        let attributed = NSMutableAttributedString(string: reference, attributes: [.font: style.currentFont, .foregroundColor: style.currentForegroundColor])
-        
+        let attributes: [NSAttributedStringKey: Any] = [
+            .font: style.currentFont,
+            .foregroundColor: style.currentForegroundColor
+        ]
+        let attributed = NSMutableAttributedString(string: reference, attributes: attributes)
+
         if let url = URL(string: "footnote://\(reference)") {
-            attributed.addAttribute(.link, value: url, range: NSMakeRange(0, attributed.string.utf16.count))
+            let range = NSRange(location: 0, length: attributed.string.utf16.count)
+            attributed.addAttribute(.link, value: url, range: range)
         }
-        
+
         return attributed
     }
-    
+
 }

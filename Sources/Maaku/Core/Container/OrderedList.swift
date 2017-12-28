@@ -10,10 +10,10 @@ import Foundation
 
 /// Represents a markdown ordered list.
 public struct OrderedList: List {
-    
+
     /// The list items.
     public let items: [Block]
-    
+
     /// Creates an OrderedList.
     ///
     /// - Returns:
@@ -21,7 +21,7 @@ public struct OrderedList: List {
     public init() {
         items = []
     }
-    
+
     /// Creates an OrderedList with the specified items.
     ///
     /// - Parameters:
@@ -31,14 +31,14 @@ public struct OrderedList: List {
     public init(items: [Block]) {
         self.items = items
     }
-    
+
 }
 
 public extension OrderedList {
-    
+
     public func attributedText(style: Style) -> NSAttributedString {
         let attributed = NSMutableAttributedString()
-        
+
         for (index, item) in items.enumerated() {
             let listNumber = NSAttributedString(
                 string: "\(index + 1). ",
@@ -47,8 +47,8 @@ public extension OrderedList {
             attributed.append(listNumber)
             attributed.append(item.attributedText(style: style))
         }
-        
+
         return attributed
     }
-    
+
 }

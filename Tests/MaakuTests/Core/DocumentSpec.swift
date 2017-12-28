@@ -14,42 +14,40 @@ import XCTest
 class DocumentSpec: QuickSpec {
 
     override func spec() {
+        // swiftlint:disable line_length
         let text = """
 # Maaku
 The Maaku framework provides a Swift wrapper around cmark with the addition of a Swift friendly representation of the AST
 """
         let data = text.data(using: .utf8)!
-        
-        
+
         describe("init(text: String)") {
             do {
                 let document = try Document(text: text)
-                    
+
                 it("initializes the document") {
                     expect(document.count).to(equal(2))
                 }
-            }
-            catch let error {
+            } catch let error {
                 it("fails to initialize the document") {
                     fail("\(error.localizedDescription)")
                 }
             }
         }
-        
+
         describe("init(data: Data)") {
             do {
                 let document = try Document(data: data)
-                
+
                 it("initializes the document") {
                     expect(document.count).to(equal(2))
                 }
-            }
-            catch let error {
+            } catch let error {
                 it("fails to initialize the document") {
                     fail("\(error.localizedDescription)")
                 }
             }
         }
     }
-    
+
 }

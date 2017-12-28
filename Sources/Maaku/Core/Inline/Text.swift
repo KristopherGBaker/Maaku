@@ -16,10 +16,10 @@ import Foundation
 
 /// Represents markdown text.
 public struct Text: Inline {
-    
+
     /// The text.
     public let text: String
-    
+
     /// Creates a Text with the specified text.
     ///
     /// - Parameters:
@@ -29,19 +29,23 @@ public struct Text: Inline {
     public init(text: String) {
         self.text = text
     }
-    
+
 }
 
 public extension Text {
-    
+
     public func attributedText(style: Style) -> NSAttributedString {
-        let attributedText = NSMutableAttributedString(string: text, attributes: [.font: style.currentFont, .foregroundColor: style.currentForegroundColor])
-        
+        var attributes: [NSAttributedStringKey: Any] = [
+            .font: style.currentFont,
+            .foregroundColor: style.currentForegroundColor
+        ]
+
         if style.hasStrikethrough {
-            attributedText.addAttributes([.strikethroughColor: style.currentForegroundColor, .strikethroughStyle: NSNumber(value: NSUnderlineStyle.styleSingle.rawValue as Int)], range: NSMakeRange(0, attributedText.string.utf16.count))
+            attributes[.strikethroughColor] = style.currentForegroundColor
+            attributes[.strikethroughStyle] = NSNumber(value: NSUnderlineStyle.styleSingle.rawValue as Int)
         }
-        
-        return attributedText
+
+        return NSAttributedString(string: text, attributes: attributes)
     }
-    
+
 }

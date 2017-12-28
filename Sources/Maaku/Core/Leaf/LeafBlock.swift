@@ -8,5 +8,5 @@
 
 /// Represents a markdown leaf block.
 public protocol LeafBlock: Block {
-    
+
 }

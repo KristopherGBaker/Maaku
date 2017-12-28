@@ -12,9 +12,10 @@ import Quick
 import XCTest
 
 class BlockQuoteSpec: QuickSpec {
-    
+
+    // swiftlint:disable function_body_length
     override func spec() {
-        
+
         describe("BlockQuote") {
             let text = """
 > This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
@@ -24,27 +25,27 @@ class BlockQuoteSpec: QuickSpec {
 > Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
 > id sem consectetuer libero luctus adipiscing.
 """
-            
+
             do {
                 let document = try Document(text: text)
-                
+
                 it("initializes the document") {
                     expect(document.count).to(equal(1))
                 }
-                
+
                 it("parses the blockquote") {
                     expect(document[0]).to(beAKindOf(BlockQuote.self))
+                    // swiftlint:disable force_cast
                     let blockquote = document[0] as! BlockQuote
                     expect(blockquote.items.count).to(equal(2))
                 }
-            }
-            catch let error {
+            } catch let error {
                 it("fails to initialize the document") {
                     fail("\(error.localizedDescription)")
                 }
             }
         }
-        
+
         describe("Nested BlockQuote") {
             let text = """
 text
@@ -52,38 +53,39 @@ text
 > > deeper layer
 > > > even deeper layer
 """
-            
+
             do {
                 let document = try Document(text: text)
-                
+
                 it("initializes the document") {
                     expect(document.count).to(equal(2))
                 }
-                
+
                 it("parses the blockquote") {
                     expect(document[1]).to(beAKindOf(BlockQuote.self))
                 }
-                
+
+                // swiftlint:disable force_cast
                 let blockquote = document[1] as! BlockQuote
-                
+
                 it("parses the nested blockquote") {
                     expect(blockquote.items.count).to(equal(2))
                     expect(blockquote.items[1]).to(beAKindOf(BlockQuote.self))
                 }
-                
+
+                // swiftlint:disable force_cast
                 let nestedBlockquote = blockquote.items[1] as! BlockQuote
-                
+
                 it("parses the next nested blockquote") {
                     expect(nestedBlockquote.items.count).to(equal(2))
                     expect(nestedBlockquote.items[1]).to(beAKindOf(BlockQuote.self))
                 }
-            }
-            catch let error {
+            } catch let error {
                 it("fails to initialize the document") {
                     fail("\(error.localizedDescription)")
                 }
             }
         }
     }
-    
+
 }

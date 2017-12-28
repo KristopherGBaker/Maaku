@@ -1,0 +1,15 @@
+disabled_rules:
+
+opt_in_rules:
+    - conditional_returns_on_newline
+    - sorted_imports
+
+included:
+    - Sources
+    - Tests
+
+excluded:
+    - Pods
+
+conditional_returns_on_newline: error
+sorted_imports: error

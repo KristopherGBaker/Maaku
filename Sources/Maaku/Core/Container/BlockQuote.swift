@@ -10,10 +10,10 @@ import Foundation
 
 /// Represents a markdown block quote.
 public struct BlockQuote: ContainerBlock {
-    
+
     /// The blockquote items.
     public let items: [Block]
-    
+
     /// Creates a BlockQuote.
     ///
     /// - Returns:
@@ -21,7 +21,7 @@ public struct BlockQuote: ContainerBlock {
     public init() {
         items = []
     }
-    
+
     /// Creates a BlockQuote with the specified items.
     ///
     /// - Parameters:
@@ -31,19 +31,19 @@ public struct BlockQuote: ContainerBlock {
     public init(items: [Block]) {
         self.items = items
     }
-    
+
 }
 
 public extension BlockQuote {
-    
+
     public func attributedText(style: Style) -> NSAttributedString {
         let attributed = NSMutableAttributedString()
-        
+
         for item in items {
             attributed.append(item.attributedText(style: style))
         }
-        
+
         return attributed
     }
-    
+
 }

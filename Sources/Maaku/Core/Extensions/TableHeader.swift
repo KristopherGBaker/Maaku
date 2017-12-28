@@ -10,10 +10,10 @@ import Foundation
 
 /// Represents a markdown table header.
 public struct TableHeader: TableLine {
-    
+
     /// The table cells.
     public let cells: [TableCell]
-    
+
     /// Creates a TableHeader.
     ///
     /// - Returns:
@@ -21,7 +21,7 @@ public struct TableHeader: TableLine {
     public init() {
         cells = []
     }
-    
+
     /// Creates a TableHeader with the specified cells.
     ///
     /// - Parameters:
@@ -31,13 +31,13 @@ public struct TableHeader: TableLine {
     public init(cells: [TableCell]) {
         self.cells = cells
     }
-    
+
 }
 
 public extension TableHeader {
-    
+
     public func attributedText(style: Style) -> NSAttributedString {
         return NSAttributedString()
     }
-    
+
 }

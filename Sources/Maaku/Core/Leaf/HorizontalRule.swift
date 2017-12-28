@@ -16,13 +16,18 @@ import Foundation
 
 /// Represents a markdonw horizontal rule (thematic break).
 public struct HorizontalRule: LeafBlock {
-    
+
 }
 
 public extension HorizontalRule {
-    
+
     public func attributedText(style: Style) -> NSAttributedString {
-        return NSAttributedString(string: "-----\n", attributes: [.font: style.currentFont, .foregroundColor: style.currentForegroundColor, .strikethroughColor: style.currentForegroundColor, .strikethroughStyle: NSNumber(value: NSUnderlineStyle.styleSingle.rawValue as Int)])
+        let attributes: [NSAttributedStringKey: Any] = [
+            .font: style.currentFont,
+            .foregroundColor: style.currentForegroundColor,
+            .strikethroughColor: style.currentForegroundColor,
+            .strikethroughStyle: NSNumber(value: NSUnderlineStyle.styleSingle.rawValue as Int)]
+        return NSAttributedString(string: "-----\n", attributes: attributes)
     }
-    
+
 }

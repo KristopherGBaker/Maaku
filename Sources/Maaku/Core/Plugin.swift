@@ -12,27 +12,31 @@ public typealias PluginName = String
 
 /// Represents a markdown plugin.
 public protocol Plugin: LeafBlock {
-    
+
     /// The plugin name.
     static var pluginName: PluginName { get }
-    
+
 }
 
 /// Defines Plugin extension methods.
 public extension Plugin {
-    
+
     public func attributedText(style: Style) -> NSAttributedString {
-        return NSAttributedString(string: "", attributes: [.font: style.currentFont, .foregroundColor: style.currentForegroundColor])
+        let attributes: [NSAttributedStringKey: Any] = [
+            .font: style.currentFont,
+            .foregroundColor: style.currentForegroundColor
+        ]
+        return NSAttributedString(string: "", attributes: attributes)
     }
-    
+
 }
 
 /// Represents a markdown plugin parser.
 public protocol PluginParser {
-    
+
     /// The unique name for the parser.
     var name: String { get }
-    
+
     /// Parses the given text and returns a markdown plugin.
     ///
     /// - Parameters:
@@ -41,15 +45,15 @@ public protocol PluginParser {
     /// - Returns:
     ///     - The plugin if parsing succeeded, nil otherwise.
     func parse(text: String) -> Plugin?
-    
+
 }
 
 /// Encapsulates management of markdown plugins.
 public struct PluginManager {
-    
+
     /// The registered parsers.
     private static var parsers = [String: PluginParser]()
-    
+
     /// Registers the specified parsers.
     ///
     /// - Parameters:
@@ -59,7 +63,7 @@ public struct PluginManager {
             self.parsers[parser.name] = parser
         }
     }
-    
+
     /// Parses the block link and returns the matching markdown plugin.
     ///
     /// - Parameters:
@@ -72,14 +76,14 @@ public struct PluginManager {
         guard let parser = parsers[name], let plugin = parser.parse(text: contents) else {
             return nil
         }
-        
+
         return plugin
     }
 }
 
 /// Extension methods for PluginParser.
 public extension PluginParser {
-    
+
     /// Splits the specified text into a dictionary of plugin parameters.
     ///
     /// - Parameters:
@@ -87,24 +91,24 @@ public extension PluginParser {
     ///
     /// - Returns:
     ///     The dictionary of plugin parameters.
-    func splitPluginParams(_ text: String) -> [String:String] {
+    func splitPluginParams(_ text: String) -> [String: String] {
         let components = text.trimmingCharacters(in: .whitespaces).components(separatedBy: "|")
-        var params = [String:String]()
-        
+        var params = [String: String]()
+
         for component in components {
             let segments = component.components(separatedBy: "::")
-            
+
             if segments.count == 2 {
                 let key = segments[0].trimmingCharacters(in: .whitespaces)
                 let value = segments[1].trimmingCharacters(in: .whitespaces)
-                
+
                 params[key] = value
             }
         }
-        
+
         return params
     }
-    
+
     /// Parses an URL from the given text using the specified parameter name.
     ///
     /// - Parameters:
@@ -115,15 +119,15 @@ public extension PluginParser {
     ///     The URL if it could be parsed, nil otherwise.
     func parseURL(_ text: String, parameterName: String = "source") -> URL? {
         let parameters = splitPluginParams(text)
-        
+
         guard parameters.count > 0 else {
             return nil
         }
-        
+
         if let href = parameters[parameterName] {
             return URL(string: href)
         }
-        
+
         return nil
     }
 }

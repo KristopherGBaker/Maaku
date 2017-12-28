@@ -4,26 +4,27 @@ inhibit_all_warnings!
 use_frameworks!
 
 abstract_target 'MaakuTargets' do
-    pod 'libcmark_gfm'
-
+  pod 'libcmark_gfm'
+  pod 'SwiftLint'
+  
   target 'Maaku' do
     platform :ios, '9.0'
   end
-
+  
   target 'Maaku-macOS' do
     platform :osx, '10.10'
   end
-
+  
   target 'Maaku-watchOS' do
     platform :watchos, '2.0'
   end
-
+  
   target 'Maaku-tvOS' do
     platform :tvos, '9.0'
   end
-
-  abstract_target 'MaakuTestTargets' do
   
+  abstract_target 'MaakuTestTargets' do
+    
     pod 'Nimble'
     pod 'Quick'
     
@@ -36,9 +37,9 @@ abstract_target 'MaakuTargets' do
     end
     
     target 'Maaku-tvOSTests' do
-        platform :tvos, '9.0'
+      platform :tvos, '9.0'
     end
     
   end
-
+  
 end

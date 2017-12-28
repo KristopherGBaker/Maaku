@@ -10,10 +10,10 @@ import Foundation
 
 /// Represents a markdown emphasis.
 public struct Emphasis: Inline {
-    
+
     /// The inline items.
     public let items: [Inline]
-    
+
     /// Creates a Emphasis.
     ///
     /// - Returns:
@@ -21,7 +21,7 @@ public struct Emphasis: Inline {
     public init() {
         items = []
     }
-    
+
     /// Creates a Emphasis with the specified items.
     ///
     /// - Parameters:
@@ -34,15 +34,15 @@ public struct Emphasis: Inline {
 }
 
 public extension Emphasis {
-    
+
     public func attributedText(style: Style) -> NSAttributedString {
         let attributed = NSMutableAttributedString()
-        
+
         for item in items {
             attributed.append(item.attributedText(style: style.emphasis()))
         }
-        
+
         return attributed
     }
-    
+
 }

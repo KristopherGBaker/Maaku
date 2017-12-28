@@ -13,7 +13,7 @@ public struct TableRow: TableLine {
 
     /// The table cells.
     public let cells: [TableCell]
-    
+
     /// Creates a TableHeader.
     ///
     /// - Returns:
@@ -21,7 +21,7 @@ public struct TableRow: TableLine {
     public init() {
         cells = []
     }
-    
+
     /// Creates a TableHeader with the specified cells.
     ///
     /// - Parameters:
@@ -31,13 +31,13 @@ public struct TableRow: TableLine {
     public init(cells: [TableCell]) {
         self.cells = cells
     }
-    
+
 }
 
 public extension TableRow {
-    
+
     public func attributedText(style: Style) -> NSAttributedString {
         return NSAttributedString()
     }
-    
+
 }

@@ -10,25 +10,25 @@ import Foundation
 
 /// Represents a markdown inline image.
 public struct Image: Inline {
-    
+
     /// The inline description.
     public let description: [Inline]
-    
+
     /// The destination (source).
     public let destination: String?
-    
+
     /// The title.
     public let title: String?
-    
+
     /// The destination as a URL.
     public var url: URL? {
         guard let destination = destination else {
             return nil
         }
-        
+
         return URL(string: destination)
     }
-    
+
     /// Creates a Image with the specified values.
     ///
     /// - Parameters:
@@ -42,7 +42,7 @@ public struct Image: Inline {
         self.destination = destination
         self.title = title
     }
-    
+
     /// Creates a Image with the specified values.
     ///
     /// - Parameters:
@@ -55,7 +55,7 @@ public struct Image: Inline {
         self.destination = destination
         self.title = title
     }
-    
+
     /// Creates an updated Image with the specified inline description.
     ///
     /// - Parameters:
@@ -65,30 +65,36 @@ public struct Image: Inline {
     func with(description: [Inline]) -> Image {
         return Image(description: description, destination: destination, title: title)
     }
-    
+
 }
 
 public extension Image {
-    
+
     public func attributedText(style: Style) -> NSAttributedString {
         // TODO: images are not supported yet
-        // consider doing something with async NSTextAttachment - https://www.cocoanetics.com/2016/09/asynchronous-nstextattachments-22/
-        
+        // consider doing something with async NSTextAttachment
+        // https://www.cocoanetics.com/2016/09/asynchronous-nstextattachments-22/
+
         let attributed = NSMutableAttributedString()
-        
+
         for item in description {
             attributed.append(item.attributedText(style: style))
         }
-        
+
         if attributed.string.count == 0 {
-            attributed.append(NSAttributedString(string: "[image]", attributes: [.font: style.currentFont, .foregroundColor: style.currentForegroundColor]))
-            
+            let attributes: [NSAttributedStringKey: Any] = [
+                .font: style.currentFont,
+                .foregroundColor: style.currentForegroundColor
+            ]
+            attributed.append(NSAttributedString(string: "[image]", attributes: attributes))
+
             if let url = self.url {
-                attributed.addAttribute(.link, value: url, range: NSMakeRange(0, attributed.string.utf16.count))
+                let range = NSRange(location: 0, length: attributed.string.utf16.count)
+                attributed.addAttribute(.link, value: url, range: range)
             }
         }
-        
+
         return attributed
     }
-    
+
 }
