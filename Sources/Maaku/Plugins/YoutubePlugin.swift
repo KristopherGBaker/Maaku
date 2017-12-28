@@ -8,11 +8,22 @@
 
 import Foundation
 
+/// Youtube plugin attributes.
+private enum PluginAttribute: String {
+
+    /// source
+    case source
+
+    /// youtubevideo
+    case youtubevideo
+
+}
+
 /// Represents a youtube video plugin parser.
 public struct YoutubePluginParser: PluginParser {
 
     /// The unique name for the parser.
-    public let name = "youtubevideo"
+    public let name = PluginAttribute.youtubevideo.rawValue
 
     /// Parses the given text and returns a markdown plugin.
     ///
@@ -22,7 +33,7 @@ public struct YoutubePluginParser: PluginParser {
     /// - Returns:
     ///     - The plugin if parsing succeeded, nil otherwise.
     public func parse(text: String) -> Plugin? {
-        guard let url = parseURL(text) else {
+        guard let url = parseURL(text, parameterName: PluginAttribute.source.rawValue) else {
             return nil
         }
 
@@ -38,7 +49,7 @@ public struct YoutubePluginParser: PluginParser {
 public struct YoutubePlugin: Plugin {
 
     /// The plugin name.
-    public static let pluginName: PluginName = "youtubevideo"
+    public static let pluginName: PluginName = PluginAttribute.youtubevideo.rawValue
 
     /// The youtube video URL.
     public let url: URL

@@ -58,7 +58,7 @@ public struct PluginManager {
     ///
     /// - Parameters:
     ///     - parsers: The markdown plugin parsers.
-    public static func registerParsers(parsers: [PluginParser]) {
+    public static func registerParsers(_ parsers: [PluginParser]) {
         for parser in parsers {
             self.parsers[parser.name] = parser
         }
@@ -121,7 +121,7 @@ public extension PluginParser {
         let parameters = splitPluginParams(text)
 
         guard parameters.count > 0 else {
-            return nil
+            return URL(string: text)
         }
 
         if let href = parameters[parameterName] {
