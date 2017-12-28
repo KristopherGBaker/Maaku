@@ -91,7 +91,8 @@ $ swift test -Xswiftc "-target" -Xswiftc "x86_64-apple-macosx10.11"
 let document = try Document(text: commonMark)
 ```
 
-Initializing a Document will parse the CommonMark and create an AST / DOM you can access through the document. The document containers a list of the top level block elements, which each may contain either other block elements or inline elements.
+Initializing a Document will parse the CommonMark and create an AST / DOM you can access. The document containers a list of the top level block elements, which each may contain either other block elements or inline elements. Block elements may be either container blocks or leaf blocks. Container blocks may contain other blocks, while leaf blocks may not.
+
 
 ## Style
 
@@ -151,7 +152,7 @@ public struct YoutubePlugin: Plugin {
 }
 ```
 
-The pluginName value should match the link text you use for the the plugin. Since the Youtube plugin looks like `[youtubevideo](https://youtu.be/kkdBB1hVLX0)`, `youtubevideo` is used for the pluginName.
+The `pluginName` value should be unique to the plugin. It can be the same as the `name` used for the PluginParser, but does not need to be.
 
 #### PluginParser example
 
@@ -174,7 +175,7 @@ public struct YoutubePluginParser: PluginParser {
 }
 ```
 
-For the PluginParser, the `name` value should be unique, it does not need to match the `pluginName` used by the Plugin.
+The `name` value should match the link text you use for the the plugin. Since the Youtube plugin looks like `[youtubevideo](https://youtu.be/kkdBB1hVLX0)`, `youtubevideo` is used for the `name`.
 
 The raw link destination is passed to the parse method. You can decide how to deal with the text value to initialize your plugin, but there are convenience methods available to plugins to ease this process.
 
