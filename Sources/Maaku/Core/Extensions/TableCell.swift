@@ -40,7 +40,7 @@ public extension TableCell {
         let attributed = NSMutableAttributedString()
 
         for item in items {
-            attributed.append(item.attributedText(style: style.font(current: style.currentFont)))
+            attributed.append(item.attributedText(style: style))
         }
 
         return attributed

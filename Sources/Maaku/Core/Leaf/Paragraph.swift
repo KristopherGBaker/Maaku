@@ -39,7 +39,7 @@ public extension Paragraph {
         let attributed = NSMutableAttributedString()
 
         for item in items {
-            attributed.append(item.attributedText(style: style.font(current: style.paragraphFont)))
+            attributed.append(item.attributedText(style: style.font(type: .current, font: style.font(.paragraph))))
         }
 
         return attributed

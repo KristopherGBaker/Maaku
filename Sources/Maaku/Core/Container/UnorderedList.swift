@@ -42,7 +42,7 @@ public extension UnorderedList {
         for item in items {
             let bullet = NSAttributedString(
                 string: "• ",
-                attributes: [.font: style.currentFont, .foregroundColor: style.currentForegroundColor]
+                attributes: [.font: style.font(.current), .foregroundColor: style.color(.current)]
             )
             attributed.append(bullet)
             attributed.append(item.attributedText(style: style))

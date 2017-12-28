@@ -23,8 +23,8 @@ public extension Plugin {
 
     public func attributedText(style: Style) -> NSAttributedString {
         let attributes: [NSAttributedStringKey: Any] = [
-            .font: style.currentFont,
-            .foregroundColor: style.currentForegroundColor
+            .font: style.font(.current),
+            .foregroundColor: style.color(.current)
         ]
         return NSAttributedString(string: "", attributes: attributes)
     }

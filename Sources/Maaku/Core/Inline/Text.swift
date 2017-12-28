@@ -36,12 +36,12 @@ public extension Text {
 
     public func attributedText(style: Style) -> NSAttributedString {
         var attributes: [NSAttributedStringKey: Any] = [
-            .font: style.currentFont,
-            .foregroundColor: style.currentForegroundColor
+            .font: style.font(.current),
+            .foregroundColor: style.color(.current)
         ]
 
         if style.hasStrikethrough {
-            attributes[.strikethroughColor] = style.currentForegroundColor
+            attributes[.strikethroughColor] = style.color(.current)
             attributes[.strikethroughStyle] = NSNumber(value: NSUnderlineStyle.styleSingle.rawValue as Int)
         }
 

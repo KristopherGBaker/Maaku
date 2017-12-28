@@ -23,9 +23,9 @@ public extension HorizontalRule {
 
     public func attributedText(style: Style) -> NSAttributedString {
         let attributes: [NSAttributedStringKey: Any] = [
-            .font: style.currentFont,
-            .foregroundColor: style.currentForegroundColor,
-            .strikethroughColor: style.currentForegroundColor,
+            .font: style.font(.current),
+            .foregroundColor: style.color(.current),
+            .strikethroughColor: style.color(.current),
             .strikethroughStyle: NSNumber(value: NSUnderlineStyle.styleSingle.rawValue as Int)]
         return NSAttributedString(string: "-----\n", attributes: attributes)
     }
