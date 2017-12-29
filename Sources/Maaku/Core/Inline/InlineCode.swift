@@ -30,9 +30,10 @@ public extension InlineCode {
     public func attributedText(style: Style) -> NSAttributedString {
         let attributes: [NSAttributedStringKey: Any] = [
             .font: style.font(.current),
-            .foregroundColor: style.color(.current)
+            .foregroundColor: style.color(.inlineCodeForeground),
+            .backgroundColor: style.color(.inlineCodeBackground)
         ]
-        return NSAttributedString(string: code, attributes: attributes)
+        return NSAttributedString(string: "\u{202F}\(code)\u{202F}", attributes: attributes)
     }
 
 }

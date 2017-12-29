@@ -32,10 +32,10 @@ public extension FootnoteReference {
             .font: style.font(.current),
             .foregroundColor: style.color(.current)
         ]
-        let attributed = NSMutableAttributedString(string: reference, attributes: attributes)
+        let attributed = NSMutableAttributedString(string: "[\(reference)]", attributes: attributes)
 
         if let url = URL(string: "footnote://\(reference)") {
-            let range = NSRange(location: 0, length: attributed.string.utf16.count)
+            let range = NSRange(location: 1, length: attributed.string.utf16.count - 2)
             attributed.addAttribute(.link, value: url, range: range)
         }
 

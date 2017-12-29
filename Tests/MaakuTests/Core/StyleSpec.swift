@@ -39,6 +39,9 @@ class StyleSpec: QuickSpec {
                     expect(style.color(.paragraph)).to(equal(Color.black))
                     expect(style.color(.link)).to(equal(Color.blue))
                     expect(style.color(.current)).to(equal(Color.black))
+                    expect(style.color(.inlineCodeBackground)).to(equal(Color(white: 0.95, alpha: 1.0)))
+                    let inlineForegroundColor = Color(red: 0.91, green: 0.11, blue: 0.25, alpha: 1.00)
+                    expect(style.color(.inlineCodeForeground)).to(equal(inlineForegroundColor))
                 }
 
                 it("sets the fonts") {

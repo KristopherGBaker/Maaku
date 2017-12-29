@@ -81,6 +81,12 @@ public struct Style {
         // swiftlint:disable identifier_name
         case h6
 
+        /// Inline code foreground color
+        case inlineCodeForeground
+
+        /// Inline code background color
+        case inlineCodeBackground
+
         /// Link foreground color
         case link
 
@@ -134,6 +140,8 @@ public struct Style {
         colors[.paragraph] = .black
         colors[.link] = .blue
         colors[.current] = .black
+        colors[.inlineCodeBackground] = Color(white: 0.95, alpha: 1.0)
+        colors[.inlineCodeForeground] = Color(red: 0.91, green: 0.11, blue: 0.25, alpha: 1.00)
         self.colors = colors
 
         hasStrikethrough = false
