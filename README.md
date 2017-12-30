@@ -57,7 +57,7 @@ $ brew install carthage
 To integrate Maaku into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "KristopherGBaker/Maaku" ~> 0.1.5
+github "KristopherGBaker/Maaku" ~> 0.2.0
 ```
 
 Run `carthage update` to build the framework and drag the built `Maaku.framework` into your Xcode project.
@@ -70,7 +70,7 @@ Once you have your Swift package set up, adding Maaku as a dependency is as easy
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/KristopherGBaker/Maaku.git", from: "0.1.5")
+    .package(url: "https://github.com/KristopherGBaker/Maaku.git", from: "0.2.0")
 ]
 ```
 
