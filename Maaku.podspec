@@ -2,10 +2,10 @@ Pod::Spec.new do |s|
 
   s.name         = "Maaku"
   s.version      = "0.1.5"
-  s.summary      = "Swift cmark wrapper with a Swift friendly representation of the AST"
+  s.summary      = "Swift cmark-gfm wrapper with a Swift friendly representation of the AST"
 
   s.description  = <<-DESC
-                   The Maaku framework provides a Swift wrapper around cmark with the addition
+                   The Maaku framework provides a Swift wrapper around cmark-gfm with the addition
                    of a Swift friendly representation of the AST
                    DESC
 

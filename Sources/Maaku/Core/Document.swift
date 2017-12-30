@@ -122,8 +122,8 @@ public struct Document: MarkdownAttributedString {
     ///     The initialized and parsed document.
     public init(text: String, options: CMDocumentOption, extensions: CMExtensionOption) throws {
         let doc = try CMDocument(text: text, options: options, extensions: extensions)
-        let converter = DocumentConverter(document: doc)
-        items = (try converter.convert()).items
+        let converter = DocumentConverter()
+        items = (try converter.convert(document: doc)).items
     }
 }
 

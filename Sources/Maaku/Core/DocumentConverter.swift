@@ -11,29 +11,26 @@
 /// Represents a way of converting a CMDocument to a Document
 public class DocumentConverter {
 
-    /// The CMDocument.
-    private let document: CMDocument
-
     /// The converted block nodes.
     fileprivate var nodes: [Node] = []
 
-    /// Creates a converter initialized with the specified CMDocument.
+    /// Creates a document converter.
     ///
-    /// - Parameters:
-    ///     - document: The CMDocument.
     /// - Returns:
     ///     The initialized converter.
-    public init(document: CMDocument) {
-        self.document = document
+    public init() {
     }
 
     /// Converts the CMDocument to a Document.
     ///
+    /// - Parameters:
+    ///     - document: The CMDocument.
     /// - Throws:
     ///     `CMParseError.invalidEventType` if an invalid event type is encountered.
     /// - Returns:
     ///     The converted document.
-    public func convert() throws -> Document {
+    public func convert(document: CMDocument) throws -> Document {
+        nodes = []
         let parser = CMParser(document: document, delegate: self)
         try parser.parse()
 

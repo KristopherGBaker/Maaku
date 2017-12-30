@@ -91,7 +91,7 @@ $ swift test -Xswiftc "-target" -Xswiftc "x86_64-apple-macosx10.11"
 let document = try Document(text: commonMark)
 ```
 
-Initializing a Document will parse the CommonMark and create an AST / DOM you can access. The document containers a list of the top level block elements, which each may contain either other block elements or inline elements. Block elements may be either container blocks or leaf blocks. Container blocks may contain other blocks, while leaf blocks may not.
+Initializing a Document will parse the CommonMark and create an AST / DOM you can access. The document contains a list of the top level block elements, which each may contain either other block elements or inline elements. Block elements may be either container blocks or leaf blocks. Container blocks may contain other blocks, while leaf blocks may not.
 
 
 ## Style
