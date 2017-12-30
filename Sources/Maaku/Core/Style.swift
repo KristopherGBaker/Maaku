@@ -17,7 +17,7 @@
 #endif
 
 /// Represents the styles (fonts, colors) to apply to attributed strings created from markdown.
-public struct Style {
+public struct Style: Equatable {
 
     public enum FontType {
 
@@ -119,12 +119,12 @@ public struct Style {
             fonts[.paragraph] = Font.systemFont(ofSize: 17, weight: .regular)
             fonts[.current] = Font.systemFont(ofSize: 17, weight: .regular)
         #else
-            fonts[.h1] = Font.preferredFont(forTextStyle: .title1)
-            fonts[.h2] = Font.preferredFont(forTextStyle: .title2)
-            fonts[.h3] = Font.preferredFont(forTextStyle: .title3)
-            fonts[.h4] = Font.preferredFont(forTextStyle: .headline)
-            fonts[.h5] = Font.preferredFont(forTextStyle: .subheadline)
-            fonts[.h6] = Font.preferredFont(forTextStyle: .footnote)
+            fonts[.h1] = Font.preferredFont(forTextStyle: .title1).maaku_bold()
+            fonts[.h2] = Font.preferredFont(forTextStyle: .title2).maaku_bold()
+            fonts[.h3] = Font.preferredFont(forTextStyle: .title3).maaku_bold()
+            fonts[.h4] = Font.preferredFont(forTextStyle: .headline).maaku_bold()
+            fonts[.h5] = Font.preferredFont(forTextStyle: .subheadline).maaku_bold()
+            fonts[.h6] = Font.preferredFont(forTextStyle: .footnote).maaku_bold()
             fonts[.paragraph] = Font.preferredFont(forTextStyle: .body)
             fonts[.current] = Font.preferredFont(forTextStyle: .body)
         #endif
@@ -198,6 +198,13 @@ public struct Style {
 /// Defines Style extension methods.
 public extension Style {
 
+    public static func == (lhs: Style, rhs: Style) -> Bool {
+        return
+            lhs.colors == rhs.colors &&
+            lhs.fonts == rhs.fonts &&
+            lhs.hasStrikethrough == rhs.hasStrikethrough
+    }
+
     /// Returns an updated Style using the preferred fonts.
     ///
     /// - Returns:
@@ -214,12 +221,12 @@ public extension Style {
             preferredFonts[.h6] = Font.systemFont(ofSize: 13, weight: .semibold)
             preferredFonts[.paragraph] = Font.systemFont(ofSize: 17, weight: .regular)
         #else
-            preferredFonts[.h1] = Font.preferredFont(forTextStyle: .title1)
-            preferredFonts[.h2] = Font.preferredFont(forTextStyle: .title2)
-            preferredFonts[.h3] = Font.preferredFont(forTextStyle: .title3)
-            preferredFonts[.h4] = Font.preferredFont(forTextStyle: .headline)
-            preferredFonts[.h5] = Font.preferredFont(forTextStyle: .subheadline)
-            preferredFonts[.h6] = Font.preferredFont(forTextStyle: .footnote)
+            preferredFonts[.h1] = Font.preferredFont(forTextStyle: .title1).maaku_bold()
+            preferredFonts[.h2] = Font.preferredFont(forTextStyle: .title2).maaku_bold()
+            preferredFonts[.h3] = Font.preferredFont(forTextStyle: .title3).maaku_bold()
+            preferredFonts[.h4] = Font.preferredFont(forTextStyle: .headline).maaku_bold()
+            preferredFonts[.h5] = Font.preferredFont(forTextStyle: .subheadline).maaku_bold()
+            preferredFonts[.h6] = Font.preferredFont(forTextStyle: .footnote).maaku_bold()
             preferredFonts[.paragraph] = Font.preferredFont(forTextStyle: .body)
         #endif
 
@@ -300,26 +307,8 @@ public extension Style {
     ///     - The updated Style.
     public func strong() -> Style {
         let currentFont = font(.current)
-        var strongFont = currentFont
-        var traits = currentFont.fontDescriptor.symbolicTraits
-
-        #if os(OSX)
-            traits.insert(.bold)
-            let descriptor = currentFont.fontDescriptor.withSymbolicTraits(traits)
-
-            if let font = Font(descriptor: descriptor, size: 0.0) {
-                strongFont = font
-            }
-        #else
-            traits.insert(.traitBold)
-
-            if let descriptor = currentFont.fontDescriptor.withSymbolicTraits(traits) {
-                strongFont = UIFont(descriptor: descriptor, size: 0.0)
-            }
-        #endif
-
         var updatedFonts = fonts
-        updatedFonts[.current] = strongFont
+        updatedFonts[.current] = currentFont.maaku_bold()
 
         return Style(fonts: updatedFonts,
                      colors: colors,
@@ -332,26 +321,8 @@ public extension Style {
     ///     - The updated Style.
     public func emphasis() -> Style {
         let currentFont = font(.current)
-        var emphasisFont = currentFont
-        var traits = currentFont.fontDescriptor.symbolicTraits
-
-        #if os(OSX)
-            traits.insert(.italic)
-            let descriptor = currentFont.fontDescriptor.withSymbolicTraits(traits)
-
-            if let font = Font(descriptor: descriptor, size: 0.0) {
-                emphasisFont = font
-            }
-        #else
-            traits.insert(.traitItalic)
-
-            if let descriptor = currentFont.fontDescriptor.withSymbolicTraits(traits) {
-                emphasisFont = UIFont(descriptor: descriptor, size: 0.0)
-            }
-        #endif
-
         var updatedFonts = fonts
-        updatedFonts[.current] = emphasisFont
+        updatedFonts[.current] = currentFont.maaku_italic()
 
         return Style(fonts: updatedFonts,
                      colors: colors,

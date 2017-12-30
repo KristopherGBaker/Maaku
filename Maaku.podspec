@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
 
   s.name         = "Maaku"
-  s.version      = "0.1.5"
+  s.version      = "0.2.0"
   s.summary      = "Swift cmark-gfm wrapper with a Swift friendly representation of the AST"
 
   s.description  = <<-DESC
                    The Maaku framework provides a Swift wrapper around cmark-gfm with the addition
-                   of a Swift friendly representation of the AST
+                   of a Swift friendly representation of the AST.
                    DESC
 
   s.homepage     = "https://github.com/KristopherGBaker/Maaku"
@@ -33,7 +33,6 @@ Pod::Spec.new do |s|
   
   s.subspec 'Plugins' do |plugins|
       plugins.source_files = "Sources/Maaku/Plugins/**/*.swift"
-      plugins.dependency 'Maaku/CMark'
       plugins.dependency 'Maaku/Core'
   end
 

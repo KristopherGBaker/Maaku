@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/KristopherGBaker/Maaku.svg?branch=master)](https://travis-ci.org/KristopherGBaker/Maaku)
 
-The Maaku framework provides a Swift wrapper around [cmark-gfm](https://github.com/github/cmark) with the addition of a Swift friendly representation of the AST.
+The Maaku framework provides a Swift wrapper around [cmark-gfm](https://github.com/github/cmark) with the addition of a Swift friendly representation of the AST. gfm extensions for tables, strikethrough, autolinks, and tag filters are supported.
 
 Maaku also supports a convention for plugins that custom renderers can use. One plugin is provided as an example.
 
@@ -91,7 +91,7 @@ $ swift test -Xswiftc "-target" -Xswiftc "x86_64-apple-macosx10.11"
 let document = try Document(text: commonMark)
 ```
 
-Initializing a Document will parse the CommonMark and create an AST / DOM you can access. The document contains a list of the top level block elements, which each may contain either other block elements or inline elements. Block elements may be either container blocks or leaf blocks. Container blocks may contain other blocks, while leaf blocks may not.
+Initializing a Document will parse the CommonMark and create an AST you can access. The document contains a list of the top level block elements, which each may contain either other block elements or inline elements. Block elements may be either container blocks or leaf blocks. Container blocks may contain other blocks, while leaf blocks may not.
 
 
 ## Style
@@ -102,7 +102,7 @@ The fonts and colors used by the attributedText method can be specified using th
 
 ## CMark
 
-The CMark* types provide a Swift friendly interface on top of cmark-gfm. The CMark types can be used on their own without Core by including only the `Maaku/CMark` subspec in your Podfile.
+The CMark* types (inspired in part by [CocoaMarkdown](https://github.com/indragiek/CocoaMarkdown)) provide a Swift friendly interface on top of cmark-gfm. The CMark types can be used on their own without Core by including only the `Maaku/CMark` subspec in your Podfile.
 
 ## Plugins
 

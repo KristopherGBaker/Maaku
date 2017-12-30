@@ -26,6 +26,18 @@ class StyleSpec: QuickSpec {
     // swiftlint:disable function_body_length
     override func spec() {
         describe("Style") {
+            context("==") {
+                let style = Style().enableStrikethrough()
+                let style2 = Style().enableStrikethrough()
+                expect(style).to(equal(style2))
+            }
+
+            context("!=") {
+                let style = Style().enableStrikethrough()
+                let style2 = Style().disableStrikethrough()
+                expect(style).toNot(equal(style2))
+            }
+
             context("init()") {
                 let style = Style()
 
@@ -55,12 +67,12 @@ class StyleSpec: QuickSpec {
                         expect(style.font(.paragraph)).to(equal(Font.systemFont(ofSize: 17, weight: .regular)))
                         expect(style.font(.current)).to(equal(Font.systemFont(ofSize: 17, weight: .regular)))
                     #else
-                        expect(style.font(.h1)).to(equal(Font.preferredFont(forTextStyle: .title1)))
-                        expect(style.font(.h2)).to(equal(Font.preferredFont(forTextStyle: .title2)))
-                        expect(style.font(.h3)).to(equal(Font.preferredFont(forTextStyle: .title3)))
-                        expect(style.font(.h4)).to(equal(Font.preferredFont(forTextStyle: .headline)))
-                        expect(style.font(.h5)).to(equal(Font.preferredFont(forTextStyle: .subheadline)))
-                        expect(style.font(.h6)).to(equal(Font.preferredFont(forTextStyle: .footnote)))
+                        expect(style.font(.h1)).to(equal(Font.preferredFont(forTextStyle: .title1).maaku_bold()))
+                        expect(style.font(.h2)).to(equal(Font.preferredFont(forTextStyle: .title2).maaku_bold()))
+                        expect(style.font(.h3)).to(equal(Font.preferredFont(forTextStyle: .title3).maaku_bold()))
+                        expect(style.font(.h4)).to(equal(Font.preferredFont(forTextStyle: .headline).maaku_bold()))
+                        expect(style.font(.h5)).to(equal(Font.preferredFont(forTextStyle: .subheadline).maaku_bold()))
+                        expect(style.font(.h6)).to(equal(Font.preferredFont(forTextStyle: .footnote).maaku_bold()))
                         expect(style.font(.paragraph)).to(equal(Font.preferredFont(forTextStyle: .body)))
                         expect(style.font(.current)).to(equal(Font.preferredFont(forTextStyle: .body)))
                     #endif
@@ -149,12 +161,12 @@ class StyleSpec: QuickSpec {
                         expect(style.font(.h6)).to(equal(Font.systemFont(ofSize: 13, weight: .semibold)))
                         expect(style.font(.paragraph)).to(equal(Font.systemFont(ofSize: 17, weight: .regular)))
                     #else
-                        expect(style.font(.h1)).to(equal(Font.preferredFont(forTextStyle: .title1)))
-                        expect(style.font(.h2)).to(equal(Font.preferredFont(forTextStyle: .title2)))
-                        expect(style.font(.h3)).to(equal(Font.preferredFont(forTextStyle: .title3)))
-                        expect(style.font(.h4)).to(equal(Font.preferredFont(forTextStyle: .headline)))
-                        expect(style.font(.h5)).to(equal(Font.preferredFont(forTextStyle: .subheadline)))
-                        expect(style.font(.h6)).to(equal(Font.preferredFont(forTextStyle: .footnote)))
+                        expect(style.font(.h1)).to(equal(Font.preferredFont(forTextStyle: .title1).maaku_bold()))
+                        expect(style.font(.h2)).to(equal(Font.preferredFont(forTextStyle: .title2).maaku_bold()))
+                        expect(style.font(.h3)).to(equal(Font.preferredFont(forTextStyle: .title3).maaku_bold()))
+                        expect(style.font(.h4)).to(equal(Font.preferredFont(forTextStyle: .headline).maaku_bold()))
+                        expect(style.font(.h5)).to(equal(Font.preferredFont(forTextStyle: .subheadline).maaku_bold()))
+                        expect(style.font(.h6)).to(equal(Font.preferredFont(forTextStyle: .footnote).maaku_bold()))
                         expect(style.font(.paragraph)).to(equal(Font.preferredFont(forTextStyle: .body)))
                     #endif
                 }

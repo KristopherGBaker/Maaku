@@ -17,6 +17,14 @@ import Foundation
 /// Represents a markdonw horizontal rule (thematic break).
 public struct HorizontalRule: LeafBlock {
 
+    /// Initializes a HorizontalRule.
+    ///
+    /// - Returns:
+    ///     The HorizontalRule.
+    public init() {
+
+    }
+
 }
 
 public extension HorizontalRule {
