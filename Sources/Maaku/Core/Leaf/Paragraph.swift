@@ -38,8 +38,12 @@ public extension Paragraph {
     public func attributedText(style: Style) -> NSAttributedString {
         let attributed = NSMutableAttributedString()
 
+        let paragraphStyle = style
+            .font(type: .current, font: style.font(.paragraph))
+            .color(type: .current, color: style.color(.paragraph))
+
         for item in items {
-            attributed.append(item.attributedText(style: style.font(type: .current, font: style.font(.paragraph))))
+            attributed.append(item.attributedText(style: paragraphStyle))
         }
 
         return attributed
