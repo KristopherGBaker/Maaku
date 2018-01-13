@@ -21,6 +21,7 @@ import Nimble
 import Quick
 import XCTest
 
+// swiftlint:disable type_body_length
 class StyleSpec: QuickSpec {
 
     // swiftlint:disable function_body_length
@@ -284,6 +285,52 @@ class StyleSpec: QuickSpec {
                     let heading = Heading(level: .unknown)
                     let font = style.font(forHeading: heading)
                     expect(font).to(equal(style.font(.paragraph)))
+                }
+            }
+
+            context("color(forHeading:)") {
+                let style = Style()
+
+                it("gets the h1 color") {
+                    let heading = Heading(level: .h1)
+                    let color = style.color(forHeading: heading)
+                    expect(color).to(equal(style.color(.h1)))
+                }
+
+                it("gets the h2 color") {
+                    let heading = Heading(level: .h2)
+                    let color = style.color(forHeading: heading)
+                    expect(color).to(equal(style.color(.h2)))
+                }
+
+                it("gets the h3 color") {
+                    let heading = Heading(level: .h3)
+                    let color = style.color(forHeading: heading)
+                    expect(color).to(equal(style.color(.h3)))
+                }
+
+                it("gets the h4 color") {
+                    let heading = Heading(level: .h4)
+                    let color = style.color(forHeading: heading)
+                    expect(color).to(equal(style.color(.h4)))
+                }
+
+                it("gets the h5 color") {
+                    let heading = Heading(level: .h5)
+                    let color = style.color(forHeading: heading)
+                    expect(color).to(equal(style.color(.h5)))
+                }
+
+                it("gets the h6 color") {
+                    let heading = Heading(level: .h6)
+                    let color = style.color(forHeading: heading)
+                    expect(color).to(equal(style.color(.h6)))
+                }
+
+                it("gets the unknown color") {
+                    let heading = Heading(level: .unknown)
+                    let color = style.color(forHeading: heading)
+                    expect(color).to(equal(style.color(.paragraph)))
                 }
             }
         }

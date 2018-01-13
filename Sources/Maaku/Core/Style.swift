@@ -354,4 +354,29 @@ public extension Style {
         }
     }
 
+    /// Returns the color for the specified heading.
+    ///
+    /// - Parameters:
+    ///     - heading: The heading.
+    /// - Returns:
+    ///     - The color for the heading.
+    public func color(forHeading heading: Heading) -> Color {
+        switch heading.level {
+        case .h1:
+            return color(.h1)
+        case .h2:
+            return color(.h2)
+        case .h3:
+            return color(.h3)
+        case .h4:
+            return color(.h4)
+        case .h5:
+            return color(.h5)
+        case .h6:
+            return color(.h6)
+        case .unknown:
+            return color(.paragraph)
+        }
+    }
+
 }
