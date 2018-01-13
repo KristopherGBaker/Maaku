@@ -40,8 +40,8 @@ public extension InlineHtml {
 //        return attributedString
 
         let attributes: [NSAttributedStringKey: Any] = [
-            .font: style.font(.current),
-            .foregroundColor: style.color(.current)
+            .font: style.fonts.current,
+            .foregroundColor: style.colors.current
         ]
         return NSAttributedString(string: html, attributes: attributes)
     }

@@ -47,7 +47,7 @@ public extension FootnoteDefinition {
     public func attributedText(style: Style) -> NSAttributedString {
         let attributed = NSMutableAttributedString(
             string: "\(number). ",
-            attributes: [.font: style.font(.current), .foregroundColor: style.color(.current)]
+            attributes: [.font: style.fonts.current, .foregroundColor: style.colors.current]
         )
 
         for item in items {

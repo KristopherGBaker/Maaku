@@ -42,7 +42,7 @@ public extension OrderedList {
         for (index, item) in items.enumerated() {
             let listNumber = NSAttributedString(
                 string: "\(index + 1). ",
-                attributes: [.font: style.font(.current), .foregroundColor: style.color(.current)]
+                attributes: [.font: style.fonts.current, .foregroundColor: style.colors.current]
             )
             attributed.append(listNumber)
             attributed.append(item.attributedText(style: style))

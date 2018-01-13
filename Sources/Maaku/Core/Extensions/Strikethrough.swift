@@ -38,8 +38,11 @@ public extension Strikethrough {
     public func attributedText(style: Style) -> NSAttributedString {
         let attributed = NSMutableAttributedString()
 
+        var strikethroughStyle = style
+        strikethroughStyle.hasStrikethrough = true
+
         for item in items {
-            attributed.append(item.attributedText(style: style.enableStrikethrough()))
+            attributed.append(item.attributedText(style: strikethroughStyle))
         }
 
         return attributed

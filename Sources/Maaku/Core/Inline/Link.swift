@@ -113,8 +113,8 @@ public extension Link {
 
         if let url = self.url {
             let attributes: [NSAttributedStringKey: Any] = [
-                .font: style.font(.current),
-                .foregroundColor: style.color(.link), .link: url
+                .font: style.fonts.current,
+                .foregroundColor: style.colors.link, .link: url
             ]
             attributed.addAttributes(attributes, range: NSRange(location: 0, length: attributed.string.utf16.count))
         }
