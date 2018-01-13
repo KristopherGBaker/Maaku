@@ -38,8 +38,11 @@ public extension Emphasis {
     public func attributedText(style: Style) -> NSAttributedString {
         let attributed = NSMutableAttributedString()
 
+        var emphasisStyle = style
+        emphasisStyle.emphasis()
+
         for item in items {
-            attributed.append(item.attributedText(style: style.emphasis()))
+            attributed.append(item.attributedText(style: emphasisStyle))
         }
 
         return attributed

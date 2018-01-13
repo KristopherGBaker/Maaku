@@ -34,8 +34,8 @@ public extension CodeBlock {
 
     public func attributedText(style: Style) -> NSAttributedString {
         let attributes: [NSAttributedStringKey: Any] = [
-            .font: style.font(.current),
-            .foregroundColor: style.color(.current)
+            .font: style.fonts.current,
+            .foregroundColor: style.colors.current
         ]
         return NSAttributedString(string: code, attributes: attributes)
     }

@@ -39,8 +39,11 @@ public extension Strong {
     public func attributedText(style: Style) -> NSAttributedString {
         let attributed = NSMutableAttributedString()
 
+        var strongStyle = style
+        strongStyle.strong()
+
         for item in items {
-            attributed.append(item.attributedText(style: style.strong()))
+            attributed.append(item.attributedText(style: strongStyle))
         }
 
         return attributed
