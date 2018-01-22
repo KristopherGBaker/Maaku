@@ -12,7 +12,7 @@ import Foundation
 public struct Link: Inline {
 
     /// Used for matching links that don't strictly conform to common mark syntax.
-    private static let regex = try? NSRegularExpression(pattern: "^\\[\\w+\\]\\([^)]+\\)$", options: [])
+    private static let regex = try? NSRegularExpression(pattern: "^\\[\\w+\\]\\(.+\\)$", options: [])
 
     /// The inline text.
     public let text: [Inline]
