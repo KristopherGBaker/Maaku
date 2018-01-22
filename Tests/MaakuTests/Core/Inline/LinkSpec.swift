@@ -42,6 +42,40 @@ class LinkSpec: QuickSpec {
                 }
             }
         }
+
+        describe("Link with nested parenthesis") {
+            let md = "[ci](source::https://www.github.com/|alt:: nested (parenthesis))"
+
+            do {
+                // autolinks must not be enabled to support nested parenthesis
+                let document = try Document(text: md, options: .default, extensions: [.strikethrough, .tables])
+
+                it("initializes the document") {
+                    expect(document.count).to(equal(1))
+                }
+
+                it("parses the link") {
+                    expect(document[0]).to(beAKindOf(Paragraph.self))
+                    // swiftlint:disable force_cast
+                    let paragraph = document[0] as! Paragraph
+                    expect(paragraph.items.count).to(equal(1))
+                    expect(paragraph.items[0]).to(beAKindOf(Text.self))
+                    // swiftlint:disable force_cast
+                    let text = paragraph.items[0] as! Text
+
+                    let link = Link(text: text)
+
+                    expect(link).toNot(beNil())
+                    expect(link?.destination)
+                        .to(equal("source::https://www.github.com/|alt:: nested (parenthesis)"))
+                    expect(link?.text[0]).to(beAKindOf(Text.self))
+                }
+            } catch let error {
+                it("fails to initialize the document") {
+                    fail("\(error.localizedDescription)")
+                }
+            }
+        }
     }
 
 }
