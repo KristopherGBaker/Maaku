@@ -77,8 +77,10 @@ public struct Link: Inline {
             let parts = text.text.components(separatedBy: "](")
 
             if parts.count == 2 {
-                let linkName = parts[0].replacingOccurrences(of: "[", with: "")
-                let dest = parts[1].replacingOccurrences(of: ")", with: "")
+                var linkName = parts[0]
+                linkName.removeFirst()
+                var dest = parts[1]
+                dest.removeLast()
 
                 self.text = [Text(text: linkName)]
                 destination = dest
