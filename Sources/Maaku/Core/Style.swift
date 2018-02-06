@@ -89,6 +89,9 @@ public protocol ColorStyle {
     /// Link foreground color
     var link: Color { get set }
 
+    /// Link underline color
+    var linkUnderline: Color { get set }
+
     /// Paragraph foreground color
     var paragraph: Color { get set }
 }
@@ -190,6 +193,9 @@ public struct DefaultColorStyle: ColorStyle {
     /// The link color.
     public var link: Color
 
+    /// The link underline color.
+    public var linkUnderline: Color
+
     /// The paragraph color.
     public var paragraph: Color
 
@@ -202,6 +208,7 @@ public struct DefaultColorStyle: ColorStyle {
         h6 = .black
         paragraph = .black
         link = .blue
+        linkUnderline = .blue
         current = .black
         inlineCodeBackground = Color(white: 0.95, alpha: 1.0)
         inlineCodeForeground = Color(red: 0.91, green: 0.11, blue: 0.25, alpha: 1.00)
