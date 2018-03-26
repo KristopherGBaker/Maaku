@@ -9,7 +9,7 @@ The Maaku framework provides a Swift wrapper around [cmark-gfm](https://github.c
 
 Maaku also supports a convention for plugins that custom renderers can use. One plugin is provided as an example.
 
-[TexturedMaaku](https://github.com/KristopherGBaker/TexturedMaaku) builds on top of Maaku together [Texture](http://texturegroup.org/) to provide a native iOS CommonMark rendering framework in Swift.
+[TexturedMaaku](https://github.com/KristopherGBaker/TexturedMaaku) builds on top of Maaku together with [Texture](http://texturegroup.org/) to provide a native iOS CommonMark rendering framework in Swift.
 
 + [Installation](#installation)
 + [Core](#core)
