@@ -650,12 +650,12 @@ public class CMParser {
 
         var align: [String] = []
 
-        for i in 0..<columns {
+        for idx in 0..<columns {
             if let val =  alignments?.pointee, let str = String(bytes: [val], encoding: .utf8) {
                 align.append(str)
             }
 
-            if i < (columns - 1) {
+            if idx < (columns - 1) {
                 alignments = alignments?.successor()
             }
         }

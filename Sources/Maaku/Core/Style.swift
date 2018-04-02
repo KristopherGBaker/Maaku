@@ -257,12 +257,14 @@ public extension Style {
 
     /// Updates the current font with a bold/strong font.
     public mutating func strong() {
-        fonts.current = fonts.current.maaku_bold()
+        let newFont = fonts.current.maaku_bold()
+        fonts.current = newFont
     }
 
     /// Updates the current font with an italic/emphasis font.
     public mutating func emphasis() {
-        fonts.current = fonts.current.maaku_italic()
+        let newFont = fonts.current.maaku_italic()
+        fonts.current = newFont
     }
 
     /// Returns the font for the specified heading.
