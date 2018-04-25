@@ -378,9 +378,7 @@ public class CMParser {
     private var parsing: Bool = false
 
     /// The delegate.
-    // swiftlint:disable weak_delegate
     public weak var delegate: CMParserDelegate?
-    // swiftlint:enable weak_delegate
 
     /// Creates a parser for the specified document.
     ///
