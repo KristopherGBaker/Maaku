@@ -7,13 +7,13 @@
 //
 
 #if os(OSX)
-    import AppKit
-    public typealias Font  = NSFont
-    public typealias Color = NSColor
+import AppKit
+public typealias Font  = NSFont
+public typealias Color = NSColor
 #else
-    import UIKit
-    public typealias Font  = UIFont
-    public typealias Color = UIColor
+import UIKit
+public typealias Font  = UIFont
+public typealias Color = UIColor
 #endif
 
 /// Represents the font style.
@@ -108,6 +108,9 @@ public protocol Style {
     /// Has strikethrough enabled.
     var hasStrikethrough: Bool { get set }
 
+    /// Soft line break separator.
+    var softbreakSeparator: String { get set }
+
 }
 
 /// Represents the default font style.
@@ -138,7 +141,7 @@ public struct DefaultFontStyle: FontStyle {
     public var paragraph: Font
 
     public init() {
-    #if os(OSX)
+        #if os(OSX)
         h1 = Font.systemFont(ofSize: 28, weight: .semibold)
         h2 = Font.systemFont(ofSize: 22, weight: .semibold)
         h3 = Font.systemFont(ofSize: 20, weight: .semibold)
@@ -147,7 +150,7 @@ public struct DefaultFontStyle: FontStyle {
         h6 = Font.systemFont(ofSize: 13, weight: .semibold)
         paragraph = Font.systemFont(ofSize: 17, weight: .regular)
         current = Font.systemFont(ofSize: 17, weight: .regular)
-    #else
+        #else
         h1 = Font.preferredFont(forTextStyle: .title1).maaku_bold()
         h2 = Font.preferredFont(forTextStyle: .title2).maaku_bold()
         h3 = Font.preferredFont(forTextStyle: .title3).maaku_bold()
@@ -156,7 +159,7 @@ public struct DefaultFontStyle: FontStyle {
         h6 = Font.preferredFont(forTextStyle: .footnote).maaku_bold()
         paragraph = Font.preferredFont(forTextStyle: .body)
         current = Font.preferredFont(forTextStyle: .body)
-    #endif
+        #endif
     }
 }
 
@@ -227,6 +230,9 @@ public struct DefaultStyle: Style {
     /// Has strikethrough enabled.
     public var hasStrikethrough: Bool
 
+    /// Soft line break separator.
+    public var softbreakSeparator: String
+
     /// Initializes a Style with the default values.
     ///
     /// - Returns:
@@ -235,6 +241,7 @@ public struct DefaultStyle: Style {
         colors = DefaultColorStyle()
         fonts = DefaultFontStyle()
         hasStrikethrough = false
+        softbreakSeparator = " "
     }
 
     /// Initializes a Style with the specified values.
@@ -249,6 +256,7 @@ public struct DefaultStyle: Style {
         self.colors = colors
         self.fonts = fonts
         self.hasStrikethrough = hasStrikethrough
+        self.softbreakSeparator = " "
     }
 }
 
