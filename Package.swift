@@ -1,4 +1,4 @@
-// swift-tools-version:4.0
+// swift-tools-version:4.2
 
 import PackageDescription
 
@@ -11,8 +11,8 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/KristopherGBaker/libcmark_gfm.git", from: "0.28.0"),
-        .package(url: "https://github.com/Quick/Nimble.git", from: "7.0.0"),
-        .package(url: "https://github.com/Quick/Quick.git", from: "1.2.0")
+        .package(url: "https://github.com/Quick/Nimble.git", from: "7.3.0"),
+        .package(url: "https://github.com/Quick/Quick.git", from: "1.3.0")
     ],
     targets: [
         .target(
@@ -22,5 +22,5 @@ let package = Package(
             name: "MaakuTests",
             dependencies: ["Maaku", "Nimble", "Quick"]),
     ],
-    swiftLanguageVersions: [4]
+    swiftLanguageVersions: [.v4_2]
 )

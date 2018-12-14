@@ -44,11 +44,11 @@ class LinkSpec: QuickSpec {
         }
 
         describe("Link with nested parenthesis") {
-            let md = "[ci](source::https://www.github.com/|alt:: nested (parenthesis))"
+            let markdown = "[ci](source::https://www.github.com/|alt:: nested (parenthesis))"
 
             do {
                 // autolinks must not be enabled to support nested parenthesis
-                let document = try Document(text: md, options: .default, extensions: [.strikethrough, .tables])
+                let document = try Document(text: markdown, options: .default, extensions: [.strikethrough, .tables])
 
                 it("initializes the document") {
                     expect(document.count).to(equal(1))

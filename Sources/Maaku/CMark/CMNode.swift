@@ -232,7 +232,7 @@ public extension CMNode {
     /// - Returns:
     ///     The HTML as a string.
     public func renderHtml(_ options: CMDocumentOption, extensions: CMExtensionOption) throws -> String {
-        var htmlExtensions: UnsafeMutablePointer<cmark_llist>? = nil
+        var htmlExtensions: UnsafeMutablePointer<cmark_llist>?
 
         if extensions.contains(.tagfilters), let tagfilter = cmark_find_syntax_extension("tagfilter") {
             htmlExtensions = cmark_llist_append(cmark_get_default_mem_allocator(), nil, tagfilter)

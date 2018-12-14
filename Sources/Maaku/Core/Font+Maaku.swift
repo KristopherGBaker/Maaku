@@ -11,7 +11,7 @@
     public typealias FontDescriptorSymbolicTraits = NSFontDescriptor.SymbolicTraits
 #else
     import UIKit
-    public typealias FontDescriptorSymbolicTraits = UIFontDescriptorSymbolicTraits
+    public typealias FontDescriptorSymbolicTraits = UIFontDescriptor.SymbolicTraits
 #endif
 
 /// Font extensions.

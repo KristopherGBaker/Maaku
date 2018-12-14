@@ -35,14 +35,14 @@ public struct Text: Inline {
 public extension Text {
 
     public func attributedText(style: Style) -> NSAttributedString {
-        var attributes: [NSAttributedStringKey: Any] = [
+        var attributes: [NSAttributedString.Key: Any] = [
             .font: style.fonts.current,
             .foregroundColor: style.colors.current
         ]
 
         if style.hasStrikethrough {
             attributes[.strikethroughColor] = style.colors.current
-            attributes[.strikethroughStyle] = NSNumber(value: NSUnderlineStyle.styleSingle.rawValue as Int)
+            attributes[.strikethroughStyle] = NSNumber(value: NSUnderlineStyle.single.rawValue as Int)
         }
 
         return NSAttributedString(string: text, attributes: attributes)

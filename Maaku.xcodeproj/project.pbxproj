@@ -818,7 +818,6 @@
 				A26822261FEB8F17006780A9 /* Frameworks */,
 				A26822271FEB8F17006780A9 /* Headers */,
 				A26822281FEB8F17006780A9 /* Resources */,
-				76ADA57565D1053DDCED6B19 /* [CP] Copy Pods Resources */,
 				A28847381FF49E2A00558555 /* ShellScript */,
 			);
 			buildRules = (
@@ -839,7 +838,6 @@
 				A26822981FEC2703006780A9 /* Frameworks */,
 				A26822991FEC2703006780A9 /* Resources */,
 				3F9921CD03B5FA2E86242B10 /* [CP] Embed Pods Frameworks */,
-				0102DE7309248E60042449C2 /* [CP] Copy Pods Resources */,
 				A28847391FF49E2E00558555 /* ShellScript */,
 			);
 			buildRules = (
@@ -861,7 +859,6 @@
 				A26823A81FECBCE3006780A9 /* Frameworks */,
 				A26823A91FECBCE3006780A9 /* Headers */,
 				A26823AA1FECBCE3006780A9 /* Resources */,
-				92E99B1D26277A8473187FDC /* [CP] Copy Pods Resources */,
 				A288473A1FF49E3200558555 /* ShellScript */,
 			);
 			buildRules = (
@@ -882,7 +879,6 @@
 				A26823B51FECBD0D006780A9 /* Frameworks */,
 				A26823B61FECBD0D006780A9 /* Headers */,
 				A26823B71FECBD0D006780A9 /* Resources */,
-				2B645DAD5C7C22225045579A /* [CP] Copy Pods Resources */,
 				A288473B1FF49E3600558555 /* ShellScript */,
 			);
 			buildRules = (
@@ -903,7 +899,6 @@
 				A26823BE1FECBD0D006780A9 /* Frameworks */,
 				A26823BF1FECBD0D006780A9 /* Resources */,
 				9B342C7D7D8EB48CC8131F6A /* [CP] Embed Pods Frameworks */,
-				1B23BBFBA2BDF9F1321DECF9 /* [CP] Copy Pods Resources */,
 				A288473C1FF49E3900558555 /* ShellScript */,
 			);
 			buildRules = (
@@ -925,7 +920,6 @@
 				A276D4801FEB1EB2006D5715 /* Frameworks */,
 				A276D4811FEB1EB2006D5715 /* Headers */,
 				A276D4821FEB1EB2006D5715 /* Resources */,
-				A01BDA557518E8A965830037 /* [CP] Copy Pods Resources */,
 				A28847361FF49E1D00558555 /* ShellScript */,
 			);
 			buildRules = (
@@ -946,7 +940,6 @@
 				A276D48A1FEB1EB2006D5715 /* Frameworks */,
 				A276D48B1FEB1EB2006D5715 /* Resources */,
 				33980E9429F9CF327C839A1D /* [CP] Embed Pods Frameworks */,
-				2B869F468F4322DBF7E01D13 /* [CP] Copy Pods Resources */,
 				A28847371FF49E2600558555 /* ShellScript */,
 			);
 			buildRules = (
@@ -1079,66 +1072,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0102DE7309248E60042449C2 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaakuTargets-MaakuTestTargets-MaakuMacOSTests/Pods-MaakuTargets-MaakuTestTargets-MaakuMacOSTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1B23BBFBA2BDF9F1321DECF9 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaakuTargets-MaakuTestTargets-Maaku-tvOSTests/Pods-MaakuTargets-MaakuTestTargets-Maaku-tvOSTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2B645DAD5C7C22225045579A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaakuTargets-Maaku-tvOS/Pods-MaakuTargets-Maaku-tvOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2B869F468F4322DBF7E01D13 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaakuTargets-MaakuTestTargets-MaakuTests/Pods-MaakuTargets-MaakuTestTargets-MaakuTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2E1F24A13694C5C5DA8C6FDE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1214,26 +1147,10 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libcmark_gfm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libcmark_gfm.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaakuTargets-MaakuTestTargets-MaakuMacOSTests/Pods-MaakuTargets-MaakuTestTargets-MaakuMacOSTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		76ADA57565D1053DDCED6B19 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaakuTargets-Maaku-macOS/Pods-MaakuTargets-Maaku-macOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		899F93BDDF93E10998F0B2E3 /* [CP] Check Pods Manifest.lock */ = {
@@ -1252,21 +1169,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		92E99B1D26277A8473187FDC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaakuTargets-Maaku-watchOS/Pods-MaakuTargets-Maaku-watchOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		94F4B655C1C913FE24BF0999 /* [CP] Check Pods Manifest.lock */ = {
@@ -1307,21 +1209,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaakuTargets-MaakuTestTargets-Maaku-tvOSTests/Pods-MaakuTargets-MaakuTestTargets-Maaku-tvOSTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A01BDA557518E8A965830037 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaakuTargets-Maaku/Pods-MaakuTargets-Maaku-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A28847361FF49E1D00558555 /* ShellScript */ = {
@@ -1413,7 +1300,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 		B4732EAAFF97772255F10CD0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1827,7 +1714,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -1855,7 +1742,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -1873,7 +1760,7 @@
 				PRODUCT_NAME = MaakuTests;
 				SDKROOT = macosx;
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "MaakuTests-Swift.h";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -1891,7 +1778,7 @@
 				PRODUCT_NAME = MaakuTests;
 				SDKROOT = macosx;
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "MaakuTests-Swift.h";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -1916,7 +1803,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.2;
 			};
@@ -1942,7 +1829,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.2;
 			};
@@ -1968,7 +1855,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 11.2;
 			};
@@ -1993,7 +1880,7 @@
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 11.2;
 			};
@@ -2009,7 +1896,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.krisbaker.MaakuTests;
 				PRODUCT_NAME = MaakuTests;
 				SDKROOT = appletvos;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 11.2;
 			};
@@ -2025,7 +1912,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.krisbaker.MaakuTests;
 				PRODUCT_NAME = MaakuTests;
 				SDKROOT = appletvos;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 11.2;
 			};
@@ -2169,7 +2056,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -2194,7 +2081,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -2210,7 +2097,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.krisbaker.MaakuTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -2226,7 +2113,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.krisbaker.MaakuTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
