@@ -104,7 +104,7 @@ Hello, this is a simple markdown document with one paragraph.
         describe("renderLatex") {
             it("renders the document") {
                 do {
-                    let md = """
+                    let markdown = """
 > This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
 > consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
 > Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
@@ -112,7 +112,7 @@ Hello, this is a simple markdown document with one paragraph.
 > Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
 > id sem consectetuer libero luctus adipiscing.
 """
-                    let document = try CMDocument(text: md)
+                    let document = try CMDocument(text: markdown)
                     let latex = try document.renderLatex(width: 100)
                     // swiftlint:disable line_length
                     expect(latex).to(equal("\\begin{quote}\nThis is a blockquote with two paragraphs. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\nAliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae,\nrisus.\n\nDonec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse id sem consectetuer libero\nluctus adipiscing.\n\n\\end{quote}\n"))

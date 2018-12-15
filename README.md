@@ -59,7 +59,7 @@ $ brew install carthage
 To integrate Maaku into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "KristopherGBaker/Maaku" ~> 0.2.0
+github "KristopherGBaker/Maaku" ~> 0.6.0
 ```
 
 Run `carthage update` to build the framework and drag the built `Maaku.framework` into your Xcode project.
@@ -72,7 +72,7 @@ Once you have your Swift package set up, adding Maaku as a dependency is as easy
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/KristopherGBaker/Maaku.git", from: "0.2.0")
+    .package(url: "https://github.com/KristopherGBaker/Maaku.git", from: "0.6.0")
 ]
 ```
 
@@ -80,12 +80,12 @@ dependencies: [
 
 ##### Building for macOS
 ```bash
-$ swift build -Xswiftc "-target" -Xswiftc "x86_64-apple-macosx10.11"
+$ swift build -Xswiftc "-target" -Xswiftc "x86_64-apple-macosx10.14"
 ```
 
 ##### Running Tests
 ```bash
-$ swift test -Xswiftc "-target" -Xswiftc "x86_64-apple-macosx10.11"
+$ swift test -Xswiftc "-target" -Xswiftc "x86_64-apple-macosx10.14"
 ```
 
 ## Core
@@ -103,7 +103,7 @@ Initializing a Document will parse the CommonMark and create an AST you can acce
 
 Core types that adopt the Node protocol support conversion to NSAttributedString using the `attributedText` method (most types are supported, but there are currently some limits, in particular with inline images and HTML - both inline and blocks).
 
-The fonts and colors used by the attributedText method can be specified using the `Style` type.
+The fonts and colors used by the attributedText method can be specified using the `Style` type. A default implementation of `Style` is provided with `DefaultStyle`.
 
 ## CMark
 

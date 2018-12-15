@@ -82,7 +82,7 @@ public extension Image {
         }
 
         if attributed.string.count == 0 {
-            let attributes: [NSAttributedStringKey: Any] = [
+            let attributes: [NSAttributedString.Key: Any] = [
                 .font: style.fonts.current,
                 .foregroundColor: style.colors.current
             ]

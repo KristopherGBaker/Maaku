@@ -114,7 +114,7 @@ public extension Link {
         }
 
         if let url = self.url {
-            let attributes: [NSAttributedStringKey: Any] = [
+            let attributes: [NSAttributedString.Key: Any] = [
                 .font: style.fonts.current,
                 .foregroundColor: style.colors.link,
                 .link: url,

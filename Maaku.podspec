@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Maaku"
-  s.version      = "0.5.0"
+  s.version      = "0.6.0"
   s.summary      = "Swift cmark-gfm wrapper with a Swift friendly representation of the AST"
 
   s.description  = <<-DESC

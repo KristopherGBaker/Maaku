@@ -35,7 +35,7 @@ public extension HtmlBlock {
 
         guard let data = html.data(using: .utf16, allowLossyConversion: false),
             let attributed = try? NSAttributedString(data: data, options: options, documentAttributes: nil) else {
-                let attributes: [NSAttributedStringKey: Any] = [
+                let attributes: [NSAttributedString.Key: Any] = [
                     .font: style.fonts.current,
                     .foregroundColor: style.colors.current
                 ]

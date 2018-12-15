@@ -30,11 +30,11 @@ public struct HorizontalRule: LeafBlock {
 public extension HorizontalRule {
 
     public func attributedText(style: Style) -> NSAttributedString {
-        let attributes: [NSAttributedStringKey: Any] = [
+        let attributes: [NSAttributedString.Key: Any] = [
             .font: style.fonts.current,
             .foregroundColor: style.colors.current,
             .strikethroughColor: style.colors.current,
-            .strikethroughStyle: NSNumber(value: NSUnderlineStyle.styleSingle.rawValue as Int)]
+            .strikethroughStyle: NSNumber(value: NSUnderlineStyle.single.rawValue as Int)]
         return NSAttributedString(string: "-----\n", attributes: attributes)
     }
 
