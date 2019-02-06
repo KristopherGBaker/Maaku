@@ -36,13 +36,6 @@ public struct CMDocumentOption: OptionSet {
     /// Render `softbreak` elements as hard line breaks.
     public static let hardBreaks = CMDocumentOption(rawValue: CMARK_OPT_HARDBREAKS)
 
-    /// Suppress raw HTML and unsafe links (`javascript:`, `vbscript:`,
-    /// `file:`, and `data:`, except for `image/png`, `image/gif`,
-    /// `image/jpeg`, or `image/webp` mime types).  Raw HTML is replaced
-    /// by a placeholder HTML comment. Unsafe links are replaced by
-    /// empty strings.
-    public static let safe = CMDocumentOption(rawValue: CMARK_OPT_SAFE)
-
     /// Render `softbreak` elements as spaces.
     public static let noBreaks = CMDocumentOption(rawValue: CMARK_OPT_NOBREAKS)
 
@@ -67,5 +60,22 @@ public struct CMDocumentOption: OptionSet {
 
     /// Parse footnotes.
     public static let footnotes = CMDocumentOption(rawValue: CMARK_OPT_FOOTNOTES)
+
+    /// Only parse strikethroughs if surrounded by exactly 2 tildes.
+    /// Gives some compatibility with redcarpet.
+    public static let strikethroughDoubleTilde = CMDocumentOption(rawValue: CMARK_OPT_STRIKETHROUGH_DOUBLE_TILDE)
+
+    /// Use style attributes to align table cells instead of align attributes.
+    public static let tablePreferStyleAttributes = CMDocumentOption(rawValue: CMARK_OPT_TABLE_PREFER_STYLE_ATTRIBUTES)
+
+    /// Include the remainder of the info string in code blocks in a separate attribute.
+    public static let optFullInfoString = CMDocumentOption(rawValue: CMARK_OPT_FULL_INFO_STRING)
+
+    /// Allow raw HTML and unsafe links, `javascript:`, `vbscript:`, `file:`, and
+    /// all `data:` URLs -- by default, only `image/png`, `image/gif`, `image/jpeg`,
+    /// or `image/webp` mime types are allowed. Without this option, raw HTML is
+    /// replaced by a placeholder HTML comment, and unsafe links are replaced by
+    /// empty strings.
+    public static let unsafe = CMDocumentOption(rawValue: CMARK_OPT_UNSAFE)
 
 }

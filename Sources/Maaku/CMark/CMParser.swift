@@ -645,8 +645,8 @@ public class CMParser {
     ///     - node: The current node.
     ///     - eventType: The event type.
     private func handleTableEvent(_ node: CMNode, eventType: CMEventType) {
-        let columns = cmarkextensions_get_table_columns(node.cmarkNode)
-        var alignments = cmarkextensions_get_table_alignments(node.cmarkNode)
+        let columns = cmark_gfm_extensions_get_table_columns(node.cmarkNode)
+        var alignments = cmark_gfm_extensions_get_table_alignments(node.cmarkNode)
 
         var align: [String] = []
 

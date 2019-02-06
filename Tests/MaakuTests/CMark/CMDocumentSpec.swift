@@ -63,8 +63,18 @@ Hello, this is a simple markdown document with one paragraph.
                 do {
                     let document = try CMDocument(data: data)
                     let xml = try document.renderXml()
-                    // swiftlint:disable line_length
-                    expect(xml).to(equal("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE document SYSTEM \"CommonMark.dtd\">\n<document xmlns=\"http://commonmark.org/xml/1.0\">\n  <paragraph>\n    <text>Hello, this is a simple markdown document with one paragraph.</text>\n  </paragraph>\n</document>\n"))
+
+                    let expected = """
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "CommonMark.dtd">
+<document xmlns="http://commonmark.org/xml/1.0">
+  <paragraph>
+    <text xml:space="preserve">Hello, this is a simple markdown document with one paragraph.</text>
+  </paragraph>
+</document>
+
+"""
+                    expect(xml).to(equal(expected))
                 } catch let error {
                     it("fails to initialize the document") {
                         fail("\(error.localizedDescription)")

@@ -23,8 +23,11 @@ class TagFilterSpec: QuickSpec {
                 let html = try document.renderHtml()
 
                 it("filters the html") {
-                    // swiftlint:disable line_length
-                    expect(html).to(equal("<p>test &lt;iframe src=\"https://www.github.com\">filtered&lt;/iframe></p>\n"))
+                    let expected = """
+<p>test <!-- raw HTML omitted -->filtered<!-- raw HTML omitted --></p>
+
+"""
+                    expect(html).to(equal(expected))
                 }
             } catch let error {
                 it("fails to initialize the document") {

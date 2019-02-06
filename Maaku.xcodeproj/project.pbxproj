@@ -500,7 +500,6 @@
 				31AB2CAB0FE87B6227CB154A /* Pods-MaakuTargets-MaakuTestTargets-MaakuTests.debug.xcconfig */,
 				A2019A843DA09A6F09EC7E33 /* Pods-MaakuTargets-MaakuTestTargets-MaakuTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
