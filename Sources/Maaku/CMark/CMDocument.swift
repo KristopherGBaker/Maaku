@@ -84,7 +84,7 @@ public class CMDocument {
     public init(text: String, options: CMDocumentOption, extensions: CMExtensionOption) throws {
         self.options = options
         self.extensions = extensions
-        core_extensions_ensure_registered()
+        cmark_gfm_core_extensions_ensure_registered()
 
         guard let parser = cmark_parser_new(options.rawValue) else {
             throw CMDocumentError.parsingError
