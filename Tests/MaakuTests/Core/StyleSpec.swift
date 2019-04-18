@@ -16,7 +16,7 @@
     public typealias Color = UIColor
 #endif
 
-@testable import Maaku
+import Maaku
 import Nimble
 import Quick
 import XCTest
