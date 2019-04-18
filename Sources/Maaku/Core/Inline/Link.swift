@@ -40,7 +40,7 @@ public struct Link: Inline {
     ///     - title: The link title.
     /// - Returns:
     ///     The initialized Link.
-    init(text: [Inline], destination: String?, title: String?) {
+    public init(text: [Inline], destination: String?, title: String?) {
         self.text = text
         self.destination = destination
         self.title = title
@@ -53,7 +53,7 @@ public struct Link: Inline {
     ///     - title: The link title.
     /// - Returns:
     ///     The initialized Link.
-    init(destination: String?, title: String?) {
+    public init(destination: String?, title: String?) {
         self.init(text: [], destination: destination, title: title)
     }
 
@@ -63,7 +63,7 @@ public struct Link: Inline {
     ///     - text: The Text.
     /// - Returns:
     ///     The initialized Link if a matching link was found, nil otherwise.
-    init?(text: Text) {
+    public init?(text: Text) {
         guard let regex = Link.regex else {
             return nil
         }
