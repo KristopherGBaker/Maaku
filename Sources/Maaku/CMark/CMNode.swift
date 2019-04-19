@@ -95,9 +95,14 @@ public extension CMNode {
         return String(cString: buffer)
     }
 
-    /// The string value.
+    /// The string value (literal).
     public var stringValue: String? {
-        guard let buffer = cmark_node_get_literal(cmarkNode) else {
+        return literal
+    }
+
+    /// The string content value.
+    public var stringContent: String? {
+        guard let buffer = cmark_node_get_string_content(cmarkNode) else {
             return nil
         }
 
