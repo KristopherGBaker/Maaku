@@ -6,7 +6,7 @@
 //  Copyright © 2017 Kristopher Baker. All rights reserved.
 //
 
-@testable import Maaku
+import Maaku
 import Nimble
 import Quick
 import XCTest
