@@ -147,6 +147,36 @@ Hello, this is a simple markdown document with one paragraph.
                 }
             }
         }
+
+        describe("document node") {
+            it("exists even with an empty document") {
+                do {
+                    let document = try CMDocument(text: "")
+                    expect(document.node.type).to(equal(CMNodeType.document))
+                } catch let error {
+                    it("fails to initialize empty document") {
+                        fail("\(error.localizedDescription)")
+                    }
+                }
+            }
+            it("is the main node for a complex document") {
+                do {
+                    let markdown = """
+# Heading 1
+## Heading 2
+Simple paragraph
+
+Another Paragraph
+"""
+                    let document = try CMDocument(text: markdown)
+                    expect(document.node.type).to(equal(CMNodeType.document))
+                } catch let error {
+                    it("fails to return reasonable node types") {
+                        fail("\(error.localizedDescription)")
+                    }
+                }
+            }
+        }
     }
 
 }
