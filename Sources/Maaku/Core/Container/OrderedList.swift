@@ -36,7 +36,7 @@ public struct OrderedList: List {
 
 public extension OrderedList {
 
-    public func attributedText(style: Style) -> NSAttributedString {
+    func attributedText(style: Style) -> NSAttributedString {
         let attributed = NSMutableAttributedString()
 
         for (index, item) in items.enumerated() {

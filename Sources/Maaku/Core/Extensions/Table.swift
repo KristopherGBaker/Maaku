@@ -108,7 +108,7 @@ public struct Table: LeafBlock {
 
 public extension Table {
 
-    public func attributedText(style: Style) -> NSAttributedString {
+    func attributedText(style: Style) -> NSAttributedString {
         return NSAttributedString()
     }
 

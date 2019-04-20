@@ -15,7 +15,7 @@ public struct LineBreak: Inline {
 
 public extension LineBreak {
 
-    public func attributedText(style: Style) -> NSAttributedString {
+    func attributedText(style: Style) -> NSAttributedString {
         return NSAttributedString(string: "\n")
     }
 

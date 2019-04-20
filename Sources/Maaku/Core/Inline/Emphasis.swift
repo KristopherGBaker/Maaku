@@ -35,7 +35,7 @@ public struct Emphasis: Inline {
 
 public extension Emphasis {
 
-    public func attributedText(style: Style) -> NSAttributedString {
+    func attributedText(style: Style) -> NSAttributedString {
         let attributed = NSMutableAttributedString()
 
         var emphasisStyle = style

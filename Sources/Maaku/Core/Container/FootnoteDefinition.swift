@@ -44,7 +44,7 @@ public struct FootnoteDefinition: ContainerBlock {
 
 public extension FootnoteDefinition {
 
-    public func attributedText(style: Style) -> NSAttributedString {
+    func attributedText(style: Style) -> NSAttributedString {
         let attributed = NSMutableAttributedString(
             string: "\(number). ",
             attributes: [.font: style.fonts.current, .foregroundColor: style.colors.current]

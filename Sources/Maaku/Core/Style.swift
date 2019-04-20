@@ -264,13 +264,13 @@ public struct DefaultStyle: Style {
 public extension Style {
 
     /// Updates the current font with a bold/strong font.
-    public mutating func strong() {
+    mutating func strong() {
         let newFont = fonts.current.maaku_bold()
         fonts.current = newFont
     }
 
     /// Updates the current font with an italic/emphasis font.
-    public mutating func emphasis() {
+    mutating func emphasis() {
         let newFont = fonts.current.maaku_italic()
         fonts.current = newFont
     }
@@ -281,7 +281,7 @@ public extension Style {
     ///     - heading: The heading.
     /// - Returns:
     ///     - The font for the heading.
-    public func font(forHeading heading: Heading) -> Font {
+    func font(forHeading heading: Heading) -> Font {
         switch heading.level {
         case .h1:
             return fonts.h1
@@ -306,7 +306,7 @@ public extension Style {
     ///     - heading: The heading.
     /// - Returns:
     ///     - The color for the heading.
-    public func color(forHeading heading: Heading) -> Color {
+    func color(forHeading heading: Heading) -> Color {
         switch heading.level {
         case .h1:
             return colors.h1

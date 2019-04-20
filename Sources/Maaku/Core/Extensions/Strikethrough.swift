@@ -35,7 +35,7 @@ public struct Strikethrough: Inline {
 
 public extension Strikethrough {
 
-    public func attributedText(style: Style) -> NSAttributedString {
+    func attributedText(style: Style) -> NSAttributedString {
         let attributed = NSMutableAttributedString()
 
         var strikethroughStyle = style

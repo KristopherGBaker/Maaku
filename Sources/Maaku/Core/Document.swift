@@ -135,7 +135,7 @@ public extension Document {
     ///     - style: The style.
     /// - Returns:
     ///     An attributed string representing the document.
-    public func attributedText(style: Style) -> NSAttributedString {
+    func attributedText(style: Style) -> NSAttributedString {
         let attributed = NSMutableAttributedString()
 
         for item in items {

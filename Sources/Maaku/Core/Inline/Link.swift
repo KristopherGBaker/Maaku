@@ -106,7 +106,7 @@ public struct Link: Inline {
 
 public extension Link {
 
-    public func attributedText(style: Style) -> NSAttributedString {
+    func attributedText(style: Style) -> NSAttributedString {
         let attributed = NSMutableAttributedString()
 
         for item in text {

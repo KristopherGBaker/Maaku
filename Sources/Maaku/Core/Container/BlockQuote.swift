@@ -36,7 +36,7 @@ public struct BlockQuote: ContainerBlock {
 
 public extension BlockQuote {
 
-    public func attributedText(style: Style) -> NSAttributedString {
+    func attributedText(style: Style) -> NSAttributedString {
         let attributed = NSMutableAttributedString()
 
         for item in items {

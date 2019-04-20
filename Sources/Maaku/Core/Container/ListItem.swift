@@ -36,7 +36,7 @@ public struct ListItem: ContainerBlock {
 
 public extension ListItem {
 
-    public func attributedText(style: Style) -> NSAttributedString {
+    func attributedText(style: Style) -> NSAttributedString {
         let attributed = NSMutableAttributedString()
 
         for item in items {

@@ -34,7 +34,7 @@ public struct Text: Inline {
 
 public extension Text {
 
-    public func attributedText(style: Style) -> NSAttributedString {
+    func attributedText(style: Style) -> NSAttributedString {
         var attributes: [NSAttributedString.Key: Any] = [
             .font: style.fonts.current,
             .foregroundColor: style.colors.current
