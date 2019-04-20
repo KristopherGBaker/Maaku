@@ -1072,8 +1072,6 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MaakuTargets-MaakuTestTargets-MaakuTests/Pods-MaakuTargets-MaakuTestTargets-MaakuTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/libcmark_gfm-iOS9.0/libcmark_gfm.framework",
@@ -1081,8 +1079,6 @@
 				"${BUILT_PRODUCTS_DIR}/Quick-iOS/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libcmark_gfm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
@@ -1208,8 +1204,6 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MaakuTargets-MaakuTestTargets-MaakuMacOSTests/Pods-MaakuTargets-MaakuTestTargets-MaakuMacOSTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/libcmark_gfm-macOS10.11/libcmark_gfm.framework",
@@ -1217,8 +1211,6 @@
 				"${BUILT_PRODUCTS_DIR}/Quick-macOS/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libcmark_gfm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
@@ -1347,8 +1339,6 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MaakuTargets-MaakuTestTargets-Maaku-tvOSTests/Pods-MaakuTargets-MaakuTestTargets-Maaku-tvOSTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/libcmark_gfm-tvOS9.0/libcmark_gfm.framework",
@@ -1356,8 +1346,6 @@
 				"${BUILT_PRODUCTS_DIR}/Quick-tvOS/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libcmark_gfm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
