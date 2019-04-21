@@ -70,7 +70,7 @@ public struct Image: Inline {
 
 public extension Image {
 
-    public func attributedText(style: Style) -> NSAttributedString {
+    func attributedText(style: Style) -> NSAttributedString {
         // TODO: images are not supported yet
         // consider doing something with async NSTextAttachment
         // https://www.cocoanetics.com/2016/09/asynchronous-nstextattachments-22/

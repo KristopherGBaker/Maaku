@@ -131,7 +131,7 @@ public extension CMDocument {
     ///     `CMDocumentError.renderError` if there is an error rendering the HTML.
     /// - Returns:
     ///     The HTML as a string.
-    public func renderHtml() throws -> String {
+    func renderHtml() throws -> String {
         return try node.renderHtml(options, extensions: extensions)
     }
 
@@ -141,7 +141,7 @@ public extension CMDocument {
     ///     `CMDocumentError.renderError` if there is an error rendering the XML.
     /// - Returns:
     ///     The XML as a string.
-    public func renderXml() throws -> String {
+    func renderXml() throws -> String {
         return try node.renderXml(options)
     }
 
@@ -153,7 +153,7 @@ public extension CMDocument {
     ///     `CMDocumentError.renderError` if there is an error rendering the man page.
     /// - Returns:
     ///     The man page as a string.
-    public func renderMan(width: Int32) throws -> String {
+    func renderMan(width: Int32) throws -> String {
         return try node.renderMan(options, width: width)
     }
 
@@ -165,7 +165,7 @@ public extension CMDocument {
     ///     `CMDocumentError.renderError` if there is an error rendering the common mark.
     /// - Returns:
     ///     The common mark as a string.
-    public func renderCommonMark(width: Int32) throws -> String {
+    func renderCommonMark(width: Int32) throws -> String {
         return try node.renderCommonMark(options, width: width)
     }
 
@@ -177,7 +177,7 @@ public extension CMDocument {
     ///     `CMDocumentError.renderError` if there is an error rendering the Latex.
     /// - Returns:
     ///     The Latex as a string.
-    public func renderLatex(width: Int32) throws -> String {
+    func renderLatex(width: Int32) throws -> String {
         return try node.renderLatex(options, width: width)
     }
 
@@ -189,7 +189,7 @@ public extension CMDocument {
     ///     `CMDocumentError.renderError` if there is an error rendering the plain text.
     /// - Returns:
     ///     The plain text as a string.
-    public func renderPlainText(width: Int32) throws -> String {
+    func renderPlainText(width: Int32) throws -> String {
         return try node.renderPlainText(options, width: width)
     }
 

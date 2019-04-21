@@ -35,7 +35,7 @@ public struct Paragraph: LeafBlock {
 
 public extension Paragraph {
 
-    public func attributedText(style: Style) -> NSAttributedString {
+    func attributedText(style: Style) -> NSAttributedString {
         let attributed = NSMutableAttributedString()
 
         var paragraphStyle = style

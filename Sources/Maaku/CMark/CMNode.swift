@@ -56,38 +56,38 @@ public extension CMNode {
     }
 
     /// The next node.
-    public var next: CMNode? {
+    var next: CMNode? {
         return wrap(cmarkNode: cmarkNode.pointee.next)
     }
 
     /// The previous node.
-    public var previous: CMNode? {
+    var previous: CMNode? {
         return wrap(cmarkNode: cmarkNode.pointee.prev)
     }
 
     /// The parent node.
-    public var parent: CMNode? {
+    var parent: CMNode? {
         return wrap(cmarkNode: cmarkNode.pointee.parent)
     }
 
     /// The first child.
-    public var firstChild: CMNode? {
+    var firstChild: CMNode? {
         return wrap(cmarkNode: cmarkNode.pointee.first_child)
     }
 
     /// The last child.
-    public var lastChild: CMNode? {
+    var lastChild: CMNode? {
         return wrap(cmarkNode: cmarkNode.pointee.last_child)
     }
 
     /// The node type.
-    public var type: CMNodeType {
+    var type: CMNodeType {
         let cmarkNodeType = cmark_node_get_type(cmarkNode)
         return CMNodeType(rawValue: cmarkNodeType.rawValue)
     }
 
     /// The human readable type.
-    public var humanReadableType: String? {
+    var humanReadableType: String? {
         guard let buffer = cmark_node_get_type_string(cmarkNode) else {
             return nil
         }
@@ -96,12 +96,12 @@ public extension CMNode {
     }
 
     /// The string value (literal).
-    public var stringValue: String? {
+    var stringValue: String? {
         return literal
     }
 
     /// The string content value.
-    public var stringContent: String? {
+    var stringContent: String? {
         guard let buffer = cmark_node_get_string_content(cmarkNode) else {
             return nil
         }
@@ -110,12 +110,12 @@ public extension CMNode {
     }
 
     /// The heading level.
-    public var headingLevel: Int32 {
+    var headingLevel: Int32 {
         return cmark_node_get_heading_level(cmarkNode)
     }
 
     /// The fenced code info.
-    public var fencedCodeInfo: String? {
+    var fencedCodeInfo: String? {
         guard let buffer = cmark_node_get_fence_info(cmarkNode) else {
             return nil
         }
@@ -124,7 +124,7 @@ public extension CMNode {
     }
 
     /// The custom on enter value.
-    public var customOnEnter: String? {
+    var customOnEnter: String? {
         guard let buffer = cmark_node_get_on_enter(cmarkNode) else {
             return nil
         }
@@ -133,7 +133,7 @@ public extension CMNode {
     }
 
     /// The custom on exit value.
-    public var customOnExit: String? {
+    var customOnExit: String? {
         guard let buffer = cmark_node_get_on_exit(cmarkNode) else {
             return nil
         }
@@ -142,27 +142,27 @@ public extension CMNode {
     }
 
     /// The list type.
-    public var listType: CMListType {
+    var listType: CMListType {
         return CMListType(rawValue: cmark_node_get_list_type(cmarkNode).rawValue) ?? .none
     }
 
     /// The list delimiter type.
-    public var listDelimiterType: CMDelimiterType {
+    var listDelimiterType: CMDelimiterType {
         return CMDelimiterType(rawValue: cmark_node_get_list_delim(cmarkNode).rawValue) ?? .none
     }
 
     /// The list starting number.
-    public var listStartingNumber: Int32 {
+    var listStartingNumber: Int32 {
         return cmark_node_get_list_start(cmarkNode)
     }
 
     /// The list tight.
-    public var listTight: Bool {
+    var listTight: Bool {
         return cmark_node_get_list_tight(cmarkNode) != 0
     }
 
     /// The URL as a string.
-    public var destination: String? {
+    var destination: String? {
         guard let buffer = cmark_node_get_url(cmarkNode) else {
             return nil
         }
@@ -171,7 +171,7 @@ public extension CMNode {
     }
 
     /// The URL.
-    public var url: URL? {
+    var url: URL? {
         guard let destination = destination else {
             return nil
         }
@@ -180,7 +180,7 @@ public extension CMNode {
     }
 
     /// The title.
-    public var title: String? {
+    var title: String? {
         guard let buffer = cmark_node_get_title(cmarkNode) else {
             return nil
         }
@@ -189,7 +189,7 @@ public extension CMNode {
     }
 
     /// The literal.
-    public var literal: String? {
+    var literal: String? {
         guard let buffer = cmark_node_get_literal(cmarkNode) else {
             return nil
         }
@@ -198,27 +198,27 @@ public extension CMNode {
     }
 
     /// The start line.
-    public var startLine: Int32 {
+    var startLine: Int32 {
         return cmark_node_get_start_line(cmarkNode)
     }
 
     /// The start column.
-    public var startColumn: Int32 {
+    var startColumn: Int32 {
         return cmark_node_get_start_column(cmarkNode)
     }
 
     /// The end line.
-    public var endLine: Int32 {
+    var endLine: Int32 {
         return cmark_node_get_end_line(cmarkNode)
     }
 
     /// The end column.
-    public var endColumn: Int32 {
+    var endColumn: Int32 {
         return cmark_node_get_end_column(cmarkNode)
     }
 
     /// Returns an iterator for the node.
-    public var iterator: Iterator? {
+    var iterator: Iterator? {
         return Iterator(node: self)
     }
 
@@ -236,7 +236,7 @@ public extension CMNode {
     ///     `CMDocumentError.renderError` if there is an error rendering the HTML.
     /// - Returns:
     ///     The HTML as a string.
-    public func renderHtml(_ options: CMDocumentOption, extensions: CMExtensionOption) throws -> String {
+    func renderHtml(_ options: CMDocumentOption, extensions: CMExtensionOption) throws -> String {
         var htmlExtensions: UnsafeMutablePointer<cmark_llist>?
 
         if extensions.contains(.tagfilters), let tagfilter = cmark_find_syntax_extension("tagfilter") {
@@ -266,7 +266,7 @@ public extension CMNode {
     ///     `CMDocumentError.renderError` if there is an error rendering the XML.
     /// - Returns:
     ///     The XML as a string.
-    public func renderXml(_ options: CMDocumentOption) throws -> String {
+    func renderXml(_ options: CMDocumentOption) throws -> String {
         guard let buffer = cmark_render_xml(cmarkNode, options.rawValue) else {
             throw CMDocumentError.renderError
         }
@@ -291,7 +291,7 @@ public extension CMNode {
     ///     `CMDocumentError.renderError` if there is an error rendering the man page.
     /// - Returns:
     ///     The man page as a string.
-    public func renderMan(_ options: CMDocumentOption, width: Int32) throws -> String {
+    func renderMan(_ options: CMDocumentOption, width: Int32) throws -> String {
         guard let buffer = cmark_render_man(cmarkNode, options.rawValue, width) else {
             throw CMDocumentError.renderError
         }
@@ -316,7 +316,7 @@ public extension CMNode {
     ///     `CMDocumentError.renderError` if there is an error rendering the common mark.
     /// - Returns:
     ///     The common mark as a string.
-    public func renderCommonMark(_ options: CMDocumentOption, width: Int32) throws -> String {
+    func renderCommonMark(_ options: CMDocumentOption, width: Int32) throws -> String {
         guard let buffer = cmark_render_commonmark(cmarkNode, options.rawValue, width) else {
             throw CMDocumentError.renderError
         }
@@ -341,7 +341,7 @@ public extension CMNode {
     ///     `CMDocumentError.renderError` if there is an error rendering the Latex.
     /// - Returns:
     ///     The Latex as a string.
-    public func renderLatex(_ options: CMDocumentOption, width: Int32) throws -> String {
+    func renderLatex(_ options: CMDocumentOption, width: Int32) throws -> String {
         guard let buffer = cmark_render_latex(cmarkNode, options.rawValue, width) else {
             throw CMDocumentError.renderError
         }
@@ -366,7 +366,7 @@ public extension CMNode {
     ///     `CMDocumentError.renderError` if there is an error rendering the plain text.
     /// - Returns:
     ///     The plain text as a string.
-    public func renderPlainText(_ options: CMDocumentOption, width: Int32) throws -> String {
+    func renderPlainText(_ options: CMDocumentOption, width: Int32) throws -> String {
         guard let buffer = cmark_render_plaintext(cmarkNode, options.rawValue, width) else {
             throw CMDocumentError.renderError
         }

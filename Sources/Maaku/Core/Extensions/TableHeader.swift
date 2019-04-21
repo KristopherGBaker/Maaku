@@ -36,7 +36,7 @@ public struct TableHeader: TableLine {
 
 public extension TableHeader {
 
-    public func attributedText(style: Style) -> NSAttributedString {
+    func attributedText(style: Style) -> NSAttributedString {
         return NSAttributedString()
     }
 
