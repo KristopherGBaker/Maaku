@@ -446,6 +446,8 @@ public class CMParser {
         }
 
         switch node.type {
+        case .none:
+            return
         case .document:
             if eventType == .enter {
                 delegate?.parserDidStartDocument(parser: self)
@@ -560,7 +562,7 @@ public class CMParser {
             if eventType == .enter {
                 delegate?.parser(parser: self, foundFootnoteReference: node.stringValue ?? "")
             }
-        default:
+        case .extension(_):
             handleExtensions(node, eventType: eventType)
         }
     }
