@@ -36,7 +36,7 @@ public struct Strong: Inline {
 
 public extension Strong {
 
-    public func attributedText(style: Style) -> NSAttributedString {
+    func attributedText(style: Style) -> NSAttributedString {
         let attributed = NSMutableAttributedString()
 
         var strongStyle = style

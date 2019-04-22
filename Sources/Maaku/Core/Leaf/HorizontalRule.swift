@@ -29,7 +29,7 @@ public struct HorizontalRule: LeafBlock {
 
 public extension HorizontalRule {
 
-    public func attributedText(style: Style) -> NSAttributedString {
+    func attributedText(style: Style) -> NSAttributedString {
         let attributes: [NSAttributedString.Key: Any] = [
             .font: style.fonts.current,
             .foregroundColor: style.colors.current,

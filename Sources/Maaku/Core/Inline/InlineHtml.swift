@@ -27,7 +27,7 @@ public struct InlineHtml: Inline {
 
 public extension InlineHtml {
 
-    public func attributedText(style: Style) -> NSAttributedString {
+    func attributedText(style: Style) -> NSAttributedString {
         // TODO: update DocumentConverter to properly deal with inline HTML,
         // for now, just render the inline HTML as a string.        
 //        guard let data = html.data(using: .utf16, allowLossyConversion: false),

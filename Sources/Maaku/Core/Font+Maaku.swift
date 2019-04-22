@@ -23,7 +23,7 @@ public extension Font {
     ///     - trait: The trait to use with the current font.
     /// - Returns:
     ///     The font with the specified trait set.
-    public func maaku_with(trait: FontDescriptorSymbolicTraits) -> Font {
+    func maaku_with(trait: FontDescriptorSymbolicTraits) -> Font {
         var font = self
         var traits = self.fontDescriptor.symbolicTraits
         traits.insert(trait)
@@ -48,7 +48,7 @@ public extension Font {
     ///
     /// - Returns:
     ///     The font with the bold trait set.
-    public func maaku_bold() -> Font {
+    func maaku_bold() -> Font {
         #if os(OSX)
             return maaku_with(trait: .bold)
         #else
@@ -60,7 +60,7 @@ public extension Font {
     ///
     /// - Returns:
     ///     The font with the italic trait set.
-    public func maaku_italic() -> Font {
+    func maaku_italic() -> Font {
         #if os(OSX)
             return maaku_with(trait: .italic)
         #else
