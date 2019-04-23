@@ -9,14 +9,16 @@
 import Foundation
 import libcmark_gfm
 
-public enum CMNodeExtensionType {
+/// Represents a cmark extension node type.
+public enum CMNodeExtensionType: Equatable {
     case strikethrough
     case table
     case tableRow
     case tableCell
     case other(UInt32)
 
-    public var rawValue: UInt32 {
+    /// The raw value.
+    var rawValue: UInt32 {
         switch self {
         case .strikethrough:
             return CMARK_NODE_STRIKETHROUGH.rawValue
@@ -46,6 +48,11 @@ public enum CMNodeExtensionType {
         default:
             self = .other(rawValue)
         }
+    }
+
+    /// Equatable implementation.
+    public static func == (lhs: CMNodeExtensionType, rhs: CMNodeExtensionType) -> Bool {
+        return lhs.rawValue == rhs.rawValue
     }
 }
 
