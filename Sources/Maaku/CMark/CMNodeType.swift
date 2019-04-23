@@ -9,6 +9,46 @@
 import Foundation
 import libcmark_gfm
 
+public enum CMNodeExtensionType {
+    case strikethrough
+    case table
+    case tableRow
+    case tableCell
+    case other(UInt32)
+
+    public var rawValue: UInt32 {
+        switch self {
+        case .strikethrough:
+            return CMARK_NODE_STRIKETHROUGH.rawValue
+        case .table:
+            return CMARK_NODE_TABLE.rawValue
+        case .tableRow:
+            return CMARK_NODE_TABLE_ROW.rawValue
+        case .tableCell:
+            return CMARK_NODE_TABLE_CELL.rawValue
+        case let .other(rawValue):
+            return rawValue
+        }
+    }
+
+    init(rawValue: UInt32) {
+        switch rawValue {
+        case CMARK_NODE_STRIKETHROUGH.rawValue:
+            self = .strikethrough
+        case CMARK_NODE_TABLE.rawValue:
+            self = .table
+        case CMARK_NODE_TABLE_ROW.rawValue:
+            self = .tableRow
+        case CMARK_NODE_TABLE_CELL.rawValue:
+            self = .tableCell
+        case CMARK_NODE_TABLE_ROW.rawValue:
+            self = .tableRow
+        default:
+            self = .other(rawValue)
+        }
+    }
+}
+
 /// Represents a cmark node type.
 public enum CMNodeType: Equatable {
     case none
@@ -34,7 +74,7 @@ public enum CMNodeType: Equatable {
     case link
     case image
     case footnoteReference
-    case `extension`(UInt32)
+    case `extension`(CMNodeExtensionType)
 
     /// The raw value.
     var rawValue: UInt32 {
@@ -85,8 +125,8 @@ public enum CMNodeType: Equatable {
             return CMARK_NODE_IMAGE.rawValue
         case .footnoteReference:
             return CMARK_NODE_FOOTNOTE_REFERENCE.rawValue
-        case let .`extension`(rawValue):
-            return rawValue
+        case let .extension(type):
+            return type.rawValue
         }
     }
 
@@ -140,7 +180,7 @@ public enum CMNodeType: Equatable {
         case CMARK_NODE_FOOTNOTE_REFERENCE.rawValue:
             self = .footnoteReference
         default:
-            self = .`extension`(rawValue)
+            self = .extension(CMNodeExtensionType(rawValue: rawValue))
         }
     }
 
