@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04C93A9D226F89730058589D /* CMExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C93A9B226F89440058589D /* CMExtensionSpec.swift */; };
+		04C93A9E226F89740058589D /* CMExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C93A9B226F89440058589D /* CMExtensionSpec.swift */; };
+		04C93A9F226F89770058589D /* CMExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C93A9B226F89440058589D /* CMExtensionSpec.swift */; };
+		04C93AA1226F8BBA0058589D /* CMExtensionInternalSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C93AA0226F8BBA0058589D /* CMExtensionInternalSpec.swift */; };
+		04C93AA2226F8BBA0058589D /* CMExtensionInternalSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C93AA0226F8BBA0058589D /* CMExtensionInternalSpec.swift */; };
+		04C93AA3226F8BBA0058589D /* CMExtensionInternalSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C93AA0226F8BBA0058589D /* CMExtensionInternalSpec.swift */; };
 		0B6E550F62C9027B9E49B2A7 /* Pods_MaakuTargets_Maaku_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E32396AB5ACC2C6CFA9F2AC4 /* Pods_MaakuTargets_Maaku_watchOS.framework */; };
 		4B6D492524092DD01386403F /* Pods_MaakuTargets_Maaku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37814D708DBC7FA6C5387968 /* Pods_MaakuTargets_Maaku.framework */; };
 		51EA21CD71E2FD365A10F250 /* Pods_MaakuTargets_Maaku_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9A961F348AB9BEB396796F /* Pods_MaakuTargets_Maaku_tvOS.framework */; };
@@ -308,6 +314,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04C93A9B226F89440058589D /* CMExtensionSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMExtensionSpec.swift; sourceTree = "<group>"; };
+		04C93AA0226F8BBA0058589D /* CMExtensionInternalSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMExtensionInternalSpec.swift; sourceTree = "<group>"; };
 		086ED2176C071EE0CFD460C6 /* Pods-MaakuTargets-MaakuTestTargets-MaakuMacOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaakuTargets-MaakuTestTargets-MaakuMacOSTests.release.xcconfig"; path = "Target Support Files/Pods-MaakuTargets-MaakuTestTargets-MaakuMacOSTests/Pods-MaakuTargets-MaakuTestTargets-MaakuMacOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		31AB2CAB0FE87B6227CB154A /* Pods-MaakuTargets-MaakuTestTargets-MaakuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaakuTargets-MaakuTestTargets-MaakuTests.debug.xcconfig"; path = "Target Support Files/Pods-MaakuTargets-MaakuTestTargets-MaakuTests/Pods-MaakuTargets-MaakuTestTargets-MaakuTests.debug.xcconfig"; sourceTree = "<group>"; };
 		37814D708DBC7FA6C5387968 /* Pods_MaakuTargets_Maaku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaakuTargets_Maaku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -535,6 +543,8 @@
 			isa = PBXGroup;
 			children = (
 				A254E2B91FEF7F6A00C48E71 /* CMDocumentSpec.swift */,
+				04C93A9B226F89440058589D /* CMExtensionSpec.swift */,
+				04C93AA0226F8BBA0058589D /* CMExtensionInternalSpec.swift */,
 			);
 			path = CMark;
 			sourceTree = "<group>";
@@ -1449,6 +1459,7 @@
 				A28847421FF5890A00558555 /* StyleSpec.swift in Sources */,
 				A254E3121FEF7F9500C48E71 /* StrongSpec.swift in Sources */,
 				A254E2E91FEF7F8800C48E71 /* HtmlBlockSpec.swift in Sources */,
+				04C93A9E226F89740058589D /* CMExtensionSpec.swift in Sources */,
 				A254E30A1FEF7F9500C48E71 /* LineBreakSpec.swift in Sources */,
 				A254E30E1FEF7F9500C48E71 /* InlineCodeSpec.swift in Sources */,
 				A254E2F91FEF7F8E00C48E71 /* AutolinkSpec.swift in Sources */,
@@ -1460,6 +1471,7 @@
 				A254E3111FEF7F9500C48E71 /* InlineHtmlSpec.swift in Sources */,
 				A254E3221FEF7F9C00C48E71 /* OrderedListSpec.swift in Sources */,
 				A254E2FA1FEF7F8E00C48E71 /* StrikethroughSpec.swift in Sources */,
+				04C93AA2226F8BBA0058589D /* CMExtensionInternalSpec.swift in Sources */,
 				A254E2DF1FEF7F7B00C48E71 /* CMDocumentSpec.swift in Sources */,
 				A254E2ED1FEF7F8800C48E71 /* CodeBlockSpec.swift in Sources */,
 				A254E3241FEF7F9C00C48E71 /* ListItemSpec.swift in Sources */,
@@ -1586,6 +1598,7 @@
 				A28847431FF5890A00558555 /* StyleSpec.swift in Sources */,
 				A254E31C1FEF7F9600C48E71 /* StrongSpec.swift in Sources */,
 				A254E2EE1FEF7F8800C48E71 /* HtmlBlockSpec.swift in Sources */,
+				04C93A9F226F89770058589D /* CMExtensionSpec.swift in Sources */,
 				A254E3141FEF7F9600C48E71 /* LineBreakSpec.swift in Sources */,
 				A254E3181FEF7F9600C48E71 /* InlineCodeSpec.swift in Sources */,
 				A254E2FD1FEF7F8F00C48E71 /* AutolinkSpec.swift in Sources */,
@@ -1597,6 +1610,7 @@
 				A254E31B1FEF7F9600C48E71 /* InlineHtmlSpec.swift in Sources */,
 				A254E3271FEF7F9D00C48E71 /* OrderedListSpec.swift in Sources */,
 				A254E2FE1FEF7F8F00C48E71 /* StrikethroughSpec.swift in Sources */,
+				04C93AA3226F8BBA0058589D /* CMExtensionInternalSpec.swift in Sources */,
 				A254E2E01FEF7F7C00C48E71 /* CMDocumentSpec.swift in Sources */,
 				A254E2F21FEF7F8800C48E71 /* CodeBlockSpec.swift in Sources */,
 				A254E3291FEF7F9D00C48E71 /* ListItemSpec.swift in Sources */,
@@ -1672,6 +1686,7 @@
 				A28847411FF5890A00558555 /* StyleSpec.swift in Sources */,
 				A254E3081FEF7F9400C48E71 /* StrongSpec.swift in Sources */,
 				A254E2E41FEF7F8700C48E71 /* HtmlBlockSpec.swift in Sources */,
+				04C93A9D226F89730058589D /* CMExtensionSpec.swift in Sources */,
 				A254E3001FEF7F9400C48E71 /* LineBreakSpec.swift in Sources */,
 				A254E3041FEF7F9400C48E71 /* InlineCodeSpec.swift in Sources */,
 				A254E2F51FEF7F8D00C48E71 /* AutolinkSpec.swift in Sources */,
@@ -1683,6 +1698,7 @@
 				A254E3071FEF7F9400C48E71 /* InlineHtmlSpec.swift in Sources */,
 				A254E31D1FEF7F9B00C48E71 /* OrderedListSpec.swift in Sources */,
 				A254E2F61FEF7F8D00C48E71 /* StrikethroughSpec.swift in Sources */,
+				04C93AA1226F8BBA0058589D /* CMExtensionInternalSpec.swift in Sources */,
 				A254E2DE1FEF7F7B00C48E71 /* CMDocumentSpec.swift in Sources */,
 				A254E2E81FEF7F8700C48E71 /* CodeBlockSpec.swift in Sources */,
 				A254E31F1FEF7F9B00C48E71 /* ListItemSpec.swift in Sources */,

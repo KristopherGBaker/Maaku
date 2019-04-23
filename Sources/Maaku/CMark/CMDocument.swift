@@ -94,20 +94,20 @@ public class CMDocument {
             cmark_parser_free(parser)
         }
 
-        if extensions.contains(.tables), let tableExtension = cmark_find_syntax_extension("table") {
+        if extensions.contains(.tables), let tableExtension = CMExtensionOption.tables.syntaxExtension {
             cmark_parser_attach_syntax_extension(parser, tableExtension)
         }
 
-        if extensions.contains(.autolinks), let autolinkExtension = cmark_find_syntax_extension("autolink") {
+        if extensions.contains(.autolinks), let autolinkExtension = CMExtensionOption.autolinks.syntaxExtension {
             cmark_parser_attach_syntax_extension(parser, autolinkExtension)
         }
 
         if extensions.contains(.strikethrough),
-            let strikethroughExtension = cmark_find_syntax_extension("strikethrough") {
+            let strikethroughExtension = CMExtensionOption.strikethrough.syntaxExtension {
             cmark_parser_attach_syntax_extension(parser, strikethroughExtension)
         }
 
-        if extensions.contains(.tagfilters), let tagfilterExtension = cmark_find_syntax_extension("tagfilter") {
+        if extensions.contains(.tagfilters), let tagfilterExtension = CMExtensionOption.tagfilters.syntaxExtension {
             cmark_parser_attach_syntax_extension(parser, tagfilterExtension)
         }
 
