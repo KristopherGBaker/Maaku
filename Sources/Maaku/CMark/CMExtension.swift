@@ -43,6 +43,9 @@ public struct CMExtensionOption: OptionSet {
     /// Tag filters
     public static let tagfilters = CMExtensionOption(rawValue: 8)
 
+    /// Marker for the end of the possible values.
+    private static let illegalOption = CMExtensionOption(rawValue: 16)
+
     /// Get the extension name associated with this option
     ///
     /// - Returns:
@@ -97,5 +100,36 @@ public struct CMExtensionOption: OptionSet {
         } else {
             return cmark_find_syntax_extension(name)
        }
+    }
+
+    /// Register the options for a parser
+    ///
+    /// - Parameters:
+    ///    -  parser: the parser object that should get the extensions added.
+    ///
+    /// - Throws:
+    ///    `CMDocumentError.parsingError` if there was an error trying to add an extension
+    func addToParser(_ parser: UnsafeMutablePointer<cmark_parser>) throws {
+        if self.contains(.tables), let tableExtension = CMExtensionOption.tables.syntaxExtension {
+            cmark_parser_attach_syntax_extension(parser, tableExtension)
+        }
+
+        if self.contains(.autolinks), let autolinkExtension = CMExtensionOption.autolinks.syntaxExtension {
+            cmark_parser_attach_syntax_extension(parser, autolinkExtension)
+        }
+
+        if self.contains(.strikethrough),
+            let strikethroughExtension = CMExtensionOption.strikethrough.syntaxExtension {
+            cmark_parser_attach_syntax_extension(parser, strikethroughExtension)
+        }
+
+        if self.contains(.tagfilters), let tagfilterExtension = CMExtensionOption.tagfilters.syntaxExtension {
+            cmark_parser_attach_syntax_extension(parser, tagfilterExtension)
+        }
+
+        // If the caller included an extension we don't understand, that's an error.
+        if self.rawValue >= CMExtensionOption.illegalOption.rawValue {
+            throw CMDocumentError.parsingError
+        }
     }
 }
