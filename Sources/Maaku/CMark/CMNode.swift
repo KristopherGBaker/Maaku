@@ -222,6 +222,21 @@ public extension CMNode {
         return Iterator(node: self)
     }
 
+    /// Returns the extension associated with the node, or nil
+    /// if no extension. Should only ever return a single extension option value,
+    /// as a node can never be associated with multiple extensions
+    public var `extension`: CMExtensionOption? {
+        guard let ext = cmark_node_get_syntax_extension(cmarkNode) else {
+            return nil
+        }
+        let extName = String(cString: ext.pointee.name)
+        let result = CMExtensionOption.option(forExtensionName: extName)
+        if result == .none {
+            return nil
+        } else {
+            return result
+        }
+    }
 }
 
 /// Node rendering methods
