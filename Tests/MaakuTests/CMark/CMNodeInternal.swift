@@ -202,6 +202,7 @@ Another Paragraph
 
                 // Now that we've played with memory, verify that the nodes are still what we expect.
                 verifyNodes()
+
             }
         }
     }
