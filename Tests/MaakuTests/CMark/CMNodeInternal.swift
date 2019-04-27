@@ -93,7 +93,7 @@ extension CMNode {
 }
 
 class CMNodeInternalSpec: QuickSpec {
-    // swiftlint:disable function_body_length
+    // swiftlint:disable cyclomatic_complexity function_body_length
     override func spec() {
         describe("memory test") {
             it("Checks that nodes can be referenced after the document has been released") {
@@ -204,6 +204,66 @@ Another Paragraph
                 verifyNodes()
 
             }
+            it("checks that all nodes reference the same memory holder") {
+                    let markdown = """
+# Heading 1
+## Heading 2
+Simple paragraph with ~~strikethrough~~ _and_ _~~multi~~_ levels.
+
+- list 1
+  1. list inside a list
+     + another list
+     + will it ever stop?
+       * Yep
+       * it will
+  1. with several elements
+  1. that are numbered
+- list 2
+- [ ] task item
+- ~~list 3~~
+
+Another Paragraph
+
+1. number 1
+1. number 2
+1. number 3
+
+|Table|
+|-----|
+|first|
+|second|
+|third|
+"""
+                    do {
+                        let document = try CMDocument(text: markdown, options: [.validateUtf8], extensions: .all)
+                        let docNode = document.node
+                        expect(docNode).toNot(beNil())
+                        // We expect that the document node is the one who owns the memory
+                        expect(docNode.internalMemoryOwner).to(beNil())
+                        // Walk through nodes and grab all the "strikethrough" nodes.
+                        try document.node.iterator?.enumerate { node, _ in
+                            if node !== docNode {
+                                // Other nodes should have the document node as the owner.
+                                expect(node.internalMemoryOwner).toNot(beNil())
+                                expect(node.internalMemoryOwner).to(beIdenticalTo(docNode))
+                            }
+                            return false
+                        }
+                        // Walk through the nodes in a different way -- using the CMNode object code rather
+                        // than the underlying C iterator stuff.
+                        for node in document.node.preorderSequence where node !== docNode {
+                            // Other nodes should have the document node as the owner.
+                            expect(node.internalMemoryOwner).toNot(beNil())
+                            expect(node.internalMemoryOwner).to(beIdenticalTo(docNode))
+                        }
+
+                    } catch let error {
+                        it("fails to return reasonable node types") {
+                            fail("\(error.localizedDescription)")
+                        }
+                    }
+
+                }
         }
     }
 }

@@ -18,6 +18,13 @@ public class CMNode {
     /// Indicates if the node should be freed when done.
     private let referencedMemoryOwner: CMNode?
 
+    /// Read-only access to the memory owner
+    /// Its primary purpose is to allow tests to verify that the right
+    /// things are going on.
+    var internalMemoryOwner: CMNode? {
+        return referencedMemoryOwner
+    }
+
     /// Creates a CMNode with the specified cmark node pointer.
     ///
     /// - Parameters:
