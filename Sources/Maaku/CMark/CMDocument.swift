@@ -102,7 +102,8 @@ public class CMDocument {
             throw CMDocumentError.parsingError
         }
 
-        node = CMNode(cmarkNode: cmarkNode, freeWhenDone: true)
+        // This node is the owner of the memory, so we don't have a referenced memory owner
+        node = CMNode(cmarkNode: cmarkNode, memoryOwner: nil)
     }
 
 }

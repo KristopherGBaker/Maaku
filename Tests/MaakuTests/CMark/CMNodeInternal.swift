@@ -93,12 +93,13 @@ extension CMNode {
 }
 
 class CMNodeInternalSpec: QuickSpec {
-    // swiftlint:disable cyclomatic_complexity function_body_length
+    // swiftlint:disable function_body_length
     override func spec() {
         describe("memory test") {
             it("Checks that nodes can be referenced after the document has been released") {
                 var strikethroughNodes: [CMNode] = []
                 var others: [CMNode] = []
+                weak var docRef: CMDocument?
                 weak var docNode: CMNode?
                 let verifyNodes = {
                     // Verify that all the strikethrough nodes still have the right extension
@@ -146,6 +147,7 @@ Another Paragraph
 """
                 do {
                     let document = try CMDocument(text: markdown, options: [.validateUtf8], extensions: .all)
+                    docRef = document
                     docNode = document.node
                     expect(docNode).toNot(beNil())
                     // Walk through nodes and grab all the "strikethrough" nodes.
@@ -178,14 +180,11 @@ Another Paragraph
                     }
                 }
 
-                // docNode should be nil, because the document was released as part of leaving
-                // the previous block, and nobody else has a reference to it.
-                // Releasing the docNode should *not* release any of the other nodes
-                // associated with the document if they had references to them.
-                if docNode != nil {
-                    // swiftlint:disable:next line_length
-                    fail("Test failure: Expected docNode to be deallocated when we left the block. Verify that the test is written correctly - subsequent tests may not work.")
-                }
+                // The document was released when we left the previous block.
+                expect(docRef).to(beNil())
+                // docNode should not be nil, because we've got some nodes that still exist
+                // in the various arrays that reference that cmarkNodes that this docNode holds.
+                expect(docNode).toNot(beNil())
 
                 do {
                     // Do some stuff to use up memory.

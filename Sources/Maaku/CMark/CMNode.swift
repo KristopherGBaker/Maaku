@@ -16,23 +16,39 @@ public class CMNode {
     public let cmarkNode: UnsafeMutablePointer<cmark_node>
 
     /// Indicates if the node should be freed when done.
-    private let freeWhenDone: Bool
+    private let referencedMemoryOwner: CMNode?
 
     /// Creates a CMNode with the specified cmark node pointer.
     ///
     /// - Parameters:
     ///     - cmarkNode: The underlying cmark node pointer.
-    ///     - freeWhenDone: Indicates if the node should be freed when done.
+    ///     - memoryOwner: indicates who really owns thememory.
+    ///          if this is nil, then this node really owns the memory,
+    ///          and it should be freed when this node goes away.
     /// - Returns:
     ///     The CMMnode initialized with the specified cmark node pointer.
-    public init(cmarkNode: UnsafeMutablePointer<cmark_node>, freeWhenDone: Bool) {
+    public init(cmarkNode: UnsafeMutablePointer<cmark_node>, memoryOwner potentialMemoryOwner: CMNode?) {
         self.cmarkNode = cmarkNode
-        self.freeWhenDone = freeWhenDone
+
+        if potentialMemoryOwner == nil {
+            // There isn't another object that owns the associated cmarkNode,
+            // so record ourself as the owner by setting the value to nil
+            self.referencedMemoryOwner = nil
+        } else if let actualMemoryOwner = potentialMemoryOwner!.referencedMemoryOwner {
+            // The object that was passed in actually references another object.
+            // So, use that one so we're all pointing to the base object.
+            self.referencedMemoryOwner = actualMemoryOwner
+        } else {
+            // The object that was passed in owns the memory.
+            // Use that object as the memory owner.
+            self.referencedMemoryOwner = potentialMemoryOwner
+        }
     }
 
     /// Frees the cmark node pointer if necessary.
     deinit {
-        if freeWhenDone {
+        if referencedMemoryOwner == nil {
+            // We're the one that really owns the memory, so free it.
             cmark_node_free(cmarkNode)
         }
     }
@@ -52,7 +68,7 @@ public extension CMNode {
             return nil
         }
 
-        return CMNode(cmarkNode: node, freeWhenDone: false)
+        return CMNode(cmarkNode: node, memoryOwner: self)
     }
 
     /// The next node.

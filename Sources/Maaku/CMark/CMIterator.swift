@@ -45,6 +45,8 @@ public class Iterator {
     /// The underlying cmark iterator pointer.
     private let iterator: UnsafeMutablePointer<cmark_iter>
 
+    private let memoryOwnerNode: CMNode
+
     /// Creates an iterator for the specified node.
     ///
     /// - Parameters:
@@ -57,6 +59,7 @@ public class Iterator {
         }
 
         iterator = iter
+        memoryOwnerNode = node
     }
 
     /// Frees the underlying cmark iterator.
@@ -66,7 +69,7 @@ public class Iterator {
 
     /// The current node for the iterator.
     public var currentNode: CMNode {
-        return CMNode(cmarkNode: cmark_iter_get_node(iterator), freeWhenDone: false)
+        return CMNode(cmarkNode: cmark_iter_get_node(iterator), memoryOwner: memoryOwnerNode)
     }
 
     /// The current event type for the iterator.
