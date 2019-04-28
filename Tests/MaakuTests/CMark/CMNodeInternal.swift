@@ -99,6 +99,7 @@ class CMNodeInternalSpec: QuickSpec {
             it("Checks that nodes can be referenced after the document has been released") {
                 var strikethroughNodes: [CMNode] = []
                 var others: [CMNode] = []
+                weak var docRef: CMDocument?
                 weak var docNode: CMNode?
                 let verifyNodes = {
                     // Verify that all the strikethrough nodes still have the right extension
@@ -146,6 +147,7 @@ Another Paragraph
 """
                 do {
                     let document = try CMDocument(text: markdown, options: [.validateUtf8], extensions: .all)
+                    docRef = document
                     docNode = document.node
                     expect(docNode).toNot(beNil())
                     // Walk through nodes and grab all the "strikethrough" nodes.
@@ -178,14 +180,11 @@ Another Paragraph
                     }
                 }
 
-                // docNode should be nil, because the document was released as part of leaving
-                // the previous block, and nobody else has a reference to it.
-                // Releasing the docNode should *not* release any of the other nodes
-                // associated with the document if they had references to them.
-                if docNode != nil {
-                    // swiftlint:disable:next line_length
-                    fail("Test failure: Expected docNode to be deallocated when we left the block. Verify that the test is written correctly - subsequent tests may not work.")
-                }
+                // The document was released when we left the previous block.
+                expect(docRef).to(beNil())
+                // docNode should not be nil, because we've got some nodes that still exist
+                // in the various arrays that reference that cmarkNodes that this docNode holds.
+                expect(docNode).toNot(beNil())
 
                 do {
                     // Do some stuff to use up memory.
@@ -203,7 +202,68 @@ Another Paragraph
 
                 // Now that we've played with memory, verify that the nodes are still what we expect.
                 verifyNodes()
+
             }
+            it("checks that all nodes reference the same memory holder") {
+                    let markdown = """
+# Heading 1
+## Heading 2
+Simple paragraph with ~~strikethrough~~ _and_ _~~multi~~_ levels.
+
+- list 1
+  1. list inside a list
+     + another list
+     + will it ever stop?
+       * Yep
+       * it will
+  1. with several elements
+  1. that are numbered
+- list 2
+- [ ] task item
+- ~~list 3~~
+
+Another Paragraph
+
+1. number 1
+1. number 2
+1. number 3
+
+|Table|
+|-----|
+|first|
+|second|
+|third|
+"""
+                    do {
+                        let document = try CMDocument(text: markdown, options: [.validateUtf8], extensions: .all)
+                        let docNode = document.node
+                        expect(docNode).toNot(beNil())
+                        // We expect that the document node is the one who owns the memory
+                        expect(docNode.internalMemoryOwner).to(beNil())
+                        // Walk through nodes and grab all the "strikethrough" nodes.
+                        try document.node.iterator?.enumerate { node, _ in
+                            if node !== docNode {
+                                // Other nodes should have the document node as the owner.
+                                expect(node.internalMemoryOwner).toNot(beNil())
+                                expect(node.internalMemoryOwner).to(beIdenticalTo(docNode))
+                            }
+                            return false
+                        }
+                        // Walk through the nodes in a different way -- using the CMNode object code rather
+                        // than the underlying C iterator stuff.
+                        for node in document.node.preorderSequence where node !== docNode {
+                            // Other nodes should have the document node as the owner.
+                            expect(node.internalMemoryOwner).toNot(beNil())
+                            expect(node.internalMemoryOwner).to(beIdenticalTo(docNode))
+                        }
+
+                    } catch let error {
+                        it("fails to return reasonable node types") {
+                            fail("\(error.localizedDescription)")
+                        }
+                    }
+
+                }
         }
     }
 }
