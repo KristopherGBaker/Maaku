@@ -28,6 +28,9 @@ enum CMExtensionName: String {
 
     /// Table Row
     case tableRow = "table_row"
+
+    /// Tasklist
+    case tasklist
 }
 
 /// The interface a markdown parser uses to inform its delegate
@@ -354,6 +357,20 @@ public protocol CMParserDelegate: class {
     /// - Parameters:
     ///     - parser: The parser.
     func parserDidEndStrikethrough(parser: CMParser)
+
+    /// Sent by the parser object to the delegate when it encounters the start of a tasklist item.
+    ///
+    /// - Parameters:
+    ///     - parser: The parser.
+    ///     - completed: true if the task is marked as completed, false otherwise.
+    func parserDidStartTasklistItem(parser: CMParser, completed: Bool)
+
+    /// Sent by the parser object to the delegate when it encounters the end of a tasklist item.
+    ///
+    /// - Parameters:
+    ///     - parser: The parser.
+    ///     - completed: true if the task is marked as completed, false otherwise.
+    func parserDidEndTasklistItem(parser: CMParser, completed: Bool)
 }
 
 /// Represents a parse error.
@@ -361,6 +378,10 @@ public enum CMParseError: Error {
 
     /// The invalid event type error.
     case invalidEventType
+
+    /// Some internal error happened.
+    /// This is most likely caused by an incompatibility between the C based parser and the Swift based parser
+    case internalError
 }
 
 /// Represnts a parser.
@@ -534,10 +555,29 @@ public class CMParser {
                 break
             }
         case .item:
-            if eventType == .enter {
-                delegate?.parserDidStartListItem(parser: self)
+            // Both item and tasklist fall under this branch because the tasklist extension
+            // doesn't add a new base type, but rather just changes the humanReadableType.
+            // So, we have to check which it is before deciding what methods to call.
+            if node.humanReadableType == CMExtensionName.tasklist.rawValue {
+                guard let taskCompleted = node.taskCompleted else {
+                    // Something is wrong internally!
+                    // If we get this, then that means the return values from
+                    // cmark_gfm_extensions_get_tasklist_state have changed.
+                    // It's better to throw an error so the user knows things are potentially
+                    // very messed up.
+                    throw CMParseError.internalError
+                }
+                if eventType == .enter {
+                    delegate?.parserDidStartTasklistItem(parser: self, completed: taskCompleted)
+                } else {
+                    delegate?.parserDidEndTasklistItem(parser: self, completed: taskCompleted)
+                }
             } else {
-                delegate?.parserDidEndListItem(parser: self)
+                if eventType == .enter {
+                    delegate?.parserDidStartListItem(parser: self)
+                } else {
+                    delegate?.parserDidEndListItem(parser: self)
+                }
             }
         case .customBlock:
             if eventType == .enter {
@@ -668,5 +708,4 @@ public class CMParser {
             delegate?.parser(parser: self, didEndTableWithColumns: columns, alignments: align)
         }
     }
-
 }

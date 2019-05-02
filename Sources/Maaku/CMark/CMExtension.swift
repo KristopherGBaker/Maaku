@@ -29,7 +29,7 @@ public struct CMExtensionOption: OptionSet {
     public static let none = CMExtensionOption(rawValue: 0)
 
     /// All extensions
-    public static let all: CMExtensionOption = [.tables, .autolinks, .strikethrough, .tagfilters]
+    public static let all: CMExtensionOption = [.tables, .autolinks, .strikethrough, .tagfilters, .tasklist]
 
     /// Tables
     public static let tables = CMExtensionOption(rawValue: 1)
@@ -43,8 +43,11 @@ public struct CMExtensionOption: OptionSet {
     /// Tag filters
     public static let tagfilters = CMExtensionOption(rawValue: 8)
 
+    /// Tasklist items
+    public static let tasklist = CMExtensionOption(rawValue: 16)
+
     /// Marker for the end of the possible values.
-    private static let illegalOption = CMExtensionOption(rawValue: 16)
+    private static let illegalOption = CMExtensionOption(rawValue: 32)
 
     /// Get the extension name associated with this option
     ///
@@ -58,6 +61,7 @@ public struct CMExtensionOption: OptionSet {
         case .autolinks: return "autolink"
         case .strikethrough: return "strikethrough"
         case .tagfilters: return "tagfilter"
+        case .tasklist: return "tasklist"
         default: return nil
         }
     }
@@ -75,6 +79,7 @@ public struct CMExtensionOption: OptionSet {
         case "autolink": return autolinks
         case "strikethrough": return strikethrough
         case "tagfilter": return tagfilters
+        case "tasklist": return tasklist
         default: return none
         }
     }
@@ -125,6 +130,10 @@ public struct CMExtensionOption: OptionSet {
 
         if self.contains(.tagfilters), let tagfilterExtension = CMExtensionOption.tagfilters.syntaxExtension {
             cmark_parser_attach_syntax_extension(parser, tagfilterExtension)
+        }
+
+        if self.contains(.tasklist), let tasklistExtension = CMExtensionOption.tasklist.syntaxExtension {
+            cmark_parser_attach_syntax_extension(parser, tasklistExtension)
         }
 
         // If the caller included an extension we don't understand, that's an error.

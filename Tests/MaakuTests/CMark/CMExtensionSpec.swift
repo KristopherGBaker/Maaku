@@ -11,22 +11,16 @@ import Nimble
 import Quick
 import XCTest
 
+extension CMExtensionOption: Hashable {
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(self.rawValue)
+    }
+}
+
 class CMExtensionSpec: QuickSpec {
 
     // swiftlint:disable function_body_length
     override func spec() {
-        describe("CMExtensionOption basics") {
-            it("should have extension names match extension objects") {
-                // We expect that each of the basic values maps correctly between extension name
-                // and extension type.
-                // swiftlint:disable line_length
-                expect(CMExtensionOption.autolinks).to(equal(CMExtensionOption.option(forExtensionName: CMExtensionOption.autolinks.extensionName ?? "")))
-                expect(CMExtensionOption.strikethrough).to(equal(CMExtensionOption.option(forExtensionName: CMExtensionOption.strikethrough.extensionName ?? "")))
-                expect(CMExtensionOption.tables).to(equal(CMExtensionOption.option(forExtensionName: CMExtensionOption.tables.extensionName ?? "")))
-               expect(CMExtensionOption.tagfilters).to(equal(CMExtensionOption.option(forExtensionName: CMExtensionOption.tagfilters.extensionName ?? "")))
-                // swiftlint:enable line_length
-            }
-        }
         describe("CMExtensionOption") {
             let markdown = """
 www.github.com
@@ -41,48 +35,45 @@ This should be converted to non-HTML via extensions: <title>
 
 ~~text with strike~~
 
-- item
+We only include task items in this doc, no regular list items!
+We will later check to see that there aren't any items of type list.
 - [ ] task item
+  - [x] completed task item
+  - [X] another completed task item
 """
             it("doesn't have nodes with extensions if no extensions enabled") {
                 do {
                     let document = try CMDocument(text: markdown, options: [], extensions: .none)
-                    var nodesByExtension: [Int32: [CMNode]] = [:]
-                    var typesFound: Set<String> = []
+                    var typeNamesFound: Set<String> = []
                     try document.node.iterator?.enumerate { node, event in
                         guard event == .enter else {
                             return false
                         }
 
                         if let typeName = node.humanReadableType {
-                            typesFound.insert(typeName)
+                            typeNamesFound.insert(typeName)
+                        } else {
+                            fail("Couldn't determine human readable type for node")
                         }
 
-                        var key = CMExtensionOption.none.rawValue
-                        if let extensionType = node.extension {
-                            key = extensionType.rawValue
-                        }
-                        // Add the node to the dictionary
-                        var foundNodes = nodesByExtension[key] ?? []
-                        foundNodes.append(node)
-                        nodesByExtension[key] = foundNodes
+                        expect(node.extension).to(beNil())
+
                         return false
                     }
-                    // We expect that there are no extension nodes, so all nodes should be
-                    // with the noExtensionKey, thus there should only be one key
-                    // in the dictionary.
-                    expect(nodesByExtension.keys.count).to(equal(1))
-                    expect(nodesByExtension[CMExtensionOption.none.rawValue]).toNot(beNil())
+
                     // We expect that none of the extension types are found.
                     // There shouldn't be a link, because 'autolink' extension wasn't enabled.
-                    expect(typesFound).toNot(contain("link"))
+                    expect(typeNamesFound).toNot(contain("link"))
                     // There shouldn't be strikethroughs, since that extension wasn't enabled.
-                    expect(typesFound).toNot(contain("strikethrough"))
+                    expect(typeNamesFound).toNot(contain("strikethrough"))
                     // There shouldn't be table objects, since that extension wasn't enabled.
-                    expect(typesFound).toNot(contain("table_cell"))
-                    expect(typesFound).toNot(contain("table_row"))
-                    expect(typesFound).toNot(contain("table_header"))
-                    expect(typesFound).toNot(contain("table"))
+                    expect(typeNamesFound).toNot(contain("table_cell"))
+                    expect(typeNamesFound).toNot(contain("table_row"))
+                    expect(typeNamesFound).toNot(contain("table_header"))
+                    expect(typeNamesFound).toNot(contain("table"))
+                    // There shouldn't be any `tasklist` nodes, but instead `item` nodes
+                    expect(typeNamesFound).toNot(contain("tasklist"))
+                    expect(typeNamesFound).to(contain("item"))
                } catch let error {
                     it("fails to process document") {
                         fail("\(error.localizedDescription)")
@@ -92,56 +83,53 @@ This should be converted to non-HTML via extensions: <title>
             it("has nodes with extensions") {
                 do {
                     let document = try CMDocument(text: markdown, options: [], extensions: .all)
-                    var nodesByExtension: [Int32: [CMNode]] = [:]
-                    var typesFound: Set<String> = []
+                    var extensionsFound: Set<CMExtensionOption> = []
+                    var typeNamesFound: Set<String> = []
                     try document.node.iterator?.enumerate { node, event in
                         guard event == .enter else {
                             return false
                         }
                         if let typeName = node.humanReadableType {
-                            typesFound.insert(typeName)
+                            typeNamesFound.insert(typeName)
                         }
 
-                        var key = CMExtensionOption.none.rawValue
                         if let extensionType = node.extension {
                             // There is an extension associated with this node.
                             expect(extensionType.extensionName).toNot(beNil())
-                            key = extensionType.rawValue
+                            extensionsFound.insert(extensionType)
                         }
-                        // Add the node to the dictionary
-                        var foundNodes = nodesByExtension[key] ?? []
-                        foundNodes.append(node)
-                        nodesByExtension[key] = foundNodes
+
                         return false
                     }
                     // We expect that we've found some nodes of each extension type.
-                    // swiftlink:disable line_length
 
                     // The autolink extension doesn't add new node types, it just
                     // converts more things to links.
-                    expect(nodesByExtension[CMExtensionOption.autolinks.rawValue]).to(beNil())
+                    expect(extensionsFound).toNot(contain(CMExtensionOption.autolinks))
                     // We expect to find a link (converted via autolink)
-                    expect(typesFound).to(contain("link"))
+                    expect(typeNamesFound).to(contain("link"))
 
                     // We expect that strikethrough objects were found.
-                    expect(nodesByExtension[CMExtensionOption.strikethrough.rawValue]).toNot(beNil())
+                    expect(extensionsFound).to(contain(CMExtensionOption.strikethrough))
                     // We expect node objects of type "strikethrough"
-                    expect(typesFound).to(contain("strikethrough"))
+                    expect(typeNamesFound).to(contain("strikethrough"))
 
                     // We expect that table extension objects were found
-                    expect(nodesByExtension[CMExtensionOption.tables.rawValue]).toNot(beNil())
+                    expect(extensionsFound).to(contain(CMExtensionOption.tables))
                     // We expect node objects of all these types:
-                    expect(typesFound).to(contain("table_cell", "table_row", "table_header", "table"))
+                    expect(typeNamesFound).to(contain("table_cell", "table_row", "table_header", "table"))
 
                     // tagfilters doesn't add new types, it just changes some values
-                    expect(nodesByExtension[CMExtensionOption.tagfilters.rawValue]).to(beNil())
+                    expect(extensionsFound).toNot(contain(CMExtensionOption.tagfilters))
                     // TODO: test tagfilters.
                     // I'm not sure how to test node object stuff.
 
-                    // Sinde the tasklist extension is included (yet) we expect that
-                    // the tasklist type wasn't found.
-                    expect(typesFound).toNot(contain("tasklist"))
-                    // swiftlink:enable line_length
+                    // We expect that tasklist extension objects were found.
+                    expect(extensionsFound).to(contain(CMExtensionOption.tasklist))
+                    // We expect objects of type 'tasklist' were found.
+                    // There shouldn't be any `tasklist` nodes, but instead `item` nodes
+                    expect(typeNamesFound).to(contain("tasklist"))
+                    expect(typeNamesFound).toNot(contain("item"))
                 } catch let error {
                     it("fails to process document") {
                         fail("\(error.localizedDescription)")
