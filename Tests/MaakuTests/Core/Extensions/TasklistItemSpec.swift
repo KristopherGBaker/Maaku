@@ -64,7 +64,7 @@ class TasklistItemSpec: QuickSpec {
                     }
                 }
 
-                fit("checks the attributedText for tasks") {
+                it("checks the attributedText for tasks") {
                     let style = DefaultStyle()
 
                     expect(list.items.count).to(equal(4))
