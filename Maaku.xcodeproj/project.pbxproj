@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04355FC9227B4BB400AE7945 /* ItemSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04355FC8227B4BB400AE7945 /* ItemSpec.swift */; };
+		04355FCA227B4BB400AE7945 /* ItemSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04355FC8227B4BB400AE7945 /* ItemSpec.swift */; };
+		04355FCB227B4BB400AE7945 /* ItemSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04355FC8227B4BB400AE7945 /* ItemSpec.swift */; };
+		0453B98F22760C4C00AB31CC /* CMDocumentStructureSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453B98C22760C4C00AB31CC /* CMDocumentStructureSpec.swift */; };
+		0453B99022760C4C00AB31CC /* CMDocumentStructureSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453B98C22760C4C00AB31CC /* CMDocumentStructureSpec.swift */; };
+		0453B99122760C4C00AB31CC /* CMDocumentStructureSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453B98C22760C4C00AB31CC /* CMDocumentStructureSpec.swift */; };
+		0453B99222760C4C00AB31CC /* CMExtensionTasklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453B98D22760C4C00AB31CC /* CMExtensionTasklist.swift */; };
+		0453B99322760C4C00AB31CC /* CMExtensionTasklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453B98D22760C4C00AB31CC /* CMExtensionTasklist.swift */; };
+		0453B99422760C4C00AB31CC /* CMExtensionTasklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453B98D22760C4C00AB31CC /* CMExtensionTasklist.swift */; };
+		0453B99522760C4C00AB31CC /* CMNodeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453B98E22760C4C00AB31CC /* CMNodeSpec.swift */; };
+		0453B99622760C4C00AB31CC /* CMNodeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453B98E22760C4C00AB31CC /* CMNodeSpec.swift */; };
+		0453B99722760C4C00AB31CC /* CMNodeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453B98E22760C4C00AB31CC /* CMNodeSpec.swift */; };
+		0453B99C22760D1C00AB31CC /* TasklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453B99822760CFA00AB31CC /* TasklistItem.swift */; };
+		0453B99D22760D2000AB31CC /* TasklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453B99822760CFA00AB31CC /* TasklistItem.swift */; };
+		0453B99E22760D2200AB31CC /* TasklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453B99822760CFA00AB31CC /* TasklistItem.swift */; };
+		0453B99F22760D2300AB31CC /* TasklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453B99822760CFA00AB31CC /* TasklistItem.swift */; };
+		0453B9A122763BAA00AB31CC /* TasklistItemSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453B9A022763BAA00AB31CC /* TasklistItemSpec.swift */; };
+		0453B9A222763BAA00AB31CC /* TasklistItemSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453B9A022763BAA00AB31CC /* TasklistItemSpec.swift */; };
+		0453B9A322763BAA00AB31CC /* TasklistItemSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453B9A022763BAA00AB31CC /* TasklistItemSpec.swift */; };
 		04C93A9D226F89730058589D /* CMExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C93A9B226F89440058589D /* CMExtensionSpec.swift */; };
 		04C93A9E226F89740058589D /* CMExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C93A9B226F89440058589D /* CMExtensionSpec.swift */; };
 		04C93A9F226F89770058589D /* CMExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C93A9B226F89440058589D /* CMExtensionSpec.swift */; };
@@ -317,6 +336,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04355FC8227B4BB400AE7945 /* ItemSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSpec.swift; sourceTree = "<group>"; };
+		0453B98C22760C4C00AB31CC /* CMDocumentStructureSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMDocumentStructureSpec.swift; sourceTree = "<group>"; };
+		0453B98D22760C4C00AB31CC /* CMExtensionTasklist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMExtensionTasklist.swift; sourceTree = "<group>"; };
+		0453B98E22760C4C00AB31CC /* CMNodeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMNodeSpec.swift; sourceTree = "<group>"; };
+		0453B99822760CFA00AB31CC /* TasklistItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasklistItem.swift; sourceTree = "<group>"; };
+		0453B9A022763BAA00AB31CC /* TasklistItemSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasklistItemSpec.swift; sourceTree = "<group>"; };
 		04C93A9B226F89440058589D /* CMExtensionSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMExtensionSpec.swift; sourceTree = "<group>"; };
 		04C93AA0226F8BBA0058589D /* CMExtensionInternalSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMExtensionInternalSpec.swift; sourceTree = "<group>"; };
 		04CB42CD2273FC3B0006625E /* CMNodeInternal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMNodeInternal.swift; sourceTree = "<group>"; };
@@ -546,10 +571,13 @@
 		A254E2B81FEF7F6A00C48E71 /* CMark */ = {
 			isa = PBXGroup;
 			children = (
-				04CB42CD2273FC3B0006625E /* CMNodeInternal.swift */,
 				A254E2B91FEF7F6A00C48E71 /* CMDocumentSpec.swift */,
+				0453B98C22760C4C00AB31CC /* CMDocumentStructureSpec.swift */,
 				04C93A9B226F89440058589D /* CMExtensionSpec.swift */,
 				04C93AA0226F8BBA0058589D /* CMExtensionInternalSpec.swift */,
+				0453B98D22760C4C00AB31CC /* CMExtensionTasklist.swift */,
+				0453B98E22760C4C00AB31CC /* CMNodeSpec.swift */,
+				04CB42CD2273FC3B0006625E /* CMNodeInternal.swift */,
 			);
 			path = CMark;
 			sourceTree = "<group>";
@@ -586,6 +614,7 @@
 				A254E2C61FEF7F6A00C48E71 /* StrikethroughSpec.swift */,
 				A254E2C41FEF7F6A00C48E71 /* TableSpec.swift */,
 				A254E2C31FEF7F6A00C48E71 /* TagFilterSpec.swift */,
+				0453B9A022763BAA00AB31CC /* TasklistItemSpec.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -615,6 +644,7 @@
 				A254E2D51FEF7F6A00C48E71 /* ListItemSpec.swift */,
 				A254E2D31FEF7F6A00C48E71 /* OrderedListSpec.swift */,
 				A254E2D41FEF7F6A00C48E71 /* UnorderedListSpec.swift */,
+				04355FC8227B4BB400AE7945 /* ItemSpec.swift */,
 			);
 			path = Container;
 			sourceTree = "<group>";
@@ -718,6 +748,7 @@
 		A288C45C1FEF29AB00667F4A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				0453B99822760CFA00AB31CC /* TasklistItem.swift */,
 				A288C4601FEF29AB00667F4A /* Strikethrough.swift */,
 				A288C45E1FEF29AB00667F4A /* Table.swift */,
 				A288C45F1FEF29AB00667F4A /* TableCell.swift */,
@@ -1414,6 +1445,7 @@
 				A288C48F1FEF29AB00667F4A /* CMExtension.swift in Sources */,
 				A288C4DF1FEF29AB00667F4A /* Emphasis.swift in Sources */,
 				A288C5171FEF29AB00667F4A /* Document.swift in Sources */,
+				0453B99D22760D2000AB31CC /* TasklistItem.swift in Sources */,
 				A288C4F31FEF29AB00667F4A /* Text.swift in Sources */,
 				A288C4FB1FEF29AB00667F4A /* FootnoteReference.swift in Sources */,
 				A288C4EB1FEF29AB00667F4A /* Inline.swift in Sources */,
@@ -1453,12 +1485,16 @@
 			files = (
 				A254E30B1FEF7F9500C48E71 /* FootnoteReferenceSpec.swift in Sources */,
 				A254E3231FEF7F9C00C48E71 /* UnorderedListSpec.swift in Sources */,
+				0453B99622760C4C00AB31CC /* CMNodeSpec.swift in Sources */,
 				A254E2EA1FEF7F8800C48E71 /* ParagraphSpec.swift in Sources */,
+				0453B9A222763BAA00AB31CC /* TasklistItemSpec.swift in Sources */,
+				0453B99022760C4C00AB31CC /* CMDocumentStructureSpec.swift in Sources */,
 				A254E3101FEF7F9500C48E71 /* EmphasisSpec.swift in Sources */,
 				A254E3261FEF7F9C00C48E71 /* FootnoteDefinitionSpec.swift in Sources */,
 				A254E2E21FEF7F8200C48E71 /* DocumentSpec.swift in Sources */,
 				A254E3251FEF7F9C00C48E71 /* BlockQuoteSpec.swift in Sources */,
 				A254E3091FEF7F9500C48E71 /* SoftBreakSpec.swift in Sources */,
+				04355FCA227B4BB400AE7945 /* ItemSpec.swift in Sources */,
 				A254E2EC1FEF7F8800C48E71 /* HorizontalRuleSpec.swift in Sources */,
 				A254E2F71FEF7F8E00C48E71 /* TagFilterSpec.swift in Sources */,
 				A28847421FF5890A00558555 /* StyleSpec.swift in Sources */,
@@ -1477,6 +1513,7 @@
 				A254E3111FEF7F9500C48E71 /* InlineHtmlSpec.swift in Sources */,
 				A254E3221FEF7F9C00C48E71 /* OrderedListSpec.swift in Sources */,
 				A254E2FA1FEF7F8E00C48E71 /* StrikethroughSpec.swift in Sources */,
+				0453B99322760C4C00AB31CC /* CMExtensionTasklist.swift in Sources */,
 				04C93AA2226F8BBA0058589D /* CMExtensionInternalSpec.swift in Sources */,
 				A254E2DF1FEF7F7B00C48E71 /* CMDocumentSpec.swift in Sources */,
 				A254E2ED1FEF7F8800C48E71 /* CodeBlockSpec.swift in Sources */,
@@ -1503,6 +1540,7 @@
 				A288C4901FEF29AB00667F4A /* CMExtension.swift in Sources */,
 				A288C4E01FEF29AB00667F4A /* Emphasis.swift in Sources */,
 				A288C5181FEF29AB00667F4A /* Document.swift in Sources */,
+				0453B99E22760D2200AB31CC /* TasklistItem.swift in Sources */,
 				A288C4F41FEF29AB00667F4A /* Text.swift in Sources */,
 				A288C4FC1FEF29AB00667F4A /* FootnoteReference.swift in Sources */,
 				A288C4EC1FEF29AB00667F4A /* Inline.swift in Sources */,
@@ -1554,6 +1592,7 @@
 				A288C4911FEF29AB00667F4A /* CMExtension.swift in Sources */,
 				A288C4E11FEF29AB00667F4A /* Emphasis.swift in Sources */,
 				A288C5191FEF29AB00667F4A /* Document.swift in Sources */,
+				0453B99F22760D2300AB31CC /* TasklistItem.swift in Sources */,
 				A288C4F51FEF29AB00667F4A /* Text.swift in Sources */,
 				A288C4FD1FEF29AB00667F4A /* FootnoteReference.swift in Sources */,
 				A288C4ED1FEF29AB00667F4A /* Inline.swift in Sources */,
@@ -1593,12 +1632,16 @@
 			files = (
 				A254E3151FEF7F9600C48E71 /* FootnoteReferenceSpec.swift in Sources */,
 				A254E3281FEF7F9D00C48E71 /* UnorderedListSpec.swift in Sources */,
+				0453B99722760C4C00AB31CC /* CMNodeSpec.swift in Sources */,
 				A254E2EF1FEF7F8800C48E71 /* ParagraphSpec.swift in Sources */,
+				0453B9A322763BAA00AB31CC /* TasklistItemSpec.swift in Sources */,
+				0453B99122760C4C00AB31CC /* CMDocumentStructureSpec.swift in Sources */,
 				A254E31A1FEF7F9600C48E71 /* EmphasisSpec.swift in Sources */,
 				A254E32B1FEF7F9D00C48E71 /* FootnoteDefinitionSpec.swift in Sources */,
 				A254E2E31FEF7F8200C48E71 /* DocumentSpec.swift in Sources */,
 				A254E32A1FEF7F9D00C48E71 /* BlockQuoteSpec.swift in Sources */,
 				A254E3131FEF7F9600C48E71 /* SoftBreakSpec.swift in Sources */,
+				04355FCB227B4BB400AE7945 /* ItemSpec.swift in Sources */,
 				A254E2F11FEF7F8800C48E71 /* HorizontalRuleSpec.swift in Sources */,
 				A254E2FB1FEF7F8F00C48E71 /* TagFilterSpec.swift in Sources */,
 				A28847431FF5890A00558555 /* StyleSpec.swift in Sources */,
@@ -1617,6 +1660,7 @@
 				A254E31B1FEF7F9600C48E71 /* InlineHtmlSpec.swift in Sources */,
 				A254E3271FEF7F9D00C48E71 /* OrderedListSpec.swift in Sources */,
 				A254E2FE1FEF7F8F00C48E71 /* StrikethroughSpec.swift in Sources */,
+				0453B99422760C4C00AB31CC /* CMExtensionTasklist.swift in Sources */,
 				04C93AA3226F8BBA0058589D /* CMExtensionInternalSpec.swift in Sources */,
 				A254E2E01FEF7F7C00C48E71 /* CMDocumentSpec.swift in Sources */,
 				A254E2F21FEF7F8800C48E71 /* CodeBlockSpec.swift in Sources */,
@@ -1643,6 +1687,7 @@
 				A288C48E1FEF29AB00667F4A /* CMExtension.swift in Sources */,
 				A288C4DE1FEF29AB00667F4A /* Emphasis.swift in Sources */,
 				A288C5161FEF29AB00667F4A /* Document.swift in Sources */,
+				0453B99C22760D1C00AB31CC /* TasklistItem.swift in Sources */,
 				A288C4F21FEF29AB00667F4A /* Text.swift in Sources */,
 				A288C4FA1FEF29AB00667F4A /* FootnoteReference.swift in Sources */,
 				A288C4EA1FEF29AB00667F4A /* Inline.swift in Sources */,
@@ -1682,12 +1727,16 @@
 			files = (
 				A254E3011FEF7F9400C48E71 /* FootnoteReferenceSpec.swift in Sources */,
 				A254E31E1FEF7F9B00C48E71 /* UnorderedListSpec.swift in Sources */,
+				0453B99522760C4C00AB31CC /* CMNodeSpec.swift in Sources */,
 				A254E2E51FEF7F8700C48E71 /* ParagraphSpec.swift in Sources */,
+				0453B9A122763BAA00AB31CC /* TasklistItemSpec.swift in Sources */,
+				0453B98F22760C4C00AB31CC /* CMDocumentStructureSpec.swift in Sources */,
 				A254E3061FEF7F9400C48E71 /* EmphasisSpec.swift in Sources */,
 				A254E3211FEF7F9B00C48E71 /* FootnoteDefinitionSpec.swift in Sources */,
 				A254E2E11FEF7F8100C48E71 /* DocumentSpec.swift in Sources */,
 				A254E3201FEF7F9B00C48E71 /* BlockQuoteSpec.swift in Sources */,
 				A254E2FF1FEF7F9400C48E71 /* SoftBreakSpec.swift in Sources */,
+				04355FC9227B4BB400AE7945 /* ItemSpec.swift in Sources */,
 				A254E2E71FEF7F8700C48E71 /* HorizontalRuleSpec.swift in Sources */,
 				A254E2F31FEF7F8D00C48E71 /* TagFilterSpec.swift in Sources */,
 				A28847411FF5890A00558555 /* StyleSpec.swift in Sources */,
@@ -1706,6 +1755,7 @@
 				A254E3071FEF7F9400C48E71 /* InlineHtmlSpec.swift in Sources */,
 				A254E31D1FEF7F9B00C48E71 /* OrderedListSpec.swift in Sources */,
 				A254E2F61FEF7F8D00C48E71 /* StrikethroughSpec.swift in Sources */,
+				0453B99222760C4C00AB31CC /* CMExtensionTasklist.swift in Sources */,
 				04C93AA1226F8BBA0058589D /* CMExtensionInternalSpec.swift in Sources */,
 				A254E2DE1FEF7F7B00C48E71 /* CMDocumentSpec.swift in Sources */,
 				A254E2E81FEF7F8700C48E71 /* CodeBlockSpec.swift in Sources */,

@@ -17,3 +17,8 @@ public protocol ContainerBlock: Block {
 public protocol List: ContainerBlock {
 
 }
+
+/// Represents an item in a markdown list.
+public protocol Item: ContainerBlock {
+
+}

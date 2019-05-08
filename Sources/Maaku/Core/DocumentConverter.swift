@@ -437,4 +437,21 @@ extension DocumentConverter: CMParserDelegate {
         }
     }
 
+    public func parserDidStartTasklistItem(parser: CMParser, completed: Bool) {
+        // Handle as a normal list item for now.
+        // This way, we can leverage all the existing code.
+        parserDidStartListItem(parser: parser)
+    }
+
+    public func parserDidEndTasklistItem(parser: CMParser, completed: Bool) {
+        // Finish up the listitem parsing
+        parserDidEndListItem(parser: parser)
+
+        // Now replace the ListItem with the TasklistItem.
+        // We expect that the last node is the ListItem.
+        if let listItem = nodes.last as? ListItem {
+            nodes.removeLast()
+            nodes.append(TasklistItem(isCompleted: completed, items: listItem.items))
+        }
+    }
 }
