@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   
   s.subspec 'CMark' do |core|
       core.source_files = "Sources/Maaku/CMark/**/*.swift"
-      core.dependency 'libcmark_gfm', '~> 0.29'
+      core.dependency 'libcmark_gfm', '~> 0.29.1'
   end
   
   s.subspec 'Core' do |md|

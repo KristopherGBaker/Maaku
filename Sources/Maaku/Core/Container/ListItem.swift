@@ -9,7 +9,7 @@
 import Foundation
 
 /// Represents a markdown list item.
-public struct ListItem: ContainerBlock {
+public struct ListItem: Item {
 
     /// The block items.
     public let items: [Block]

@@ -1,8 +1,8 @@
 PODS:
-  - libcmark_gfm (0.29.0)
+  - libcmark_gfm (0.29.1)
   - Nimble (8.0.1)
   - Quick (2.1.0)
-  - SwiftLint (0.31.0)
+  - SwiftLint (0.32.0)
 
 DEPENDENCIES:
   - libcmark_gfm
@@ -18,10 +18,10 @@ SPEC REPOS:
     - SwiftLint
 
 SPEC CHECKSUMS:
-  libcmark_gfm: 36ec7615a5e1981ee59adef881d21bb89b9940bc
+  libcmark_gfm: 862bbb13bf59081fbd921b6d0a3ba5c112ff25e6
   Nimble: 45f786ae66faa9a709624227fae502db55a8bdd0
   Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
-  SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
+  SwiftLint: 009a898ef2a1c851f45e1b59349bf6ff2ddc990d
 
 PODFILE CHECKSUM: db683c8d21d426f02ffd5b901ea1ce625806c872
 
