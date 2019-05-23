@@ -602,7 +602,7 @@ public class CMParser {
             if eventType == .enter {
                 delegate?.parser(parser: self, foundFootnoteReference: node.stringValue ?? "")
             }
-        case .extension(_):
+        case .extension:
             handleExtensions(node, eventType: eventType)
         }
     }

@@ -41,6 +41,14 @@
 		55143839E9270DA640C9AE06 /* Pods_MaakuTargets_MaakuTestTargets_MaakuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF5DA208D491DE48B806EA40 /* Pods_MaakuTargets_MaakuTestTargets_MaakuTests.framework */; };
 		5925089C4755541F50A9B908 /* Pods_MaakuTargets_MaakuTestTargets_MaakuMacOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA21F1898F056C286EF74E42 /* Pods_MaakuTargets_MaakuTestTargets_MaakuMacOSTests.framework */; };
 		7E55C6ADA172840A4C9F26DF /* Pods_MaakuTargets_Maaku_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D191B918CEA2687988B108EE /* Pods_MaakuTargets_Maaku_macOS.framework */; };
+		90D97E9A229687B800067FF7 /* CMNode+Render.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D97E99229687B800067FF7 /* CMNode+Render.swift */; };
+		90D97E9C229687EF00067FF7 /* CMNode+Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D97E9B229687EF00067FF7 /* CMNode+Task.swift */; };
+		90D97E9D229687FF00067FF7 /* CMNode+Render.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D97E99229687B800067FF7 /* CMNode+Render.swift */; };
+		90D97E9E2296880000067FF7 /* CMNode+Render.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D97E99229687B800067FF7 /* CMNode+Render.swift */; };
+		90D97E9F2296880000067FF7 /* CMNode+Render.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D97E99229687B800067FF7 /* CMNode+Render.swift */; };
+		90D97EA02296880300067FF7 /* CMNode+Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D97E9B229687EF00067FF7 /* CMNode+Task.swift */; };
+		90D97EA12296880400067FF7 /* CMNode+Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D97E9B229687EF00067FF7 /* CMNode+Task.swift */; };
+		90D97EA22296880500067FF7 /* CMNode+Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D97E9B229687EF00067FF7 /* CMNode+Task.swift */; };
 		A2298AE81FEF270800A0E275 /* Maaku.h in Headers */ = {isa = PBXBuildFile; fileRef = A2298AE71FEF270700A0E275 /* Maaku.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A2298AE91FEF270800A0E275 /* Maaku.h in Headers */ = {isa = PBXBuildFile; fileRef = A2298AE71FEF270700A0E275 /* Maaku.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A2298AEA1FEF270800A0E275 /* Maaku.h in Headers */ = {isa = PBXBuildFile; fileRef = A2298AE71FEF270700A0E275 /* Maaku.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -350,6 +358,8 @@
 		37814D708DBC7FA6C5387968 /* Pods_MaakuTargets_Maaku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaakuTargets_Maaku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CC8163AB5A942922ABCD89D /* Pods_MaakuTargets_MaakuTestTargets_Maaku_tvOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaakuTargets_MaakuTestTargets_Maaku_tvOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B0457E59D3B01370B7BE98 /* Pods-MaakuTargets-Maaku-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaakuTargets-Maaku-tvOS.release.xcconfig"; path = "Target Support Files/Pods-MaakuTargets-Maaku-tvOS/Pods-MaakuTargets-Maaku-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		90D97E99229687B800067FF7 /* CMNode+Render.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CMNode+Render.swift"; sourceTree = "<group>"; };
+		90D97E9B229687EF00067FF7 /* CMNode+Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CMNode+Task.swift"; sourceTree = "<group>"; };
 		94CA4B59FDAE08B0FBB904B8 /* Pods-MaakuTargets-Maaku-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaakuTargets-Maaku-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-MaakuTargets-Maaku-tvOS/Pods-MaakuTargets-Maaku-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		9F480677C7A85EB6C23FE95E /* Pods-MaakuTargets-Maaku-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaakuTargets-Maaku-macOS.release.xcconfig"; path = "Target Support Files/Pods-MaakuTargets-Maaku-macOS/Pods-MaakuTargets-Maaku-macOS.release.xcconfig"; sourceTree = "<group>"; };
 		A2019A843DA09A6F09EC7E33 /* Pods-MaakuTargets-MaakuTestTargets-MaakuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaakuTargets-MaakuTestTargets-MaakuTests.release.xcconfig"; path = "Target Support Files/Pods-MaakuTargets-MaakuTestTargets-MaakuTests/Pods-MaakuTargets-MaakuTestTargets-MaakuTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -709,6 +719,8 @@
 				A288C44A1FEF29AA00667F4A /* CMIterator.swift */,
 				A288C4511FEF29AA00667F4A /* CMListType.swift */,
 				A288C44F1FEF29AA00667F4A /* CMNode.swift */,
+				90D97E99229687B800067FF7 /* CMNode+Render.swift */,
+				90D97E9B229687EF00067FF7 /* CMNode+Task.swift */,
 				A288C44C1FEF29AA00667F4A /* CMNodeType.swift */,
 				A288C4501FEF29AA00667F4A /* CMParser.swift */,
 			);
@@ -1434,6 +1446,7 @@
 				A288C4971FEF29AB00667F4A /* CMParser.swift in Sources */,
 				A288C4D71FEF29AB00667F4A /* InlineCode.swift in Sources */,
 				A288C4CB1FEF29AB00667F4A /* Strikethrough.swift in Sources */,
+				90D97EA02296880300067FF7 /* CMNode+Task.swift in Sources */,
 				A288C4BF1FEF29AB00667F4A /* TableRow.swift in Sources */,
 				A288C51B1FEF29AB00667F4A /* Style.swift in Sources */,
 				A288C4C31FEF29AB00667F4A /* Table.swift in Sources */,
@@ -1458,6 +1471,7 @@
 				A288C47B1FEF29AB00667F4A /* CMDocumentOption.swift in Sources */,
 				A2ECDAE41FF84347003692AB /* Font+Maaku.swift in Sources */,
 				A288C4AF1FEF29AB00667F4A /* Heading.swift in Sources */,
+				90D97E9D229687FF00067FF7 /* CMNode+Render.swift in Sources */,
 				A288C4E71FEF29AB00667F4A /* Image.swift in Sources */,
 				A288C4AB1FEF29AB00667F4A /* CodeBlock.swift in Sources */,
 				A288C4BB1FEF29AB00667F4A /* Block.swift in Sources */,
@@ -1529,6 +1543,7 @@
 				A288C4981FEF29AB00667F4A /* CMParser.swift in Sources */,
 				A288C4D81FEF29AB00667F4A /* InlineCode.swift in Sources */,
 				A288C4CC1FEF29AB00667F4A /* Strikethrough.swift in Sources */,
+				90D97EA12296880400067FF7 /* CMNode+Task.swift in Sources */,
 				A288C4C01FEF29AB00667F4A /* TableRow.swift in Sources */,
 				A288C51C1FEF29AB00667F4A /* Style.swift in Sources */,
 				A288C4C41FEF29AB00667F4A /* Table.swift in Sources */,
@@ -1553,6 +1568,7 @@
 				A288C47C1FEF29AB00667F4A /* CMDocumentOption.swift in Sources */,
 				A2ECDAE51FF84347003692AB /* Font+Maaku.swift in Sources */,
 				A288C4B01FEF29AB00667F4A /* Heading.swift in Sources */,
+				90D97E9E2296880000067FF7 /* CMNode+Render.swift in Sources */,
 				A288C4E81FEF29AB00667F4A /* Image.swift in Sources */,
 				A288C4AC1FEF29AB00667F4A /* CodeBlock.swift in Sources */,
 				A288C4BC1FEF29AB00667F4A /* Block.swift in Sources */,
@@ -1581,6 +1597,7 @@
 				A288C4991FEF29AB00667F4A /* CMParser.swift in Sources */,
 				A288C4D91FEF29AB00667F4A /* InlineCode.swift in Sources */,
 				A288C4CD1FEF29AB00667F4A /* Strikethrough.swift in Sources */,
+				90D97EA22296880500067FF7 /* CMNode+Task.swift in Sources */,
 				A288C4C11FEF29AB00667F4A /* TableRow.swift in Sources */,
 				A288C51D1FEF29AB00667F4A /* Style.swift in Sources */,
 				A288C4C51FEF29AB00667F4A /* Table.swift in Sources */,
@@ -1605,6 +1622,7 @@
 				A288C47D1FEF29AB00667F4A /* CMDocumentOption.swift in Sources */,
 				A2ECDAE61FF84347003692AB /* Font+Maaku.swift in Sources */,
 				A288C4B11FEF29AB00667F4A /* Heading.swift in Sources */,
+				90D97E9F2296880000067FF7 /* CMNode+Render.swift in Sources */,
 				A288C4E91FEF29AB00667F4A /* Image.swift in Sources */,
 				A288C4AD1FEF29AB00667F4A /* CodeBlock.swift in Sources */,
 				A288C4BD1FEF29AB00667F4A /* Block.swift in Sources */,
@@ -1676,6 +1694,7 @@
 				A288C4961FEF29AB00667F4A /* CMParser.swift in Sources */,
 				A288C4D61FEF29AB00667F4A /* InlineCode.swift in Sources */,
 				A288C4CA1FEF29AB00667F4A /* Strikethrough.swift in Sources */,
+				90D97E9C229687EF00067FF7 /* CMNode+Task.swift in Sources */,
 				A288C4BE1FEF29AB00667F4A /* TableRow.swift in Sources */,
 				A288C51A1FEF29AB00667F4A /* Style.swift in Sources */,
 				A288C4C21FEF29AB00667F4A /* Table.swift in Sources */,
@@ -1700,6 +1719,7 @@
 				A288C47A1FEF29AB00667F4A /* CMDocumentOption.swift in Sources */,
 				A2ECDAE31FF84347003692AB /* Font+Maaku.swift in Sources */,
 				A288C4AE1FEF29AB00667F4A /* Heading.swift in Sources */,
+				90D97E9A229687B800067FF7 /* CMNode+Render.swift in Sources */,
 				A288C4E61FEF29AB00667F4A /* Image.swift in Sources */,
 				A288C4AA1FEF29AB00667F4A /* CodeBlock.swift in Sources */,
 				A288C4BA1FEF29AB00667F4A /* Block.swift in Sources */,
@@ -1810,7 +1830,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1838,7 +1858,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1856,7 +1876,7 @@
 				PRODUCT_NAME = MaakuTests;
 				SDKROOT = macosx;
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "MaakuTests-Swift.h";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1874,7 +1894,7 @@
 				PRODUCT_NAME = MaakuTests;
 				SDKROOT = macosx;
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "MaakuTests-Swift.h";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1899,7 +1919,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.2;
 			};
@@ -1925,7 +1945,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.2;
 			};
@@ -1951,7 +1971,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 11.2;
 			};
@@ -1976,7 +1996,7 @@
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 11.2;
 			};
@@ -1992,7 +2012,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.krisbaker.MaakuTests;
 				PRODUCT_NAME = MaakuTests;
 				SDKROOT = appletvos;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 11.2;
 			};
@@ -2008,7 +2028,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.krisbaker.MaakuTests;
 				PRODUCT_NAME = MaakuTests;
 				SDKROOT = appletvos;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 11.2;
 			};
@@ -2152,7 +2172,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -2177,7 +2197,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -2193,7 +2213,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.krisbaker.MaakuTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -2209,7 +2229,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.krisbaker.MaakuTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
