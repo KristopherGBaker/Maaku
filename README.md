@@ -1,8 +1,10 @@
 # Maaku
 
 [![Build Status](https://travis-ci.org/KristopherGBaker/Maaku.svg?branch=master)](https://travis-ci.org/KristopherGBaker/Maaku)
+[![Swift](https://img.shields.io/badge/swift-5-orange.svg?style=flat)](https://developer.apple.com/swift/)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/Maaku.svg)](https://img.shields.io/cocoapods/v/Maaku.svg)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 [![Platform](https://img.shields.io/cocoapods/p/Maaku.svg?style=flat)](http://cocoadocs.org/docsets/Maaku)
 
 The Maaku framework provides a Swift wrapper around [cmark-gfm](https://github.com/github/cmark) with the addition of a Swift friendly representation of the AST. gfm extensions for tables, strikethrough, autolinks, and tag filters are supported.

@@ -93,7 +93,6 @@
 		0FEEC2E6E641608C2C9EB680E008AD71 /* NSBundle+CurrentTestBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B919AC996105EC9DF638E867A050532 /* NSBundle+CurrentTestBundle.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		10544A5A88547EB3BF1ECD3F327D5847 /* plugin.c in Sources */ = {isa = PBXBuildFile; fileRef = EBE2F6180073A0A51B01E3EAE22FB701 /* plugin.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		10F0DFC919B8C07200358D3A59DE4CFD /* QuickSpecBase.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C43D2F980FF35B187D2690D46ED822 /* QuickSpecBase.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		11632EA32BC8D8DCA81405EDD12AFA6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6DD47D71CD3EF80C71229D5D2E51C0 /* Foundation.framework */; };
 		11654D951F456287ACA3E5171043AD13 /* inlines.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EE690172BA0799921D995EB3F7E5712 /* inlines.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		11805DBFD4FDADF37075C876D4C1C7C1 /* registry.h in Headers */ = {isa = PBXBuildFile; fileRef = F499D32CD0F78B0571CDA78FC8F6C577 /* registry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11DE53B2A68E0F3C4489A10023A64E03 /* man.c in Sources */ = {isa = PBXBuildFile; fileRef = AD89867AE410F98BA633991847C8117C /* man.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -181,7 +180,9 @@
 		29EFF280F17D657CF9BD8A988161204F /* libcmark_gfm.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AA97551F1E21D248A4D4520A12A20D1 /* libcmark_gfm.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2A0D84D4A7BF0B06DC09548D811AF4D5 /* cmark-gfm-core-extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 445BD5547134E5C533F93A9A830558CA /* cmark-gfm-core-extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2B060E028A5FC7D2372AAE9F4DEC7307 /* FailureMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2487AB4F59407665A238EDFC9EF2A5 /* FailureMessage.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2B54A259C4F688DEAC5801A173B2D69E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226D2E0350A67D752F0416BBF52E66A6 /* Foundation.framework */; };
 		2C03A2138325F0CAE0EB66DA10356997 /* BeAnInstanceOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = D374A756295B0E096CF0E437C76D8BFD /* BeAnInstanceOf.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2C9A84B25F676D8A6C3AE58D09F0D9E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226D2E0350A67D752F0416BBF52E66A6 /* Foundation.framework */; };
 		2D1181046D0A63923A42AB8D6F7A0DE7 /* ext_scanners.c in Sources */ = {isa = PBXBuildFile; fileRef = 034AAA63DC611F15C7EB504998D8FEEA /* ext_scanners.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		2D3E75C73870FBB0FC67EB144C7D6781 /* man.c in Sources */ = {isa = PBXBuildFile; fileRef = AD89867AE410F98BA633991847C8117C /* man.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		2E14E94391334EC12367BEB22C755D88 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8806EAEC6B2E367CE755237A4472D6 /* Expression.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble -w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -211,6 +212,7 @@
 		35A987DB9A82BBADA63E9CE3C2AE278F /* utf8.c in Sources */ = {isa = PBXBuildFile; fileRef = F78814F5D7DD5E5AC855F23C126C3AF8 /* utf8.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		362BC16FEB466C5406FAE20C4718E932 /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = EC3B4CB809D0BAF64164CEFA75AA9A47 /* buffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36614EB43918230A4EA70BFE2DE34708 /* tagfilter.c in Sources */ = {isa = PBXBuildFile; fileRef = 26B603EB84A8FDFEE5915EFA990BAA1D /* tagfilter.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		372EBBBEFBDB90BE3DCD47E325A0197D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6565962DAC1ADC17DE2FBF0ED28DD520 /* Foundation.framework */; };
 		37AC2563342389372233701CF756AC20 /* chunk.h in Headers */ = {isa = PBXBuildFile; fileRef = E048163AD79A9285C5D555845CE1C33B /* chunk.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		380D0CE7F3DF5C36C56B6DBF25BBA1B3 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8BE0FCABAC9F7B75DB0275CD7C4EA /* Match.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		38623125942B8FB6FF66AD9F72CA6003 /* render.h in Headers */ = {isa = PBXBuildFile; fileRef = 4835CEBB14F34EA49942B70A047FA47B /* render.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -228,10 +230,8 @@
 		3CC8D75CF898951F3D6E5EC0D9423D04 /* cmark.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B1E970C9E034AAC79D0F777E308973 /* cmark.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		3CE523DB28809A12D9D7A19EFE6E792B /* Pods-MaakuTargets-Maaku-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E987AC9DD723AA915DCF3F75BB05F8F5 /* Pods-MaakuTargets-Maaku-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E72E1494AA63619BC06976878F475D6 /* footnotes.h in Headers */ = {isa = PBXBuildFile; fileRef = 5230EFF8A8D39086B5240185DA9BEF04 /* footnotes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3E8AA71124BD0C93A5DA74A4C9D9A2ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6DD47D71CD3EF80C71229D5D2E51C0 /* Foundation.framework */; };
 		3EAF6E4525305063913F462A4F9710A3 /* html.c in Sources */ = {isa = PBXBuildFile; fileRef = 4D7F889A0C07E5D85A921A7E86B95201 /* html.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		3EEAB7FA8F552ED9AC711FEAB7409D4F /* AllPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFC7C9DE6581287DA78DFB989C966DB /* AllPass.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		3F2B1542EF2E96A489DB0AE8C4E567D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D98C243823D324258E19E60B99687E /* Foundation.framework */; };
 		3F32C17EC6E6AC25C539F76E55C9BCCB /* libcmark_gfm-macOS10.10-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FADB60FFD1059BC889F89338D84A5BC4 /* libcmark_gfm-macOS10.10-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3FD5EC0196C9C09B7D5C36129EBE39CD /* houdini_html_u.c in Sources */ = {isa = PBXBuildFile; fileRef = 61AE431305D908D63B6DCBF3D79E4703 /* houdini_html_u.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		3FF413C17469BAC8037D011F611C3B2E /* arena.c in Sources */ = {isa = PBXBuildFile; fileRef = E9B47D80056BD6EAE74FAF47AF140D23 /* arena.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -240,7 +240,6 @@
 		40A4A734323020441A50DF831FB47674 /* linked_list.c in Sources */ = {isa = PBXBuildFile; fileRef = 90F1FA577DB8B561638A4137385F51AF /* linked_list.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		41AF07E692D4F87C174012E217E8C46E /* Quick-tvOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B90AFAF0FD73C2E2ACF730A9C0571AD /* Quick-tvOS-dummy.m */; };
 		42D52AE4830A7841513788FFA402B60E /* BeAnInstanceOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = D374A756295B0E096CF0E437C76D8BFD /* BeAnInstanceOf.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		431FBE45EBF72847B5BF2CAA089A8ACE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76907429CA64D8169BC779410D37614 /* XCTest.framework */; };
 		4351BFE7FB1C52BC4C36D134E44AFA44 /* CwlCatchException.h in Headers */ = {isa = PBXBuildFile; fileRef = B910DF0C37F7A74797C6CC4C336D1408 /* CwlCatchException.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		43F240F74700F8F29375857E81A183A1 /* inlines.h in Headers */ = {isa = PBXBuildFile; fileRef = 367949A165E0A2285AF5B077EFA42F75 /* inlines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4412599B0F0C2D95EB7B3A6AEA11824F /* ElementsEqual.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65B17676D0FDD6727E0C9893D1E59C1 /* ElementsEqual.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble -w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -281,6 +280,7 @@
 		50EF1DFE6D3C5DBDD8F2725CA2570126 /* table.h in Headers */ = {isa = PBXBuildFile; fileRef = 541175DF03E67273AD7299E57A544C5B /* table.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		51179C28287443FC3A356C6B44DD7819 /* scanners.h in Headers */ = {isa = PBXBuildFile; fileRef = 3929E76FA9616404CF732A96F95918C2 /* scanners.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		51976688A867B31CB46A790019030C49 /* cmark-gfm.h in Headers */ = {isa = PBXBuildFile; fileRef = BD436DD89E958A4C1EAA9AC4BF3C011C /* cmark-gfm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51A1E9C2C96E50E1FE70E33D283492E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6565962DAC1ADC17DE2FBF0ED28DD520 /* Foundation.framework */; };
 		51A9F13941FAE7EC7AFC8E4046F9DB71 /* BeNil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F2558CDE819D416F8A7D65B46DEFE5 /* BeNil.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		51EB62F59ED3F15B88F4023937FED2A8 /* commonmark.c in Sources */ = {isa = PBXBuildFile; fileRef = C1423D0972C615E28959D68C6D410159 /* commonmark.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		5280D48EEC690A82CBEB94BCEE1854A3 /* ToSucceed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC31B52DA3851271348D96F5486D51 /* ToSucceed.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble -w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -317,6 +317,7 @@
 		5E0305ACBC7EB3EF558171571D32D2F8 /* table.h in Headers */ = {isa = PBXBuildFile; fileRef = 541175DF03E67273AD7299E57A544C5B /* table.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E3DFAB627767AE129E4FD070379D7B6 /* utf8.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A96D5182925425AD2D90D542D464E4A /* utf8.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E8E68DE08EF7B4FB7C67E7ECD66426F /* XCTestObservationCenter+Register.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E2E3D1CC051A2538567178F90D9E38 /* XCTestObservationCenter+Register.m */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5EAA26AE332B12F04D786C3FB2F511C4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C561EEBF319499E328AFA7B7D86AC85 /* XCTest.framework */; };
 		5EF8D484478B2A7D9FAD61BC972D597A /* utf8.c in Sources */ = {isa = PBXBuildFile; fileRef = F78814F5D7DD5E5AC855F23C126C3AF8 /* utf8.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		5F2B082FCEF93A917B240E80813031A2 /* arena.c in Sources */ = {isa = PBXBuildFile; fileRef = E9B47D80056BD6EAE74FAF47AF140D23 /* arena.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		5FED5EBE59687624B0773ADA393625FA /* cmark-gfm_version.h in Headers */ = {isa = PBXBuildFile; fileRef = 294D8BE875583F9E6F02F59CC3B146E1 /* cmark-gfm_version.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -371,8 +372,6 @@
 		70241F0E96858D8C3B4CCAA82A29BF94 /* BeginWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B05C9C8154EB42BB9F0794FFE5139F /* BeginWith.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		7027C39C06454641F35D9303F24AB2B6 /* Nimble-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 965CF4010F60A71F156980A5009E0E01 /* Nimble-macOS-dummy.m */; };
 		70507ADB8355C06A5D6CFE9AFE626C82 /* CwlMachBadInstructionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E128BB43041FEB20E7157BD6B034CAA /* CwlMachBadInstructionHandler.m */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		70A90B2E10DD07241F69C47301E10D1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D98C243823D324258E19E60B99687E /* Foundation.framework */; };
-		70BC5ACAFD2C9405552C8B862DD32E6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8951D7D6C48D90558017CFD622A4BF56 /* Foundation.framework */; };
 		717F6597C8D5E8773ECA1ADEACE5A4F7 /* CwlCatchBadInstructionPosix.swift in Sources */ = {isa = PBXBuildFile; fileRef = B953C27A842C6F3F0869F73DF8E99655 /* CwlCatchBadInstructionPosix.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		7184B1778E4D267E737246FAEAC4196A /* map.c in Sources */ = {isa = PBXBuildFile; fileRef = A37E5DFB31AA08415570C814450849BB /* map.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		725CEDBEFB5A9F4F69F0C1C59814588A /* tasklist.h in Headers */ = {isa = PBXBuildFile; fileRef = 4152B0E7C3F7BA732C2144EF1926FC89 /* tasklist.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -380,8 +379,8 @@
 		72D20B776B5E608DE2F459FF6A160854 /* BeAKindOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294C3911343415359C72449C7B6A42D9 /* BeAKindOf.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		73084F5BA0EB0435ED1C3F5B96377668 /* AssertionRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F021E7BEE00C69D2D12F246408D2CF /* AssertionRecorder.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		7327D9D3EFC877AC7D122592431950B8 /* NMBStringify.h in Headers */ = {isa = PBXBuildFile; fileRef = 9415539EA6FD0C340EFB5FE06C8FA9BE /* NMBStringify.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		734D2B307365CF15F8FA2B9F75610B20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B93599A9FE66FFDC70701B0A9FA8835A /* Foundation.framework */; };
 		736BFC7A8A25BF5EE87ED7C4D12DCE79 /* ext_scanners.c in Sources */ = {isa = PBXBuildFile; fileRef = 034AAA63DC611F15C7EB504998D8FEEA /* ext_scanners.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		739D30D5D189B1579EADA0B43AF0338C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8951D7D6C48D90558017CFD622A4BF56 /* Foundation.framework */; };
 		73B0EAD202AC83658EFBE5201BFB521C /* XCTestSuite+QuickTestSuiteBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0497D15F80C8FCAE0E7EE944A7A3C9 /* XCTestSuite+QuickTestSuiteBuilder.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		73EDEAECE2606CE1547705E954BA707D /* render.h in Headers */ = {isa = PBXBuildFile; fileRef = 4835CEBB14F34EA49942B70A047FA47B /* render.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		74D7EF5DDE848C689AEC1E37D8334A45 /* SourceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BE3AA0A25487E72472B85F52B722D5 /* SourceLocation.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble -w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -415,10 +414,8 @@
 		8043E2CFBCD8AD15F9257F910B6B2ED0 /* QuickSpecBase.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C43D2F980FF35B187D2690D46ED822 /* QuickSpecBase.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		80490A19076ABC2683D35646B6207943 /* World+DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C897AB540C0EA60FEDBADC1163E8BA8 /* World+DSL.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		80F58271A54BF414F4BE37B934E3B24B /* libcmark_gfm-tvOS9.0-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A8692682507DF897AE2F1B8B13AF62E7 /* libcmark_gfm-tvOS9.0-dummy.m */; };
-		8162193BA051BD216494AB8BFC28F7D7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0EF2BF74C17AAA0C995DE1E61056DF3 /* XCTest.framework */; };
 		825AD471E26207E44E85B740BC66DF56 /* cmark_ctype.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F45E45A12035993C3683CE01E52485C /* cmark_ctype.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		829166C3352BB7AC444F76E39CCF4C11 /* String+C99ExtendedIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3908A7462F2A7C71A0E9541826285069 /* String+C99ExtendedIdentifier.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		830D6AD5FB23E3103EC4B14706B604CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D98C243823D324258E19E60B99687E /* Foundation.framework */; };
 		832BBD2348BEB090D64370A6F50C03AA /* registry.h in Headers */ = {isa = PBXBuildFile; fileRef = F499D32CD0F78B0571CDA78FC8F6C577 /* registry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		834576FF2BF0A68FE363617696FBE6FC /* BeGreaterThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7428806B890A20869E148A2A82712F9C /* BeGreaterThan.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		835CE3D3FF0E3CBD3BD31DA0C780A49E /* Predicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D0686F29DF4D66565AA5DB3FDAF21A /* Predicate.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble -w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -429,6 +426,7 @@
 		84BE7B9058B515E18DF03BED64AB701D /* ThrowAssertion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6854728EB5AE984D285C47B6A08244A /* ThrowAssertion.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		84DE8634440E1D77789B25780F98022D /* registry.c in Sources */ = {isa = PBXBuildFile; fileRef = 6C5E38BA8F3D04A8442D6C131072A708 /* registry.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		854A9CA5CDC9AAA01D575398DC2C31C5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80470FDD174E43DA95C4ADB498BB3885 /* XCTest.framework */; };
+		8587866E10A68706367A44FD4801F2C0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8008FF57D231808E4F6B0BE51C5D2617 /* XCTest.framework */; };
 		865EB3F072216B35A8D345F09BFC8FA1 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4D0BA51AA2BF9ACF688D6DF48422DA /* Closures.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		87D78FB05BEBE54F062ECF757BF636E1 /* QuickSpecBase.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C43D2F980FF35B187D2690D46ED822 /* QuickSpecBase.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8800E28EBABE87175D3276FC9EDD7970 /* syntax_extension.c in Sources */ = {isa = PBXBuildFile; fileRef = 42575009D30055F8262C98955F9FCB1C /* syntax_extension.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -480,6 +478,7 @@
 		9AD5A64A6E54798992E0EB9105BDB4A3 /* inlines.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EE690172BA0799921D995EB3F7E5712 /* inlines.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		9B2CD5E3727F9EF4195C1A829EE79092 /* BeAKindOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294C3911343415359C72449C7B6A42D9 /* BeAKindOf.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		9B3E5C4E0EF6B8E9435C8C17A33C6D21 /* Equal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5809736EE057AFD8B1D59DD50EC05D50 /* Equal.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9B518E87B8550A623618B3E9225491B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226D2E0350A67D752F0416BBF52E66A6 /* Foundation.framework */; };
 		9B780E3140D56C9EBD00AD21D33202EA /* Pods-MaakuTargets-MaakuTestTargets-Maaku-tvOSTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7C2DC9717B7FB216C2E6DFB18743633 /* Pods-MaakuTargets-MaakuTestTargets-Maaku-tvOSTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9BD5F14AFA017123C25070FF124DD175 /* QuickSelectedTestSuiteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0CE3C0E50CBAA00C697C019C05AE8F /* QuickSelectedTestSuiteBuilder.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		9C089DD33DAF1DBADC978E14E07D329A /* scanners.h in Headers */ = {isa = PBXBuildFile; fileRef = 3929E76FA9616404CF732A96F95918C2 /* scanners.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -541,6 +540,7 @@
 		B0366D1FC827AF2518DCC90B82875EC7 /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F668AE751F12B745D72BCD8497CF23D /* World.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B06A6ECBF40149E69FA126BA28D11FA3 /* footnotes.h in Headers */ = {isa = PBXBuildFile; fileRef = 5230EFF8A8D39086B5240185DA9BEF04 /* footnotes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B09B485822DE84E90DDA4A064AFC50E9 /* cmark-gfm.h in Headers */ = {isa = PBXBuildFile; fileRef = BD436DD89E958A4C1EAA9AC4BF3C011C /* cmark-gfm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0B7A19FBC2203A0CD5FD417B1F052BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B93599A9FE66FFDC70701B0A9FA8835A /* Foundation.framework */; };
 		B0D5A26B98D6862661E194B6288EE8B8 /* parser.h in Headers */ = {isa = PBXBuildFile; fileRef = A745ADA583605B0DED19D540237D4243 /* parser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B0FFE24CF027BC6E7950C9B390427461 /* render.c in Sources */ = {isa = PBXBuildFile; fileRef = 64DCCE4D69E09657BC29961A507959D9 /* render.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B117DE33AFB67927027A2BEE81CFDD45 /* QuickConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = F6507EF8086106D16F897B7C5DCA853A /* QuickConfiguration.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -560,7 +560,6 @@
 		B8A83D5FD99D9BC35A707ACA4E5D4737 /* iterator.h in Headers */ = {isa = PBXBuildFile; fileRef = 72B5FACC013685211173382F511A53A4 /* iterator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA300FCA2E91C14EBCBD1F4618366D81 /* Pods-MaakuTargets-MaakuTestTargets-MaakuTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E634BD6479942FF0496085C76420B7F6 /* Pods-MaakuTargets-MaakuTestTargets-MaakuTests-dummy.m */; };
 		BA477E82EB5C34DA7E219DA4B6D5F36B /* QuickSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 903295845DFA40CC01D845B32E53DDBF /* QuickSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BAD9C76429EBB1B88985F2F127677E82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6DD47D71CD3EF80C71229D5D2E51C0 /* Foundation.framework */; };
 		BB58DA295A23AB6D63ECDFB51BFB48BD /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8BE0FCABAC9F7B75DB0275CD7C4EA /* Match.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		BC3CBB689CB7CA0253F66F99A3ED4B66 /* CwlBadInstructionException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1D66D12715D7E0704560842CA3E9D /* CwlBadInstructionException.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		BC409CEF91FC7CB3B799E2B8FF8B8AB2 /* linked_list.c in Sources */ = {isa = PBXBuildFile; fileRef = 90F1FA577DB8B561638A4137385F51AF /* linked_list.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -568,7 +567,6 @@
 		BCFB1EAD50CC01C96E3CE9070A5B4876 /* syntax_extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 55547C767F65935F021FC14B06641E7B /* syntax_extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BD25941A48DC21E87101F038944697CD /* mach_excServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 79C81ADE676D51B362DAD1A1127311FF /* mach_excServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BD7DD062DFC219F8C05DA3AD9F88C2AF /* cmark_ctype.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F45E45A12035993C3683CE01E52485C /* cmark_ctype.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BDE409A668BACAC1123CF65D84C845B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D98C243823D324258E19E60B99687E /* Foundation.framework */; };
 		BE9F54F9CF8310764614D18A8BE8A448 /* MatcherFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD6276C4825D8A99B00D3734BCBC54 /* MatcherFunc.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		BF92BB047AD8CECAEE6CF34D2D2BE2D7 /* houdini_html_u.c in Sources */ = {isa = PBXBuildFile; fileRef = 61AE431305D908D63B6DCBF3D79E4703 /* houdini_html_u.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		BFE4DBA207BF969B4DFE1359FB1481A8 /* utf8.c in Sources */ = {isa = PBXBuildFile; fileRef = F78814F5D7DD5E5AC855F23C126C3AF8 /* utf8.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -579,7 +577,6 @@
 		C1BF0AEBA17ED3386B880E536C80A657 /* NMBExpectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BFCD22C96BD3A28A474A35A512B46B /* NMBExpectation.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C224382284C786BA968E3B3B76F046DD /* BeLessThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC380DE645B174664E26381A17C2EC /* BeLessThan.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C23FDB7878B0C74A18A4791B981B8DD4 /* strikethrough.h in Headers */ = {isa = PBXBuildFile; fileRef = 66A2D033D42ACBA61B29090A4CF65F27 /* strikethrough.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2DAF8071C8C040DC13D9A77695F180C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6DD47D71CD3EF80C71229D5D2E51C0 /* Foundation.framework */; };
 		C4A0B91E75CA7EB74D9B519BE8AA04C7 /* Pods-MaakuTargets-Maaku-tvOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 738CF796CF69B8096DA5B17F32621F68 /* Pods-MaakuTargets-Maaku-tvOS-dummy.m */; };
 		C5280EB1D582FA3EB13CE6D055F616F9 /* tasklist.h in Headers */ = {isa = PBXBuildFile; fileRef = 4152B0E7C3F7BA732C2144EF1926FC89 /* tasklist.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C5737EF53BC24B637D4AFBF9696300D4 /* BeGreaterThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7428806B890A20869E148A2A82712F9C /* BeGreaterThan.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble -w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -608,8 +605,8 @@
 		CECA20FCF37644993859A2B490C3AC24 /* MatcherProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D5CF387896DDE0B6686DE1A772F9D3 /* MatcherProtocols.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		CED75D45F711230C9046323099526398 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4970414079EFB7F333F9DCC15296EE59 /* Cocoa.framework */; };
 		CEDAFDBEA4371AF9E1C6C38822526DD6 /* QuickSelectedTestSuiteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0CE3C0E50CBAA00C697C019C05AE8F /* QuickSelectedTestSuiteBuilder.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		CF00C18DCBBA60545D478C909A89DD77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D98C243823D324258E19E60B99687E /* Foundation.framework */; };
 		CF6829A0A7750AFAC470AA875334601A /* MatcherFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD6276C4825D8A99B00D3734BCBC54 /* MatcherFunc.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D059E6CC5450C47718918E15A2E007BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6565962DAC1ADC17DE2FBF0ED28DD520 /* Foundation.framework */; };
 		D066F6B9A1F563A7AFDEB3292BB04A05 /* iterator.h in Headers */ = {isa = PBXBuildFile; fileRef = 72B5FACC013685211173382F511A53A4 /* iterator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0A4227C76F464C4D497577F2F44F993 /* MatcherProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D5CF387896DDE0B6686DE1A772F9D3 /* MatcherProtocols.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		D0A575BB4E33DE02754DE5BC2402B0CA /* Quick.h in Headers */ = {isa = PBXBuildFile; fileRef = BAD8704531B2691260263CA399D7E2D8 /* Quick.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -676,6 +673,7 @@
 		E8B29CA875DA003B226EE347DEAEFE32 /* blocks.c in Sources */ = {isa = PBXBuildFile; fileRef = 68756AA111D4E2FA4D639CDF478EE0D3 /* blocks.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		E8DB82F9754868D39499F3A3DB046C6D /* FailureMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2487AB4F59407665A238EDFC9EF2A5 /* FailureMessage.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		E99B72C238DD46502EDFC93B2EF4F348 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4970414079EFB7F333F9DCC15296EE59 /* Cocoa.framework */; };
+		EA255DB3B4AECC4B71BD6B897911791B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6565962DAC1ADC17DE2FBF0ED28DD520 /* Foundation.framework */; };
 		EA4F2FAD0B0522B33DB3B06E3B549136 /* houdini.h in Headers */ = {isa = PBXBuildFile; fileRef = B9F6AB9397839D5C63E644F3C2B059DC /* houdini.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB9458F18A00EE20839ABD5BF3C178DB /* CwlMachBadInstructionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = D6952E73252F9FBD52CDF80D78155039 /* CwlMachBadInstructionHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EC11AA9F9411DE651D9C82581DFCF4E6 /* tasklist.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DC5D5E22CFF0AAEA7272501E3E87459 /* tasklist.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -702,13 +700,14 @@
 		F3CA317C1F281FC005AE0D3900BE4B93 /* xml.c in Sources */ = {isa = PBXBuildFile; fileRef = 11E80BED0E05929A836AFDBFB11B4D43 /* xml.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F3E0A398E106835C5668E8EA00E627B2 /* node.h in Headers */ = {isa = PBXBuildFile; fileRef = 89D2A4E81A724886A624C160D638A0E0 /* node.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F401FD668F58A29669F2D45CEAA4F965 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = CAC8EF67B087FFBC970A14B245D3BD73 /* config.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F40FE4390CC1931BDCD864C0A70D4D0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6565962DAC1ADC17DE2FBF0ED28DD520 /* Foundation.framework */; };
 		F450AC377080F5E67BC62FBD2C4F3AC3 /* Quick.h in Headers */ = {isa = PBXBuildFile; fileRef = BAD8704531B2691260263CA399D7E2D8 /* Quick.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4676B8898810DAD024E09EF57319545 /* table.c in Sources */ = {isa = PBXBuildFile; fileRef = 71456EE63475EC9DC01DD391FDCA40D2 /* table.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F51F540B2EA1AB2CF650C1314DE81A7A /* iterator.c in Sources */ = {isa = PBXBuildFile; fileRef = 5EDA0639EF269FAA7641B2A349989D01 /* iterator.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F5E469354EED012E053A4381F99F5615 /* cmark-gfm_version.h in Headers */ = {isa = PBXBuildFile; fileRef = 294D8BE875583F9E6F02F59CC3B146E1 /* cmark-gfm_version.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F5EF6C2DFE8D36837A6946FA33FCAFCF /* MatcherFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD6276C4825D8A99B00D3734BCBC54 /* MatcherFunc.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F69D31EA8B4E02CC2284465842723DF6 /* tagfilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C935C537D5499E6F29CCC09E750B146 /* tagfilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F7AFE18CCDA7C404BB0C213DF707766D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6DD47D71CD3EF80C71229D5D2E51C0 /* Foundation.framework */; };
+		F716F546F62132EE6F0EEEB46953858D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226D2E0350A67D752F0416BBF52E66A6 /* Foundation.framework */; };
 		F840A33CE82EA5EF124EA9B2D5DBF9C4 /* tagfilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C935C537D5499E6F29CCC09E750B146 /* tagfilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F88E1A922C9DF08AD3D919909CB12369 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8806EAEC6B2E367CE755237A4472D6 /* Expression.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F8FAAE018A0DEBF0E5E30BEEFF7BCCBF /* CwlMachBadInstructionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E128BB43041FEB20E7157BD6B034CAA /* CwlMachBadInstructionHandler.m */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble -w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -722,6 +721,7 @@
 		FAE81F87E735946115B803502DB44A67 /* tasklist.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DC5D5E22CFF0AAEA7272501E3E87459 /* tasklist.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		FAFF1DBD0CFF0B3A85412ED727F40069 /* footnotes.c in Sources */ = {isa = PBXBuildFile; fileRef = C690664CE492533EA79AA741E8D079D1 /* footnotes.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		FB3D355256488781DF9457F35CCF8C6B /* tasklist.h in Headers */ = {isa = PBXBuildFile; fileRef = 4152B0E7C3F7BA732C2144EF1926FC89 /* tasklist.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB5C64F5BFD0178A727B37826C536571 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226D2E0350A67D752F0416BBF52E66A6 /* Foundation.framework */; };
 		FBB36E67766C55BC6D0F7FB4A83035CA /* strikethrough.c in Sources */ = {isa = PBXBuildFile; fileRef = 3393C82CB9BCB7AE572625742F639516 /* strikethrough.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		FC112FF60833B04AA8FEEF419FE0909B /* BeCloseTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE545FC7611D3C96787B0D0D83C733B /* BeCloseTo.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		FC5919E282EC7062A51F58FFCBFE444C /* MatchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E5C88A29C8FE59AB0600F54BBDB7C9 /* MatchError.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble -w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -902,8 +902,8 @@
 		088A5895BC03A39C48044EB610CF24B9 /* Nimble-tvOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "Nimble-tvOS.modulemap"; path = "../Nimble-tvOS/Nimble-tvOS.modulemap"; sourceTree = "<group>"; };
 		0892184BBEEFB52E2DA4A1C252DB5FA9 /* buffer.c */ = {isa = PBXFileReference; includeInIndex = 1; name = buffer.c; path = Sources/libcmark_gfm/buffer.c; sourceTree = "<group>"; };
 		09D1D66D12715D7E0704560842CA3E9D /* CwlBadInstructionException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CwlBadInstructionException.swift; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlPreconditionTesting/CwlBadInstructionException.swift; sourceTree = "<group>"; };
-		0A6DD47D71CD3EF80C71229D5D2E51C0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		0B90AFAF0FD73C2E2ACF730A9C0571AD /* Quick-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Quick-tvOS-dummy.m"; path = "../Quick-tvOS/Quick-tvOS-dummy.m"; sourceTree = "<group>"; };
+		0C561EEBF319499E328AFA7B7D86AC85 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		0DAE51FD4E97FB5900BDB642DB7019A4 /* Nimble-macOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Nimble-macOS-prefix.pch"; path = "../Nimble-macOS/Nimble-macOS-prefix.pch"; sourceTree = "<group>"; };
 		0EE690172BA0799921D995EB3F7E5712 /* inlines.c */ = {isa = PBXFileReference; includeInIndex = 1; name = inlines.c; path = Sources/libcmark_gfm/inlines.c; sourceTree = "<group>"; };
 		10B8BE0FCABAC9F7B75DB0275CD7C4EA /* Match.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Match.swift; path = Sources/Nimble/Matchers/Match.swift; sourceTree = "<group>"; };
@@ -930,6 +930,7 @@
 		1F9E43605E50988442227B01AA055AFA /* ExampleMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleMetadata.swift; path = Sources/Quick/ExampleMetadata.swift; sourceTree = "<group>"; };
 		1FFDB6CDA08D2492BB6734336ABFC322 /* QCKDSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QCKDSL.m; path = Sources/QuickObjectiveC/DSL/QCKDSL.m; sourceTree = "<group>"; };
 		20DE5B39E5D381C142B77F8122398A11 /* Nimble-tvOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Nimble-tvOS-Info.plist"; path = "../Nimble-tvOS/Nimble-tvOS-Info.plist"; sourceTree = "<group>"; };
+		226D2E0350A67D752F0416BBF52E66A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		24B295C334DC88EAC494E2D10EDCA21E /* Quick-tvOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Quick-tvOS-prefix.pch"; path = "../Quick-tvOS/Quick-tvOS-prefix.pch"; sourceTree = "<group>"; };
 		24CDD4E72F0C706D9BE0FD953754CE81 /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Quick.framework; path = "Quick-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		263DDF24A3FD445CC1FE3BB92CF503B0 /* SwiftLint-watchOS2.0.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "SwiftLint-watchOS2.0.xcconfig"; path = "../SwiftLint-watchOS2.0/SwiftLint-watchOS2.0.xcconfig"; sourceTree = "<group>"; };
@@ -974,7 +975,6 @@
 		46D040803C29617B0A505A8C644D3B42 /* libcmark_gfm-watchOS2.0-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "libcmark_gfm-watchOS2.0-dummy.m"; path = "../libcmark_gfm-watchOS2.0/libcmark_gfm-watchOS2.0-dummy.m"; sourceTree = "<group>"; };
 		4728E879DE2AAA28C08FD8748EAB8523 /* Pods-MaakuTargets-Maaku-macOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MaakuTargets-Maaku-macOS-Info.plist"; sourceTree = "<group>"; };
 		4835CEBB14F34EA49942B70A047FA47B /* render.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = render.h; path = Sources/libcmark_gfm/include/render.h; sourceTree = "<group>"; };
-		48D98C243823D324258E19E60B99687E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		4970414079EFB7F333F9DCC15296EE59 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		497B0A9521FABE89160776AE664BC265 /* SwiftLint-tvOS9.0.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "SwiftLint-tvOS9.0.xcconfig"; path = "../SwiftLint-tvOS9.0/SwiftLint-tvOS9.0.xcconfig"; sourceTree = "<group>"; };
 		4995BB7CA7A3CE007B9D1FA7116FF2AD /* CwlDarwinDefinitions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CwlDarwinDefinitions.swift; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlPreconditionTesting/CwlDarwinDefinitions.swift; sourceTree = "<group>"; };
@@ -1021,6 +1021,7 @@
 		639A3D2B75A742F01784936BE1ABB3A6 /* Quick-tvOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Quick-tvOS-umbrella.h"; path = "../Quick-tvOS/Quick-tvOS-umbrella.h"; sourceTree = "<group>"; };
 		64DCCE4D69E09657BC29961A507959D9 /* render.c */ = {isa = PBXFileReference; includeInIndex = 1; name = render.c; path = Sources/libcmark_gfm/render.c; sourceTree = "<group>"; };
 		64E17756F4D98BCF8682A794CC0B98CD /* libcmark_gfm-macOS10.11-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "libcmark_gfm-macOS10.11-Info.plist"; path = "../libcmark_gfm-macOS10.11/libcmark_gfm-macOS10.11-Info.plist"; sourceTree = "<group>"; };
+		6565962DAC1ADC17DE2FBF0ED28DD520 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		661BA1811ECF04249E4ABD864D113604 /* DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DSL.swift; path = Sources/Nimble/DSL.swift; sourceTree = "<group>"; };
 		666768AABA70676A1AF3A4DCE0031EA2 /* Pods-MaakuTargets-MaakuTestTargets-MaakuTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MaakuTargets-MaakuTestTargets-MaakuTests-frameworks.sh"; sourceTree = "<group>"; };
 		66A2D033D42ACBA61B29090A4CF65F27 /* strikethrough.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = strikethrough.h; path = Sources/libcmark_gfm/include/strikethrough.h; sourceTree = "<group>"; };
@@ -1054,6 +1055,7 @@
 		7E3E463992C1C55ADB7FDC6BC1CA75E6 /* Pods-MaakuTargets-Maaku-macOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MaakuTargets-Maaku-macOS-acknowledgements.plist"; sourceTree = "<group>"; };
 		7EF0601FE7150E5F55B9BE78FD2D0873 /* Pods-MaakuTargets-MaakuTestTargets-MaakuMacOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MaakuTargets-MaakuTestTargets-MaakuMacOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7F807BA83B6C4113CD8131C2E19A54C7 /* Nimble-tvOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Nimble-tvOS-umbrella.h"; path = "../Nimble-tvOS/Nimble-tvOS-umbrella.h"; sourceTree = "<group>"; };
+		8008FF57D231808E4F6B0BE51C5D2617 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.2.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		80470FDD174E43DA95C4ADB498BB3885 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		806DA4877521E1F7CA1E28AAD4320AAC /* Pods-MaakuTargets-MaakuTestTargets-MaakuTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MaakuTargets-MaakuTestTargets-MaakuTests.modulemap"; sourceTree = "<group>"; };
 		808818B2D894B499418709C6DF425083 /* Expectation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expectation.swift; path = Sources/Nimble/Expectation.swift; sourceTree = "<group>"; };
@@ -1067,7 +1069,6 @@
 		86CC31B52DA3851271348D96F5486D51 /* ToSucceed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToSucceed.swift; path = Sources/Nimble/Matchers/ToSucceed.swift; sourceTree = "<group>"; };
 		88AB863CA477647C51638FEE39D4997C /* libcmark_gfm-iOS9.0-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "libcmark_gfm-iOS9.0-prefix.pch"; sourceTree = "<group>"; };
 		89024F8AFD1FD0C4892292825D1EBADB /* Nimble-macOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Nimble-macOS-Info.plist"; path = "../Nimble-macOS/Nimble-macOS-Info.plist"; sourceTree = "<group>"; };
-		8951D7D6C48D90558017CFD622A4BF56 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		89CDE4A4B90FEFAD68FC74481E09C06A /* DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DSL.swift; path = Sources/Quick/DSL/DSL.swift; sourceTree = "<group>"; };
 		89D2A4E81A724886A624C160D638A0E0 /* node.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = node.h; path = Sources/libcmark_gfm/include/node.h; sourceTree = "<group>"; };
 		8A78A481C0ABFC1A16C01B99744C58B3 /* Pods-MaakuTargets-Maaku-macOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MaakuTargets-Maaku-macOS-dummy.m"; sourceTree = "<group>"; };
@@ -1132,6 +1133,7 @@
 		B86B107DDBB2AD225EC1A3712B5CDC75 /* Pods-MaakuTargets-Maaku-tvOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MaakuTargets-Maaku-tvOS-Info.plist"; sourceTree = "<group>"; };
 		B910DF0C37F7A74797C6CC4C336D1408 /* CwlCatchException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CwlCatchException.h; path = Carthage/Checkouts/CwlCatchException/Sources/CwlCatchExceptionSupport/include/CwlCatchException.h; sourceTree = "<group>"; };
 		B924CB3BEE6AF3E8EB214B5CFDFA41FB /* Pods-MaakuTargets-Maaku.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MaakuTargets-Maaku.release.xcconfig"; sourceTree = "<group>"; };
+		B93599A9FE66FFDC70701B0A9FA8835A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		B953C27A842C6F3F0869F73DF8E99655 /* CwlCatchBadInstructionPosix.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CwlCatchBadInstructionPosix.swift; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlPreconditionTesting/CwlCatchBadInstructionPosix.swift; sourceTree = "<group>"; };
 		B9F6AB9397839D5C63E644F3C2B059DC /* houdini.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = houdini.h; path = Sources/libcmark_gfm/include/houdini.h; sourceTree = "<group>"; };
 		BA7E8228F11C5EBD9F65C9F765A3C125 /* NMBStringify.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMBStringify.m; path = Sources/NimbleObjectiveC/NMBStringify.m; sourceTree = "<group>"; };
@@ -1145,7 +1147,6 @@
 		C642098DD33FD826045163B1F1F016B4 /* NMBObjCMatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NMBObjCMatcher.swift; path = Sources/Nimble/Adapters/NMBObjCMatcher.swift; sourceTree = "<group>"; };
 		C65B17676D0FDD6727E0C9893D1E59C1 /* ElementsEqual.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ElementsEqual.swift; path = Sources/Nimble/Matchers/ElementsEqual.swift; sourceTree = "<group>"; };
 		C690664CE492533EA79AA741E8D079D1 /* footnotes.c */ = {isa = PBXFileReference; includeInIndex = 1; name = footnotes.c; path = Sources/libcmark_gfm/footnotes.c; sourceTree = "<group>"; };
-		C76907429CA64D8169BC779410D37614 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		C7BE33155B1350FEA8E50C39D8E91174 /* Quick-macOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Quick-macOS-prefix.pch"; path = "../Quick-macOS/Quick-macOS-prefix.pch"; sourceTree = "<group>"; };
 		C9312D3D2B63301B23ABF54E5747F290 /* map.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = map.h; path = Sources/libcmark_gfm/include/map.h; sourceTree = "<group>"; };
 		C9FDB133F3276E492A2DF411E0D2D5A1 /* Pods-MaakuTargets-MaakuTestTargets-Maaku-tvOSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MaakuTargets-MaakuTestTargets-Maaku-tvOSTests-dummy.m"; sourceTree = "<group>"; };
@@ -1187,7 +1188,6 @@
 		F008D5A6D8405CE4E8EEE5592DAE1037 /* libcmark_gfm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = libcmark_gfm.framework; path = "libcmark_gfm-macOS10.11.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F058DAD18931213C1B540E0D6A3E242D /* NMBExceptionCapture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMBExceptionCapture.h; path = Sources/NimbleObjectiveC/NMBExceptionCapture.h; sourceTree = "<group>"; };
 		F0CEAB0D5CEDE4017D52392141225561 /* ExampleHooks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleHooks.swift; path = Sources/Quick/Hooks/ExampleHooks.swift; sourceTree = "<group>"; };
-		F0EF2BF74C17AAA0C995DE1E61056DF3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F1F021E7BEE00C69D2D12F246408D2CF /* AssertionRecorder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssertionRecorder.swift; path = Sources/Nimble/Adapters/AssertionRecorder.swift; sourceTree = "<group>"; };
 		F2A4FB2E87F95EE5E3203909B33CE7B2 /* html.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = html.h; path = Sources/libcmark_gfm/include/html.h; sourceTree = "<group>"; };
 		F418582D74BA6FB1C02CBFAC56DD92DC /* Pods-MaakuTargets-Maaku-watchOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MaakuTargets-Maaku-watchOS-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -1214,8 +1214,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDE409A668BACAC1123CF65D84C845B2 /* Foundation.framework in Frameworks */,
-				431FBE45EBF72847B5BF2CAA089A8ACE /* XCTest.framework in Frameworks */,
+				F716F546F62132EE6F0EEEB46953858D /* Foundation.framework in Frameworks */,
+				5EAA26AE332B12F04D786C3FB2F511C4 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1223,7 +1223,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				830D6AD5FB23E3103EC4B14706B604CC /* Foundation.framework in Frameworks */,
+				FB5C64F5BFD0178A727B37826C536571 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1247,7 +1247,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAD9C76429EBB1B88985F2F127677E82 /* Foundation.framework in Frameworks */,
+				372EBBBEFBDB90BE3DCD47E325A0197D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1255,8 +1255,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E8AA71124BD0C93A5DA74A4C9D9A2ED /* Foundation.framework in Frameworks */,
-				8162193BA051BD216494AB8BFC28F7D7 /* XCTest.framework in Frameworks */,
+				51A1E9C2C96E50E1FE70E33D283492E0 /* Foundation.framework in Frameworks */,
+				8587866E10A68706367A44FD4801F2C0 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1264,7 +1264,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70A90B2E10DD07241F69C47301E10D1C /* Foundation.framework in Frameworks */,
+				2C9A84B25F676D8A6C3AE58D09F0D9E3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1272,7 +1272,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF00C18DCBBA60545D478C909A89DD77 /* Foundation.framework in Frameworks */,
+				2B54A259C4F688DEAC5801A173B2D69E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1280,7 +1280,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2DAF8071C8C040DC13D9A77695F180C /* Foundation.framework in Frameworks */,
+				D059E6CC5450C47718918E15A2E007BC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1288,7 +1288,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F2B1542EF2E96A489DB0AE8C4E567D5 /* Foundation.framework in Frameworks */,
+				9B518E87B8550A623618B3E9225491B8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1313,7 +1313,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7AFE18CCDA7C404BB0C213DF707766D /* Foundation.framework in Frameworks */,
+				F40FE4390CC1931BDCD864C0A70D4D0E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1321,7 +1321,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70BC5ACAFD2C9405552C8B862DD32E6D /* Foundation.framework in Frameworks */,
+				B0B7A19FBC2203A0CD5FD417B1F052BD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1345,7 +1345,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				739D30D5D189B1579EADA0B43AF0338C /* Foundation.framework in Frameworks */,
+				734D2B307365CF15F8FA2B9F75610B20 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1353,7 +1353,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11632EA32BC8D8DCA81405EDD12AFA6B /* Foundation.framework in Frameworks */,
+				EA255DB3B4AECC4B71BD6B897911791B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1441,13 +1441,12 @@
 			path = Nimble;
 			sourceTree = "<group>";
 		};
-		17B9FBA92E56CF8E87F0C3F5894E81F9 /* tvOS */ = {
+		1427A57C587C79BF526380CF211EC2C6 /* watchOS */ = {
 			isa = PBXGroup;
 			children = (
-				0A6DD47D71CD3EF80C71229D5D2E51C0 /* Foundation.framework */,
-				F0EF2BF74C17AAA0C995DE1E61056DF3 /* XCTest.framework */,
+				B93599A9FE66FFDC70701B0A9FA8835A /* Foundation.framework */,
 			);
-			name = tvOS;
+			name = watchOS;
 			sourceTree = "<group>";
 		};
 		1A3DAD790FAD44EE5E760A971FF47D30 /* SwiftLint */ = {
@@ -1473,6 +1472,15 @@
 			);
 			name = "Pods-MaakuTargets-Maaku-macOS";
 			path = "Target Support Files/Pods-MaakuTargets-Maaku-macOS";
+			sourceTree = "<group>";
+		};
+		207FE1D25EC81F01069D69C40473A072 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				226D2E0350A67D752F0416BBF52E66A6 /* Foundation.framework */,
+				0C561EEBF319499E328AFA7B7D86AC85 /* XCTest.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		3ABFAFA701F72A7F9B753934A8446485 /* Pods-MaakuTargets-Maaku-watchOS */ = {
@@ -1633,13 +1641,13 @@
 			path = "Target Support Files/Pods-MaakuTargets-MaakuTestTargets-MaakuTests";
 			sourceTree = "<group>";
 		};
-		A0F054F0640A7C4226436DCB428B7F30 /* iOS */ = {
+		A58904F2AD9F27A49E48DB9D47B1B5B6 /* tvOS */ = {
 			isa = PBXGroup;
 			children = (
-				48D98C243823D324258E19E60B99687E /* Foundation.framework */,
-				C76907429CA64D8169BC779410D37614 /* XCTest.framework */,
+				6565962DAC1ADC17DE2FBF0ED28DD520 /* Foundation.framework */,
+				8008FF57D231808E4F6B0BE51C5D2617 /* XCTest.framework */,
 			);
-			name = iOS;
+			name = tvOS;
 			sourceTree = "<group>";
 		};
 		A8AE5D392AA2F0F18070E3281F4A880D /* libcmark_gfm */ = {
@@ -1854,14 +1862,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		FBEEE950BBF5E93686FBC5DB93DAE732 /* watchOS */ = {
-			isa = PBXGroup;
-			children = (
-				8951D7D6C48D90558017CFD622A4BF56 /* Foundation.framework */,
-			);
-			name = watchOS;
-			sourceTree = "<group>";
-		};
 		FC0717A11BE815862C0F9EFB264A2EBC /* Pods-MaakuTargets-Maaku-tvOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -1881,10 +1881,10 @@
 		FC5F3079966C654F0CFF7334DB86A1A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A0F054F0640A7C4226436DCB428B7F30 /* iOS */,
+				207FE1D25EC81F01069D69C40473A072 /* iOS */,
 				C05D6B533007B6F0712645B4B39F6F94 /* OS X */,
-				17B9FBA92E56CF8E87F0C3F5894E81F9 /* tvOS */,
-				FBEEE950BBF5E93686FBC5DB93DAE732 /* watchOS */,
+				A58904F2AD9F27A49E48DB9D47B1B5B6 /* tvOS */,
+				1427A57C587C79BF526380CF211EC2C6 /* watchOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2587,12 +2587,12 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 8.0";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -3516,6 +3516,69 @@
 			};
 			name = Release;
 		};
+		19F0C8D14ED8388AB5C4C2F4C2A84DF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9589B374446569EFBE70BB44C49F8CED /* libcmark_gfm-watchOS2.0.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/libcmark_gfm-watchOS2.0/libcmark_gfm-watchOS2.0-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/libcmark_gfm-watchOS2.0/libcmark_gfm-watchOS2.0-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/libcmark_gfm-watchOS2.0/libcmark_gfm-watchOS2.0.modulemap";
+				PRODUCT_MODULE_NAME = libcmark_gfm;
+				PRODUCT_NAME = libcmark_gfm;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		28FC8EB6BD0228644B09A5AF0809E74A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E7761FD85716AA7DF0B2A9A873896CB /* libcmark_gfm-iOS9.0.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/libcmark_gfm-iOS9.0/libcmark_gfm-iOS9.0-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/libcmark_gfm-iOS9.0/libcmark_gfm-iOS9.0-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/libcmark_gfm-iOS9.0/libcmark_gfm-iOS9.0.modulemap";
+				PRODUCT_MODULE_NAME = libcmark_gfm;
+				PRODUCT_NAME = libcmark_gfm;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		39ABCB437D41AA3F9C36E70CC8764E17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4D9C60B9F2EA0BD534000182AAAD45B5 /* Pods-MaakuTargets-Maaku-macOS.debug.xcconfig */;
@@ -3621,10 +3684,11 @@
 			};
 			name = Debug;
 		};
-		42CC318317DC55C3FC1FC33A6B5906CA /* Debug */ = {
+		4679A234AD2421E7883CDE010BAA0F2B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13935851D9C731F910298D7CAC45A415 /* libcmark_gfm-tvOS9.0.xcconfig */;
+			baseConfigurationReference = 9589B374446569EFBE70BB44C49F8CED /* libcmark_gfm-watchOS2.0.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -3634,19 +3698,54 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/libcmark_gfm-tvOS9.0/libcmark_gfm-tvOS9.0-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/libcmark_gfm-tvOS9.0/libcmark_gfm-tvOS9.0-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/libcmark_gfm-watchOS2.0/libcmark_gfm-watchOS2.0-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/libcmark_gfm-watchOS2.0/libcmark_gfm-watchOS2.0-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/libcmark_gfm-tvOS9.0/libcmark_gfm-tvOS9.0.modulemap";
+				MODULEMAP_FILE = "Target Support Files/libcmark_gfm-watchOS2.0/libcmark_gfm-watchOS2.0.modulemap";
 				PRODUCT_MODULE_NAME = libcmark_gfm;
 				PRODUCT_NAME = libcmark_gfm;
-				SDKROOT = appletvos;
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		4759E91454D11B79CA612418A0757018 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B21D3629C4FB42879F2701888176F89A /* libcmark_gfm-macOS10.10.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/libcmark_gfm-macOS10.10/libcmark_gfm-macOS10.10-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/libcmark_gfm-macOS10.10/libcmark_gfm-macOS10.10-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/libcmark_gfm-macOS10.10/libcmark_gfm-macOS10.10.modulemap";
+				PRODUCT_MODULE_NAME = libcmark_gfm;
+				PRODUCT_NAME = libcmark_gfm;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -3685,6 +3784,40 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		59DBFA9B845B628BB670EE7C46DAB967 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E6E45E29659CE92BA3EF2A814088059 /* libcmark_gfm-macOS10.11.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/libcmark_gfm-macOS10.11/libcmark_gfm-macOS10.11-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/libcmark_gfm-macOS10.11/libcmark_gfm-macOS10.11-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/libcmark_gfm-macOS10.11/libcmark_gfm-macOS10.11.modulemap";
+				PRODUCT_MODULE_NAME = libcmark_gfm;
+				PRODUCT_NAME = libcmark_gfm;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		5CA9E7C9F5E908728C271AEEBBF11E25 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -3734,6 +3867,38 @@
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
+		};
+		6326ACCB1B69A7E5B679D13528EB44A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13935851D9C731F910298D7CAC45A415 /* libcmark_gfm-tvOS9.0.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/libcmark_gfm-tvOS9.0/libcmark_gfm-tvOS9.0-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/libcmark_gfm-tvOS9.0/libcmark_gfm-tvOS9.0-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/libcmark_gfm-tvOS9.0/libcmark_gfm-tvOS9.0.modulemap";
+				PRODUCT_MODULE_NAME = libcmark_gfm;
+				PRODUCT_NAME = libcmark_gfm;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		676BAD734A721FEF9D53494EFABA47DF /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -3834,38 +3999,6 @@
 			};
 			name = Debug;
 		};
-		6AAE86845CE3565334AC79C5487C8639 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13935851D9C731F910298D7CAC45A415 /* libcmark_gfm-tvOS9.0.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/libcmark_gfm-tvOS9.0/libcmark_gfm-tvOS9.0-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/libcmark_gfm-tvOS9.0/libcmark_gfm-tvOS9.0-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/libcmark_gfm-tvOS9.0/libcmark_gfm-tvOS9.0.modulemap";
-				PRODUCT_MODULE_NAME = libcmark_gfm;
-				PRODUCT_NAME = libcmark_gfm;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		73390CAD2A608E401F274D01A8A2F064 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AED11716B37749EF1AB5A2C8A0721FED /* Pods-MaakuTargets-Maaku.debug.xcconfig */;
@@ -3898,73 +4031,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		737DA684CA24625EC8A02D04E05D9024 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E6E45E29659CE92BA3EF2A814088059 /* libcmark_gfm-macOS10.11.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/libcmark_gfm-macOS10.11/libcmark_gfm-macOS10.11-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/libcmark_gfm-macOS10.11/libcmark_gfm-macOS10.11-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/libcmark_gfm-macOS10.11/libcmark_gfm-macOS10.11.modulemap";
-				PRODUCT_MODULE_NAME = libcmark_gfm;
-				PRODUCT_NAME = libcmark_gfm;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		73E85CAEC023C45F2CF18746D6289A44 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9589B374446569EFBE70BB44C49F8CED /* libcmark_gfm-watchOS2.0.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/libcmark_gfm-watchOS2.0/libcmark_gfm-watchOS2.0-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/libcmark_gfm-watchOS2.0/libcmark_gfm-watchOS2.0-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/libcmark_gfm-watchOS2.0/libcmark_gfm-watchOS2.0.modulemap";
-				PRODUCT_MODULE_NAME = libcmark_gfm;
-				PRODUCT_NAME = libcmark_gfm;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 4;
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
 		};
 		74C0A2B58DC82F18E05407A7A84752FA /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -4015,7 +4081,7 @@
 			};
 			name = Release;
 		};
-		87881B479BDE12F34CA5F5C2EFC0B9FE /* Debug */ = {
+		8460BD811929C2084B48F38B36D42E16 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4E7761FD85716AA7DF0B2A9A873896CB /* libcmark_gfm-iOS9.0.xcconfig */;
 			buildSettings = {
@@ -4039,44 +4105,13 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
-		};
-		8FD7581D66AE53F7007914291E1A127B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9589B374446569EFBE70BB44C49F8CED /* libcmark_gfm-watchOS2.0.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/libcmark_gfm-watchOS2.0/libcmark_gfm-watchOS2.0-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/libcmark_gfm-watchOS2.0/libcmark_gfm-watchOS2.0-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/libcmark_gfm-watchOS2.0/libcmark_gfm-watchOS2.0.modulemap";
-				PRODUCT_MODULE_NAME = libcmark_gfm;
-				PRODUCT_NAME = libcmark_gfm;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 4;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
+			name = Release;
 		};
 		8FDD6C96F9870B8D5138017325ECF3D0 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -4109,69 +4144,6 @@
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		907B3FC7B9F85CE24B49EE47B49ED1F5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
-				SYMROOT = "${SRCROOT}/../build";
-				TVOS_DEPLOYMENT_TARGET = 9.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
@@ -4351,39 +4323,99 @@
 			};
 			name = Release;
 		};
-		A86C87730D9E84FDCDE8E5A82625D856 /* Release */ = {
+		9F30DC4260FA8D96703F498DDA34558A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E6E45E29659CE92BA3EF2A814088059 /* libcmark_gfm-macOS10.11.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		9FA63419E9A02DD516A2D1E620879FD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13935851D9C731F910298D7CAC45A415 /* libcmark_gfm-tvOS9.0.xcconfig */;
+			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/libcmark_gfm-macOS10.11/libcmark_gfm-macOS10.11-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/libcmark_gfm-macOS10.11/libcmark_gfm-macOS10.11-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/libcmark_gfm-tvOS9.0/libcmark_gfm-tvOS9.0-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/libcmark_gfm-tvOS9.0/libcmark_gfm-tvOS9.0-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/libcmark_gfm-macOS10.11/libcmark_gfm-macOS10.11.modulemap";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/libcmark_gfm-tvOS9.0/libcmark_gfm-tvOS9.0.modulemap";
 				PRODUCT_MODULE_NAME = libcmark_gfm;
 				PRODUCT_NAME = libcmark_gfm;
-				SDKROOT = macosx;
+				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		ACA4814A8ACEEF7A01952EE8D71FDCA5 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -4453,40 +4485,6 @@
 			};
 			name = Release;
 		};
-		B48358D8B5AE729F01C4AD1CB4BB15F3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B21D3629C4FB42879F2701888176F89A /* libcmark_gfm-macOS10.10.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/libcmark_gfm-macOS10.10/libcmark_gfm-macOS10.10-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/libcmark_gfm-macOS10.10/libcmark_gfm-macOS10.10-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/libcmark_gfm-macOS10.10/libcmark_gfm-macOS10.10.modulemap";
-				PRODUCT_MODULE_NAME = libcmark_gfm;
-				PRODUCT_NAME = libcmark_gfm;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		B4EDD770D42075DF90198F7BA525A8BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E69F2892849742111950DB13273B4749 /* Pods-MaakuTargets-Maaku-tvOS.debug.xcconfig */;
@@ -4519,40 +4517,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		B686D34F305EC9B63557EF134CC82FAD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B21D3629C4FB42879F2701888176F89A /* libcmark_gfm-macOS10.10.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/libcmark_gfm-macOS10.10/libcmark_gfm-macOS10.10-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/libcmark_gfm-macOS10.10/libcmark_gfm-macOS10.10-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/libcmark_gfm-macOS10.10/libcmark_gfm-macOS10.10.modulemap";
-				PRODUCT_MODULE_NAME = libcmark_gfm;
-				PRODUCT_NAME = libcmark_gfm;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		C9B7A8D816F7C6EA6B7DD1078077207D /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -4615,6 +4579,40 @@
 			};
 			name = Release;
 		};
+		D98934BB0448474DBBDB7FC1BD29DDA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E6E45E29659CE92BA3EF2A814088059 /* libcmark_gfm-macOS10.11.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/libcmark_gfm-macOS10.11/libcmark_gfm-macOS10.11-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/libcmark_gfm-macOS10.11/libcmark_gfm-macOS10.11-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/libcmark_gfm-macOS10.11/libcmark_gfm-macOS10.11.modulemap";
+				PRODUCT_MODULE_NAME = libcmark_gfm;
+				PRODUCT_NAME = libcmark_gfm;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		DBF924234B98731A6A406E994FD9367F /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1A88C53FF8DCE4DD55B29D8878A35CF0 /* Nimble-iOS.xcconfig */;
@@ -4647,37 +4645,72 @@
 			};
 			name = Release;
 		};
-		E260E5C30CAF633A49E4671DD5D24390 /* Release */ = {
+		E2CDD4078FD8AE2E152CD858E9926545 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E7761FD85716AA7DF0B2A9A873896CB /* libcmark_gfm-iOS9.0.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/libcmark_gfm-iOS9.0/libcmark_gfm-iOS9.0-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/libcmark_gfm-iOS9.0/libcmark_gfm-iOS9.0-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/libcmark_gfm-iOS9.0/libcmark_gfm-iOS9.0.modulemap";
-				PRODUCT_MODULE_NAME = libcmark_gfm;
-				PRODUCT_NAME = libcmark_gfm;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
-			name = Release;
+			name = Debug;
 		};
 		E3CE5CEDE843DEDBAAEC48152265310C /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -4745,73 +4778,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		EAB0701CEF44DA6FC0F2616388C6791A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_DEBUG=1",
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				SYMROOT = "${SRCROOT}/../build";
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
 		};
 		F190EFA4A22BF8585C2F724368B9072F /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -4889,6 +4855,40 @@
 			};
 			name = Debug;
 		};
+		F623DE7E5D54842AF35A2EFC30577F34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B21D3629C4FB42879F2701888176F89A /* libcmark_gfm-macOS10.10.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/libcmark_gfm-macOS10.10/libcmark_gfm-macOS10.10-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/libcmark_gfm-macOS10.10/libcmark_gfm-macOS10.10-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/libcmark_gfm-macOS10.10/libcmark_gfm-macOS10.10.modulemap";
+				PRODUCT_MODULE_NAME = libcmark_gfm;
+				PRODUCT_NAME = libcmark_gfm;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		F95099C09F3A85A134D57A361353BD98 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ABDBD60B263E7DB7A8021B1BA119168B /* Pods-MaakuTargets-MaakuTestTargets-MaakuTests.release.xcconfig */;
@@ -4938,8 +4938,8 @@
 		1A96469ADC9B4407B940862D3E5B23EE /* Build configuration list for PBXNativeTarget "libcmark_gfm-macOS10.10" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B48358D8B5AE729F01C4AD1CB4BB15F3 /* Debug */,
-				B686D34F305EC9B63557EF134CC82FAD /* Release */,
+				4759E91454D11B79CA612418A0757018 /* Debug */,
+				F623DE7E5D54842AF35A2EFC30577F34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4974,8 +4974,8 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EAB0701CEF44DA6FC0F2616388C6791A /* Debug */,
-				907B3FC7B9F85CE24B49EE47B49ED1F5 /* Release */,
+				E2CDD4078FD8AE2E152CD858E9926545 /* Debug */,
+				9F30DC4260FA8D96703F498DDA34558A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -5064,8 +5064,8 @@
 		ACD55C19C04A352465A66E2858DB47B0 /* Build configuration list for PBXNativeTarget "libcmark_gfm-tvOS9.0" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				42CC318317DC55C3FC1FC33A6B5906CA /* Debug */,
-				6AAE86845CE3565334AC79C5487C8639 /* Release */,
+				9FA63419E9A02DD516A2D1E620879FD8 /* Debug */,
+				6326ACCB1B69A7E5B679D13528EB44A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -5082,8 +5082,8 @@
 		B24B9493159F265B076BA437A171A642 /* Build configuration list for PBXNativeTarget "libcmark_gfm-watchOS2.0" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8FD7581D66AE53F7007914291E1A127B /* Debug */,
-				73E85CAEC023C45F2CF18746D6289A44 /* Release */,
+				19F0C8D14ED8388AB5C4C2F4C2A84DF5 /* Debug */,
+				4679A234AD2421E7883CDE010BAA0F2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -5100,8 +5100,8 @@
 		CC214E8E761A7FF34700F59075448B0A /* Build configuration list for PBXNativeTarget "libcmark_gfm-iOS9.0" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				87881B479BDE12F34CA5F5C2EFC0B9FE /* Debug */,
-				E260E5C30CAF633A49E4671DD5D24390 /* Release */,
+				28FC8EB6BD0228644B09A5AF0809E74A /* Debug */,
+				8460BD811929C2084B48F38B36D42E16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -5127,8 +5127,8 @@
 		EE3498B0078103111370FBF526B3904B /* Build configuration list for PBXNativeTarget "libcmark_gfm-macOS10.11" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				737DA684CA24625EC8A02D04E05D9024 /* Debug */,
-				A86C87730D9E84FDCDE8E5A82625D856 /* Release */,
+				59DBFA9B845B628BB670EE7C46DAB967 /* Debug */,
+				D98934BB0448474DBBDB7FC1BD29DDA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
