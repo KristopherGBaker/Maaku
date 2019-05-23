@@ -41,82 +41,82 @@ public protocol CMParserDelegate: class {
     ///
     /// - Parameters:
     ///     - parser: The parser.
-    func parserDidStartDocument(parser: CMParser)
+    func parserDidStartDocument(parser: CMParser) throws
 
     /// Sent by the parser object to the delegate when it has successfully completed parsing.
     ///
     /// - Parameters:
     ///     - parser: The parser.
-    func parserDidEndDocument(parser: CMParser)
+    func parserDidEndDocument(parser: CMParser) throws
 
     /// Sent by the parser object to the delegate when it aborts parsing.
     ///
     /// - Parameters:
     ///     - parser: The parser.
-    func parserDidAbort(parser: CMParser)
+    func parserDidAbort(parser: CMParser) throws
 
     /// Sent by the parser object to the delegate when it finds text.
     ///
     /// - Parameters:
     ///     - parser: The parser.
     ///     - text: The text.
-    func parser(parser: CMParser, foundText text: String)
+    func parser(parser: CMParser, foundText text: String) throws
 
     /// Sent by the parser object to the delegate when it finds a thematic break (horizontal rule).
     ///
     /// - Parameters:
     ///     - parser: The parser.
-    func parserFoundThematicBreak(parser: CMParser)
+    func parserFoundThematicBreak(parser: CMParser) throws
 
     /// Sent by the parser object to the delegate when it encounters the start of a heading.
     ///
     /// - Parameters:
     ///     - parser: The parser.
     ///     - level: The heading level.
-    func parser(parser: CMParser, didStartHeadingWithLevel level: Int32)
+    func parser(parser: CMParser, didStartHeadingWithLevel level: Int32) throws
 
     /// Sent by the parser object to the delegate when it encounters the end of a heading.
     ///
     /// - Parameters:
     ///     - parser: The parser.
     ///     - level: The heading level.
-    func parser(parser: CMParser, didEndHeadingWithLevel level: Int32)
+    func parser(parser: CMParser, didEndHeadingWithLevel level: Int32) throws
 
     /// Sent by the parser object to the delegate when it encounters the start of a paragraph.
     ///
     /// - Parameters:
     ///     - parser: The parser.
-    func parserDidStartParagraph(parser: CMParser)
+    func parserDidStartParagraph(parser: CMParser) throws
 
     /// Sent by the parser object to the delegate when it encounters the end of a paragraph.
     ///
     /// - Parameters:
     ///     - parser: The parser.
-    func parserDidEndParagraph(parser: CMParser)
+    func parserDidEndParagraph(parser: CMParser) throws
 
     /// Sent by the parser object to the delegate when it encounters the start of an emphasis.
     ///
     /// - Parameters:
     ///     - parser: The parser.
-    func parserDidStartEmphasis(parser: CMParser)
+    func parserDidStartEmphasis(parser: CMParser) throws
 
     /// Sent by the parser object to the delegate when it encounters the end of an emphasis.
     ///
     /// - Parameters:
     ///     - parser: The parser.
-    func parserDidEndEmphasis(parser: CMParser)
+    func parserDidEndEmphasis(parser: CMParser) throws
 
     /// Sent by the parser object to the delegate when it encounters the start of a strong.
     ///
     /// - Parameters:
     ///     - parser: The parser.
-    func parserDidStartStrong(parser: CMParser)
+    func parserDidStartStrong(parser: CMParser) throws
 
     /// Sent by the parser object to the delegate when it encounters the end of a strong.
     ///
     /// - Parameters:
     ///     - parser: The parser.
-    func parserDidEndStrong(parser: CMParser)
+    func parserDidEndStrong(parser: CMParser) throws
 
     /// Sent by the parser object to the delegate when it encounters the start of a link.
     ///
@@ -124,7 +124,7 @@ public protocol CMParserDelegate: class {
     ///     - parser: The parser.
     ///     - destination: The link destination.
     ///     - title: The link title.
-    func parser(parser: CMParser, didStartLinkWithDestination destination: String?, title: String?)
+    func parser(parser: CMParser, didStartLinkWithDestination destination: String?, title: String?) throws
 
     /// Sent by the parser object to the delegate when it encounters the end of a link.
     ///
@@ -132,7 +132,7 @@ public protocol CMParserDelegate: class {
     ///     - parser: The parser.
     ///     - destination: The link destination.
     ///     - title: The link title.
-    func parser(parser: CMParser, didEndLinkWithDestination destination: String?, title: String?)
+    func parser(parser: CMParser, didEndLinkWithDestination destination: String?, title: String?) throws
 
     /// Sent by the parser object to the delegate when it encounters the start of an image.
     ///
@@ -140,7 +140,7 @@ public protocol CMParserDelegate: class {
     ///     - parser: The parser.
     ///     - destination: The image destination.
     ///     - title: The image title.
-    func parser(parser: CMParser, didStartImageWithDestination destination: String?, title: String?)
+    func parser(parser: CMParser, didStartImageWithDestination destination: String?, title: String?) throws
 
     /// Sent by the parser object to the delegate when it encounters the end of an image.
     ///
@@ -148,21 +148,21 @@ public protocol CMParserDelegate: class {
     ///     - parser: The parser.
     ///     - destination: The image destination.
     ///     - title: The image title.
-    func parser(parser: CMParser, didEndImageWithDestination destination: String?, title: String?)
+    func parser(parser: CMParser, didEndImageWithDestination destination: String?, title: String?) throws
 
     /// Sent by the parser object to the delegate when it encounters an HTML block.
     ///
     /// - Parameters:
     ///     - parser: The parser.
     ///     - html: The HTML.
-    func parser(parser: CMParser, foundHtml html: String)
+    func parser(parser: CMParser, foundHtml html: String) throws
 
     /// Sent by the parser object to the delegate when it encounters inline HTML.
     ///
     /// - Parameters:
     ///     - parser: The parser.
     ///     - html: The HTML.
-    func parser(parser: CMParser, foundInlineHtml html: String)
+    func parser(parser: CMParser, foundInlineHtml html: String) throws
 
     /// Sent by the parser object to the delegate when it encounters a code block.
     ///
@@ -170,52 +170,52 @@ public protocol CMParserDelegate: class {
     ///     - parser: The parser.
     ///     - code: The code.
     ///     - info: The code info (language).
-    func parser(parser: CMParser, foundCodeBlock code: String, info: String)
+    func parser(parser: CMParser, foundCodeBlock code: String, info: String) throws
 
     /// Sent by the parser object to the delegate when it encounters inline code.
     ///
     /// - Parameters:
     ///     - parser: The parser.
     ///     - code: The code.
-    func parser(parser: CMParser, foundInlineCode code: String)
+    func parser(parser: CMParser, foundInlineCode code: String) throws
 
     /// Sent by the parser object to the delegate when it encounters a soft break.
     ///
     /// - Parameters:
     ///     - parser: The parser.
-    func parserFoundSoftBreak(parser: CMParser)
+    func parserFoundSoftBreak(parser: CMParser) throws
 
     /// Sent by the parser object to the delegate when it encounters a line break.
     ///
     /// - Parameters:
     ///     - parser: The parser.
-    func parserFoundLineBreak(parser: CMParser)
+    func parserFoundLineBreak(parser: CMParser) throws
 
     /// Sent by the parser object to the delegate when it encounters the start of a blockquote.
     ///
     /// - Parameters:
     ///     - parser: The parser.
-    func parserDidStartBlockQuote(parser: CMParser)
+    func parserDidStartBlockQuote(parser: CMParser) throws
 
     /// Sent by the parser object to the delegate when it encounters the end of a blockquote.
     ///
     /// - Parameters:
     ///     - parser: The parser.
-    func parserDidEndBlockQuote(parser: CMParser)
+    func parserDidEndBlockQuote(parser: CMParser) throws
 
     /// Sent by the parser object to the delegate when it encounters the start of an unordered list.
     ///
     /// - Parameters:
     ///     - parser: The parser.
     ///     - tight: The list tightness.
-    func parser(parser: CMParser, didStartUnorderedListWithTightness tight: Bool)
+    func parser(parser: CMParser, didStartUnorderedListWithTightness tight: Bool) throws
 
     /// Sent by the parser object to the delegate when it encounters the end of an unordered list.
     ///
     /// - Parameters:
     ///     - parser: The parser.
     ///     - tight: The list tightness.
-    func parser(parser: CMParser, didEndUnorderedListWithTightness tight: Bool)
+    func parser(parser: CMParser, didEndUnorderedListWithTightness tight: Bool) throws
 
     /// Sent by the parser object to the delegate when it encounters the start of an ordered list.
     ///
@@ -223,7 +223,7 @@ public protocol CMParserDelegate: class {
     ///     - parser: The parser.
     ///     - num: The list starting number.
     ///     - tight: The list tightness.
-    func parser(parser: CMParser, didStartOrderedListWithStartingNumber num: Int32, tight: Bool)
+    func parser(parser: CMParser, didStartOrderedListWithStartingNumber num: Int32, tight: Bool) throws
 
     /// Sent by the parser object to the delegate when it encounters the end of an ordered list.
     ///
@@ -231,68 +231,68 @@ public protocol CMParserDelegate: class {
     ///     - parser: The parser.
     ///     - num: The list starting number.
     ///     - tight: The list tightness.
-    func parser(parser: CMParser, didEndOrderedListWithStartingNumber num: Int32, tight: Bool)
+    func parser(parser: CMParser, didEndOrderedListWithStartingNumber num: Int32, tight: Bool) throws
 
     /// Sent by the parser object to the delegate when it encounters the start of a list item.
     ///
     /// - Parameters:
     ///     - parser: The parser.
-    func parserDidStartListItem(parser: CMParser)
+    func parserDidStartListItem(parser: CMParser) throws
 
     /// Sent by the parser object to the delegate when it encounters the end of a list item.
     ///
     /// - Parameters:
     ///     - parser: The parser.
-    func parserDidEndListItem(parser: CMParser)
+    func parserDidEndListItem(parser: CMParser) throws
 
     /// Sent by the parser object to the delegate when it encounters the start of a custom block.
     ///
     /// - Parameters:
     ///     - parser: The parser.
     ///     - contents: The custom block contents.
-    func parser(parser: CMParser, didStartCustomBlock contents: String)
+    func parser(parser: CMParser, didStartCustomBlock contents: String) throws
 
     /// Sent by the parser object to the delegate when it encounters the end of a custom block.
     ///
     /// - Parameters:
     ///     - parser: The parser.
     ///     - contents: The custom block contents.
-    func parser(parser: CMParser, didEndCustomBlock contents: String)
+    func parser(parser: CMParser, didEndCustomBlock contents: String) throws
 
     /// Sent by the parser object to the delegate when it encounters the start of a custom inline.
     ///
     /// - Parameters:
     ///     - parser: The parser.
     ///     - contents: The custom block contents.
-    func parser(parser: CMParser, didStartCustomInline contents: String)
+    func parser(parser: CMParser, didStartCustomInline contents: String) throws
 
     /// Sent by the parser object to the delegate when it encounters the end of a custom inline.
     ///
     /// - Parameters:
     ///     - parser: The parser.
     ///     - contents: The custom block contents.
-    func parser(parser: CMParser, didEndCustomInline contents: String)
+    func parser(parser: CMParser, didEndCustomInline contents: String) throws
 
     /// Sent by the parser object to the delegate when it encounters the start of a footnote definition.
     ///
     /// - Parameters:
     ///     - parser: The parser.
     ///     - num: The footnote definition number.
-    func parser(parser: CMParser, didStartFootnoteDefinition num: Int32)
+    func parser(parser: CMParser, didStartFootnoteDefinition num: Int32) throws
 
     /// Sent by the parser object to the delegate when it encounters the end of a footnote definition.
     ///
     /// - Parameters:
     ///     - parser: The parser.
     ///     - num: The footnote definition number.
-    func parser(parser: CMParser, didEndFootnoteDefinition num: Int32)
+    func parser(parser: CMParser, didEndFootnoteDefinition num: Int32) throws
 
     /// Sent by the parser object to the delegate when it encounters a footnote reference.
     ///
     /// - Parameters:
     ///     - parser: The parser.
     ///     - reference: The footnote reference.
-    func parser(parser: CMParser, foundFootnoteReference reference: String)
+    func parser(parser: CMParser, foundFootnoteReference reference: String) throws
 
     /// Sent by the parser object to the delegate when it encounters the start of a table.
     ///
@@ -300,7 +300,7 @@ public protocol CMParserDelegate: class {
     ///     - parser: The parser.
     ///     - columns: The number of table columns.
     ///     - alignemnts: The table alignments.
-    func parser(parser: CMParser, didStartTableWithColumns columns: UInt16, alignments: [String])
+    func parser(parser: CMParser, didStartTableWithColumns columns: UInt16, alignments: [String]) throws
 
     /// Sent by the parser object to the delegate when it encounters the end of a table.
     ///
@@ -308,69 +308,69 @@ public protocol CMParserDelegate: class {
     ///     - parser: The parser.
     ///     - columns: The number of table columns.
     ///     - alignemnts: The table alignments.
-    func parser(parser: CMParser, didEndTableWithColumns columns: UInt16, alignments: [String])
+    func parser(parser: CMParser, didEndTableWithColumns columns: UInt16, alignments: [String]) throws
 
     /// Sent by the parser object to the delegate when it encounters the start of a table header.
     ///
     /// - Parameters:
     ///     - parser: The parser.
-    func parserDidStartTableHeader(parser: CMParser)
+    func parserDidStartTableHeader(parser: CMParser) throws
 
     /// Sent by the parser object to the delegate when it encounters the end of a table header.
     ///
     /// - Parameters:
     ///     - parser: The parser.
-    func parserDidEndTableHeader(parser: CMParser)
+    func parserDidEndTableHeader(parser: CMParser) throws
 
     /// Sent by the parser object to the delegate when it encounters the start of a table row.
     ///
     /// - Parameters:
     ///     - parser: The parser.
-    func parserDidStartTableRow(parser: CMParser)
+    func parserDidStartTableRow(parser: CMParser) throws
 
     /// Sent by the parser object to the delegate when it encounters the end of a table row.
     ///
     /// - Parameters:
     ///     - parser: The parser.
-    func parserDidEndTableRow(parser: CMParser)
+    func parserDidEndTableRow(parser: CMParser) throws
 
     /// Sent by the parser object to the delegate when it encounters the start of a table cell.
     ///
     /// - Parameters:
     ///     - parser: The parser.
-    func parserDidStartTableCell(parser: CMParser)
+    func parserDidStartTableCell(parser: CMParser) throws
 
     /// Sent by the parser object to the delegate when it encounters the end of a table cell.
     ///
     /// - Parameters:
     ///     - parser: The parser.
-    func parserDidEndTableCell(parser: CMParser)
+    func parserDidEndTableCell(parser: CMParser) throws
 
     /// Sent by the parser object to the delegate when it encounters the start of a strikethrough.
     ///
     /// - Parameters:
     ///     - parser: The parser.
-    func parserDidStartStrikethrough(parser: CMParser)
+    func parserDidStartStrikethrough(parser: CMParser) throws
 
     /// Sent by the parser object to the delegate when it encounters the end of a strikethrough.
     ///
     /// - Parameters:
     ///     - parser: The parser.
-    func parserDidEndStrikethrough(parser: CMParser)
+    func parserDidEndStrikethrough(parser: CMParser) throws
 
     /// Sent by the parser object to the delegate when it encounters the start of a tasklist item.
     ///
     /// - Parameters:
     ///     - parser: The parser.
     ///     - completed: true if the task is marked as completed, false otherwise.
-    func parserDidStartTasklistItem(parser: CMParser, completed: Bool)
+    func parserDidStartTasklistItem(parser: CMParser, completed: Bool) throws
 
     /// Sent by the parser object to the delegate when it encounters the end of a tasklist item.
     ///
     /// - Parameters:
     ///     - parser: The parser.
     ///     - completed: true if the task is marked as completed, false otherwise.
-    func parserDidEndTasklistItem(parser: CMParser, completed: Bool)
+    func parserDidEndTasklistItem(parser: CMParser, completed: Bool) throws
 }
 
 /// Represents a parse error.
@@ -378,6 +378,11 @@ public enum CMParseError: Error {
 
     /// The invalid event type error.
     case invalidEventType
+
+    /// The parser could parse.
+    /// This may be because the parser was called rentrant (illegal)
+    /// or because it couldn't get an iterator.
+    case canNotParse
 
     /// Some internal error happened.
     /// This is most likely caused by an incompatibility between the C based parser and the Swift based parser
@@ -429,7 +434,7 @@ public class CMParser {
     ///     `CMParseError.invalidEventType` if an invalid event type is encountered.
     public func parse() throws {
         guard !parsing, let iterator = document.node.iterator else {
-            return
+            throw CMParseError.canNotParse
         }
 
         parsing = true
@@ -444,12 +449,12 @@ public class CMParser {
     }
 
     /// Aborts parsing
-    public func abortParsing() {
+    public func abortParsing() throws {
         guard parsing else {
             return
         }
 
-        delegate?.parserDidAbort(parser: self)
+        try delegate?.parserDidAbort(parser: self)
         parsing = false
     }
 
@@ -471,85 +476,85 @@ public class CMParser {
             return
         case .document:
             if eventType == .enter {
-                delegate?.parserDidStartDocument(parser: self)
+                try delegate?.parserDidStartDocument(parser: self)
             } else {
-                delegate?.parserDidEndDocument(parser: self)
+                try delegate?.parserDidEndDocument(parser: self)
             }
         case .text:
-            delegate?.parser(parser: self, foundText: node.stringValue ?? "")
+            try delegate?.parser(parser: self, foundText: node.stringValue ?? "")
         case .thematicBreak:
-            delegate?.parserFoundThematicBreak(parser: self)
+            try delegate?.parserFoundThematicBreak(parser: self)
         case .heading:
             if eventType == .enter {
-                delegate?.parser(parser: self, didStartHeadingWithLevel: node.headingLevel)
+                try delegate?.parser(parser: self, didStartHeadingWithLevel: node.headingLevel)
             } else {
-                delegate?.parser(parser: self, didEndHeadingWithLevel: node.headingLevel)
+                try delegate?.parser(parser: self, didEndHeadingWithLevel: node.headingLevel)
             }
         case .paragraph:
             if eventType == .enter {
-                delegate?.parserDidStartParagraph(parser: self)
+                try delegate?.parserDidStartParagraph(parser: self)
             } else {
-                delegate?.parserDidEndParagraph(parser: self)
+                try delegate?.parserDidEndParagraph(parser: self)
             }
         case .emphasis:
             if eventType == .enter {
-                delegate?.parserDidStartEmphasis(parser: self)
+                try delegate?.parserDidStartEmphasis(parser: self)
             } else {
-                delegate?.parserDidEndEmphasis(parser: self)
+                try delegate?.parserDidEndEmphasis(parser: self)
             }
         case .strong:
             if eventType == .enter {
-                delegate?.parserDidStartStrong(parser: self)
+                try delegate?.parserDidStartStrong(parser: self)
             } else {
-                delegate?.parserDidEndStrong(parser: self)
+                try delegate?.parserDidEndStrong(parser: self)
             }
         case .link:
             if eventType == .enter {
-                delegate?.parser(parser: self, didStartLinkWithDestination: node.destination, title: node.title)
+                try delegate?.parser(parser: self, didStartLinkWithDestination: node.destination, title: node.title)
             } else {
-                delegate?.parser(parser: self, didEndLinkWithDestination: node.destination, title: node.title)
+                try delegate?.parser(parser: self, didEndLinkWithDestination: node.destination, title: node.title)
             }
         case .image:
             if eventType == .enter {
-                delegate?.parser(parser: self, didStartImageWithDestination: node.destination, title: node.title)
+                try delegate?.parser(parser: self, didStartImageWithDestination: node.destination, title: node.title)
             } else {
-                delegate?.parser(parser: self, didEndImageWithDestination: node.destination, title: node.title)
+                try delegate?.parser(parser: self, didEndImageWithDestination: node.destination, title: node.title)
             }
         case .htmlBlock:
-            delegate?.parser(parser: self, foundHtml: node.stringValue ?? "")
+            try delegate?.parser(parser: self, foundHtml: node.stringValue ?? "")
         case .htmlInline:
-            delegate?.parser(parser: self, foundInlineHtml: node.stringValue ?? "")
+            try delegate?.parser(parser: self, foundInlineHtml: node.stringValue ?? "")
         case .codeBlock:
-            delegate?.parser(parser: self, foundCodeBlock: node.stringValue ?? "", info: node.fencedCodeInfo ?? "")
+            try delegate?.parser(parser: self, foundCodeBlock: node.stringValue ?? "", info: node.fencedCodeInfo ?? "")
         case .code:
-            delegate?.parser(parser: self, foundInlineCode: node.stringValue ?? "")
+            try delegate?.parser(parser: self, foundInlineCode: node.stringValue ?? "")
         case .softBreak:
-            delegate?.parserFoundSoftBreak(parser: self)
+            try delegate?.parserFoundSoftBreak(parser: self)
         case .lineBreak:
-            delegate?.parserFoundLineBreak(parser: self)
+            try delegate?.parserFoundLineBreak(parser: self)
         case .blockQuote:
             if eventType == .enter {
-                delegate?.parserDidStartBlockQuote(parser: self)
+                try delegate?.parserDidStartBlockQuote(parser: self)
             } else {
-                delegate?.parserDidEndBlockQuote(parser: self)
+                try delegate?.parserDidEndBlockQuote(parser: self)
             }
         case .list:
             switch node.listType {
             case .ordered:
                 if eventType == .enter {
-                    delegate?.parser(parser: self,
+                    try delegate?.parser(parser: self,
                                      didStartOrderedListWithStartingNumber: node.listStartingNumber,
                                      tight: node.listTight)
                 } else {
-                    delegate?.parser(parser: self,
+                    try delegate?.parser(parser: self,
                                      didEndOrderedListWithStartingNumber: node.listStartingNumber,
                                      tight: node.listTight)
                 }
             case .unordered:
                 if eventType == .enter {
-                    delegate?.parser(parser: self, didStartUnorderedListWithTightness: node.listTight)
+                    try delegate?.parser(parser: self, didStartUnorderedListWithTightness: node.listTight)
                 } else {
-                    delegate?.parser(parser: self, didEndUnorderedListWithTightness: node.listTight)
+                    try delegate?.parser(parser: self, didEndUnorderedListWithTightness: node.listTight)
                 }
             case .none:
                 break
@@ -568,42 +573,42 @@ public class CMParser {
                     throw CMParseError.internalError
                 }
                 if eventType == .enter {
-                    delegate?.parserDidStartTasklistItem(parser: self, completed: taskCompleted)
+                    try delegate?.parserDidStartTasklistItem(parser: self, completed: taskCompleted)
                 } else {
-                    delegate?.parserDidEndTasklistItem(parser: self, completed: taskCompleted)
+                    try delegate?.parserDidEndTasklistItem(parser: self, completed: taskCompleted)
                 }
             } else {
                 if eventType == .enter {
-                    delegate?.parserDidStartListItem(parser: self)
+                    try delegate?.parserDidStartListItem(parser: self)
                 } else {
-                    delegate?.parserDidEndListItem(parser: self)
+                    try delegate?.parserDidEndListItem(parser: self)
                 }
             }
         case .customBlock:
             if eventType == .enter {
-                delegate?.parser(parser: self, didStartCustomBlock: node.customOnEnter ?? "")
+                try delegate?.parser(parser: self, didStartCustomBlock: node.customOnEnter ?? "")
             } else {
-                delegate?.parser(parser: self, didEndCustomBlock: node.customOnExit ?? "")
+                try delegate?.parser(parser: self, didEndCustomBlock: node.customOnExit ?? "")
             }
         case .footnoteDefinition:
             if eventType == .enter {
                 footnoteIndex += 1
-                delegate?.parser(parser: self, didStartFootnoteDefinition: footnoteIndex)
+                try delegate?.parser(parser: self, didStartFootnoteDefinition: footnoteIndex)
             } else {
-                delegate?.parser(parser: self, didEndFootnoteDefinition: footnoteIndex)
+                try delegate?.parser(parser: self, didEndFootnoteDefinition: footnoteIndex)
             }
         case .customInline:
             if eventType == .enter {
-                delegate?.parser(parser: self, didStartCustomInline: node.customOnEnter ?? "")
+                try delegate?.parser(parser: self, didStartCustomInline: node.customOnEnter ?? "")
             } else {
-                delegate?.parser(parser: self, didEndCustomInline: node.customOnExit ?? "")
+                try delegate?.parser(parser: self, didEndCustomInline: node.customOnExit ?? "")
             }
         case .footnoteReference:
             if eventType == .enter {
-                delegate?.parser(parser: self, foundFootnoteReference: node.stringValue ?? "")
+                try delegate?.parser(parser: self, foundFootnoteReference: node.stringValue ?? "")
             }
         case .extension:
-            handleExtensions(node, eventType: eventType)
+            try handleExtensions(node, eventType: eventType)
         }
     }
 
@@ -612,12 +617,12 @@ public class CMParser {
     /// - Parameters:
     ///     - node: The current node.
     ///     - eventType: The event type.
-    private func handleExtensions(_ node: CMNode, eventType: CMEventType) {
+    private func handleExtensions(_ node: CMNode, eventType: CMEventType) throws {
         guard let nodeName = node.humanReadableType else {
             return
         }
 
-        _ = handleTable(node, nodeName: nodeName, eventType: eventType) ||
+        _ = try handleTable(node, nodeName: nodeName, eventType: eventType) ||
             handleStrikethrough(nodeName, eventType: eventType)
     }
 
@@ -629,15 +634,15 @@ public class CMParser {
     /// - Returns:
     ///     true if the node was handled as a strikethrough, false otherwise.
     @discardableResult
-    private func handleStrikethrough(_ nodeName: String, eventType: CMEventType) -> Bool {
+    private func handleStrikethrough(_ nodeName: String, eventType: CMEventType) throws -> Bool {
         guard nodeName == CMExtensionName.strikethrough.rawValue else {
             return false
         }
 
         if eventType == .enter {
-            delegate?.parserDidStartStrikethrough(parser: self)
+            try delegate?.parserDidStartStrikethrough(parser: self)
         } else {
-            delegate?.parserDidEndStrikethrough(parser: self)
+            try delegate?.parserDidEndStrikethrough(parser: self)
         }
 
         return true
@@ -652,27 +657,27 @@ public class CMParser {
     /// - Returns:
     ///     true if the node was handled as a table, table header, table row, or table cell, false otherwise.
     @discardableResult
-    private func handleTable(_ node: CMNode, nodeName: String, eventType: CMEventType) -> Bool {
+    private func handleTable(_ node: CMNode, nodeName: String, eventType: CMEventType) throws -> Bool {
         switch nodeName {
         case CMExtensionName.table.rawValue:
-            handleTableEvent(node, eventType: eventType)
+            try handleTableEvent(node, eventType: eventType)
         case CMExtensionName.tableHeader.rawValue:
             if eventType == .enter {
-                delegate?.parserDidStartTableHeader(parser: self)
+                try delegate?.parserDidStartTableHeader(parser: self)
             } else {
-                delegate?.parserDidEndTableHeader(parser: self)
+                try delegate?.parserDidEndTableHeader(parser: self)
             }
         case CMExtensionName.tableRow.rawValue:
             if eventType == .enter {
-                delegate?.parserDidStartTableRow(parser: self)
+                try delegate?.parserDidStartTableRow(parser: self)
             } else {
-                delegate?.parserDidEndTableRow(parser: self)
+                try delegate?.parserDidEndTableRow(parser: self)
             }
         case CMExtensionName.tableCell.rawValue:
             if eventType == .enter {
-                delegate?.parserDidStartTableCell(parser: self)
+                try delegate?.parserDidStartTableCell(parser: self)
             } else {
-                delegate?.parserDidEndTableCell(parser: self)
+                try delegate?.parserDidEndTableCell(parser: self)
             }
         default:
             return false
@@ -686,7 +691,7 @@ public class CMParser {
     /// - Parameters:
     ///     - node: The current node.
     ///     - eventType: The event type.
-    private func handleTableEvent(_ node: CMNode, eventType: CMEventType) {
+    private func handleTableEvent(_ node: CMNode, eventType: CMEventType) throws {
         let columns = cmark_gfm_extensions_get_table_columns(node.cmarkNode)
         var alignments = cmark_gfm_extensions_get_table_alignments(node.cmarkNode)
 
@@ -703,9 +708,9 @@ public class CMParser {
         }
 
         if eventType == .enter {
-            delegate?.parser(parser: self, didStartTableWithColumns: columns, alignments: align)
+            try delegate?.parser(parser: self, didStartTableWithColumns: columns, alignments: align)
         } else {
-            delegate?.parser(parser: self, didEndTableWithColumns: columns, alignments: align)
+            try delegate?.parser(parser: self, didEndTableWithColumns: columns, alignments: align)
         }
     }
 }

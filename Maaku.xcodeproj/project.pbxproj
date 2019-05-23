@@ -26,6 +26,9 @@
 		0453B9A122763BAA00AB31CC /* TasklistItemSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453B9A022763BAA00AB31CC /* TasklistItemSpec.swift */; };
 		0453B9A222763BAA00AB31CC /* TasklistItemSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453B9A022763BAA00AB31CC /* TasklistItemSpec.swift */; };
 		0453B9A322763BAA00AB31CC /* TasklistItemSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453B9A022763BAA00AB31CC /* TasklistItemSpec.swift */; };
+		04C2EF4D2297251700413346 /* CMParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C2EF4B229724D900413346 /* CMParserSpec.swift */; };
+		04C2EF4E2297251800413346 /* CMParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C2EF4B229724D900413346 /* CMParserSpec.swift */; };
+		04C2EF4F2297251B00413346 /* CMParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C2EF4B229724D900413346 /* CMParserSpec.swift */; };
 		04C93A9D226F89730058589D /* CMExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C93A9B226F89440058589D /* CMExtensionSpec.swift */; };
 		04C93A9E226F89740058589D /* CMExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C93A9B226F89440058589D /* CMExtensionSpec.swift */; };
 		04C93A9F226F89770058589D /* CMExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C93A9B226F89440058589D /* CMExtensionSpec.swift */; };
@@ -350,6 +353,7 @@
 		0453B98E22760C4C00AB31CC /* CMNodeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMNodeSpec.swift; sourceTree = "<group>"; };
 		0453B99822760CFA00AB31CC /* TasklistItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasklistItem.swift; sourceTree = "<group>"; };
 		0453B9A022763BAA00AB31CC /* TasklistItemSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasklistItemSpec.swift; sourceTree = "<group>"; };
+		04C2EF4B229724D900413346 /* CMParserSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMParserSpec.swift; sourceTree = "<group>"; };
 		04C93A9B226F89440058589D /* CMExtensionSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMExtensionSpec.swift; sourceTree = "<group>"; };
 		04C93AA0226F8BBA0058589D /* CMExtensionInternalSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMExtensionInternalSpec.swift; sourceTree = "<group>"; };
 		04CB42CD2273FC3B0006625E /* CMNodeInternal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMNodeInternal.swift; sourceTree = "<group>"; };
@@ -588,6 +592,7 @@
 				0453B98D22760C4C00AB31CC /* CMExtensionTasklist.swift */,
 				0453B98E22760C4C00AB31CC /* CMNodeSpec.swift */,
 				04CB42CD2273FC3B0006625E /* CMNodeInternal.swift */,
+				04C2EF4B229724D900413346 /* CMParserSpec.swift */,
 			);
 			path = CMark;
 			sourceTree = "<group>";
@@ -1516,6 +1521,7 @@
 				A254E2E91FEF7F8800C48E71 /* HtmlBlockSpec.swift in Sources */,
 				04C93A9E226F89740058589D /* CMExtensionSpec.swift in Sources */,
 				A254E30A1FEF7F9500C48E71 /* LineBreakSpec.swift in Sources */,
+				04C2EF4E2297251800413346 /* CMParserSpec.swift in Sources */,
 				A254E30E1FEF7F9500C48E71 /* InlineCodeSpec.swift in Sources */,
 				A254E2F91FEF7F8E00C48E71 /* AutolinkSpec.swift in Sources */,
 				A254E30C1FEF7F9500C48E71 /* TextSpec.swift in Sources */,
@@ -1667,6 +1673,7 @@
 				A254E2EE1FEF7F8800C48E71 /* HtmlBlockSpec.swift in Sources */,
 				04C93A9F226F89770058589D /* CMExtensionSpec.swift in Sources */,
 				A254E3141FEF7F9600C48E71 /* LineBreakSpec.swift in Sources */,
+				04C2EF4F2297251B00413346 /* CMParserSpec.swift in Sources */,
 				A254E3181FEF7F9600C48E71 /* InlineCodeSpec.swift in Sources */,
 				A254E2FD1FEF7F8F00C48E71 /* AutolinkSpec.swift in Sources */,
 				A254E3161FEF7F9600C48E71 /* TextSpec.swift in Sources */,
@@ -1764,6 +1771,7 @@
 				A254E2E41FEF7F8700C48E71 /* HtmlBlockSpec.swift in Sources */,
 				04C93A9D226F89730058589D /* CMExtensionSpec.swift in Sources */,
 				A254E3001FEF7F9400C48E71 /* LineBreakSpec.swift in Sources */,
+				04C2EF4D2297251700413346 /* CMParserSpec.swift in Sources */,
 				A254E3041FEF7F9400C48E71 /* InlineCodeSpec.swift in Sources */,
 				A254E2F51FEF7F8D00C48E71 /* AutolinkSpec.swift in Sources */,
 				A254E3021FEF7F9400C48E71 /* TextSpec.swift in Sources */,
