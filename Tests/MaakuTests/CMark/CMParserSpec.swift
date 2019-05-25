@@ -11,6 +11,11 @@ import Nimble
 import Quick
 import XCTest
 
+public enum SpecialParserDelegateError: Error {
+    /// An error we can throw from this parser delegate
+    case specialParserError
+}
+
 class CMParserSpec: QuickSpec {
     override func spec() {
         let markdown = """
@@ -20,13 +25,13 @@ Simple paragraph
 
 Another Paragraph
 """
-        describe("Parsing document") {
-            it("can parse using standard DocumentConverter") {
+        describe("Parsing document with special converter") {
+            it("can parse with no errors") {
                 do {
                     let cmDocument = try CMDocument(text: markdown)
                     let parserDelegate = SpecialParserDelegate()
-                    let parser = CMParser(document: cmDocument, delegate: parserDelegate)
-                    try parser.parse()
+                    let parser = CMParser(delegate: parserDelegate)
+                    try parser.parse(document: cmDocument)
                 } catch let error {
                     fail("\(error.localizedDescription)")
                 }
@@ -34,9 +39,20 @@ Another Paragraph
             it("will raise an error if parser is called rentrantly") {
                 do {
                     let cmDocument = try CMDocument(text: markdown)
-                    let parserDelegate = SpecialParserDelegate(makeReentrantCall: true)
-                    let parser = CMParser(document: cmDocument, delegate: parserDelegate)
-                    expect { try parser.parse() }.to(throwError(CMParseError.canNotParse))
+                    let parserDelegate = SpecialParserDelegate(makeReentrantCallOnDocument: cmDocument)
+                    let parser = CMParser(delegate: parserDelegate)
+                    expect { try parser.parse(document: cmDocument) }.to(throwError(CMParseError.canNotParse))
+                } catch let error {
+                    fail("\(error.localizedDescription)")
+                }
+            }
+            it("will return an exception thrown by the delegate") {
+                do {
+                    let cmDocument = try CMDocument(text: markdown)
+                    let parserDelegate = SpecialParserDelegate(testThrowingException: true)
+                    let parser = CMParser(delegate: parserDelegate)
+                    // swiftlint:disable:next line_length
+                    expect { try parser.parse(document: cmDocument) }.to(throwError(SpecialParserDelegateError.specialParserError))
                 } catch let error {
                     fail("\(error.localizedDescription)")
                 }
@@ -44,17 +60,22 @@ Another Paragraph
        }
     }
     class SpecialParserDelegate: CMParserDelegate {
-        var makeReentrantCall: Bool
-        init(makeReentrantCall: Bool = false) {
-            self.makeReentrantCall = makeReentrantCall
+        var makeReentrantCallOnDocument: CMDocument?
+        var throwException: Bool
+        init(makeReentrantCallOnDocument document: CMDocument? = nil, testThrowingException: Bool = false) {
+            makeReentrantCallOnDocument = document
+            throwException = testThrowingException
         }
 
         func parserDidStartDocument(parser: CMParser) throws {
         }
 
         func parserDidEndDocument(parser: CMParser) throws {
-            if makeReentrantCall {
-                try parser.parse()
+            if let document = makeReentrantCallOnDocument {
+                try parser.parse(document: document)
+            }
+            if throwException {
+                throw SpecialParserDelegateError.specialParserError
             }
         }
 

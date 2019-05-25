@@ -397,47 +397,45 @@ public class CMParser {
     /// The current footnote index.
     private var footnoteIndex: Int32 = 0
 
-    /// The document.
-    private let document: CMDocument
-
     /// Indicates if the parser is currently parsing.
     private var parsing: Bool = false
 
     /// The delegate.
     public weak var delegate: CMParserDelegate?
 
-    /// Creates a parser for the specified document.
+    /// Creates a parser.
     ///
     /// - Parameters:
-    ///     - document: The document.
-    /// - Returns:
-    ///     The parser for the document.
-    public convenience init(document: CMDocument) {
-        self.init(document: document, delegate: nil)
-    }
-
-    /// Creates a parser for the specified document.
-    ///
-    /// - Parameters:
-    ///     - document: The document.
     ///     - delegate: The delegate.
     /// - Returns:
-    ///     The parser for the document.
-    public init(document: CMDocument, delegate: CMParserDelegate?) {
-        self.document = document
+    ///     The parser.
+    public init(delegate: CMParserDelegate? = nil) {
         self.delegate = delegate
     }
 
     /// Parses the document, calling delegate methods as needed.
     ///
+    /// - Parameters:
+    ///     - document: The document.
     /// - Throws:
     ///     `CMParseError.invalidEventType` if an invalid event type is encountered.
-    public func parse() throws {
-        guard !parsing, let iterator = document.node.iterator else {
+    public func parse(document: CMDocument) throws {
+        try parse(subtree: document.node, startingFootnoteIndex: 0)
+    }
+
+    /// Parses the subtree, calling delegate methods as needed.
+    ///
+    /// - Parameters:
+    ///     - subtree: The subtree to parse.
+    /// - Throws:
+    ///     `CMParseError.invalidEventType` if an invalid event type is encountered.
+    public func parse(subtree: CMNode, startingFootnoteIndex: Int32 = 0) throws {
+        guard !parsing, let iterator = subtree.iterator else {
             throw CMParseError.canNotParse
         }
 
         parsing = true
+        footnoteIndex = startingFootnoteIndex
 
         try iterator.enumerate { [unowned self] (node, eventType) -> Bool in
             try self.handleNode(node, eventType: eventType)
@@ -445,7 +443,6 @@ public class CMParser {
         }
 
         parsing = false
-        footnoteIndex = 0
     }
 
     /// Aborts parsing

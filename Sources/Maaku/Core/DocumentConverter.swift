@@ -30,9 +30,21 @@ public class DocumentConverter {
     /// - Returns:
     ///     The converted document.
     public func convert(document: CMDocument) throws -> Document {
+        return Document(items: try convert(cmNode: document.node))
+    }
+
+    /// Converts a single CMNode (and its children) to a Node tree.
+    ///
+    /// - Parameters:
+    ///     - cmNode: The CMNode.
+    /// - Throws:
+    ///     `CMParseError.invalidEventType` if an invalid event type is encountered.
+    /// - Returns:
+    ///     The converted Node.
+    public func convert(cmNode: CMNode) throws -> [Block] {
         nodes = []
-        let parser = CMParser(document: document, delegate: self)
-        try parser.parse()
+        let parser = CMParser(delegate: self)
+        try parser.parse(subtree: cmNode)
 
         var items = [Block]()
 
@@ -42,7 +54,7 @@ public class DocumentConverter {
             }
         }
 
-        return Document(items: items)
+        return items
     }
 
 }
