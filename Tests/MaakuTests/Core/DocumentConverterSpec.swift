@@ -60,9 +60,8 @@ class DocumentConverterSpec: QuickSpec {
                 try DocumentConverterSpec.checkText(item: paragraph.items[i], identifier: "\(identifier) [item \(i)]", expectedText: expectedString)
             } else {
                 // If the value in the expectedText array is nil, that means we expect a softbreak
-                if let item = paragraph.items[i] as? SoftBreak {
-                    // nothing to check.
-                } else {
+                // If we didn't get one, that's a problem
+                if !(paragraph.items[i] is SoftBreak) {
                     throw ParseError.customError(message: "\(identifier): expected item \(i) to be a soft break, but got \(paragraph.items[i])")
                 }
             }
