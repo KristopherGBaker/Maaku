@@ -29,6 +29,9 @@
 		04C2EF4D2297251700413346 /* CMParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C2EF4B229724D900413346 /* CMParserSpec.swift */; };
 		04C2EF4E2297251800413346 /* CMParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C2EF4B229724D900413346 /* CMParserSpec.swift */; };
 		04C2EF4F2297251B00413346 /* CMParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C2EF4B229724D900413346 /* CMParserSpec.swift */; };
+		04C2EF512299E40D00413346 /* DocumentConverterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C2EF502299E40D00413346 /* DocumentConverterSpec.swift */; };
+		04C2EF522299E40D00413346 /* DocumentConverterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C2EF502299E40D00413346 /* DocumentConverterSpec.swift */; };
+		04C2EF532299E40D00413346 /* DocumentConverterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C2EF502299E40D00413346 /* DocumentConverterSpec.swift */; };
 		04C93A9D226F89730058589D /* CMExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C93A9B226F89440058589D /* CMExtensionSpec.swift */; };
 		04C93A9E226F89740058589D /* CMExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C93A9B226F89440058589D /* CMExtensionSpec.swift */; };
 		04C93A9F226F89770058589D /* CMExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C93A9B226F89440058589D /* CMExtensionSpec.swift */; };
@@ -354,6 +357,7 @@
 		0453B99822760CFA00AB31CC /* TasklistItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasklistItem.swift; sourceTree = "<group>"; };
 		0453B9A022763BAA00AB31CC /* TasklistItemSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasklistItemSpec.swift; sourceTree = "<group>"; };
 		04C2EF4B229724D900413346 /* CMParserSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMParserSpec.swift; sourceTree = "<group>"; };
+		04C2EF502299E40D00413346 /* DocumentConverterSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentConverterSpec.swift; sourceTree = "<group>"; };
 		04C93A9B226F89440058589D /* CMExtensionSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMExtensionSpec.swift; sourceTree = "<group>"; };
 		04C93AA0226F8BBA0058589D /* CMExtensionInternalSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMExtensionInternalSpec.swift; sourceTree = "<group>"; };
 		04CB42CD2273FC3B0006625E /* CMNodeInternal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMNodeInternal.swift; sourceTree = "<group>"; };
@@ -601,6 +605,7 @@
 			isa = PBXGroup;
 			children = (
 				A254E2BB1FEF7F6A00C48E71 /* DocumentSpec.swift */,
+				04C2EF502299E40D00413346 /* DocumentConverterSpec.swift */,
 				A28847401FF5890A00558555 /* StyleSpec.swift */,
 				A254E2D21FEF7F6A00C48E71 /* Container */,
 				A254E2C21FEF7F6A00C48E71 /* Extensions */,
@@ -1504,6 +1509,7 @@
 			files = (
 				A254E30B1FEF7F9500C48E71 /* FootnoteReferenceSpec.swift in Sources */,
 				A254E3231FEF7F9C00C48E71 /* UnorderedListSpec.swift in Sources */,
+				04C2EF522299E40D00413346 /* DocumentConverterSpec.swift in Sources */,
 				0453B99622760C4C00AB31CC /* CMNodeSpec.swift in Sources */,
 				A254E2EA1FEF7F8800C48E71 /* ParagraphSpec.swift in Sources */,
 				0453B9A222763BAA00AB31CC /* TasklistItemSpec.swift in Sources */,
@@ -1656,6 +1662,7 @@
 			files = (
 				A254E3151FEF7F9600C48E71 /* FootnoteReferenceSpec.swift in Sources */,
 				A254E3281FEF7F9D00C48E71 /* UnorderedListSpec.swift in Sources */,
+				04C2EF532299E40D00413346 /* DocumentConverterSpec.swift in Sources */,
 				0453B99722760C4C00AB31CC /* CMNodeSpec.swift in Sources */,
 				A254E2EF1FEF7F8800C48E71 /* ParagraphSpec.swift in Sources */,
 				0453B9A322763BAA00AB31CC /* TasklistItemSpec.swift in Sources */,
@@ -1754,6 +1761,7 @@
 			files = (
 				A254E3011FEF7F9400C48E71 /* FootnoteReferenceSpec.swift in Sources */,
 				A254E31E1FEF7F9B00C48E71 /* UnorderedListSpec.swift in Sources */,
+				04C2EF512299E40D00413346 /* DocumentConverterSpec.swift in Sources */,
 				0453B99522760C4C00AB31CC /* CMNodeSpec.swift in Sources */,
 				A254E2E51FEF7F8700C48E71 /* ParagraphSpec.swift in Sources */,
 				0453B9A122763BAA00AB31CC /* TasklistItemSpec.swift in Sources */,
