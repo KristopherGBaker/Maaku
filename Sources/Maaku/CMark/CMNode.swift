@@ -19,8 +19,7 @@ public class CMNode {
     private let referencedMemoryOwner: CMNode?
 
     /// Read-only access to the memory owner
-    /// Its primary purpose is to allow tests to verify that the right
-    /// things are going on.
+    /// This allows extensions (or tests) to query the value.
     var internalMemoryOwner: CMNode? {
         return referencedMemoryOwner
     }
@@ -56,7 +55,12 @@ public class CMNode {
     deinit {
         if referencedMemoryOwner == nil {
             // We're the one that really owns the memory, so free it.
-            cmark_node_free(cmarkNode)
+            // But only free it if the node doesn't have a parent!
+            // If it has a parent, then we either need to remove it from the parent
+            // or not free it, because the parent will free it.
+            if cmarkNode.pointee.parent == nil {
+                cmark_node_free(cmarkNode)
+            }
         }
     }
 }
