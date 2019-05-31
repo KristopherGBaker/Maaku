@@ -16,20 +16,6 @@ public extension CMNode {
         guard humanReadableType == CMExtensionName.tasklist.rawValue else {
             return nil
         }
-        guard let value = cmark_gfm_extensions_get_tasklist_state(cmarkNode) else {
-            return nil
-        }
-        // The state should either be "checked" or "unchecked".
-        // If it is something else, then there is a mismatch between the C Parser and us.
-        switch String(cString: value) {
-        case "checked":
-            return true
-        case "unchecked":
-            return false
-        default:
-            // It would be better if we could throw an exception,
-            // but we'll have to settle for returning nil.
-            return nil
-        }
+        return cmark_gfm_extensions_tasklist_state_is_checked(cmarkNode)
     }
 }
