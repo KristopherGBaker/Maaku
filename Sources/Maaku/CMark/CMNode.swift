@@ -188,8 +188,8 @@ public extension CMNode {
         return cmark_node_get_list_tight(cmarkNode) != 0
     }
 
-    /// The URL as a string.
-    var destination: String? {
+    /// The link URL as a string.
+    var linkDestination: String? {
         guard let buffer = cmark_node_get_url(cmarkNode) else {
             return nil
         }
@@ -197,17 +197,17 @@ public extension CMNode {
         return String(cString: buffer)
     }
 
-    /// The URL.
-    var url: URL? {
-        guard let destination = destination else {
+    /// The link URL.
+    var linkUrl: URL? {
+        guard let destination = linkDestination else {
             return nil
         }
 
         return URL(string: destination)
     }
 
-    /// The title.
-    var title: String? {
+    /// The link title.
+    var linkTitle: String? {
         guard let buffer = cmark_node_get_title(cmarkNode) else {
             return nil
         }
