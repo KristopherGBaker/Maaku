@@ -26,6 +26,10 @@
 		0453B9A122763BAA00AB31CC /* TasklistItemSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453B9A022763BAA00AB31CC /* TasklistItemSpec.swift */; };
 		0453B9A222763BAA00AB31CC /* TasklistItemSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453B9A022763BAA00AB31CC /* TasklistItemSpec.swift */; };
 		0453B9A322763BAA00AB31CC /* TasklistItemSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453B9A022763BAA00AB31CC /* TasklistItemSpec.swift */; };
+		04A3A74A229F24A700ACBC09 /* CMNode+ASTManipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3A749229F24A700ACBC09 /* CMNode+ASTManipulation.swift */; };
+		04A3A74B229F24A700ACBC09 /* CMNode+ASTManipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3A749229F24A700ACBC09 /* CMNode+ASTManipulation.swift */; };
+		04A3A74C229F24A700ACBC09 /* CMNode+ASTManipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3A749229F24A700ACBC09 /* CMNode+ASTManipulation.swift */; };
+		04A3A74D229F24A700ACBC09 /* CMNode+ASTManipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3A749229F24A700ACBC09 /* CMNode+ASTManipulation.swift */; };
 		04C2EF4D2297251700413346 /* CMParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C2EF4B229724D900413346 /* CMParserSpec.swift */; };
 		04C2EF4E2297251800413346 /* CMParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C2EF4B229724D900413346 /* CMParserSpec.swift */; };
 		04C2EF4F2297251B00413346 /* CMParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C2EF4B229724D900413346 /* CMParserSpec.swift */; };
@@ -356,6 +360,7 @@
 		0453B98E22760C4C00AB31CC /* CMNodeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMNodeSpec.swift; sourceTree = "<group>"; };
 		0453B99822760CFA00AB31CC /* TasklistItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasklistItem.swift; sourceTree = "<group>"; };
 		0453B9A022763BAA00AB31CC /* TasklistItemSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasklistItemSpec.swift; sourceTree = "<group>"; };
+		04A3A749229F24A700ACBC09 /* CMNode+ASTManipulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CMNode+ASTManipulation.swift"; sourceTree = "<group>"; };
 		04C2EF4B229724D900413346 /* CMParserSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMParserSpec.swift; sourceTree = "<group>"; };
 		04C2EF502299E40D00413346 /* DocumentConverterSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentConverterSpec.swift; sourceTree = "<group>"; };
 		04C93A9B226F89440058589D /* CMExtensionSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMExtensionSpec.swift; sourceTree = "<group>"; };
@@ -729,6 +734,7 @@
 				A288C44A1FEF29AA00667F4A /* CMIterator.swift */,
 				A288C4511FEF29AA00667F4A /* CMListType.swift */,
 				A288C44F1FEF29AA00667F4A /* CMNode.swift */,
+				04A3A749229F24A700ACBC09 /* CMNode+ASTManipulation.swift */,
 				90D97E99229687B800067FF7 /* CMNode+Render.swift */,
 				90D97E9B229687EF00067FF7 /* CMNode+Task.swift */,
 				A288C44C1FEF29AA00667F4A /* CMNodeType.swift */,
@@ -1454,6 +1460,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A288C4971FEF29AB00667F4A /* CMParser.swift in Sources */,
+				04A3A74B229F24A700ACBC09 /* CMNode+ASTManipulation.swift in Sources */,
 				A288C4D71FEF29AB00667F4A /* InlineCode.swift in Sources */,
 				A288C4CB1FEF29AB00667F4A /* Strikethrough.swift in Sources */,
 				90D97EA02296880300067FF7 /* CMNode+Task.swift in Sources */,
@@ -1553,6 +1560,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A288C4981FEF29AB00667F4A /* CMParser.swift in Sources */,
+				04A3A74C229F24A700ACBC09 /* CMNode+ASTManipulation.swift in Sources */,
 				A288C4D81FEF29AB00667F4A /* InlineCode.swift in Sources */,
 				A288C4CC1FEF29AB00667F4A /* Strikethrough.swift in Sources */,
 				90D97EA12296880400067FF7 /* CMNode+Task.swift in Sources */,
@@ -1607,6 +1615,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A288C4991FEF29AB00667F4A /* CMParser.swift in Sources */,
+				04A3A74D229F24A700ACBC09 /* CMNode+ASTManipulation.swift in Sources */,
 				A288C4D91FEF29AB00667F4A /* InlineCode.swift in Sources */,
 				A288C4CD1FEF29AB00667F4A /* Strikethrough.swift in Sources */,
 				90D97EA22296880500067FF7 /* CMNode+Task.swift in Sources */,
@@ -1706,6 +1715,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A288C4961FEF29AB00667F4A /* CMParser.swift in Sources */,
+				04A3A74A229F24A700ACBC09 /* CMNode+ASTManipulation.swift in Sources */,
 				A288C4D61FEF29AB00667F4A /* InlineCode.swift in Sources */,
 				A288C4CA1FEF29AB00667F4A /* Strikethrough.swift in Sources */,
 				90D97E9C229687EF00067FF7 /* CMNode+Task.swift in Sources */,
