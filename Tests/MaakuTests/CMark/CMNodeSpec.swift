@@ -164,9 +164,9 @@ class CMNodeSpec: QuickSpec {
                         expect(try doc.node.setListDelimiterType(.period)).to(throwError(CMNode.ASTError.canNotSetValue))
                         expect(try doc.node.setListStartingNumber(3)).to(throwError(CMNode.ASTError.canNotSetValue))
                         expect(try doc.node.setListTight(false)).to(throwError(CMNode.ASTError.canNotSetValue))
-                        expect(try doc.node.setDestination("dummy string")).to(throwError(CMNode.ASTError.canNotSetValue))
-                        expect(try doc.node.setURL(URL(string: "http://google.com")!)).to(throwError(CMNode.ASTError.canNotSetValue))
-                        expect(try doc.node.setTitle("dummy string")).to(throwError(CMNode.ASTError.canNotSetValue))
+                        expect(try doc.node.setLinkDestination("dummy string")).to(throwError(CMNode.ASTError.canNotSetValue))
+                        expect(try doc.node.setLinkURL(URL(string: "http://google.com")!)).to(throwError(CMNode.ASTError.canNotSetValue))
+                        expect(try doc.node.setLinkTitle("dummy string")).to(throwError(CMNode.ASTError.canNotSetValue))
                         expect(try doc.node.setLiteral("dummy string")).to(throwError(CMNode.ASTError.canNotSetValue))
                         // swiftlint:enable line_length
                     }
@@ -256,11 +256,11 @@ some text
                     do {
                         let doc = try CMDocument(text: "[my info](http://google.com)")
                         let linkNode = doc.node.firstChild!.firstChild!
-                        expect(linkNode.title).to(equal(""))
-                        try linkNode.setTitle("A new title")
-                        expect(linkNode.title).to(equal("A new title"))
-                        try linkNode.setURL(URL(string: "http://apple.com")!)
-                        expect(linkNode.destination).to(equal("http://apple.com"))
+                        expect(linkNode.linkTitle).to(equal(""))
+                        try linkNode.setLinkTitle("A new title")
+                        expect(linkNode.linkTitle).to(equal("A new title"))
+                        try linkNode.setLinkURL(URL(string: "http://apple.com")!)
+                        expect(linkNode.linkDestination).to(equal("http://apple.com"))
                         let result = try doc.renderCommonMark(width: 100)
                         expect(result).to(equal("[my info](http://apple.com \"A new title\")\n"))
                     }
