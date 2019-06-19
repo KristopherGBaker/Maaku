@@ -16,6 +16,6 @@ public extension CMNode {
         guard humanReadableType == CMExtensionName.tasklist.rawValue else {
             return nil
         }
-        return cmark_gfm_extensions_tasklist_state_is_checked(cmarkNode)
+        return cmark_gfm_extensions_get_tasklist_item_checked(cmarkNode)
     }
 }

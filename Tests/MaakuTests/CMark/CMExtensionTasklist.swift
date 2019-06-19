@@ -124,6 +124,33 @@ class CMExtensionTasklistSpec: QuickSpec {
                         }
                     }
                 }
+                it("can modify the tasklist state") {
+                    do {
+                        let text =
+"""
+- [ ] task
+
+"""
+                        let doc = try CMDocument(text: text, options: .default, extensions: .tasklist)
+                        expect(try doc.renderCommonMark(width: 0)).to(equal(text))
+                        let listNode = doc.node.firstChild!
+                        // swiftlint:disable:next line_length
+                        expect(try listNode.setTaskCompleted(false)).to(throwError(CMNode.ASTError.canNotSetValue))
+                        let taskNode = listNode.firstChild!
+                        expect(taskNode.humanReadableType).to(equal("tasklist"))
+                        expect(taskNode.taskCompleted).to(equal(false))
+                        expect(try taskNode.setTaskCompleted(true)).toNot(throwError())
+                        expect(taskNode.taskCompleted).to(equal(true))
+                        expect(try doc.renderCommonMark(width: 0)).to(equal(text.replacingOccurrences(of: "[ ]", with: "[x]")))
+                        expect(try taskNode.setTaskCompleted(false)).toNot(throwError())
+                        expect(taskNode.taskCompleted).to(equal(false))
+                        expect(try doc.renderCommonMark(width: 0)).to(equal(text))
+                    } catch let error {
+                        it("fails to initialize the document") {
+                            fail("\(error.localizedDescription)")
+                        }
+                    }
+                }
             }
         }
         describe("render document") {
