@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Maaku"
-  s.version      = "0.9.1"
+  s.version      = "0.9.2"
   s.summary      = "Swift cmark-gfm wrapper with a Swift friendly representation of the AST"
 
   s.description  = <<-DESC
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   
   s.subspec 'CMark' do |core|
       core.source_files = "Sources/Maaku/CMark/**/*.swift"
-      core.dependency 'libcmark_gfm', '~> 0.29.2'
+      core.dependency 'libcmark_gfm', '~> 0.29.3'
   end
   
   s.subspec 'Core' do |md|
