@@ -507,15 +507,23 @@ public class CMParser {
             }
         case .link:
             if eventType == .enter {
-                try delegate?.parser(parser: self, didStartLinkWithDestination: node.linkDestination, title: node.linkTitle)
+                try delegate?.parser(parser: self,
+                                     didStartLinkWithDestination: node.linkDestination,
+                                     title: node.linkTitle)
             } else {
-                try delegate?.parser(parser: self, didEndLinkWithDestination: node.linkDestination, title: node.linkTitle)
+                try delegate?.parser(parser: self,
+                                     didEndLinkWithDestination: node.linkDestination,
+                                     title: node.linkTitle)
             }
         case .image:
             if eventType == .enter {
-                try delegate?.parser(parser: self, didStartImageWithDestination: node.linkDestination, title: node.linkTitle)
+                try delegate?.parser(parser: self,
+                                     didStartImageWithDestination: node.linkDestination,
+                                     title: node.linkTitle)
             } else {
-                try delegate?.parser(parser: self, didEndImageWithDestination: node.linkDestination, title: node.linkTitle)
+                try delegate?.parser(parser: self,
+                                     didEndImageWithDestination: node.linkDestination,
+                                     title: node.linkTitle)
             }
         case .htmlBlock:
             try delegate?.parser(parser: self, foundHtml: node.stringValue ?? "")
