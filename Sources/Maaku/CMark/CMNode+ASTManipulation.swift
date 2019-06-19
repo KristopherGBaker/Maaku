@@ -100,6 +100,12 @@ public extension CMNode {
         }
     }
 
+    func setTaskCompleted(_ newValue: Bool) throws {
+        if cmark_gfm_extensions_set_tasklist_item_checked(cmarkNode, newValue) != 1 {
+            throw ASTError.canNotSetValue
+        }
+    }
+
     /// Inserts this node into the AST before the given node
     ///
     /// - Parameters:
