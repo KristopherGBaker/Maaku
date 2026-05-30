@@ -1,6 +1,9 @@
 # Maaku
 
-[![Build Status](https://travis-ci.org/KristopherGBaker/Maaku.svg?branch=master)](https://travis-ci.org/KristopherGBaker/Maaku)
+> **⚠️ This project is archived and no longer maintained.**
+>
+> For parsing Markdown into a Swift AST, use [swift-markdown](https://github.com/swiftlang/swift-markdown) from the Swift project — it's built on the same cmark-gfm core and is actively maintained. For rendering, see SwiftUI's built-in `AttributedString` Markdown support (iOS 15+) or [Textual](https://github.com/gonzalezreal/textual) (the maintained successor to swift-markdown-ui). The repository remains available for reference.
+
 [![Swift](https://img.shields.io/badge/swift-5-orange.svg?style=flat)](https://developer.apple.com/swift/)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/Maaku.svg)](https://img.shields.io/cocoapods/v/Maaku.svg)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
